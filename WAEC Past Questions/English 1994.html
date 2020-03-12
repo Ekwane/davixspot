@@ -1,11 +1,42 @@
 <!doctype html>
 <html>
     <head>
-		<link rel="stylesheet" href="../css/style.css" type="text/css">
-		<script src="../js/script.js" type="text/javascript"></script>
-		<title>English 1994 WAEC past questions</title>
-	</head>
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+		<script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+        <title>English 1994 WAEC past questions</title>
+    </head>
     <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+		  <source src="../aud/start.ogg" type="audio/ogg">
+		  <source src="../aud/start.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="selectAudio">
+		  <source src="../aud/optionselect.ogg" type="audio/ogg">
+		  <source src="../aud/optionselect.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="stopAudio">
+		  <source src="../aud/stop.ogg" type="audio/ogg">
+		  <source src="../aud/stop.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="passedAudio">
+		  <source src="../aud/passed.ogg" type="audio/ogg">
+		  <source src="../aud/passed.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="selectAudio">
+		  <source src="../aud/failed.ogg" type="audio/ogg">
+		  <source src="../aud/failed.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="clickAudio">
+		  <source src="../aud/btnclick.ogg" type="audio/ogg">
+		  <source src="../aud/btnclick.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
         <div class="leftcolumnForMainPageHeader">
             <div id = "mainPageHeader">SCHOOL MANAGER</div>
             <div id="motto">Learning made Easier</div>
@@ -127,44 +158,68 @@
                 </strong><br>
                 <em><strong>Instruction: </strong>In the following passages, the numbered gaps indicate missing words. Choose the word that is most suitable to fill the numbered gaps in the passage</em>
             </center>
-            <div id='sec6'>
-                <br><center><big>PASSAGE A</big></center>
+            <div>
+                <br><center><strong>PASSAGE A</strong></center>
                 A nation that wants to <select id="sel76"><option>-76-</option><option value="a">A. groom</option><option value="b">B. fatten</option><option value="c">C. feed</option><option value="d">D. feast</option><option value="e">E. nourish</option></select> cannot rely on traditional method of <select id="sel77"><option>-77-</option><option value="a">A. fanning</option><option value="b">B. peasantry</option><option value="c">C. planting</option><option value="d">D. sowing</option><option value="e">E. gardening</option></select> but on a large scale <select id="sel78"><option>-78-</option><option value="a">A. horticulture</option><option value="b">B. silage</option><option value="c">C. tillage</option><option value="d">D. husbandry</option><option value="e">E. agriculture</option></select>
                 Rather than depend on simple <select id="sel79"><option>-79-</option><option value="a">A. instruments</option><option value="b">B. facilities</option><option value="c">C. machines</option><option value="d">D. implements</option><option value="e">E. aids</option></select> like the hoe and the cutlass, it is high time we thought in the terms of <select id="sel80"><option>-80-</option><option value="a">A. harrowing</option><option value="b">B. mechanization</option><option value="c">C. robots</option><option value="d">D. automation</option><option value="e">E. computerization</option></select>.
                 I agree areas of <select id="sel81"><option>-81-</option><option value="a">A. fallow</option><option value="b">B. waste</option><option value="c">C. arable</option><option value="d">D. paddy</option><option value="e">E. ranch</option></select> land must be opened up, and aid must be given to young farmers to acquire their own <select id="sel82"><option>-82-</option><option value="a">A. appliances</option><option value="b">B. vehicles</option><option value="c">C. engines</option><option value="d">D. arms</option><option value="e">E. tractors</option></select>. The effort must start from schools, where students need to be taught both <select id="sel83"><option>-83-</option><option value="a">A. digging</option><option value="b">B. mowing</option><option value="c">C. prunning</option><option value="d">D. ploughing</option><option value="e">E. cultivation</option></select>
                 of crops and and well as animal <select id="sel84"><option>-84-</option><option value="a">A. husbandry</option><option value="b">B. economy</option><option value="c">C. manuring</option><option value="d">D. ranching</option><option value="e">E. flowering</option></select>. To make land available to more people, the land <select id="sel85"><option>-85-</option><option value="a">A. purchase</option><option value="b">B. holden</option><option value="c">C. proxy</option><option value="d">D. tenure</option><option value="e">E. tendering</option></select> practices in most parts of the nation need to be revised. Above all, <select id="sel86"><option>-86-</option><option value="a">A. labour</option><option value="b">B. capital</option><option value="c">C. debenture</option><option value="d">D. resources</option><option value="e">E. profits</option></select>
                 should be generated through loans with reasonable <select id="sel87"><option>-87-</option><option value="a">A. credit</option><option value="b">B. loan</option><option value="c">C. investment</option><option value="d">D. premium</option><option value="e">E. interest</option></select> rates
-                <br><center><big>PASSAGE B</big></center>
+                <br><br><center><strong>PASSAGE B</strong></center>
                 The <select id="sel88"><option>-88-</option><option value="a">A. lust</option><option value="b">B. attraction</option><option value="c">C. fancy</option><option value="d">D. passion</option><option value="e">E. desire</option></select> to have children is deep-rooted in the heart of both men and women, and on entering into <select id="sel89"><option>-89-</option><option value="a">A. fraternal</option><option value="b">B. domestic</option><option value="c">C. matrimonial</option><option value="d">D. polygamous</option><option value="e">E. bigamous</option></select> union they regard the <select id="sel90"><option>-90-</option><option value="a">A. miding</option><option value="b">B. procreation</option><option value="c">C. conception</option><option value="d">D. tendering</option><option value="e">E. mouldering</option></select> of children as the first and most
                 <select id="sel91"><option>-91-</option><option value="a">A. homely</option><option value="b">B. voluntary</option><option value="c">C. ancient</option><option value="d">D. necessary</option><option value="e">E. important</option></select> duty. A childless marriage in Africa <select id="sel92"><option>-92-</option><option value="a">A. congregation</option><option value="b">B. community</option><option value="c">C. guild</option><option value="d">D. race</option><option value="e">E. sect</option></select> is practically a failure, for children bring joy not only to their parents but also to the <select id="sel93"><option>-93-</option><option value="a">A. kingdom</option><option value="b">B. establishment</option><option value="c">C. company</option><option value="d">D. region</option><option value="e">E. society</option></select> as a whole.
                 The <select id="sel94"><option>-94-</option><option value="a">A. rearing</option><option value="b">B. nursing</option><option value="c">C. grooming</option><option value="d">D. governor</option><option value="e">E. reviving</option></select> of a family brings with it a rise in social <select id="sel95"><option>-95-</option><option value="a">A. value</option><option value="b">B. rank</option><option value="c">C. cadre</option><option value="d">D. status</option><option value="e">E. promotion</option></select>. The social position of a <select id="sel96"><option>-96-</option><option value="a">A. people</option><option value="b">B. duet</option><option value="c">C. couple</option><option value="d">D. team</option><option value="e">E. stock</option></select> who has children is of greater importance and dignity
-                than that f a bachelor or <select id="sel97"><option>-97-</option><option value="a">A. spinster</option><option value="b">B. girl</option><option value="c">C. virgin</option><option value="d">D. nun</option><option value="e">E. maiden</option></select>. After the <select id="sel98"><option>-98-</option><option value="a">A. launching</option><option value="b">B. ceremony </option><option value="c">C. celebration</option><option value="d">D. dawn</option><option value="e">E. birth</option></select> of the first child, he married <select id="sel99"><option>-99-</option><option value="a">A. twain</option><option value="b">B. pair</option><option value="c">C. twin</option><option value="d">D. company</option><option value="e">E. syndicate</option></select> becomes the object of higher <select id="sel100"><option>-100-</option><option value="a">A. adulation</option><option value="b">B. influence</option><option value="c">C. affluence</option><option value="d">D. regard</option><option value="e">E. position</option></select> among their fellows
-                than they were before.
+                than that f a bachelor or <select id="sel97"><option>-97-</option><option value="a">A. spinster</option><option value="b">B. girl</option><option value="c">C. virgin</option><option value="d">D. nun</option><option value="e">E. maiden</option></select>. After the <select id="sel98"><option>-98-</option><option value="a">A. launching</option><option value="b">B. ceremony </option><option value="c">C. celebration</option><option value="d">D. dawn</option><option value="e">E. birth</option></select> of the first child, he married <select id="sel99"><option>-99-</option><option value="a">A. twain</option><option value="b">B. pair</option><option value="c">C. twin</option><option value="d">D. company</option><option value="e">E. syndicate</option></select> becomes the object of higher 
+                <select id="sel100"><option>-100-</option><option value="a">A. adulation</option><option value="b">B. influence</option><option value="c">C. affluence</option><option value="d">D. regard</option><option value="e">E. on</option></select> among their fellows than they were before.
             </div>
-            <p>&nbsp</p>
-            <center>
-                      <a href="oralenglish" class="oralLink">Take a test on 1994 Oral English</a>
-            </center>
-        </div>
+            <p>&nbsp;</p>
+            <div id='mainBody'>
+                <div class='essayque'>
+                    You are about leaving school after spending six years as a student. Write a letter to your principal expressing your candid views on the strengths and weaknesses of the school and giving suggestions for improvement
+                </div><br>
+                <div class='essayque'>
+                    Write an ariticle for publication in a literary magazine on the need to promote the study of indigenous languages of your country.
+                </div><br>
+                <div class='essayque'>
+                    You are the main speaker in a school debate the topic of which is: <i>Bribery and corruption are worse enemies to our country than armed robbery.</i>
+                </div><br>
+                <div class='essayque'>
+                    You have been involved in an incident in which very many of your friends criticized your role. Narrate the incident to a close friend and defend the role you played.
+                </div><br>
+                <div class='essayque'>
+                    An elder sister of yours who has left school hd confided in you in her last letter that she plans to elope with her lover whom you parents do not approve of. Write a letter to her advicing her against such action adn suggesting steps she could take to obtain your parents consent.
+                </div><br>
+                <div class='essayque'>
+                    Write a story which ends with the words .....<i>I really agree that a patient dog eats the fattest bone</i> 
+                </div><br><br>
+            </div>
+            <div id='TestLinks'>
+                <center>
+                   <a href="English 1994 Test of Oral.html">Take a test on 1994 WAEC Oral English</a>&nbsp;<a id='essay'>Essay Exam</a>
+                </center>
+            </div>
         </div>
         <div class="rightcolumn">
-			<div class="floatingDiv">
-				<span id="clockntimer">
-					<button id="startBtn" onclick="startExam(150)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button><br><label id="clockLabel"></label><br>
-					Spent:<label id="timeSpent"></label><br>
-					Left:<label id="timeLeft"></label>
-				</span>
-				<center><button class="submit" onclick = "displayResults(answersENG1994)">Answers</button></center>
-				<center><button class="submit2" onclick = "displayScore(100)">Performance</button></center>
-				<div id="resultSheet">
-
-				</div>
-			</div>
+                <div class="floatingDiv">
+                    <span id="clockntimer">
+                      <div id='timer' style='position: relative;'><button id="startBtn" onclick="startExam(60)">Start</button>&nbsp;&nbsp;<button id="resetBtn" onclick="resetExam()">Reset</button>&nbsp;&nbsp;<button id="stopBtn" onclick="stopExam()">Stop</button></div>  
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="clockLabel"></label>
+                        <br>Spent:<label id="timeSpent"></label>
+                        Left:<label id="timeLeft"></label>
+                    </span>
+                    <div style='position: absolute; top: 1px; left: 25%'>
+                        <center><button class="submit" onclick = "displayResults(answersENG1996)">Answers</button></center>
+                        <center><button class="submit2" onclick = "displayScore(100);">Performance</button></center>
+                    </div> 
+                    <div id="resultSheet">
+        
+                    </div>
+                </div>
         </div>
         <div id="footer">
             <center><p>Click <a href="#top">here</a> to go back to top.</p></center>
             <p>For more past questions on WAEC, NECO and other exams, visit <a href="https://www.tutusfx.com/@davixspot">@Davixspot</a>.<br><br>
-              Available past questions include<br>
+                Available past questions include<br>
             <ul>
             <!-- the English Language dropdown -->
             <nav><span>English Language</span>
@@ -196,11 +251,11 @@
                     <li><a href="Mathematics 2014.html">2014</a><br></li>
                 </ul>
             </nav>
-            <li><a href="www.google.com">Government</a><br></li>
-            <li><a href="www.google.com">Commerce</a><br></li>
-            <li><a href="www.google.com">Econimics</a><br></li>
-            <li><a href="www.google.com">Physics</a><br></li>
+            <li><a href="https://www.google.com">Government</a><br></li>
+            <li><a href="https://www.google.com">Commerce</a><br></li>
+            <li><a href="https://www.google.com">Economics</a><br></li>
+            <li><a href="#">more...</a><br></li>
         </div>
-        <button class="footerBtn" onclick="footer();"><span id="footerBtntxt">hide footer</span></button></p>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button>
     </body>
 </html>
