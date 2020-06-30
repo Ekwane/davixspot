@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+        <title>School manager</title>
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+		  <source src="../aud/start.ogg" type="audio/ogg">
+		  <source src="../aud/start.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="selectAudio">
+		  <source src="../aud/optionselect.ogg" type="audio/ogg">
+		  <source src="../aud/optionselect.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="stopAudio">
+		  <source src="../aud/stop.ogg" type="audio/ogg">
+		  <source src="../aud/stop.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="passedAudio">
+		  <source src="../aud/passed.ogg" type="audio/ogg">
+		  <source src="../aud/passed.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="selectAudio">
+		  <source src="../aud/failed.ogg" type="audio/ogg">
+		  <source src="../aud/failed.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="clickAudio">
+		  <source src="../aud/btnclick.ogg" type="audio/ogg">
+		  <source src="../aud/btnclick.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+        <div class="leftcolumnForMainPageHeader">
+			<div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+			<a href="@davixspot.html" class="fa fa-home" id="home"></a>
+		</div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>Biology Objective Test Questions<br>WASSCE 2004</center></div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 60</div>
+            <center><p id="Obj"><strong>OBJECTIVE TEST</strong></p></center>
+            <p>1. Which of the following characteristics is not possessed by most plants? Ability to _____________ <br><input type="radio" name = "sel1" value="a">A. move away from stimuli<br><input type="radio" name = "sel1" value="b">B. respire <br><input type="radio" name = "sel1" value="c">C. reproduce<br><input type="radio" name = "sel1" value="d">D. adapt to environment</p>
+            <p>2. Hydra is able to perform the following functions except _____________ <br><input type="radio" name = "sel2" value="a">A. feeding <br><input type="radio" name = "sel2" value="b">B. movement<br><input type="radio" name = "sel2" value="c">C. photosynthesis<br><input type="radio" name = "sel2" value="d">D. egestion</p>
+            <p>3. Euglena can be classified as an animal because of the possession of _____________ <br><input type="radio" name = "sel3" value="a">A. nucleus<br><input type="radio" name = "sel3" value="b">B. cytoplasm<br><input type="radio" name = "sel3" value="c">C. cell wall<br><input type="radio" name = "sel3" value="d">D. pellicle</p>
+            <p>4. Which two structures are present in a pallisade cell and not in a liver cell?<br><input type="radio" name = "sel4" value="a">A. cell wall and cytoplasm <br><input type="radio" name = "sel4" value="b">B. cell wall and chloroplast<br><input type="radio" name = "sel4" value="c">C. cell membrane and cytoplasm<br><input type="radio" name = "sel4" value="d">D. cell membrane and chloroplast</p>
+            <p>5. The nucleus controls the activities of the cell because it _____________ <br><input type="radio" name = "sel5" value="a">A. synthezises hormones <br><input type="radio" name = "sel5" value="b">B. is like a brain in the cell<br><input type="radio" name = "sel5" value="c">C. uses DNA to synthezise enzymes which are used in cell metebolism<br><input type="radio" name = "sel5" value="d">D. sends out nervous impulses to ensure the functioning of the cytoplasm</p>
+            <p>6. The process by which a drop of ink spreads uniformly in a beaker of water is called _____________ <br><input type="radio" name = "sel6" value="a">A. arbsorption<br><input type="radio" name = "sel6" value="b">B. osmosis<br><input type="radio" name = "sel6" value="c">C. plasmolysis<br><input type="radio" name = "sel6" value="d">D. diffusion</p>
+            <p>7. When a person's urine contains a high concentration of urea, its could be the result of _____________ <br><input type="radio" name = "sel7" value="a">A. a drop in body temperature<br><input type="radio" name = "sel7" value="b">B. having diabetes melitus<br><input type="radio" name = "sel7" value="c">C. eating a meal rich in protein<br><input type="radio" name = "sel7" value="d">D. drinking a large amount of water</p>
+            <p>8. How many congugants are involved in sexual reproduction of paramecium?<br><input type="radio" name = "sel8" value="a">A. 1<br><input type="radio" name = "sel8" value="b">B. 2<br><input type="radio" name = "sel8" value="c">C. 4<br><input type="radio" name = "sel8" value="d">D. 8</p>
+            <p>9. Which of the following groups of vertebrae have two branches at the end of their transverse processes?<br><input type="radio" name = "sel9" value="a">A. Sacral<br><input type="radio" name = "sel9" value="b">B. Thoracic<br><input type="radio" name = "sel9" value="c">C. Cervical<br><input type="radio" name = "sel9" value="d">D. Lumber</p>
+            <p>10. The axial skeleton is made up of the following<br><input type="radio" name = "sel10" value="a">A. skull, vertebral column, rib cage and sternum<br><input type="radio" name = "sel10" value="b">B. limbs and limb girdles<br><input type="radio" name = "sel10" value="c">C. lumber and thoracic vertebrae<br><input type="radio" name = "sel10" value="d">D. vertebral column and lumber vertebrae</p>
+            <p>11. The xylem elements perform the function of transport but they also help to support plants because they _____________ <br><input type="radio" name = "sel11" value="a">A. are internally located<br><input type="radio" name = "sel11" value="b">B. are tubular<br><input type="radio" name = "sel11" value="c">C. have rigid thick walls<br><input type="radio" name = "sel11" value="d">D. constantly absorb water</p>
+            <p>12. Excessive bleeding from and injury may be due to lack of vitamin <br><input type="radio" name = "sel12" value="a">A. A &nbsp;<input type="radio" name = "sel12" value="b">B. B &nbsp;<input type="radio" name = "sel12" value="c">C. D &nbsp;<input type="radio" name = "sel12" value="d">D. K</p>
+            <p>13. The hepatic portal vein is often heavily loaded with food-nutrients because carries blood <br><input type="radio" name = "sel13" value="a">A. directly from the heart<br><input type="radio" name = "sel13" value="b">B. from the liver to the heart<br><input type="radio" name = "sel13" value="c">C. from the small intestine to the heart<br><input type="radio" name = "sel13" value="d">D. from the liver to join the posterior vena cave</p>
+            <p>14. The products of respiration are _____________ <br><input type="radio" name = "sel14" value="a">A. nitrogen and water<br><input type="radio" name = "sel14" value="b">B. nitrogen and carbondioxide <br><input type="radio" name = "sel14" value="c">C. water and oxygen<br><input type="radio" name = "sel14" value="d">D. carbondioxide and water</p>
+            <p>15. Green plant loss water to the atmosphere through the process of _____________ <br><input type="radio" name = "sel15" value="a">A. respiration<br><input type="radio" name = "sel15" value="b">B. photosynthesis<br><input type="radio" name = "sel15" value="c">C. transpiration<br><input type="radio" name = "sel15" value="d">D. translocation</p>
+            <p>16. The body tenperature of a mammal has to be maintained at a fairly constant level because _____________ <br><input type="radio" name = "sel16" value="a">A. excessive heat is continually lost by the body to the environment<br><input type="radio" name = "sel16" value="b">B. their body temperature is always higher than that of the environment<br><input type="radio" name = "sel16" value="c">C. evaporation of sweat cools the body<br><input type="radio" name = "sel16" value="d">D. metabolic activities function best at certain temperatures</p>
+            <p>17. A urine sample of Benedict/Fehling solution, gave an oranged-coloured precipitate, indicating the presence of _____________ <br><input type="radio" name = "sel17" value="a">A. glucose<br><input type="radio" name = "sel17" value="b">B. sucrose<br><input type="radio" name = "sel17" value="c">C. lactose<br><input type="radio" name = "sel17" value="d">D. maltose</p>
+            <p>18. Which hormonal deficiency is likely to cause an accumulation of reducing sugar in the urine?<br><input type="radio" name = "sel18" value="a">A. Thyroxine<br><input type="radio" name = "sel18" value="b">B. Insulin<br><input type="radio" name = "sel18" value="b">B. Secretin<br><input type="radio" name = "sel18" value="d">D. Testosterone</p>
+            <p>19. Which of the following structures occupies the neural canal of the vertebral column?<br><input type="radio" name = "sel19" value="a">A. Cerebellum<br><input type="radio" name = "sel19" value="b">B. Hypothalamus<br><input type="radio" name = "sel19" value="c">C. Medulla oblongata<br><input type="radio" name = "sel19" value="d">D. Spinal cord</p>
+            <p>The diagram below is a dorsal veiw of a mammalian brain. Use it to answer questions 20 and 21</p>
+            <p>20. The structure labelled I in the diagram above is the _____________ <br><input type="radio" name = "sel20" value="a">A. Cerebellum<br><input type="radio" name = "sel20" value="b">B. Cerebrum<br><input type="radio" name = "sel20" value="c">C. Olfactory lobe<br><input type="radio" name = "sel20" value="d">D. Medulla oblongata</p>
+            <p>21. The structure labelled VII in the diagramm is responsible for _____________ <br><input type="radio" name = "sel21" value="a">A. vision<br><input type="radio" name = "sel21" value="b">B. involuntary actions<br><input type="radio" name = "sel21" value="c">C. speech<br><input type="radio" name = "sel21" value="d">D. voluntary actions</p>
+            <p>22. Which of the following occurs when a person looks at a distant, dim object and then looks at a much closer bright object? In each eye, the pupil becomes _____________ <br><input type="radio" name = "sel22" value="a">A. larger, while the lens becomes thicker<br><input type="radio" name = "sel22" value="b">B. larger, while the lens becomes thinner<br><input type="radio" name = "sel22" value="c">C. smaller, while the lens becomes thicker<br><input type="radio" name = "sel22" value="d">D. smaller, while the lens becomes thinner</p>
+            <p>23. The following insects underdo incomplete metamorphorsis except _____________ <br><input type="radio" name = "sel23" value="a">A. termites<br><input type="radio" name = "sel23" value="b">B. cockroach<br><input type="radio" name = "sel23" value="c">C. butterfly<br><input type="radio" name = "sel23" value="d">D. locust</p>
+            <p>24. The process by which fruits develop without fertilization is called _____________ <br><input type="radio" name = "sel24" value="a">A. parthenocarpy<br><input type="radio" name = "sel24" value="b">B. pathology<br><input type="radio" name = "sel24" value="c">C. hermaproditism<br><input type="radio" name = "sel24" value="d">D. layering</p>
+            <p>25. Which of the following groups contain only macro-nutrients?<br><input type="radio" name = "sel25" value="a">A. phosphorus, nitrogen and molybdenum<br><input type="radio" name = "sel25" value="b">B. manganese, copper and zinc<br><input type="radio" name = "sel25" value="c">C. boron, sulphur and iron<br><input type="radio" name = "sel25" value="d">D. calcium, manganese and potassium</p>
+            <p>26. A solution which contains all the required elements in their correct proportions is known as _____________ <br><input type="radio" name = "sel26" value="a">A. culture nutrient<br><input type="radio" name = "sel26" value="b">B. growth medium<br><input type="radio" name = "sel26" value="c">C. complete culture solution<br><input type="radio" name = "sel26" value="d">D. nutrient solution</p>
+            <p>27. The deficiency of manganese in plants results in _____________ <br><input type="radio" name = "sel27" value="a">A. death of shoot<br><input type="radio" name = "sel27" value="b">B. leaves turning yellow<br><input type="radio" name = "sel27" value="c">C. stunted growth<br><input type="radio" name = "sel27" value="d">D. poor root development</p>
+            <p>28. Which of the following is not true about a potted plant in a laboratory for one week without watering?<br><input type="radio" name = "sel28" value="a">A. the cells of the plant will be turgid<br><input type="radio" name = "sel28" value="b">B. there will be wilting of the plant<br><input type="radio" name = "sel28" value="c">C. the leaves are likely to turn yellow<br><input type="radio" name = "sel28" value="d">D. plant will not take in enough nutrients</p>
+            <p>29. The deficiency of vitamin D and calcium ions in the deit of a human causes _____________ <br><input type="radio" name = "sel29" value="a">A. anaemia<br><input type="radio" name = "sel29" value="b">B. night-blindness<br><input type="radio" name = "sel29" value="c">C. kwashiokor<br><input type="radio" name = "sel29" value="d">D. rickets</p>
+            <p>30. An organism is considered and heterotroph when it _____________ <br><input type="radio" name = "sel30" value="a">A. feeds on inorganic food<br><input type="radio" name = "sel30" value="b">B. feeds on already manufactured food<br><input type="radio" name = "sel30" value="c">C. fixes atmospheric nitrogen<br><input type="radio" name = "sel30" value="d">D. respires anaerobically</p>
+            <p>31. The breakdown of food into simple, soluble and absorbable end-products iis termed _____________ <br><input type="radio" name = "sel31" value="a">A. absorption<br><input type="radio" name = "sel31" value="b">B. ingestion<br><input type="radio" name = "sel31" value="c">C. nutrition<br><input type="radio" name = "sel31" value="d">D. digestion</p>
+            <p>32. Which of the following teeth are well developed to form the carnassial teeth of carnivorous mammals? The _____________<br><input type="radio" name = "sel32" value="a">A. first lower premolar and the third upper molar<br><input type="radio" name = "sel32" value="b">B. first lower molar and third upper premolar<br><input type="radio" name = "sel32" value="c">C. second lower premolar and first lower molar<br><input type="radio" name = "sel32" value="d">D. first lower molar and last upper premolar</p>
+            <p>33. Biosphere is best described as _____________ <br><input type="radio" name = "sel33" value="a">A. all parts of the Earth where life exists<br><input type="radio" name = "sel33" value="b">B. the non-living part of an ecosystem<br><input type="radio" name = "sel33" value="c">C. all components of an ecosystem<br><input type="radio" name = "sel33" value="d">D. all the members of a single species in habit</p>
+            <p>34. Which of the following is not essential in the study of ecological factors that directly affects plants?<br><input type="radio" name = "sel34" value="a">A. wind<br><input type="radio" name = "sel34" value="b">B. temperature<br><input type="radio" name = "sel34" value="c">C. herbivores<br><input type="radio" name = "sel34" value="d">D. carnivores</p>
+            <p>35. Conservation of soil  fertility employs crop rotation because _____________ <br><input type="radio" name = "sel35" value="a">A. crops are allowed to grow at their own rates<br><input type="radio" name = "sel35" value="b">B. it encourages the healthy growth of plants <br><input type="radio" name = "sel35" value="c">C. it allows utilization of soil nutrients at different levels<br><input type="radio" name = "sel35" value="d">D. different crops grow at the same time</p>
+            <p>Study the diagram below showing three food chains. Use it to answer question 36</p>
+	    <p>36. Which of the following are consumers in these food chains?<br><input type="radio" name = "sel36" value="a">A. maize and rabbits<br><input type="radio" name = "sel36" value="b">B. chicken, rats and maize<br><input type="radio" name = "sel36" value="c">C. eagle, maize and snakes<br><input type="radio" name = "sel36" value="d">D. Humans, eagles and snakes</p>
+            <p>37. An importance of food web is that living organisms _____________ <br><input type="radio" name = "sel37" value="a">A. use web to collect food<br><input type="radio" name = "sel37" value="b">B. can live on their own<br><input type="radio" name = "sel37" value="c">C. have to form web<br><input type="radio" name = "sel37" value="d">D. depend on one another for their existence</p>
+            <p>38. The continuity of an ecosystem depends on constant flow of energy and circulation of matter. However, the amount of energy passed on from decomposers to producers should be _____________<br><input type="radio" name = "sel38" value="a">A. great<br><input type="radio" name = "sel38" value="b">B. small<br><input type="radio" name = "sel38" value="c">C. reversible<br><input type="radio" name = "sel38" value="d">D. zero</p>
+            <p>39. Which of the following enables the tapworms to live successfully in the small intestine of humans?<br><input type="radio" name = "sel39" value="a">A. hooks and suckers for strong attachment<br><input type="radio" name = "sel39" value="b">B. a long neck for forming proglottis<br><input type="radio" name = "sel39" value="c">C. the absence of segmentation and appendages<br><input type="radio" name = "sel39" value="d">D. possession of flame cells for excretion</p>
+            <p>40. Which of the following defines symbiosis?<br><input type="radio" name = "sel40" value="a">A. parasites feeding on dead organisms<br><input type="radio" name = "sel40" value="b">B. two organims benefitting mutually by living together<br><input type="radio" name = "sel40" value="c">C. saprophytes feeding on living organisms<br><input type="radio" name = "sel40" value="d">D. organisms serves as host to parasites</p>
+            <p>41. Plants found in an aquatic habitat are generally referred to as _____________ <br><input type="radio" name = "sel41" value="a">A. epiphytes<br><input type="radio" name = "sel41" value="b">B. halophytes<br><input type="radio" name = "sel41" value="c">C. xerophytes<br><input type="radio" name = "sel41" value="d">D. hydrophytes</p>
+            <p>42. When a farmer sprays crops with a pesticide, the pesticide becomes _____________ <br><input type="radio" name = "sel42" value="a">A. poisonous to all plants<br><input type="radio" name = "sel42" value="b">B. broken down by soil algae<br><input type="radio" name = "sel42" value="c">C. easily washed down into lakes and rivers<br><input type="radio" name = "sel42" value="d">D. absorbed by bodies of mammals</p>
+            <p>43. Which of the following methods is best for the determination of population density of Tridax in an open field?<br><input type="radio" name = "sel43" value="a">A. transect<br><input type="radio" name = "sel43" value="b">B. quadrat<br><input type="radio" name = "sel43" value="c">C. sweep net<br><input type="radio" name = "sel43" value="d">D. pit fall</p>
+            <p>44. If a piece of abandoned farmland went through a series of floral and faunal changes and becomes established with a permanent plant and animal population, it could be said to have undergone _____________ <br><input type="radio" name = "sel44" value="a">A. transformation<br><input type="radio" name = "sel44" value="b">B. succession<br><input type="radio" name = "sel44" value="c">C. competition<br><input type="radio" name = "sel44" value="d">D. evolution</p>
+            <p>45. The drugs which inhibit the growth of disease causing organisms and thus used in the treatment of infections are referred to as _____________ <br><input type="radio" name = "sel45" value="a">A. antibodies<br><input type="radio" name = "sel45" value="b">B. antibiotics<br><input type="radio" name = "sel45" value="c">C. antitoxics<br><input type="radio" name = "sel45" value="d">D. septics</p>
+            <p>46. An abandoned refuse dump maybe go site for an intending vegetable farmer because _____________ <br><input type="radio" name = "sel46" value="a">A. very little manual work would be done by the farmer <br><input type="radio" name = "sel46" value="b">B. microbial activities had released nutrient into the soil<br><input type="radio" name = "sel46" value="c">C. the roots of vegetable seedlings easily get enough light<br><input type="radio" name = "sel46" value="d">D. refuse dumps possess plenty of gas whic scares away rodents</p>
+            <p>47. The following are natural resources except _____________ <br><input type="radio" name = "sel47" value="a">A. rubber<br><input type="radio" name = "sel47" value="b">B. soil<br><input type="radio" name = "sel47" value="c">C. water<br><input type="radio" name = "sel47" value="d">D. cellophane</p>
+            <p>48. Which of the following practices does not contribute to intensive depletion of forest resources in West Africa?<br><input type="radio" name = "sel48" value="a">A. use of powerful tools to for felling trees<br><input type="radio" name = "sel48" value="b">B. regrowing of forest trees<br><input type="radio" name = "sel48" value="c">C. clearance of forest for cash crops <br><input type="radio" name = "sel48" value="d">D. use of fire for hunting in forests</p>
+            <p>49. Tropical rain forests can be conserved by the following practices except _____________<br><input type="radio" name = "sel49" value="a">A. agroforestry<br><input type="radio" name = "sel49" value="b">B. deforestation<br><input type="radio" name = "sel49" value="c">C. shifting cultivation<br><input type="radio" name = "sel49" value="d">D. crop rotation</p>
+            <p>50. Which of these physiological variation is sek linked?<br><input type="radio" name = "sel50" value="a">A. albinism<br><input type="radio" name = "sel50" value="b">B. blood groups<br><input type="radio" name = "sel50" value="c">C. sickle cell anaemia<br><input type="radio" name = "sel50" value="d">D. haemophilic condition</p>
+            <p>51. The ability of some individual to taste phenylthiocarbamide (PTC) is a _____________ <br><input type="radio" name = "sel51" value="a">A. morphological adaptation<br><input type="radio" name = "sel51" value="b">B. morphorlogical variation<br><input type="radio" name = "sel51" value="c">C. physiological adaptation<br><input type="radio" name = "sel51" value="d">D. physiological variation</p>
+            <p>52. In man, sex is determined by the inherintance of _____________ <br><input type="radio" name = "sel52" value="a">A. a pair of homologous chromosomes<br><input type="radio" name = "sel52" value="b">B. an extra chromosome in the cells of a female<br><input type="radio" name = "sel52" value="c">C. a dorminant gene for maleness present in man<br><input type="radio" name = "sel52" value="d">D. two similar X chromosomes in the female and X and Y chromosomes in the male</p>
+            <p>53. What will be the genetypic ratio when two heterozygous red pea plants are crossed?<br><input type="radio" name = "sel53" value="a">A. 1:0<br><input type="radio" name = "sel53" value="b">B. 1:2:1<br><input type="radio" name = "sel53" value="c">C. 2:1<br><input type="radio" name = "sel53" value="d">D. 3:1</p>
+            <p>54. Which of the following traits in humans can be affected by environmental factors?<br><input type="radio" name = "sel54" value="a">A. skin colour<br><input type="radio" name = "sel54" value="b">B. eye colour<br><input type="radio" name = "sel54" value="c">C. baldness<br><input type="radio" name = "sel54" value="d">D. tongue-rolling</p>
+            <p>55. Heterozygous tall plants were crossed with pure-breeding dwaf plants of the same species. What were the approximate percentages of the offspring?<br><input type="radio" name = "sel55" value="a">A. 100% tall 0% dawf<br><input type="radio" name = "sel55" value="b">B. 75% tall 25% dawf<br><input type="radio" name = "sel55" value="c">C. 50% tall 50% dawf<br><input type="radio" name = "sel55" value="d">D. 25% tall 75% dawf</p>
+            <p>56. In the F<sub>1</sub> generation of Mandel's experiment obtained by crossing pea plants of long stems with those of short stems, what was his observation?<br><input type="radio" name = "sel56" value="a">A. some were short while others were long<br><input type="radio" name = "sel56" value="b">B. all were long<br><input type="radio" name = "sel56" value="c">C. half of them were long while half were short<br><input type="radio" name = "sel56" value="d">D. three-quarters were long while one-quater were short</p>
+            <p>57. Which of the following statements is correct about the chromosomes in the gametes? At the end of the second meiotic division, _____________ <br><input type="radio" name = "sel57" value="a">A. each gamates contains only paternal hereditary information<br><input type="radio" name = "sel57" value="b">B. chromosomes contain a random mixture of paternal and maternal chromosomes<br><input type="radio" name = "sel57" value="c">C. chromosomes in the four gametes cells are diploid in number<br><input type="radio" name = "sel57" value="d">D. chromosomes contain only maternal hereditary information</p>
+            <p>58. Which of the following organisms exhibit division of labour?<br><input type="radio" name = "sel58" value="a">A. Houseflies<br><input type="radio" name = "sel58" value="b">B. Butterflies<br><input type="radio" name = "sel58" value="c">C. Cockroaches<br><input type="radio" name = "sel58" value="d">D. Termites</p>
+            <p>59. Which of the following is not included in the theory of natural selection?<br><input type="radio" name = "sel59" value="a">A. struggle for existence<br><input type="radio" name = "sel59" value="b">B. offspring show variation<br><input type="radio" name = "sel59" value="c">C. inheritance of adaptive structures<br><input type="radio" name = "sel59" value="d">D. disappearance of functionless organs</p>
+            <p>60. The theory of evolution by natural selection was first put forward by _____________ <br><input type="radio" name = "sel60" value="a">A. Aristotle<br><input type="radio" name = "sel60" value="b">B. Darwin<br><input type="radio" name = "sel60" value="c">C. Linnaeus<br><input type="radio" name = "sel60" value="d">D. Boyle</p>
+        </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                  <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>  
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersBIO2004)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(60);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+    
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2018.html">2018</a></li>
+                            <li><a href="English 2017.html">2017</a></li>
+                            <li><a href="English 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2005.html">2005</a></li>
+                            <li><a href="Biology 2003.html">2003</a></li>
+                            <li><a href="Biology 2002.html">2002</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Econimics</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>
