@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+        <title>School manager</title>
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+		  <source src="../aud/start.ogg" type="audio/ogg">
+		  <source src="../aud/start.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="selectAudio">
+		  <source src="../aud/optionselect.ogg" type="audio/ogg">
+		  <source src="../aud/optionselect.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="stopAudio">
+		  <source src="../aud/stop.ogg" type="audio/ogg">
+		  <source src="../aud/stop.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="passedAudio">
+		  <source src="../aud/passed.ogg" type="audio/ogg">
+		  <source src="../aud/passed.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="selectAudio">
+		  <source src="../aud/failed.ogg" type="audio/ogg">
+		  <source src="../aud/failed.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="clickAudio">
+		  <source src="../aud/btnclick.ogg" type="audio/ogg">
+		  <source src="../aud/btnclick.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+        <div class="leftcolumnForMainPageHeader">
+			<div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+			<a href="@davixspot.html" class="fa fa-home" id="home"></a>
+		</div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>Biology Objective Test Questions<br>WASSCE 2001</center></div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 60</div>
+            <center><p id="Obj"><strong>OBJECTIVE TEST</strong></p></center>
+            <p>1. Which of the following indicates that Euglena is a plant?<br><input type="radio" name = "sel1" value="a">A. conspicuous eye spot<br><input type="radio" name = "sel1" value="b">B. presence of gullet<br><input type="radio" name = "sel1" value="c">C. Limited movement<br><input type="radio" name = "sel1" value="d">D. presence of starch grains</p>
+            <p>2. Which of the following is a tissue?<br><input type="radio" name = "sel2" value="a">A. Volvox<br><input type="radio" name = "sel2" value="b">B. Chlamydomonas<br><input type="radio" name = "sel2" value="c">C. Epidermis<br><input type="radio" name = "sel2" value="d">D. Paramecium</p>
+            <p><strong>Use the diagram below to answer questions 3 and 4</strong></p>
+            <p>3. The structure that produces ATP is labellled _____________ <br><input type="radio" name = "sel3" value="a">A. VII<br><input type="radio" name = "sel3" value="b">B. V<br><input type="radio" name = "sel3" value="c">C. VI<br><input type="radio" name = "sel3" value="d">D. I</p>
+            <p>4. The structure labelled V is the _____________ <br><input type="radio" name = "sel4" value="a">A. cell wall<br><input type="radio" name = "sel4" value="b">B. nucleus<br><input type="radio" name = "sel4" value="c">C. endoplasmic reticulum<br><input type="radio" name = "sel4" value="d">D. mitochondrion</p>
+            <p>5. The major function of the cell membrane is that it _____________ <br><input type="radio" name = "sel5" value="a">A. delimits the cytoplasm<br><input type="radio" name = "sel5" value="b">B. synthesizes protein<br><input type="radio" name = "sel5" value="c">C. breaks down worn-out organelles<br><input type="radio" name = "sel5" value="d">D. is the site for photosynthesis</p>
+            <p>6. Carbohydrates are stored in animal cell in form of _____________ <br><input type="radio" name = "sel6" value="a">A. starch<br><input type="radio" name = "sel6" value="b">B. glycogen<br><input type="radio" name = "sel6" value="c">C. plastid <br><input type="radio" name = "sel6" value="d">D. maltose</p>
+            <p>7. A piece of yam weighing 1.0g was put into some salt solution. After 3 hours, it was removed and weighed. The recorded weigth was 1.2g. This simple experiment demonstrates that the _____________ <br><input type="radio" name = "sel7" value="a">A. salt solution is more concentrated than the cell sap of the yam.<br><input type="radio" name = "sel7" value="b">B. cell sap of the yam is more concentrated than the salt solution<br><input type="radio" name = "sel7" value="c">C. salt solution has the same concentration as the cell sap of the yam<br><input type="radio" name = "sel7" value="d">D. the yam lost water molecules to the salt solution</p>
+            <p>8. A major reason why the red blood cells can survivein the blood is that the _____________ <br><input type="radio" name = "sel8" value="a">A. bloood plasms and the red blood cells are isotonic<br><input type="radio" name = "sel8" value="b">B. red blood cells are hypotonic to the blood plasma<br><input type="radio" name = "sel8" value="c">C. the red blood cells receive digested nutrients<br><input type="radio" name = "sel8" value="d">D. </p>
+            <p>9. Which of the following phenomena affects plant growth in an alkaline solution?<br><input type="radio" name = "sel9" value="a">A. excessive plasmolysis<br><input type="radio" name = "sel9" value="b">B. excessive transpiration<br><input type="radio" name = "sel9" value="c">C. excessive sunlight<br><input type="radio" name = "sel9" value="d">D. poor drainage</p>
+            <p>10. A red blood cell undergoes haemolysis when placed in a hypotonic solution because _____________ <br><input type="radio" name = "sel10" value="a">A. it contains haemoglobin<br><input type="radio" name = "sel10" value="b">B. the cytoplasm is less dense<br><input type="radio" name = "sel10" value="c">C. the cell lacks a wall<br><input type="radio" name = "sel10" value="d">D. it pigments has a high affinity for water</p>
+            <p>11. Which of the following structures are visible in the cell of a plant during mitosis?<br><input type="radio" name = "sel11" value="a">A. centrioles, chromatids and nucleolus<br><input type="radio" name = "sel11" value="b">B. Homologous chromosomes, nuclear membrane and spindle fibres<br><input type="radio" name = "sel11" value="c">C. cell wall centrioles and chromatids<br><input type="radio" name = "sel11" value="d">D. chromosomes, nuclear membrane and centromere</p>
+            <p>12. Display is a phenomenon which occurs when an animal is _____________ <br><input type="radio" name = "sel12" value="a">A. ready for mating<br><input type="radio" name = "sel12" value="b">B. fightingto defend itself<br><input type="radio" name = "sel12" value="c">C. approaching puberty<br><input type="radio" name = "sel12" value="d">D. chasing away an intruder</p>
+            <p>13. The advantages of sexual reproduction include the following except _____________ <br><input type="radio" name = "sel13" value="a">A. it allows the formation of new species<br><input type="radio" name = "sel13" value="b">B. at allows production of desirable traits<br><input type="radio" name = "sel13" value="c">C. it permits variation of individuals<br><input type="radio" name = "sel13" value="d">D. it provides means for the variation of chromosome number from generation to generation</p>
+            <p>14. Which of the following groups contain a non-supporting structure in animals?<br><input type="radio" name = "sel14" value="a">A. cartilage, bone and pseudopodia<br><input type="radio" name = "sel14" value="b">B. pellicle, chitin and bone<br><input type="radio" name = "sel14" value="c">C. humerus, ribs and cartilage<br><input type="radio" name = "sel14" value="d">D. femur, pellicle and chitin</p>
+            <p>15. Which of the following statements is true about blood groupings?<br><input type="radio" name = "sel15" value="a">A. group AB can donate blood to all other groups<br><input type="radio" name = "sel15" value="b">B. group O are universal recipients<br><input type="radio" name = "sel15" value="c">C. group A has A antigen in its plasma<br><input type="radio" name = "sel15" value="d">D. group O has no antigen</p>
+            <p>16. Which of the following is not a constituent of blood plasma?<br><input type="radio" name = "sel16" value="a">A. proteins<br><input type="radio" name = "sel16" value="b">B. mineral salts<br><input type="radio" name = "sel16" value="c">C. water<br><input type="radio" name = "sel16" value="d">D. platelets</p>
+            <p>17. The process by which plant convey food materials to different parts of the body is called _____________ <br><input type="radio" name = "sel17" value="a">A. nutrition<br><input type="radio" name = "sel17" value="b">B. absorption<br><input type="radio" name = "sel17" value="c">C. circulation<br><input type="radio" name = "sel17" value="d">D. translocation</p>
+            <p>18. Which part of the gill of fish is involved in gaseous exchange?<br><input type="radio" name = "sel18" value="a">A. Gill slits<br><input type="radio" name = "sel18" value="b">B. Gill bars<br><input type="radio" name = "sel18" value="b">B. Govers<br><input type="radio" name = "sel18" value="d">D. Gill filaments</p>
+            <p>19. Which of the following is not a product of fermentation of glucose?<br><input type="radio" name = "sel19" value="a">A. energy<br><input type="radio" name = "sel19" value="b">B. alcohol<br><input type="radio" name = "sel19" value="c">C. lactic acid<br><input type="radio" name = "sel19" value="d">D. carbondioxide</p>
+            <p>20. Which of the following pairs of structures does not perform similar functions?<br><input type="radio" name = "sel20" value="a">A. lungs and spiracles<br><input type="radio" name = "sel20" value="b">B. root hair and mammalian hair<br><input type="radio" name = "sel20" value="c">C. feathers and scales<br><input type="radio" name = "sel20" value="d">D. contractile vacuole and kidney</p>
+            <p>21. The effect of contraction of the muscles of the diaphragm is that _____________ <br><input type="radio" name = "sel21" value="a">A. the volume of thoracic cavity inreases<br><input type="radio" name = "sel21" value="b">B. more carbondioxide is expelled through the nostrils<br><input type="radio" name = "sel21" value="c">C. the rib cage is drawn inwards<br><input type="radio" name = "sel21" value="d">D. the intercostal muscle becomes relaxed</p>
+            <p>22. Which of the following is an excretory product of Amoeba?<br><input type="radio" name = "sel22" value="a">A. Urea<br><input type="radio" name = "sel22" value="b">B. Ammonia<br><input type="radio" name = "sel22" value="c">C. Uric acid<br><input type="radio" name = "sel22" value="d">D. Amino acid</p>
+            <p>23. Which of the following processes occurs when the body temperature of a mammal rises above the normal? <br>
+            I. The arterioles in the skin dilate<br>
+            II. Sweat production is reduced<br>
+            III. The erector muscles contract.
+            <br><input type="radio" name = "sel23" value="a">A. I only<br><input type="radio" name = "sel23" value="b">B. II only<br><input type="radio" name = "sel23" value="c">C. I and III only<br><input type="radio" name = "sel23" value="d">D. II and III only</p>
+            <p>24. The following functions are associated with the liver except _____________ <br><input type="radio" name = "sel24" value="a">A. regulation of blood sugar<br><input type="radio" name = "sel24" value="b">B. production of heat<br><input type="radio" name = "sel24" value="c">C. production of fibrinogen<br><input type="radio" name = "sel24" value="d">D. production of vitamin D</p>
+            <p>25. Short-sight could be corrected with the use of _____________ <br><input type="radio" name = "sel25" value="a">A. convex lens<br><input type="radio" name = "sel25" value="b">B. cylindrical lens<br><input type="radio" name = "sel25" value="c">C. concave lens<br><input type="radio" name = "sel25" value="d">D. bifocal lens</p>
+            <p>26. Which of the following statements about the maize grain is not correct?<br><input type="radio" name = "sel26" value="a">A. it undergoes hypogeal germination<br><input type="radio" name = "sel26" value="b">B. it is a fruit<br><input type="radio" name = "sel26" value="c">C. it is non-endospermous<br><input type="radio" name = "sel26" value="d">D. It has pericarp fused with the testa</p>
+            <p>27. In mammals, fertilization usually occurs in the _____________ <br><input type="radio" name = "sel27" value="a">A. cervix<br><input type="radio" name = "sel27" value="b">B. vagina<br><input type="radio" name = "sel27" value="c">C. uterus<br><input type="radio" name = "sel27" value="d">D. oviduct</p>
+            <p>28. Which of the following vertebrates incubate their eggs?<br><input type="radio" name = "sel28" value="a">A. Mammals<br><input type="radio" name = "sel28" value="b">B. Birds<br><input type="radio" name = "sel28" value="c">C. Amphibians<br><input type="radio" name = "sel28" value="d">D. Reptiles</p>
+            <p>29. Which of the following is an agent of pollination of grasses?<br><input type="radio" name = "sel29" value="a">A. Insects<br><input type="radio" name = "sel29" value="b">B. Water<br><input type="radio" name = "sel29" value="c">C. Wind<br><input type="radio" name = "sel29" value="d">D. Mammals</p>
+            <p>30. The spinneret found in the catapillar of butterfly is used for _____________ <br><input type="radio" name = "sel30" value="a">A. protection against predators<br><input type="radio" name = "sel30" value="b">B. feeding on vegetation<br><input type="radio" name = "sel30" value="c">C. movement on twigs<br><input type="radio" name = "sel30" value="d">D. production of silk thread</p>
+            <p><strong>The diagram below if the transverse section of a leaf. Study and use it to answer questions 31 to 34</strong></p>
+            <p>31. Carbondioxide enters the leaf through the structure labelled _____________ <br><input type="radio" name = "sel31" value="a">A. I<br><input type="radio" name = "sel31" value="b">B. II<br><input type="radio" name = "sel31" value="c">C. IX<br><input type="radio" name = "sel31" value="d">D. X</p>
+            <p>32. Manufactured food is transported from the leaves through the structure labelled _____________ <br><input type="radio" name = "sel32" value="a">A. IV<br><input type="radio" name = "sel32" value="b">B. V<br><input type="radio" name = "sel32" value="c">C. VI<br><input type="radio" name = "sel32" value="d">D. VIII</p>
+            <p>33. The pallisade cells are structures labelled _____________ <br><input type="radio" name = "sel33" value="a">A. III<br><input type="radio" name = "sel33" value="b">B. IV<br><input type="radio" name = "sel33" value="c">C. VI<br><input type="radio" name = "sel33" value="d">D. VIII</p>
+            <p>34. Which of the groups of structures listed below contains chloroplast?<br><input type="radio" name = "sel34" value="a">A. I, II, and III<br><input type="radio" name = "sel34" value="b">B. II, III and VII<br><input type="radio" name = "sel34" value="c">C. III, VIII and IX<br><input type="radio" name = "sel34" value="d">D. III, VIII and XI</p>
+            <p>35. In which of the following processes is light energy converted to ATP?<br><input type="radio" name = "sel35" value="a">A. osmosis<br><input type="radio" name = "sel35" value="b">B. transpiration<br><input type="radio" name = "sel35" value="c">C. chmosynthesis<br><input type="radio" name = "sel35" value="d">D. photosynthesis</p>
+            <p>36. The correct equation for photosynthesis is _____________ <br><input type="radio" name = "sel36" value="a">A. C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>+6O<sub>2</sub>&dash;&dash;>6CO<sub>2</sub>+6H<sub>2</sub>O<br><input type="radio" name = "sel36" value="b">B. CO<sub>2</sub>+H<sub>2</sub>O&dash;&dash;>C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>+O<sub>2</sub><br><input type="radio" name = "sel36" value="c">C. 6CO<sub>2</sub>+6H<sub>2</sub>O&dash;&dash;>C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>+6O<sub>2</sub><br><input type="radio" name = "sel36" value="d">D. 6CO<sub>2</sub>+6H<sub>2</sub>O&dash;&dash;>6C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>+6O<sub>2</sub></p>
+            <p>37. Which of the following is an evidence of photosynthesis?<br><input type="radio" name = "sel37" value="a">A. absorption of light<br><input type="radio" name = "sel37" value="b">B. formation of starch<br><input type="radio" name = "sel37" value="c">C. availability of carbondioxide<br><input type="radio" name = "sel37" value="d">D. splitting oof water molecules</p>
+            <p>38. Which of the following organisms is a chemo--autotroph?<br><input type="radio" name = "sel38" value="a">A. Virus<br><input type="radio" name = "sel38" value="b">B. Bacteria<br><input type="radio" name = "sel38" value="c">C. Paramecium<br><input type="radio" name = "sel38" value="d">D. Euglena</p>
+            <p>39. Turgidity in the cell of plant does not easily lead to bursting of the cell because of the _____________ <br><input type="radio" name = "sel39" value="a">A. cell membrane can resist the turgidity<br><input type="radio" name = "sel39" value="b">B. large vacuole contained in the cell, can continuously take in water<br><input type="radio" name = "sel39" value="c">C. cellulose cell wall resist the turgidity<br><input type="radio" name = "sel39" value="d">D. cytoplasm is jelly like</p>
+            <p>40. Magnesium is needed in plants for _____________ <br><input type="radio" name = "sel40" value="a">A. protein synthesis<br><input type="radio" name = "sel40" value="b">B. formation of cell membrane<br><input type="radio" name = "sel40" value="c">C. activation of enzymes<br><input type="radio" name = "sel40" value="d">D. formation of chlorophyll</p>
+            <p>41. Which of the following id not a micro-nutrient?<br><input type="radio" name = "sel41" value="a">A. manganese<br><input type="radio" name = "sel41" value="b">B. copper<br><input type="radio" name = "sel41" value="c">C. potassium<br><input type="radio" name = "sel41" value="d">D. zinc</p>
+            <p>42. Loam is the best type of soil for crop production because _____________ <br><input type="radio" name = "sel42" value="a">A. it has a high percentage of clay which prevents leaching<br><input type="radio" name = "sel42" value="b">B. it has high humus content<br><input type="radio" name = "sel42" value="c">C. it is porous and has water retention capacity<br><input type="radio" name = "sel42" value="d">D. gravels which obstruct implements are absent from it</p>
+            <p>43. The mineral needed for the formation of haemoglobin is _____________ <br><input type="radio" name = "sel43" value="a">A. magnesium<br><input type="radio" name = "sel43" value="b">B. iron<br><input type="radio" name = "sel43" value="c">C. phosphorus<br><input type="radio" name = "sel43" value="d">D. calcium</p>
+            <p>44. A person who fails to detect the bitter taste of a substance swallowed, is more likely to have _____________ <br><input type="radio" name = "sel44" value="a">A. dead taste buds on the tongue<br><input type="radio" name = "sel44" value="b">B. avoided the substance from contacting the back of his/her tongue<br><input type="radio" name = "sel44" value="c">C. fewer taste buds on the tongue<br><input type="radio" name = "sel44" value="d">D. swallowed the substance without any water</p>
+            <p>45. Which of the following solutions is suitable for removing chlorophyll in a green leaf?<br><input type="radio" name = "sel45" value="a">A. Millon's reagent<br><input type="radio" name = "sel45" value="b">B. Methylated spirit<br><input type="radio" name = "sel45" value="c">C. Benedict solution<br><input type="radio" name = "sel45" value="d">D. Fehling's solution</p>
+            <p>46. Which of the following is not promoted by high wind speed?<br><input type="radio" name = "sel46" value="a">A. Rill erosion<br><input type="radio" name = "sel46" value="b">B. weathering of parent rocks<br><input type="radio" name = "sel46" value="c">C. breeding of plant<br><input type="radio" name = "sel46" value="d">D. opening of stomata</p>
+            <p>47. Micro-organisms whcih break down dead organisms and absorb their content are called _____________ <br><input type="radio" name = "sel47" value="a">A. decomposers<br><input type="radio" name = "sel47" value="b">B. consumers<br><input type="radio" name = "sel47" value="c">C. parasites<br><input type="radio" name = "sel47" value="d">D. commensals</p>
+            <p>48. The substances recycled in the soil by activities of micro-organisms during the decay of dead organisms are first utilised by the _____________ <br><input type="radio" name = "sel48" value="a">A. carnivores<br><input type="radio" name = "sel48" value="b">B. herbivores<br><input type="radio" name = "sel48" value="c">C. scavengers<br><input type="radio" name = "sel48" value="d">D. autotrophs</p>
+            <p>49. Which of the following associations can upset the balance of nature?<br><input type="radio" name = "sel49" value="a">A. Epiphitism<br><input type="radio" name = "sel49" value="b">B. Parasitism<br><input type="radio" name = "sel49" value="c">C. Symbiosis<br><input type="radio" name = "sel49" value="d">D. Saprophitism</p>
+            <p>50. Which of the following groups of factors do the Agama Lizards compete for?<br>
+            I. Space&nbsp;II. Food&nbsp;III. Mates<br><input type="radio" name = "sel50" value="a">A. I and II only<br><input type="radio" name = "sel50" value="b">B. I and III only<br><input type="radio" name = "sel50" value="c">C. II and III only<br><input type="radio" name = "sel50" value="d">D. I, II and III</p>
+            <p>51. Which of the following structures in a housefly aids the transmission of diseases in man?<br><input type="radio" name = "sel51" value="a">A. hairs<br><input type="radio" name = "sel51" value="b">B. spiracles<br><input type="radio" name = "sel51" value="c">C. antennae<br><input type="radio" name = "sel51" value="d">D. wings</p>
+            <p>52. Which of these is not correct about the tse-tse fly and mosquito?<br><input type="radio" name = "sel52" value="a">A. they habour protozoa and disease agent<br><input type="radio" name = "sel52" value="b">B. they possess piercing and sucking mouth parts<br><input type="radio" name = "sel52" value="c">C. the have intermidiate hosts<br><input type="radio" name = "sel52" value="d">D. they inject disease-causing organisms into the blood stream</p>
+            <p>53. Which of these is a vector of malaria fever?<br><input type="radio" name = "sel53" value="a">A. ffemale anopheles mosquito<br><input type="radio" name = "sel53" value="b">B. male anopheles mosquito<br><input type="radio" name = "sel53" value="c">C. female culex mosquito<br><input type="radio" name = "sel53" value="d">D. male culex mosquito</p>
+            <p>54. Fresh milk is often kept in refrigerated vehicles for distribution to customers in order to _____________ <br><input type="radio" name = "sel54" value="a">A. ensure proper share of fresh milk to all customers<br><input type="radio" name = "sel54" value="b">B. ensure delivery of milks to customers in good time<br><input type="radio" name = "sel54" value="c">C. improve the quality of the milk<br><input type="radio" name = "sel54" value="d">D. ensure that the milk is preserved for a longer period</p>
+            <p>55. In medicine, bacteria has proved very useful due to the production of _____________ <br><input type="radio" name = "sel55" value="a">A. nitrates<br><input type="radio" name = "sel55" value="b">B. antibiotics<br><input type="radio" name = "sel55" value="c">C. cured tobacco<br><input type="radio" name = "sel55" value="d">D. tanned leather</p>
+            <p>Use the following human characteristics to answer questions 56 to 57<br>
+            I. Complextion<br>
+            II. Height<br>
+            III. Blood Rh factor<br>
+            IV. Colour blindness</p>
+            <p>56. Which of the above human characteristics are discontinuous variation?<br><input type="radio" name = "sel56" value="a">A. I and III only<br><input type="radio" name = "sel56" value="b">B. II and III only<br><input type="radio" name = "sel56" value="c">C. II and IV only<br><input type="radio" name = "sel56" value="d">D. III and IV only</p>
+            <p>57. Which of the characteristics can be expressed phonotypically?<br><input type="radio" name = "sel57" value="a">A. I and II only<br><input type="radio" name = "sel57" value="b">B. I, II and IV only<br><input type="radio" name = "sel57" value="c">C. I and III and IV only<br><input type="radio" name = "sel57" value="d">D. I, II and III only</p>
+            <p>58. Which of the following variations is applicable to a weight lifter?<br><input type="radio" name = "sel58" value="a">A. continuous variation<br><input type="radio" name = "sel58" value="b">B. discontinuous variation<br><input type="radio" name = "sel58" value="c">C. Hereditary variation<br><input type="radio" name = "sel58" value="d">D. Acquired variation</p>
+            <p>59. The character that expresses itself in the presence of the contrasting character is _____________ <br><input type="radio" name = "sel59" value="a">A. hybrid<br><input type="radio" name = "sel59" value="b">B. allele<br><input type="radio" name = "sel59" value="c">C. recessive<br><input type="radio" name = "sel59" value="d">D. dominant</p>
+            <p>60. Which of the following animals exhibit territoriality?<br><input type="radio" name = "sel60" value="a">A. Bees<br><input type="radio" name = "sel60" value="b">B. Bats<br><input type="radio" name = "sel60" value="c">C. Lizards<br><input type="radio" name = "sel60" value="d">D. Rabbits</p>
+        </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                  <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>  
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersBIO2001)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(60);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+    
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2018.html">2018</a></li>
+                            <li><a href="English 2017.html">2017</a></li>
+                            <li><a href="English 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2002.html">2002</a></li>
+                            <li><a href="Biology 2000.html">2000</a></li>
+                            <li><a href="Biology 1999.html">1999</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Econimics</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>
