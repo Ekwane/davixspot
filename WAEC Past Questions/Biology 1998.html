@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+    <head>
+        <title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+		  <source src="../aud/start.ogg" type="audio/ogg">
+		  <source src="../aud/start.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="selectAudio">
+		  <source src="../aud/optionselect.ogg" type="audio/ogg">
+		  <source src="../aud/optionselect.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="stopAudio">
+		  <source src="../aud/stop.ogg" type="audio/ogg">
+		  <source src="../aud/stop.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="passedAudio">
+		  <source src="../aud/passed.ogg" type="audio/ogg">
+		  <source src="../aud/passed.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="selectAudio">
+		  <source src="../aud/failed.ogg" type="audio/ogg">
+		  <source src="../aud/failed.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="clickAudio">
+		  <source src="../aud/btnclick.ogg" type="audio/ogg">
+		  <source src="../aud/btnclick.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+        <div class="leftcolumnForMainPageHeader">
+			<div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+			<a href="@davixspot.html" class="fa fa-home" id="home"></a>
+		</div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>BIOLOGY WASSCE 1998</center></div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 60</div>
+            <center><p id="Obj"><strong>OBJECTIVE TEST</strong></p></center>
+            <p>1. Which of the following organisms exhibits both plant and animal characterisctics?<br><input type="radio" name = "sel1" value="a">A. Amoeba<br><input type="radio" name = "sel1" value="b">B. Spyrogyra<br><input type="radio" name = "sel1" value="c">C. Mucor<br><input type="radio" name = "sel1" value="d">D. Euglena<br><input type="radio" name = "sel1" value="e">E. Moss</p>
+            <p>2. Which of the following is not an organ?<br><input type="radio" name = "sel2" value="a">A. hair<br><input type="radio" name = "sel2" value="b">B. tongue<br><input type="radio" name = "sel2" value="c">C. rhizome<br><input type="radio" name = "sel2" value="d">D. corm<br><input type="radio" name = "sel2" value="e">E. heart</p>
+            <p>3. One of the major difference between osmosis and diffusion is that diffusion _____________ <br><input type="radio" name = "sel3" value="a">A. does not need a semi-permeable membrane<br><input type="radio" name = "sel3" value="b">B. does not take place in living tisse<br><input type="radio" name = "sel3" value="c">C. takes place only in a liquid medium<br><input type="radio" name = "sel3" value="d">D. takes place only in a gaseous medium<br><input type="radio" name = "sel3" value="e">E. cannot be demonstrated experimental</p>
+            <p>4. Which of the following is a difference mitosis and meiosis?<br><input type="radio" name = "sel4" value="a">A. alignment of chromosomes along the equitorial plain<br><input type="radio" name = "sel4" value="b">B. replication of the chromososme and the cell organelle<br><input type="radio" name = "sel4" value="c">C. pairing of homologous chromosomes<br><input type="radio" name = "sel4" value="d">D. formation of spindle fibres<br><input type="radio" name = "sel4" value="e">E. tickning of chromatin threads at prophase</p>
+            <p>5. Which of the following can be used for vegetative propagation?<br><input type="radio" name = "sel5" value="a">A. ginger stem<br><input type="radio" name = "sel5" value="b">B. yam leave<br><input type="radio" name = "sel5" value="c">C. plantain roots<br><input type="radio" name = "sel5" value="d">D. sweet potatoe tuber<br><input type="radio" name = "sel5" value="e">E. carrot root</p>
+            <p>6. Which of the following is a method of artificial vegetative propagation?<br><input type="radio" name = "sel6" value="a">A. creeping stem<br><input type="radio" name = "sel6" value="b">B. layering<br><input type="radio" name = "sel6" value="c">C. corm<br><input type="radio" name = "sel6" value="d">D. rhizome<br><input type="radio" name = "sel6" value="e">E. bulbil</p>
+            <p><strong>Use the diagram below to answer questions 7 to 9</strong></p>
+            <p>7. The diagram represents _____________ <br><input type="radio" name = "sel7" value="a">A. longitudinal section of a stem<br><input type="radio" name = "sel7" value="b">B. longitudinal section of a root<br><input type="radio" name = "sel7" value="c">C. cross section of a root<br><input type="radio" name = "sel7" value="d">D. transverse section of a stem<br><input type="radio" name = "sel7" value="e">E. longitudinal section of a leave</p>
+            <p>8. The part labelled II in the diagram is the _____________ <br><input type="radio" name = "sel8" value="a">A. epidermis<br><input type="radio" name = "sel8" value="b">B. cortex<br><input type="radio" name = "sel8" value="c">C. phloem<br><input type="radio" name = "sel8" value="d">D. xylem<br><input type="radio" name = "sel8" value="e">E. cuticle</p>
+            <p>9. The part labelled IV in the diagram is the _____________ <br><input type="radio" name = "sel9" value="a">A. phloem<br><input type="radio" name = "sel9" value="b">B. pericycle<br><input type="radio" name = "sel9" value="c">C. cortex<br><input type="radio" name = "sel9" value="d">D. xylem<br><input type="radio" name = "sel9" value="e">E. epidermis</p>
+            <p>10. Which of the following is not a function of the blood?<br><input type="radio" name = "sel10" value="a">A. maintenance of body temperature<br><input type="radio" name = "sel10" value="b">B. formation of clot<br><input type="radio" name = "sel10" value="c">C. distribution of bile<br><input type="radio" name = "sel10" value="d">D. transportation of excretory materials<br><input type="radio" name = "sel10" value="e">E. distribution of hormones</p>
+            <p>11. Which of the following statements about the circulation of blood is not correct?<br><input type="radio" name = "sel11" value="a">A. deoxygenated blood flows into the heart through the vena cava<br><input type="radio" name = "sel11" value="b">B. blood is pumped out of the heart through the aorta<br><input type="radio" name = "sel11" value="c">C. oxygenated blood from the lungs is carried to the left auricle<br><input type="radio" name = "sel11" value="d">D. the oxygenated blood enters the lungs through the pulmonary vein<br><input type="radio" name = "sel11" value="e">E. ventricles contract to pump blood into the aorta</p>
+            <p>12. A difference between the auricle and ventricle of the mammamlian heart is that the _____________ <br><input type="radio" name = "sel12" value="a">A. ventricles carry deoxygenated blood <br><input type="radio" name = "sel12" value="b">B. ventricles do not have outlets<br><input type="radio" name = "sel12" value="c">C. auricles have no valves<br><input type="radio" name = "sel12" value="d">D. walls of the ventricle are less muscular than that of the auricles<br><input type="radio" name = "sel12" value="e">E. walls of the ventricles are more muscular than that of the auricles</p>
+            <p>13. Which of the following respires through the body surface?<br><input type="radio" name = "sel13" value="a">A. man<br><input type="radio" name = "sel13" value="b">B. fish<br><input type="radio" name = "sel13" value="c">C. tridax<br><input type="radio" name = "sel13" value="d">D. amoeba<br><input type="radio" name = "sel13" value="e">E. hibiscus</p>
+            <p>14. The stomata of a leave perform the same function as _____________ <br><input type="radio" name = "sel14" value="a">A. spiracles of insects<br><input type="radio" name = "sel14" value="b">B. trachea of toads<br><input type="radio" name = "sel14" value="c">C. pharynx of man<br><input type="radio" name = "sel14" value="d">D. liver of man<br><input type="radio" name = "sel14" value="e">E. scales of fish</p>
+            <p>15. Which of the following does not happen during inspiration?<br><input type="radio" name = "sel15" value="a">A. intercostal muscles contract<br><input type="radio" name = "sel15" value="b">B. ribs move forward<br><input type="radio" name = "sel15" value="c">C. thoracic cavity increases<br><input type="radio" name = "sel15" value="d">D. diaphragm relaxes<br><input type="radio" name = "sel15" value="e">E. internal air pressure decreases</p>
+            <p>16. Which of these is not an excretory product of plant?<br><input type="radio" name = "sel16" value="a">A. tannin<br><input type="radio" name = "sel16" value="b">B. gum<br><input type="radio" name = "sel16" value="c">C. alkaloid<br><input type="radio" name = "sel16" value="d">D. sweat<br><input type="radio" name = "sel16" value="e">E. anthocyanin</p>
+            <p>17. Which of these is not a function of the kidney?<br><input type="radio" name = "sel17" value="a">A. production of urine<br><input type="radio" name = "sel17" value="b">B. maintenace of acid base balance in the body<br><input type="radio" name = "sel17" value="c">C. osmo-regulation<br><input type="radio" name = "sel17" value="d">D. removal of urine<br><input type="radio" name = "sel17" value="e">E. production of bile</p>
+            <p>18. In which part of the kidney does ultrafiltration take place?<br><input type="radio" name = "sel18" value="a">A. Bowman's capsule<br><input type="radio" name = "sel18" value="b">B. Distal convulated tule<br><input type="radio" name = "sel18" value="b">B. proximal convulated tubule<br><input type="radio" name = "sel18" value="d">D. collecting dust<br><input type="radio" name = "sel18" value="e">E. afferent arteriole</p>
+            <p>19. Which of the following organs is concerned with detoxication of harmful compounds?<br><input type="radio" name = "sel19" value="a">A. Kidney<br><input type="radio" name = "sel19" value="b">B. Lungs<br><input type="radio" name = "sel19" value="c">C. Gall bladeer<br><input type="radio" name = "sel19" value="d">D. Liver<br><input type="radio" name = "sel19" value="e">E. Pancreas</p>
+            <p>20. The hormone that promotes secondary sexual characteristics in females is _____________ <br><input type="radio" name = "sel20" value="a">A. insulin<br><input type="radio" name = "sel20" value="b">B. thyroxin<br><input type="radio" name = "sel20" value="c">C. testosterone<br><input type="radio" name = "sel20" value="d">D. oxytoxin<br><input type="radio" name = "sel20" value="e">E. oestrogen</p>
+            <p><strong>Use the diagram below to answer questions 21 and 22</strong></p>
+            <p>21. The cell body in the diagram is labelled _____________ <br><input type="radio" name = "sel21" value="a">A. I<br><input type="radio" name = "sel21" value="b">B. II<br><input type="radio" name = "sel21" value="c">C. III<br><input type="radio" name = "sel21" value="d">D. IV<br><input type="radio" name = "sel21" value="e">E. V</p>
+            <p>22. The function of the part labelled two in the diagram is to _____________ <br><input type="radio" name = "sel22" value="a">A. transmit impulse from one end of the cell to another<br><input type="radio" name = "sel22" value="b">B. manufacture food for the cell<br><input type="radio" name = "sel22" value="c">C. protect the axon<br><input type="radio" name = "sel22" value="d">D. produce energy for the cell<br><input type="radio" name = "sel22" value="e">E. detect electrical impulses</p>
+            <p>23. The organ responsible for equalising air pressure in the ear is the _____________ <br><input type="radio" name = "sel23" value="a">A. sacculus<br><input type="radio" name = "sel23" value="b">B. utriculus<br><input type="radio" name = "sel23" value="c">C. eustachian tube<br><input type="radio" name = "sel23" value="d">D. ampulla<br><input type="radio" name = "sel23" value="e">E. ear ossicle</p>
+            <p>24. Which of the following organisms lacks a reproductive organ?<br><input type="radio" name = "sel24" value="a">A. Chlamydomonas<br><input type="radio" name = "sel24" value="b">B. Toad<br><input type="radio" name = "sel24" value="c">C. Pride of barbados<br><input type="radio" name = "sel24" value="d">D. Cockroach<br><input type="radio" name = "sel24" value="e">E. Man</p>
+            <p>25. Which of the following mammalian features acts as a shock-absorber to the developing embryo?<br><input type="radio" name = "sel25" value="a">A. Amniotic fluid<br><input type="radio" name = "sel25" value="b">B. Umbilical cord<br><input type="radio" name = "sel25" value="c">C. Placenta<br><input type="radio" name = "sel25" value="d">D. Amnion<br><input type="radio" name = "sel25" value="e">E. Chorion</p>
+            <p>26. The collective name for the female parts of the flower is _____________ <br><input type="radio" name = "sel26" value="a">A. gynoecium<br><input type="radio" name = "sel26" value="b">B. androecium<br><input type="radio" name = "sel26" value="c">C. ovary<br><input type="radio" name = "sel26" value="d">D. stigma<br><input type="radio" name = "sel26" value="e">E. style</p>
+            <p>27. If the petals of a flowerinng plant are removed, which of the following processes is likely to be affected?<br><input type="radio" name = "sel27" value="a">A. transpiration<br><input type="radio" name = "sel27" value="b">B. pollination<br><input type="radio" name = "sel27" value="c">C. germination<br><input type="radio" name = "sel27" value="d">D. photosynthesis<br><input type="radio" name = "sel27" value="e">E. dispersal</p>
+            <p><strong>Use the diagram below to answer questions 28- 30</strong></p>
+            <p>28. The part labelled two in the diagram is the _____________ <br><input type="radio" name = "sel28" value="a">A. plumule<br><input type="radio" name = "sel28" value="b">B. endosperm<br><input type="radio" name = "sel28" value="c">C. radicle<br><input type="radio" name = "sel28" value="d">D. colerhiza <br><input type="radio" name = "sel28" value="e">E. pericarp</p>
+            <p>29. The part labelled IV in the diagram is the _____________ <br><input type="radio" name = "sel29" value="a">A. plumule<br><input type="radio" name = "sel29" value="b">B. endosperm<br><input type="radio" name = "sel29" value="c">C. radicle<br><input type="radio" name = "sel29" value="d">D. coleoptile<br><input type="radio" name = "sel29" value="e">E. pericarp</p>
+            <p>30. The function of the part labelled V in the diagram is the _____________ <br><input type="radio" name = "sel30" value="a">A. manufacture of food<br><input type="radio" name = "sel30" value="b">B. storage of food<br><input type="radio" name = "sel30" value="c">C. secretion of digestive enzymes<br><input type="radio" name = "sel30" value="d">D. protection of the radicle<br><input type="radio" name = "sel30" value="e">E. absorption of mineral salt</p>
+            <p>31. Which of the following is a feature of wind pollinated flowers?<br><input type="radio" name = "sel31" value="a">A. large and brightly coloured petals<br><input type="radio" name = "sel31" value="b">B. possession of sweet scent<br><input type="radio" name = "sel31" value="c">C. presence of nectar<br><input type="radio" name = "sel31" value="d">D. presence of pollen guides<br><input type="radio" name = "sel31" value="e">E. smooth, light and numerous pollen grains</p>
+            <p>32. In testing for starch in leaves, the function of alcohol is _____________ <br><input type="radio" name = "sel32" value="a">A. kill the cells of the leaf<br><input type="radio" name = "sel32" value="b">B. soften the vein of the leaf<br><input type="radio" name = "sel32" value="c">C. aid iodine to penetrate the cell<br><input type="radio" name = "sel32" value="d">D. be a component of the heating bath<br><input type="radio" name = "sel32" value="e">E. extract the chlorophyll from the leaf</p>
+            <p>33. Which of the following processes removes CO<sub>2</sub> from the atmosphere?<br><input type="radio" name = "sel33" value="a">A. respiration<br><input type="radio" name = "sel33" value="b">B. photosynthesis<br><input type="radio" name = "sel33" value="c">C. transpiration <br><input type="radio" name = "sel33" value="d">D. excretion<br><input type="radio" name = "sel33" value="e">E. combustion</p>
+            <p>34. The role of bacteria in the nitrogen cycle includes the following except _____________ <br><input type="radio" name = "sel34" value="a">A. fiixing atmospheric nitrogen<br><input type="radio" name = "sel34" value="b">B. converting ammonia to ntrites<br><input type="radio" name = "sel34" value="c">C. converting nitrites to nitrates<br><input type="radio" name = "sel34" value="d">D. converting carbohydrate to carbondioxide<br><input type="radio" name = "sel34" value="e">E. causing the decay of dead organisms</p>
+            <p>35. The mode of nutrition which describes feeding habits in animals is <br><input type="radio" name = "sel35" value="a">A. autotrophic <br><input type="radio" name = "sel35" value="b">B. holozoic<br><input type="radio" name = "sel35" value="c">C. holophytic<br><input type="radio" name = "sel35" value="d">D. saprophytic<br><input type="radio" name = "sel35" value="e">E. photosynthetic</p>
+            <p>36. Which of the following organisms has homodont dentition?<br><input type="radio" name = "sel36" value="a">A. Rabbit<br><input type="radio" name = "sel36" value="b">B. Man<br><input type="radio" name = "sel36" value="c">C. Sheep<br><input type="radio" name = "sel36" value="d">D. Cat<br><input type="radio" name = "sel36" value="e">E. Lizard</p>
+            <p>37. The pancreatic duct opens opens into the _____________ <br><input type="radio" name = "sel37" value="a">A. caecum<br><input type="radio" name = "sel37" value="b">B. colon<br><input type="radio" name = "sel37" value="c">C. ileum<br><input type="radio" name = "sel37" value="d">D. duodenum<br><input type="radio" name = "sel37" value="e">E. oesophagus</p>
+            <p>38. The enzymes that acts on milk in the stomach is _____________ <br><input type="radio" name = "sel38" value="a">A. ivertase<br><input type="radio" name = "sel38" value="b">B. trypsin<br><input type="radio" name = "sel38" value="c">C. diatase<br><input type="radio" name = "sel38" value="d">D. renin<br><input type="radio" name = "sel38" value="e">E. ptylin</p>
+            <p>39. Which of the following plants is a carnivore?<br><input type="radio" name = "sel39" value="a">A. Desmodium<br><input type="radio" name = "sel39" value="b">B. Sundew<br><input type="radio" name = "sel39" value="c">C. Mushroom<br><input type="radio" name = "sel39" value="d">D. Platycerium<br><input type="radio" name = "sel39" value="e">E. Liverwort</p>
+            <p>40. Hydra feeds by <br><input type="radio" name = "sel40" value="a">A. digesting its food extra cellularly<br><input type="radio" name = "sel40" value="b">B. absorbing food digested by other organisms<br><input type="radio" name = "sel40" value="c">C. symbiotic association<br><input type="radio" name = "sel40" value="d">D. masticating the food particles<br><input type="radio" name = "sel40" value="e">E. synthesizing its food chemically</p>
+            <p>41. Which of the following contains a reducing sugar?<br><input type="radio" name = "sel41" value="a">A. milk<br><input type="radio" name = "sel41" value="b">B. cassava<br><input type="radio" name = "sel41" value="c">C. grapefruit<br><input type="radio" name = "sel41" value="d">D. beans<br><input type="radio" name = "sel41" value="e">E. plantain</p>
+            <p>42. Which of the following instruments can be used to measure relative humidity?<br><input type="radio" name = "sel42" value="a">A. Anemometer<br><input type="radio" name = "sel42" value="b">B. Hygrometer<br><input type="radio" name = "sel42" value="c">C. Wind guage<br><input type="radio" name = "sel42" value="d">D. Barometer<br><input type="radio" name = "sel42" value="e">E. Thermometer</p>
+            <p>43. In a food chain, each stage in the chain is a _____________ <br><input type="radio" name = "sel43" value="a">A. chain level<br><input type="radio" name = "sel43" value="b">B. web level<br><input type="radio" name = "sel43" value="c">C. consumption level<br><input type="radio" name = "sel43" value="d">D. trophic level<br><input type="radio" name = "sel43" value="e">E. production level</p>
+            <p><strong>Use the diagram below to answer questions 44 to 46</strong></p>
+            <p>44. The diagram illustrates <br><input type="radio" name = "sel44" value="a">A. the size of various organisms<br><input type="radio" name = "sel44" value="b">B. types of organism in a habitat<br><input type="radio" name = "sel44" value="c">C. the organisms in a habitat<br><input type="radio" name = "sel44" value="d">D. the hierarchy of organisms in a habitat<br><input type="radio" name = "sel44" value="e">E. the food chain</p>
+            <p>45. Which of these organisms ocuupies the 3rd trophic level?<br><input type="radio" name = "sel45" value="a">A. King fisher<br><input type="radio" name = "sel45" value="b">B. Small fish<br><input type="radio" name = "sel45" value="c">C. Phytoplankton<br><input type="radio" name = "sel45" value="d">D. Big fish<br><input type="radio" name = "sel45" value="e">E. Tadpole</p>
+            <p>46. Which of these organisms is a herbivore?<br><input type="radio" name = "sel46" value="a">A. Tadpole<br><input type="radio" name = "sel46" value="b">B. Phytoplankton<br><input type="radio" name = "sel46" value="c">C. King fisher<br><input type="radio" name = "sel46" value="d">D. Small fish<br><input type="radio" name = "sel46" value="e">E. Big fish</p>
+            <p>47. The presence of stilt and breathing roots are featurea of plants found in the _____________ <br><input type="radio" name = "sel47" value="a">A. tropical rain forest<br><input type="radio" name = "sel47" value="b">B. fresh water swamp forest<br><input type="radio" name = "sel47" value="c">C. mangroove forest<br><input type="radio" name = "sel47" value="d">D. southern guinea savanna<br><input type="radio" name = "sel47" value="e">E. northern guinea savanna</p>
+            <p>48. Excessive loss of water from the leaves if prevented by the _____________ <br><input type="radio" name = "sel48" value="a">A. vescular bundle<br><input type="radio" name = "sel48" value="b">B. cuticle<br><input type="radio" name = "sel48" value="c">C. midrib<br><input type="radio" name = "sel48" value="d">D. parenchyma<br><input type="radio" name = "sel48" value="e">E. mesophyll</p>
+            <p>49. Which of the following organisms will be a colonizing species of a heap of moist sub soil?<br><input type="radio" name = "sel49" value="a">A. Green algae<br><input type="radio" name = "sel49" value="b">B. Ferns<br><input type="radio" name = "sel49" value="c">C. White mangroove<br><input type="radio" name = "sel49" value="d">D. Snails<br><input type="radio" name = "sel49" value="e">E. Tadpole</p>
+            <p>50. The Earthworm is important because _____________ <br><input type="radio" name = "sel50" value="a">A. its body is always moist<br><input type="radio" name = "sel50" value="b">B. each of its segments has chetae<br><input type="radio" name = "sel50" value="c">C. it has a clitelum<br><input type="radio" name = "sel50" value="d">D. it aerates the soil<br><input type="radio" name = "sel50" value="e">E. it reproduces fast</p>
+            <p>51. Which of the following plant partsis not a storage organ?<br><input type="radio" name = "sel51" value="a">A. Carrot root<br><input type="radio" name = "sel51" value="b">B. Sugar cane stem<br><input type="radio" name = "sel51" value="c">C. Onion leaf<br><input type="radio" name = "sel51" value="d">D. Banana stem<br><input type="radio" name = "sel51" value="e">E. Cassava rot</p>
+            <p>52. Which of the following statements about poliomyelitis is not correct? It _____________ <br><input type="radio" name = "sel52" value="a">A. is a bacterial disease<br><input type="radio" name = "sel52" value="b">B. is capable of paralysing the limbs<br><input type="radio" name = "sel52" value="c">C. can be prevented by immunization<br><input type="radio" name = "sel52" value="d">D. is an infant disease<br><input type="radio" name = "sel52" value="e">E. may cause wasting of the limb muscles</p>
+            <p>53. Soil is spread over stagnant water in which mosquitoes breed in order to _____________ <br><input type="radio" name = "sel53" value="a">A. provide landing surface for the aldult<br><input type="radio" name = "sel53" value="b">B. prevent larva or pupa from attaching itself to the surface<br><input type="radio" name = "sel53" value="c">C. prevent the water from over heating<br><input type="radio" name = "sel53" value="d">D. lubricate the larva for easy movement<br><input type="radio" name = "sel53" value="e">E. provide surface for laying their eggs</p>
+            <p>54. In animals, the main protective covering is found in the _____________ <br><input type="radio" name = "sel54" value="a">A. adipose tissues <br><input type="radio" name = "sel54" value="b">B. epithelial tissues<br><input type="radio" name = "sel54" value="c">C. bone tissue<br><input type="radio" name = "sel54" value="d">D. connecting tissues<br><input type="radio" name = "sel54" value="e">E. vascular tissues</p>
+            <p>55. How many chromosomes will be present in gamete if the somatic cell has eight (8) chromosomes?<br><input type="radio" name = "sel55" value="a">A. 4<br><input type="radio" name = "sel55" value="b">B. 6<br><input type="radio" name = "sel55" value="c">C. 8<br><input type="radio" name = "sel55" value="d">D. 10<br><input type="radio" name = "sel55" value="e">E. 16</p>
+            <p>56. In a plant of genetype Tt, what is the probability that a gamete will contain gene t?<br><input type="radio" name = "sel56" value="a">A. <sup>1</sup>/<sub>2</sub><br><input type="radio" name = "sel56" value="b">B. <sup>3</sup>/<sub>4</sub><br><input type="radio" name = "sel56" value="c">C. <sup>1</sup>/<sub>8</sub><br><input type="radio" name = "sel56" value="d">D. <sup>1</sup>/<sub>6</sub><br><input type="radio" name = "sel56" value="e">E. <sup>1</sup>/<sub>4</sub></p>
+            <p>57. In a cross involving an heterozygous red flowered plant Rr and white flowered plant rr what is the probability that the offspring will be Rr?<br><input type="radio" name = "sel57" value="a">A. 1<br><input type="radio" name = "sel57" value="b">B. <sup>1</sup>/<sub>2</sub><br><input type="radio" name = "sel57" value="c">C. <sup>1</sup>/<sub>4</sub><br><input type="radio" name = "sel57" value="d">D. <sup>3</sup>/<sub>2</sub><br><input type="radio" name = "sel57" value="e">E. 2</p>
+            <p>58. Termites are called social insects because _____________ <br><input type="radio" name = "sel58" value="a">A. the nests are built by the nasute soldiers<br><input type="radio" name = "sel58" value="b">B. they live together in communities<br><input type="radio" name = "sel58" value="c">C. the queen allocates duties to the workers<br><input type="radio" name = "sel58" value="d">D. the king and queen do mate<br><input type="radio" name = "sel58" value="e">E. the functions of the workers and soldiers are very important</p>
+            <p>59. Which of the following makes up the bee caste?<br><input type="radio" name = "sel59" value="a">A. soldier and queen<br><input type="radio" name = "sel59" value="b">B. drones, soldiers and workers<br><input type="radio" name = "sel59" value="c">C. queen, workers and soldiers<br><input type="radio" name = "sel59" value="d">D. queen, drones and workers<br><input type="radio" name = "sel59" value="e">E. soldiers, queen and drones</p>
+            <p>60. Which of the following examples best descibes camouflagic colouration in organism<br><input type="radio" name = "sel60" value="a">A. a butterfly which has a reddish colouration on the wing<br><input type="radio" name = "sel60" value="b">B. a green snake in a green grass<br><input type="radio" name = "sel60" value="c">C. zebra with vertical stripes on the body<br><input type="radio" name = "sel60" value="d">D. certain tree frogs with bright colour patterns<br><input type="radio" name = "sel60" value="e">E. a flower whose petals and sepals are of the same colour</p>
+        </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                  <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>  
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersBIO1998)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(60);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+    
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2018.html">2018</a></li>
+                            <li><a href="English 2017.html">2017</a></li>
+                            <li><a href="English 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 1999.html">1999</a></li>
+                            <li><a href="Biology 1997.html">1997</a></li>
+                            <li><a href="Biology 1996.html">1996</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Econimics</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>

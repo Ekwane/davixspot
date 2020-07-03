@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+    <head>
+        <title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+            <source src="../aud/start.ogg" type="audio/ogg">
+            <source src="../aud/start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/optionselect.ogg" type="audio/ogg">
+            <source src="../aud/optionselect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="stopAudio">
+            <source src="../aud/stop.ogg" type="audio/ogg">
+            <source src="../aud/stop.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="passedAudio">
+            <source src="../aud/passed.ogg" type="audio/ogg">
+            <source src="../aud/passed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/failed.ogg" type="audio/ogg">
+            <source src="../aud/failed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="clickAudio">
+            <source src="../aud/btnclick.ogg" type="audio/ogg">
+            <source src="../aud/btnclick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="leftcolumnForMainPageHeader">
+			<div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+			<a href="@davixspot.html" class="fa fa-home" id="home"></a>
+		</div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>BIOLOGY WASSCE 2011</center></div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 60</div>
+            <center><p id="Obj"><strong>OBJECTIVE TEST</strong></p></center>
+            <p>1. The branch of Biology that deals with the principles of classification of organisms is known as ______________ <br><input type="radio" name = "sel1" value="a">A. biological index<br><input type="radio" name = "sel1" value="b">B. nomenclature<br><input type="radio" name = "sel1" value="c">C. taxonomy<br><input type="radio" name = "sel1" value="d">D. ecology</p>
+            <p>2. Which of the following structures is a tissue?<br><input type="radio" name = "sel2" value="a">A. vessel element<br><input type="radio" name = "sel2" value="b">B. blood<br><input type="radio" name = "sel2" value="c">C. sieve tube element<br><input type="radio" name = "sel2" value="d">D. erythrocyte</p>
+            <p>3. Which of the following cells are not regarded as specialized?<br><input type="radio" name = "sel3" value="a">A. sperm cells<br><input type="radio" name = "sel3" value="b">B. root tip cells<br><input type="radio" name = "sel3" value="c">C. muscle cells<br><input type="radio" name = "sel3" value="d">D. somatic cells</p>
+            <p>4. Which of the following pairs of cells carry out the same function?<br><input type="radio" name = "sel4" value="a">A. check cell and red blood cell<br><input type="radio" name = "sel4" value="b">B. spermatozoa and ovum<br><input type="radio" name = "sel4" value="c">C. palisade cell and epidermal cell<br><input type="radio" name = "sel4" value="d">D. root tip cell and guard cell</p>
+            <p>5. If Amoeba is placed in a salt solution, the contractile vacuoles would  ______________ <br><input type="radio" name = "sel5" value="a">A. be bursting more frequently<br><input type="radio" name = "sel5" value="b">B. be more numerous<br><input type="radio" name = "sel5" value="c">C. be found less frequently<br><input type="radio" name = "sel5" value="d">D. grow bigger before they burst</p>
+            <p>6. In which of the following habitat is Paramecium not found?<br><input type="radio" name = "sel6" value="a">A. pond<br><input type="radio" name = "sel6" value="b">B. aquarium<br><input type="radio" name = "sel6" value="c">C. lake<br><input type="radio" name = "sel6" value="d">D. puddle</p>
+            <p>7. The following processes are involved in water movement in the endodermis except ______________ <br><input type="radio" name = "sel7" value="a">A. osmosis<br><input type="radio" name = "sel7" value="b">B. vacuolar pathway<br><input type="radio" name = "sel7" value="c">C. diffusion<br><input type="radio" name = "sel7" value="d">D. active transport</p>
+            <p>8. Cells that utilize a lot of energy are characterised by the presence of a large number of ______________ <br><input type="radio" name = "sel8" value="a">A. vacuoles<br><input type="radio" name = "sel8" value="b">B. mitochondria<br><input type="radio" name = "sel8" value="c">C. endoplasmic reticulum<br><input type="radio" name = "sel8" value="d">D. ribosomes</p>
+            <p><strong>The diagram below represents the phenominon of growth in a meristematice cell of a plant. Use it to answer question 9 and 10</strong></p>
+	        <p>9. The part labelled II in the diagram is the ______________ <br><input type="radio" name = "sel9" value="a">A. centriole<br><input type="radio" name = "sel9" value="b">B. chloroplast<br><input type="radio" name = "sel9" value="c">C. chromatid<br><input type="radio" name = "sel9" value="b">D. tenoplast</p>
+            <p>10. The part labelled I is called the ______________ <br><input type="radio" name = "sel10" value="a">A. nucleus<br><input type="radio" name = "sel10" value="b">B. centromere<br><input type="radio" name = "sel10" value="c">C. centriole<br><input type="radio" name = "sel10" value="d">D. spindle</p>
+            <p>11. Secondary growth is brought about by the activities of the ______________ <br><input type="radio" name = "sel11" value="a">A. phellogen and phelloderm<br><input type="radio" name = "sel11" value="b">B. phellogen and procambium<br><input type="radio" name = "sel11" value="c">C. vascular cambium and phelloderm<br><input type="radio" name = "sel11" value="d">D. vascular cambium and phellogen</p>
+            <p>12. A monocot root is different from a dicot root by having ______________ <br><input type="radio" name = "sel12" value="a">A. endodermis<br><input type="radio" name = "sel12" value="b">B. cambium<br><input type="radio" name = "sel12" value="c">C. wide pith<br><input type="radio" name = "sel12" value="d">D. root hair</p>
+            <p>13. Which of the following statements best describes haemoglobin? It is ______________ <br><input type="radio" name = "sel13" value="a">A. yellowish in colour<br><input type="radio" name = "sel13" value="b">B. a red blood cell<br><input type="radio" name = "sel13" value="c">C. an oxygen carrying pigment<br><input type="radio" name = "sel13" value="d">D. needed for blood clotting</p>
+            <p>14. Inhaled air is made warm and moist in the ______________ <br><input type="radio" name = "sel14" value="a">A. epiglottis<br><input type="radio" name = "sel14" value="b">B. nassal cavity<br><input type="radio" name = "sel14" value="c">C. trachea<br><input type="radio" name = "sel14" value="d">D. mouth</p>
+            <p>15. Which of the following structures is not involved in respiration?<br><input type="radio" name = "sel15" value="a">A. lung books<br><input type="radio" name = "sel15" value="b">B. mouth<br><input type="radio" name = "sel15" value="c">C. stomach<br><input type="radio" name = "sel15" value="d">D. trachea</p>
+            <p>16. Filtrate in the Bowman's capsule contains vitamin because ______________ <br><input type="radio" name = "sel16" value="a">A. only a little amount is required by the body<br><input type="radio" name = "sel16" value="b">B. they can be reabsorbed into the blood<br><input type="radio" name = "sel16" value="c">C. they have low molecular weight<br><input type="radio" name = "sel16" value="d">D. most of them are fat soluble</p>
+            <p>17. More sweat is produced during muscular excercise because ______________ <br><input type="radio" name = "sel17" value="a">A. the contracting muscles produces water<br><input type="radio" name = "sel17" value="b">B. fermentation occurs in muscles<br><input type="radio" name = "sel17" value="c">C. the temperature of the body rises<br><input type="radio" name = "sel17" value="d">D. the muscles fatigues</p>
+            <p>18. Which of the following neurones may not have myelin shealth?<br><input type="radio" name = "sel18" value="a">A. effector cells<br><input type="radio" name = "sel18" value="b">B. intermidiate neurones<br><input type="radio" name = "sel18" value="b">C. motor neurones<br><input type="radio" name = "sel18" value="d">D. sensory neurone</p>
+            <p>19. Which of the following is an effector organ?<br><input type="radio" name = "sel19" value="a">A. tongue<br><input type="radio" name = "sel19" value="b">B. skin<br><input type="radio" name = "sel19" value="c">C. nose brigde<br><input type="radio" name = "sel19" value="d">D. ear glands</p>
+            <p>20. During sexual reproduction in Paramecium, how many times does the zygote divide to produce eight nuclei?<br><input type="radio" name = "sel20" value="a">A. 1<br><input type="radio" name = "sel20" value="b">B. 2<br><input type="radio" name = "sel20" value="c">C. 3<br><input type="radio" name = "sel20" value="d">D. 4</p>
+            <p>21. The testes in male mammals descend into the scrotal sac because ______________ <br><input type="radio" name = "sel21" value="a">A. there is congestion in the lower abdomen<br><input type="radio" name = "sel21" value="b">B. they run the risk of being destroyed<br><input type="radio" name = "sel21" value="c">C. they need special support<br><input type="radio" name = "sel21" value="d">D. they require a relatively low temperature</p>
+            <p>22. Some animals returns to water body to reproduce because ______________ <br><input type="radio" name = "sel22" value="a">A. natural enemies destroys their eggs on land<br><input type="radio" name = "sel22" value="b">B. water nourishes their embryos and their young ones<br><input type="radio" name = "sel22" value="c">C. they are close to their ancestors and immitate them<br><input type="radio" name = "sel22" value="d">D. the temperature on land is not suitable for the developement of their embryos</p>
+            <p>23. Which of the following methods is appropriate  for the cultivation of cassava?<br><input type="radio" name = "sel23" value="a">A. budding<br><input type="radio" name = "sel23" value="b">B. fragmentation<br><input type="radio" name = "sel23" value="c">C. root cutting<br><input type="radio" name = "sel23" value="d">D. stem cutting</p>
+            <p>24. What would be the chromosome number of the hybrid of two varieties of a plant with 36 chromosome in the endosperm cell?<br><input type="radio" name = "sel24" value="a">A. 12<br><input type="radio" name = "sel24" value="b">B. 24<br><input type="radio" name = "sel24" value="c">C. 36<br><input type="radio" name = "sel24" value="d">D. 48</p>
+            <p>25. Kreb's cycle occurs in the ______________ <br><input type="radio" name = "sel25" value="a">A. mitochondria<br><input type="radio" name = "sel25" value="b">B. cytoplasm<br><input type="radio" name = "sel25" value="c">C. nucleus<br><input type="radio" name = "sel25" value="d">D. ribosomes</p>
+            <p>26. The process wherby electrons are emitted from chlorophyll and returned to it unchanged is known as ______________ <br><input type="radio" name = "sel26" value="a">A. non-cyclic phosphorylation<br><input type="radio" name = "sel26" value="b">B. photochemical reaction<br><input type="radio" name = "sel26" value="c">C. photophorylation<br><input type="radio" name = "sel26" value="d">D. cyclic photophorylation</p>
+            <p>27. Which of the following statements about photosynthesis is not true?<br><input type="radio" name = "sel27" value="a">A. plants can photosynthesize without an increase in the dry weight<br><input type="radio" name = "sel27" value="b">B. carbondioxide is absorbed by the leaves in bright light<br><input type="radio" name = "sel27" value="c">C. oxygen is produced during photosynthesis from breakdown of water<br><input type="radio" name = "sel27" value="d">D. photosynthesis occurs in green plants</p>
+            <p>28. The equation below represents the process of glycolysis. <br>Glucose + ATP <span style='word-spacing: -7.5em'>heterokinesis _______________> X + ADP. X in the equation represents ______________ </span> <br><input type="radio" name = "sel28" value="a">A. glucose diphosphate<br><input type="radio" name = "sel28" value="b">B. glucose phosphate<br><input type="radio" name = "sel28" value="c">C. glucose triphosphate<br><input type="radio" name = "sel28" value="d">D. fructose phosphate</p>
+            <p>29. The removal of all phloem tissues of the stem of a plant close to the root system for a long period of time is likely to ______________<br><input type="radio" name = "sel29" value="a">A. provide more energy to the roots<br><input type="radio" name = "sel29" value="b">B. accumulates more starch in the roots<br><input type="radio" name = "sel29" value="c">C. cause the underground roots to develope buds<br><input type="radio" name = "sel29" value="d">D. cause the plant to wither and die</p>
+            <p>30. The conversion of glucose to starch in the leaf during the day principally<br><input type="radio" name = "sel30" value="a">A. enables photosynthesis<br><input type="radio" name = "sel30" value="b">B. prevents osmotic problems<br><input type="radio" name = "sel30" value="c">C. enables the leaf to store the starch<br><input type="radio" name = "sel30" value="d">D. enables glucose to be used up</p>
+            <p>31. Which of the following groups of substances are not six-carbon compounds?<br><input type="radio" name = "sel31" value="a">A. glucose and lactose<br><input type="radio" name = "sel31" value="b">B. lactose and cellulose<br><input type="radio" name = "sel31" value="c">C. glucose, lactose and pyruvate<br><input type="radio" name = "sel31" value="d">D. pyruvate and cellulose</p>
+            <p>32. A purple colour was obtained when sodium hydroxide solution and drop of copper sulphate solution was added to a food substance. The food substance is likely to be a ______________<br><input type="radio" name = "sel32" value="a">A. carbohydrate<br><input type="radio" name = "sel32" value="b">B. fat<br><input type="radio" name = "sel32" value="c">C. protein<br><input type="radio" name = "sel32" value="d">D. sugar</p>
+            <p>33. Which of the following enzymes is active in the duodenum?<br><input type="radio" name = "sel33" value="a">A. pepsin<br><input type="radio" name = "sel33" value="b">B. renin<br><input type="radio" name = "sel33" value="c">C. trypsin<br><input type="radio" name = "sel33" value="d">D. amylase</p>
+            <p>34. The following organisms are producers except ______________ <br><input type="radio" name = "sel34" value="a">A. Hibiscus<br><input type="radio" name = "sel34" value="b">B. Mushroom<br><input type="radio" name = "sel34" value="c">C. Cactus<br><input type="radio" name = "sel34" value="d">D. Spirogyra</p>
+            <p>35. Which of the following structures produces  the greatest variety of digestive enzymes?<br><input type="radio" name = "sel35" value="a">A. salivary glands<br><input type="radio" name = "sel35" value="b">B. pancreas<br><input type="radio" name = "sel35" value="c">C. stomach<br><input type="radio" name = "sel35" value="d">D. colon</p>
+            <p>36. The following are abiotic components of an ecosystem except ______________ <br><input type="radio" name = "sel36" value="a">A. temperature<br><input type="radio" name = "sel36" value="b">B. oxygen<br><input type="radio" name = "sel36" value="c">C. bacteria<br><input type="radio" name = "sel36" value="d">D. soil</p>
+            <p><strong>Use thr following information on capture-recapture method to calculate the total number of organisms in a habitat. First capture = 200, second = 120; Number of organisms with mark in second capture = 40</strong></p>
+	        <p>37. The total number of organism ______________ <br><input type="radio" name = "sel37" value="a">A. 200<br><input type="radio" name = "sel37" value="b">B. 360<br><input type="radio" name = "sel37" value="c">C. 600<br><input type="radio" name = "sel37" value="d">D. 800</p>
+            <p>38. Ecological investigation in habitat includes the following procedures except ______________ <br><input type="radio" name = "sel38" value="a">A. choosing a habitat<br><input type="radio" name = "sel38" value="b">B. identification of specimens<br><input type="radio" name = "sel38" value="c">C. determining the genetic make-up of specimens<br><input type="radio" name = "sel38" value="d">D. measuring biotic and abiotic factors</p>
+            <p>39. Which of the following substances when lost from the body of a mammal will not be returned to the ecosystem?<br><input type="radio" name = "sel39" value="a">A. sweat<br><input type="radio" name = "sel39" value="b">B. urea<br><input type="radio" name = "sel39" value="c">C. heat energy<br><input type="radio" name = "sel39" value="d">D. carbondioxide</p>
+            <p>40. The rate of decomposition of organisms is faster in the tropical rain forest than in other biomes because <br><input type="radio" name = "sel40" value="a">A. of the relatively constant daylight<br><input type="radio" name = "sel40" value="b">B. there are more plants per square feet<br><input type="radio" name = "sel40" value="c">C. of abundance of water<br><input type="radio" name = "sel40" value="d">D. of constant cool temperature</p>
+            <p>41. A xerophyte conserves water by possession of the following features except ______________ <br><input type="radio" name = "sel41" value="a">A. thick cuticle<br><input type="radio" name = "sel41" value="b">B. sunken stomata<br><input type="radio" name = "sel41" value="c">C. broad leaves<br><input type="radio" name = "sel41" value="d">D. fleshy stem</p>
+            <p>42. The fallin off of leaves of deciduous trees is helpful to the plant because it ______________ <br><input type="radio" name = "sel42" value="a">A. reduces the rate of transpiration<br><input type="radio" name = "sel42" value="b">B. enables the plant to conviniently eliminate its excretory products<br><input type="radio" name = "sel42" value="c">C. enables the plant to bear more fruit<br><input type="radio" name = "sel42" value="d">D. ensures that the limited mineral salts gets to only growing regions</p>
+            <p>43. A sample of wet garden soil of known weight was heated to constant weight. The loss of weight is due to the loss of ______________ <br><input type="radio" name = "sel43" value="a">A. water<br><input type="radio" name = "sel43" value="b">B. organic matter<br><input type="radio" name = "sel43" value="c">C. water and organic matter<br><input type="radio" name = "sel43" value="d">D. water and inorganic matter</p>
+            <p>44. Assuming that a period of stable population size is followed by a period when natality increases by 10% and immigration by 20% of population size. The population size will ______________<br><input type="radio" name = "sel44" value="a">A. be at equilibrium<br><input type="radio" name = "sel44" value="b">B. increase by 40% percent<br><input type="radio" name = "sel44" value="c">C. begins to increase<br><input type="radio" name = "sel44" value="d">D. begin to decrease</p>
+            <p>45. Which of the following methods does make water fit for drinking?<br><input type="radio" name = "sel45" value="a">A. addition of chlorine<br><input type="radio" name = "sel45" value="b">B. boiling<br><input type="radio" name = "sel45" value="c">C. distillation<br><input type="radio" name = "sel45" value="d">D. addition of alum</p>
+            <p>46. vaccination results in ______________ <br><input type="radio" name = "sel46" value="a">A. aiding red blood cells to carry more oxygen<br><input type="radio" name = "sel46" value="b">B. production of antibodies which destroy toxins of germs<br><input type="radio" name = "sel46" value="c">C. arresting excessive bleeding<br><input type="radio" name = "sel46" value="d">D. production of white blood cells which engulf and digest bacteria</p>
+            <p>47. Leguminous crops are incorporated into crop rotation in order to ______________ <br><input type="radio" name = "sel47" value="a">A. improve aeration of soil<br><input type="radio" name = "sel47" value="b">B. promote nitrogen fixation<br><input type="radio" name = "sel47" value="c">C. increase the rate of formation <br><input type="radio" name = "sel47" value="d">D. improve upon the water holding capacity of the soil</p>
+            <p>48. Which of the following practices improves the crop yield in a clayey soil? Addition of ______________ <br><input type="radio" name = "sel48" value="a">A. more water and humus<br><input type="radio" name = "sel48" value="b">B. lime and humus<br><input type="radio" name = "sel48" value="c">C. fertilizers<br><input type="radio" name = "sel48" value="d">D. weedicides and fertilizers</p>
+            <p>49. Which of the following activities promotes forest conservation?<br><input type="radio" name = "sel49" value="a">A. lumbering<br><input type="radio" name = "sel49" value="b">B. use of fire wood for cooking <br><input type="radio" name = "sel49" value="c">C. afforestation<br><input type="radio" name = "sel49" value="d">D. production of paper</p>
+            <p>50. Which of the following statements is not true about continuous variation? It ______________ <br><input type="radio" name = "sel50" value="a">A. is usually controlled by several genes<br><input type="radio" name = "sel50" value="b">B. can be influenced by environmental factors<br><input type="radio" name = "sel50" value="c">C. follows a normal distribution curve<br><input type="radio" name = "sel50" value="d">D. is usually controlled by one or two pair(s) of gene</p>
+            <p>51. Acquired characters are ______________ <br><input type="radio" name = "sel51" value="a">A. received from parents<br><input type="radio" name = "sel51" value="b">B. passed to offsprings<br><input type="radio" name = "sel51" value="c">C. caused by the environment<br><input type="radio" name = "sel51" value="d">D. caused by mutation</p>
+            <p>52. Differences in the characteristics observed between individuals of the same species is known as ______________ <br><input type="radio" name = "sel52" value="a">A. trait<br><input type="radio" name = "sel52" value="b">B. phenotype<br><input type="radio" name = "sel52" value="c">C. mutation<br><input type="radio" name = "sel52" value="d">D. variation</p>
+            <p>53. Which of the following statements best describes protein synthesis?<br><input type="radio" name = "sel53" value="a">A. DNA in directly involved in translocation<br><input type="radio" name = "sel53" value="b">B. translocation of the ribosomes exposes a new codon for base pairing with an amino acid<br><input type="radio" name = "sel53" value="c">C. each tRNA with a particular anticodon always carries a different protein in the process<br><input type="radio" name = "sel53" value="d">D. one amino acid is always carried by more than one tRNA</p>
+            <p>54. If a persons hastwo alleles of the sickle cell anaemia gene, the person <br><input type="radio" name = "sel54" value="a">A. is a heteroozygous carrier of the disease<br><input type="radio" name = "sel54" value="b">B. is immune to the disease and cannot pass it on an offspring<br><input type="radio" name = "sel54" value="c">C. has the disease<br><input type="radio" name = "sel54" value="d">D. is probably Asian ancestry</p>
+            <p>55. What is the probability of a man of blood group AB married to a woman of blood group O producing a child of blood group O?<br><input type="radio" name = "sel55" value="a">A. 0%<br><input type="radio" name = "sel55" value="b">B. 25%<br><input type="radio" name = "sel55" value="c">C. 50%<br><input type="radio" name = "sel55" value="d">D. 75%</p>
+            <p>56. A man with blood group |<sup>A</sup>|<sup>A</sup> is married to a woman with blood group |<sup>A</sup>|<sup>O</sup>. The blood group of their son is likely to be ______________ <br><input type="radio" name = "sel56" value="a">A. A<br><input type="radio" name = "sel56" value="b">B. O<br><input type="radio" name = "sel56" value="c">C. B<br><input type="radio" name = "sel56" value="d">D. AB</p>
+            <p>57. Natural selection is a consequence of ______________ <br><input type="radio" name = "sel57" value="a">A. distribution of organisms<br><input type="radio" name = "sel57" value="b">B. diverse conditions<br><input type="radio" name = "sel57" value="c">C. variation in organisms<br><input type="radio" name = "sel57" value="d">D. inbreeding</p>
+            <p>58. Which of the following components of Larmark's theory of evolution is considered faulty?<br><input type="radio" name = "sel58" value="a">A. individual of the same species growing under different environmental conditions differ from each other<br><input type="radio" name = "sel58" value="b">B. use of certain organs result in development of those parts<br><input type="radio" name = "sel58" value="c">C. unused organs degenerate<br><input type="radio" name = "sel58" value="d">D. changes that results in indviduals of the same species are transmitted to offsprings</p>
+            <p>59. A vestigial structure in humans is ______________ <br><input type="radio" name = "sel59" value="a">A. earlobe<br><input type="radio" name = "sel59" value="b">B. toe bone<br><input type="radio" name = "sel59" value="c">C. tail bone<br><input type="radio" name = "sel59" value="d">D. spleen</p>
+            <p>60. Adenine pairs with thymine because <br><input type="radio" name = "sel60" value="a">A. the tow occur in the same nucleic acid<br><input type="radio" name = "sel60" value="b">B. one is a strong base and the other is a weak base<br><input type="radio" name = "sel60" value="c">C. two purine bases easily pair up<br><input type="radio" name = "sel60" value="d">D. one is a purine base and the other a pyrimidine</p>
+        </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                  <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>  
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersBIO2011)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(60);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+    
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2018.html">2018</a></li>
+                            <li><a href="English 2017.html">2017</a></li>
+                            <li><a href="English 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2012.html">2012</a></li>
+                            <li><a href="Biology 2010.html">2010</a></li>
+                            <li><a href="Biology 2009.html">2009</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Econimics</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>

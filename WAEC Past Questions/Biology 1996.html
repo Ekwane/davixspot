@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+    <head>
+        <title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+		  <source src="../aud/start.ogg" type="audio/ogg">
+		  <source src="../aud/start.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="selectAudio">
+		  <source src="../aud/optionselect.ogg" type="audio/ogg">
+		  <source src="../aud/optionselect.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="stopAudio">
+		  <source src="../aud/stop.ogg" type="audio/ogg">
+		  <source src="../aud/stop.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="passedAudio">
+		  <source src="../aud/passed.ogg" type="audio/ogg">
+		  <source src="../aud/passed.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="selectAudio">
+		  <source src="../aud/failed.ogg" type="audio/ogg">
+		  <source src="../aud/failed.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="clickAudio">
+		  <source src="../aud/btnclick.ogg" type="audio/ogg">
+		  <source src="../aud/btnclick.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+        <div class="leftcolumnForMainPageHeader">
+			<div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+			<a href="@davixspot.html" class="fa fa-home" id="home"></a>
+		</div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>BIOLOGY WASSCE 1996</center></div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 60</div>
+            <center><p id="Obj"><strong>OBJECTIVE TEST</strong></p></center>
+            <p>1. Which of the following levels of organisation in living things is in the correct sequence, starting from the most complex to the simplest?<br><input type="radio" name = "sel1" value="a">A. tissue-->cell-->organ-->system<br><input type="radio" name = "sel1" value="b">B. system-->organ-->tissue-->cell<br><input type="radio" name = "sel1" value="c">C. cell-->tissue-->system-->organ<br><input type="radio" name = "sel1" value="d">D. cell-->tissue-->organ-->system<br><input type="radio" name = "sel1" value="e">E. organ-->system-->tissue-->cell</p>
+            <p>2. A few drops of fehling's solution was added to juice extracted from fresh maize grain and boiled. Ared precipitate was formed, indicating the presence of _____________ <br><input type="radio" name = "sel2" value="a">A. alcohol<br><input type="radio" name = "sel2" value="b">B. protein<br><input type="radio" name = "sel2" value="c">C. non-reducing sugar<br><input type="radio" name = "sel2" value="d">D. starch<br><input type="radio" name = "sel2" value="e">E. reducing sugar</p>
+            <p>3. Which of the following is not a cell organelle?<br><input type="radio" name = "sel3" value="a">A. golgi body<br><input type="radio" name = "sel3" value="b">B. nucleus<br><input type="radio" name = "sel3" value="c">C. fat droplets<br><input type="radio" name = "sel3" value="d">D. ribosome<br><input type="radio" name = "sel3" value="e">E. endoplasmic reticulum</p>
+            <p>4. One of the differences between plants and animals is that _____________ <br><input type="radio" name = "sel4" value="a">A. growth is indefinite in animals but definite in plants<br><input type="radio" name = "sel4" value="b">B. nutrition is autotrophic in plants but holophytic in animals<br><input type="radio" name = "sel4" value="c">C. in plants there are excretory system but in animals wastes are stored away<br><input type="radio" name = "sel4" value="d">D. plants react slowly to external stimuli while animals react more quickly<br><input type="radio" name = "sel4" value="e">E. respiration takes place in animals but does not take place in plants</p>
+            <p>5. Which of the following are the final products of aerobic respiration?<br><input type="radio" name = "sel5" value="a">A. water, carbondioxide and energy<br><input type="radio" name = "sel5" value="b">B. pyrucic acid, carbondioxide and waterbr><input type="radio" name = "sel5" value="c">C. glucose, energy and  urea<br><input type="radio" name = "sel5" value="d">D. energy and carbondioxide<br><input type="radio" name = "sel5" value="e">E. lactic acid, water and cabondioxide</p>
+            <p>6. Movement of water through a semi-permeable membrane from a weaker solution to a stronger solution is known as _____________ <br><input type="radio" name = "sel6" value="a">A. transpiration<br><input type="radio" name = "sel6" value="b">B. diffusion<br><input type="radio" name = "sel6" value="c">C. active transport<br><input type="radio" name = "sel6" value="d">D. plasmolysis<br><input type="radio" name = "sel6" value="e">E. osmosis</p>
+            <p>7. In which of the following structures will cells undergoing meiosis be seen?<br><input type="radio" name = "sel7" value="a">A. at the apices of stem and root<br><input type="radio" name = "sel7" value="b">B. in the cortex of the stem<br><input type="radio" name = "sel7" value="c">C. in the palisade mesophyll of the leaf<br><input type="radio" name = "sel7" value="d">D. in the ovary of a flower<br><input type="radio" name = "sel7" value="e">E. in the root of a seedling</p>
+            <p>8. Which of the following instruments can be used to perform an experiment on geotropism?<br><input type="radio" name = "sel8" value="a">A. potometer<br><input type="radio" name = "sel8" value="b">B. cup anemometer<br><input type="radio" name = "sel8" value="c">C. klinostat<br><input type="radio" name = "sel8" value="d">D. kymograph<br><input type="radio" name = "sel8" value="e">E. sphygmomanometer</p>
+            <p>9. The thoracic vertebra differs from all the following vertebrae by the possession of _____________ <br><input type="radio" name = "sel9" value="a">A. long neural spine<br><input type="radio" name = "sel9" value="b">B. odontoid process<br><input type="radio" name = "sel9" value="c">C. vertebrarterial canal<br><input type="radio" name = "sel9" value="d">D. large centrum<br><input type="radio" name = "sel9" value="e">E. transverse processes</p>
+            <p><strong>Study the list below and use it to answer questions 10 to 12</strong></p>
+            <p>
+                The vertebral columns of mammals consist of the following:<br>
+                I. Lumbar vertebrae<br>
+                II. Thoracic vertebrae<br>
+                III. Caudal vertebrae<br>
+                IV. Cervical vertebrae<br>
+                V. Scral vertebrae
+            </p>
+            <p>10. Which of the following are found immediately next to the skull?<br><input type="radio" name = "sel10" value="a">A. I<br><input type="radio" name = "sel10" value="b">B. II<br><input type="radio" name = "sel10" value="c">C. III<br><input type="radio" name = "sel10" value="d">D. IV<br><input type="radio" name = "sel10" value="e">E. V</p>
+            <p>11. Which of the following articulates with the ribs?<br><input type="radio" name = "sel11" value="a">A. I<br><input type="radio" name = "sel11" value="b">B. II<br><input type="radio" name = "sel11" value="c">C. III<br><input type="radio" name = "sel11" value="d">D. IV<br><input type="radio" name = "sel11" value="e">E. V</p>
+            <p>12. Which of the following articulates with the pelvic girdle?<br><input type="radio" name = "sel12" value="a">A. V<br><input type="radio" name = "sel12" value="b">B. IV<br><input type="radio" name = "sel12" value="c">C. III<br><input type="radio" name = "sel12" value="d">D. II<br><input type="radio" name = "sel12" value="e">E. I</p>
+            <p>13. Which of the following is more concentrated in the blood within the renal artery than the blood within the renal vein?<br><input type="radio" name = "sel13" value="a">A. urea<br><input type="radio" name = "sel13" value="b">B. red blood cells<br><input type="radio" name = "sel13" value="c">C. glucose<br><input type="radio" name = "sel13" value="d">D. protein<br><input type="radio" name = "sel13" value="e">E. white blood cells</p>
+            <p>14. Which of the following statements about the lymphatic system is not correct?<br><input type="radio" name = "sel14" value="a">A. The lymph vessels are always larger in size than the arteries<br><input type="radio" name = "sel14" value="b">B. the flow of lymph is assisted by general muscular movement<br><input type="radio" name = "sel14" value="c">C. lymph flows only in one direction due to the presence of valves<br><input type="radio" name = "sel14" value="d">D. lymph is emptied into the blood circulatory system through a vein<br><input type="radio" name = "sel14" value="e">E. lymph nodes become swollen during serious infection</p>
+            <p>15. In which of the following groups is nephridium found?<br><input type="radio" name = "sel15" value="a">A. crustaceans<br><input type="radio" name = "sel15" value="b">B. reptiles<br><input type="radio" name = "sel15" value="c">C. birds<br><input type="radio" name = "sel15" value="d">D. mammals<br><input type="radio" name = "sel15" value="e">E. annelids</p>
+            <p>16. The maintenace of a constant internal environment of an organism is known as _____________ <br><input type="radio" name = "sel16" value="a">A. hemeostasis<br><input type="radio" name = "sel16" value="b">B. homeorhesis<br><input type="radio" name = "sel16" value="c">C. turgidity<br><input type="radio" name = "sel16" value="d">D. homoiothermy<br><input type="radio" name = "sel16" value="e">E. duiresis</p>
+            <p>17. Which of the following is the effect of continuous tillage on an ecological system?<br><input type="radio" name = "sel17" value="a">A. addition of more humus to the soil<br><input type="radio" name = "sel17" value="b">B. decrease in productivity<br><input type="radio" name = "sel17" value="c">C. increase in yield<br><input type="radio" name = "sel17" value="d">D. improved fertility<br><input type="radio" name = "sel17" value="e">E. prevention of erosion</p>
+            <p>18. The most sensitive part of the retina is called _____________ <br><input type="radio" name = "sel18" value="a">A. blindspot<br><input type="radio" name = "sel18" value="b">B. conjunctiva<br><input type="radio" name = "sel18" value="b">B. fovea centralis<br><input type="radio" name = "sel18" value="d">D. choroid coat<br><input type="radio" name = "sel18" value="e">E. sclerotic coat</p>
+            <p>19. Which of the following pairs consists of gametes?<br><input type="radio" name = "sel19" value="a">A. ova and spermatozoa<br><input type="radio" name = "sel19" value="b">B. spores and sporangium<br><input type="radio" name = "sel19" value="c">C. flowers and pollen grains <br><input type="radio" name = "sel19" value="d">D. testes and ovaries<br><input type="radio" name = "sel19" value="e">E. gametophyte and sporophytes</p>
+            <p><strong>Study the diagram below and use it to answer questions 20 to 22</strong></p>
+            <p>20. Which of the labelled structures is the nucleus?<br><input type="radio" name = "sel20" value="a">A. I<br><input type="radio" name = "sel20" value="b">B. II<br><input type="radio" name = "sel20" value="c">C. III<br><input type="radio" name = "sel20" value="d">D. IV<br><input type="radio" name = "sel20" value="e">E. V</p>
+            <p>21. Which of the following labelled structures secretes enzymes which facilitates the penetration of the egg?<br><input type="radio" name = "sel21" value="a">A. I<br><input type="radio" name = "sel21" value="b">B. II<br><input type="radio" name = "sel21" value="c">C. III<br><input type="radio" name = "sel21" value="d">D. IV<br><input type="radio" name = "sel21" value="e">E. V</p>
+            <p>22. Which of the following labelled structures is similar to the locomotory structure in Euglena?<br><input type="radio" name = "sel22" value="a">A. I<br><input type="radio" name = "sel22" value="b">B. II<br><input type="radio" name = "sel22" value="c">C. III<br><input type="radio" name = "sel22" value="d">D. IV<br><input type="radio" name = "sel22" value="e">E. V</p>
+            <p><strong>Study the diagrams below and use them to answer questions 23 to 25</strong></p>
+            <p>23. The part labelled I in A represents the <br><input type="radio" name = "sel23" value="a">A. root<br><input type="radio" name = "sel23" value="b">B. radicle<br><input type="radio" name = "sel23" value="c">C. hypocotyl<br><input type="radio" name = "sel23" value="d">D. shoot<br><input type="radio" name = "sel23" value="e">E. stem</p>
+            <p>24. The part labelled II represents the _____________ <br><input type="radio" name = "sel24" value="a">A. root<br><input type="radio" name = "sel24" value="b">B. epicotyl<br><input type="radio" name = "sel24" value="c">C. hypocotyl<br><input type="radio" name = "sel24" value="d">D. cotyledon<br><input type="radio" name = "sel24" value="e">E. hilum</p>
+            <p>25. What is the importance of the part labelled II to the seedling? It _____________ <br><input type="radio" name = "sel25" value="a">A. protects the foilage leaves<br><input type="radio" name = "sel25" value="b">B. grows into the first foilage leaves<br><input type="radio" name = "sel25" value="c">C. later develops into the fruit<br><input type="radio" name = "sel25" value="d">D. provides the seedling with food<br><input type="radio" name = "sel25" value="e">E. serves as the water reservior for the seedling</p>
+            <p>26. In grasshopper/cockroach, digestion starts from the _____________ <br><input type="radio" name = "sel26" value="a">A. oesophagus<br><input type="radio" name = "sel26" value="b">B. crops<br><input type="radio" name = "sel26" value="c">C. gizza<br><input type="radio" name = "sel26" value="d">D. midgut<br><input type="radio" name = "sel26" value="e">E. mouth</p>
+            <p>27. In a water cultured experiment, the cultured solution in a transparent beaker turned green. What precaution should have been taken to prevent the cultured solution from turning green?<br><input type="radio" name = "sel27" value="a">A. changing the cultured solution regularly<br><input type="radio" name = "sel27" value="b">B. increasing the number of times the culture is aerated<br><input type="radio" name = "sel27" value="c">C. covering the transparent speaker with black cloth<br><input type="radio" name = "sel27" value="d">D. adding warm alcohol to bleach the green colour<br><input type="radio" name = "sel27" value="e">E. sterilizing the beaker in a hot oven before use</p>
+            <p>28. Which of the following is responsible for the conversion of nitrites to nitrate in the nitrogen cycle?<br><input type="radio" name = "sel28" value="a">A. denitrifying bacteria<br><input type="radio" name = "sel28" value="b">B. nitrifying bacteria<br><input type="radio" name = "sel28" value="c">C. lightening<br><input type="radio" name = "sel28" value="d">D. fungi<br><input type="radio" name = "sel28" value="e">E. brown algae</p>
+            <p>29. Hydra captures small crustaceans by means of _____________ <br><input type="radio" name = "sel29" value="a">A. pseudopodia<br><input type="radio" name = "sel29" value="b">B. musculo-epithelial cell<br><input type="radio" name = "sel29" value="c">C. tentacles<br><input type="radio" name = "sel29" value="d">D. enteron<br><input type="radio" name = "sel29" value="e">E. ectoderm</p>
+            <p>30. Which of the following processes is not due to interaction between the biotic and abiotic components of an ecosystem?<br><input type="radio" name = "sel30" value="a">A. soil nutrient depletion<br><input type="radio" name = "sel30" value="b">B. condensation<br><input type="radio" name = "sel30" value="c">C. decomposition<br><input type="radio" name = "sel30" value="d">D. osmosis<br><input type="radio" name = "sel30" value="e">E. photosynthesis</p>
+            <p>31. The entire habits and habitat of an organism can be described as its _____________ <br><input type="radio" name = "sel31" value="a">A. ecological community<br><input type="radio" name = "sel31" value="b">B. ecological niche<br><input type="radio" name = "sel31" value="c">C. habitat factor<br><input type="radio" name = "sel31" value="d">D. biotic factor<br><input type="radio" name = "sel31" value="e">E. abiotic factor</p>
+            <p>32. Which of the following is not true characteristic of the tropical rain forest?<br><input type="radio" name = "sel32" value="a">A. vegetation consist predominantly of tall trees with thick canopy<br><input type="radio" name = "sel32" value="b">B. forest is rich of epiphytes and climbers<br><input type="radio" name = "sel32" value="c">C. annual rainfall is less than 100cm<br><input type="radio" name = "sel32" value="d">D. interior has low light intensity, low humidity and damp floor<br><input type="radio" name = "sel32" value="e">E. fruits of trees are often large-sized and are generally without adaptation to wind dispersal</p>
+            <p>33. The frequency of Andropogon in a grass lawn is 90. 100 throws were made with 1 meter square quadrat. What is the density of Andropogon in the field?<br><input type="radio" name = "sel33" value="a">A. 0.09 per m<sup>2</sup><br><input type="radio" name = "sel33" value="b">B. 0.90 per m<sup>2</sup><br><input type="radio" name = "sel33" value="c">C. 9.0 per m<sup>2</sup><br><input type="radio" name = "sel33" value="d">D. 90 per m<sup>2</sup><br><input type="radio" name = "sel33" value="e">E. 900 per m<sup>2</sup></p>
+            <p>34. Which of the following is the correct method of collecting soil organism?<br><input type="radio" name = "sel34" value="a">A. heating the soil sample in an oven<br><input type="radio" name = "sel34" value="b">B. aerating the soil sample<br><input type="radio" name = "sel34" value="c">C. refrigerating  the soil for some hours<br><input type="radio" name = "sel34" value="d">D. pouring hot water on the soil to enable the organism float<br><input type="radio" name = "sel34" value="e">E. placing a lighted electric bulb over soil in a funnel</p>
+            <p>35. Which of these groups of organisms is reponsible for capturing energy for the biotic community?<br><input type="radio" name = "sel35" value="a">A. decomposers<br><input type="radio" name = "sel35" value="b">B. omnivores<br><input type="radio" name = "sel35" value="c">C. consumers<br><input type="radio" name = "sel35" value="d">D. producers<br><input type="radio" name = "sel35" value="e">E. detritus feeders</p>
+            <p>
+                The following are pathways of energy in the biosphere:<br>
+                I. Heat energy is lost from body metabolism to the surrounding air.<br>
+                II. Energy passes to decomposers and parasites.<br>
+                III. Energy is transferred to the next higher level in a food chain.<br>
+                IV. Energy is also passed by conduction to clothing and other objects
+            </p>
+            <p>36. Which pathway directly leads to transfer of useful energy within a biological community?<br><input type="radio" name = "sel36" value="a">A. I only<br><input type="radio" name = "sel36" value="b">B. II and III only<br><input type="radio" name = "sel36" value="c">C. I and III only<br><input type="radio" name = "sel36" value="d">D. I and II only<br><input type="radio" name = "sel36" value="e">E. IV only</p>
+            <p>37. Which of the following pathways will energy follow to reach plasmodium to reach red blood cells?<br><input type="radio" name = "sel37" value="a">A. I, II and III<br><input type="radio" name = "sel37" value="b">B. I and II<br><input type="radio" name = "sel37" value="c">C. II only<br><input type="radio" name = "sel37" value="d">D. III and IV<br><input type="radio" name = "sel37" value="e">E. IV and I</p>
+            <p>38. What type of relationship exists in the large intestine of a sheep, between bacteria and the sheep?<br><input type="radio" name = "sel38" value="a">A. symbiosis<br><input type="radio" name = "sel38" value="b">B. commensalism<br><input type="radio" name = "sel38" value="c">C. predation<br><input type="radio" name = "sel38" value="d">D. parasitism<br><input type="radio" name = "sel38" value="e">E. saprophytism</p>
+            <p>39. The Tutgren's  funnelis used to _____________ <br><input type="radio" name = "sel39" value="a">A. extract minute soil organisms<br><input type="radio" name = "sel39" value="b">B. measure the amount of rainfall<br><input type="radio" name = "sel39" value="c">C. collect water from habitat<br><input type="radio" name = "sel39" value="d">D. pour liquids into containers with narrow mouth <br><input type="radio" name = "sel39" value="e">E. measure the volume of heavy liquids</p>
+            <p>40. Which of the following is not an aquatic habitat?<br><input type="radio" name = "sel40" value="a">A. estuaries<br><input type="radio" name = "sel40" value="b">B. ponds<br><input type="radio" name = "sel40" value="c">C. rainforest<br><input type="radio" name = "sel40" value="d">D. swamp<br><input type="radio" name = "sel40" value="e">E. salt lake</p>
+            <p>41. Which of these materials is not required for insect collection in an ecological field-trap?<br><input type="radio" name = "sel41" value="a">A. pooter<br><input type="radio" name = "sel41" value="b">B. seechi disc<br><input type="radio" name = "sel41" value="c">C. spreading board<br><input type="radio" name = "sel41" value="d">D. jar containing alcohol<br><input type="radio" name = "sel41" value="e">E. sweep net</p>
+            <p>42. The factors which determine the type of vegetation a particular habitat will support are related to the following except _____________ <br><input type="radio" name = "sel42" value="a">A. nature of the soil particle<br><input type="radio" name = "sel42" value="b">B. amount of rainfall<br><input type="radio" name = "sel42" value="c">C. mineral content of the soil<br><input type="radio" name = "sel42" value="d">D. farming activities<br><input type="radio" name = "sel42" value="e">E. depth of water table</p>
+            <p>43. Which of the following statements is not true of population?<br><input type="radio" name = "sel43" value="a">A. members of a population may be of same species<br><input type="radio" name = "sel43" value="b">B. members of a population may be of same species but do not interbreed<br><input type="radio" name = "sel43" value="c">C. size of population may be limited by space<br><input type="radio" name = "sel43" value="d">D. some species can form another population elsewhere<br><input type="radio" name = "sel43" value="e">E. members of a population may co-exist</p>
+            <p>44. Which of the following is an abiotic fator which affects a population?<br><input type="radio" name = "sel44" value="a">A. parasite<br><input type="radio" name = "sel44" value="b">B. consumer<br><input type="radio" name = "sel44" value="c">C. producer<br><input type="radio" name = "sel44" value="d">D. temperature<br><input type="radio" name = "sel44" value="e">E. secondary producer</p>
+            <p>45. One of the ecological conditions which favours the spread of malaria is _____________ <br><input type="radio" name = "sel45" value="a">A. proper disposal of decaying oorganic matter<br><input type="radio" name = "sel45" value="b">B. clearing bushes around dwelling houses<br><input type="radio" name = "sel45" value="c">C. presence of water weeds<br><input type="radio" name = "sel45" value="d">D. presence of stagnant water<br><input type="radio" name = "sel45" value="e">E. improper disposal of sewage into the sea</p>
+            <p>46. Which of the following natural resources is non-renewable?<br><input type="radio" name = "sel46" value="a">A. livestock<br><input type="radio" name = "sel46" value="b">B. minerals<br><input type="radio" name = "sel46" value="c">C. forest<br><input type="radio" name = "sel46" value="d">D. soil<br><input type="radio" name = "sel46" value="e">E. air</p>
+            <p>47. The following are the effect of overgrazng except _____________ <br><input type="radio" name = "sel47" value="a">A. completion of useful fodder crops<br><input type="radio" name = "sel47" value="b">B. soil and wind erosion of pasture land<br><input type="radio" name = "sel47" value="c">C. epidermic of cattle diseases<br><input type="radio" name = "sel47" value="d">D. migration of herdsmen<br><input type="radio" name = "sel47" value="e">E. scarcity of good pasture land</p>
+            <p>48. Which of these is not a way of conserving natural resources?<br><input type="radio" name = "sel48" value="a">A. adopting good farming practices<br><input type="radio" name = "sel48" value="b">B. establishing forest reserves<br><input type="radio" name = "sel48" value="c">C. establishing game reserves<br><input type="radio" name = "sel48" value="d">D. encouraging pouching<br><input type="radio" name = "sel48" value="e">E. protecting the endangered species</p>
+            <p>49. The needs for conservation include the following except to _____________ <br><input type="radio" name = "sel49" value="a">A. keep natural resources for future generations<br><input type="radio" name = "sel49" value="b">B. preserve them for scientific and recreational purposes<br><input type="radio" name = "sel49" value="c">C. maximise the use of natural resources<br><input type="radio" name = "sel49" value="d">D. make sure the natural resources are not used<br><input type="radio" name = "sel49" value="e">E. ensure that everybody benefits from the natural resources</p>
+            <p>50. Which of these is not a hereditary variation?<br><input type="radio" name = "sel50" value="a">A. infant paralysis<br><input type="radio" name = "sel50" value="b">B. blood group <br><input type="radio" name = "sel50" value="c">C. sickle cell<br><input type="radio" name = "sel50" value="d">D. shape of face and nose <br><input type="radio" name = "sel50" value="e">E. colour of hair</p>
+            <p>51. Which of these statements is correct?<br><input type="radio" name = "sel51" value="a">A. Recombination at fertilization does not ocuur between two homologous chromosomes<br><input type="radio" name = "sel51" value="b">B. in homologous chromosome, two genes very close to each other are more likely to form recomination at meiotic prophase I<br><input type="radio" name = "sel51" value="c">C. a dominant gene marks the presence of a recessive gene<br><input type="radio" name = "sel51" value="d">D. mmeiosis leads to the formation of daughter cells with diploid chromosome number<br><input type="radio" name = "sel51" value="e">E. mitosis increases variation within a population</p>
+            <p>52. Of one Mendel's experiments was repeated by crossing a red variety of pepper with that of a yellow variety which produced all red offspring. The red offsprings were then self pollinated and these produced both red and yellow pepper. The yellow colour can be said to be _____________ <br><input type="radio" name = "sel52" value="a">A. dominant to red<br><input type="radio" name = "sel52" value="b">B. recessive to red<br><input type="radio" name = "sel52" value="c">C. homozygous to red<br><input type="radio" name = "sel52" value="d">D. heterozygous to red<br><input type="radio" name = "sel52" value="e">E. linked to red</p>
+            <p>53. Which of the following statements is not true about chromosomes?<br><input type="radio" name = "sel53" value="a">A. each chromosomes is made up of two chromatids<br><input type="radio" name = "sel53" value="b">B. body cells have diploid numbers of chromosomes<br><input type="radio" name = "sel53" value="c">C. homologous chromosomes do not occur in pairs naturally<br><input type="radio" name = "sel53" value="d">D. the sex cells have haploid number of chromosomes<br><input type="radio" name = "sel53" value="e">E. chromosomes have many transverse bands</p>
+            <p>54. Cross breeding is a way of _____________ <br><input type="radio" name = "sel54" value="a">A. developing superior varieties of plants only<br><input type="radio" name = "sel54" value="b">B. developing superior varieties of animals only<br><input type="radio" name = "sel54" value="c">C. developing disease-resistant varieties only<br><input type="radio" name = "sel54" value="d">D. encouraging random reproduction in agriculture <br><input type="radio" name = "sel54" value="e">E. applyging the principles of heriditary in agriculture</p>
+            <p>55. The wings of bats and birds, the flippers of whale and the fins of fish are examples of _____________ <br><input type="radio" name = "sel55" value="a">A. adaptive radiation<br><input type="radio" name = "sel55" value="b">B. vestigial organs <br><input type="radio" name = "sel55" value="c">C. continuous variation<br><input type="radio" name = "sel55" value="d">D. convergent evolution<br><input type="radio" name = "sel55" value="e">E. divergent evolution</p>
+            <p>56. Which of the following is a social insect?<br><input type="radio" name = "sel56" value="a">A. mosqueto<br><input type="radio" name = "sel56" value="b">B. butterfly<br><input type="radio" name = "sel56" value="c">C. honey bee<br><input type="radio" name = "sel56" value="d">D. grasshopper<br><input type="radio" name = "sel56" value="e">E. cockroach</p>
+            <p>57. The phenomenon whereby some organisms get established in an environment after struggling for existence, by taking advantage of some special features possessed by the organism is called _____________ <br><input type="radio" name = "sel57" value="a">A. partial selection<br><input type="radio" name = "sel57" value="b">B. artificial selection<br><input type="radio" name = "sel57" value="c">C. natural selection<br><input type="radio" name = "sel57" value="d">D. mutation<br><input type="radio" name = "sel57" value="e">E. competition</p>
+            <p>The statements below are about evolution.<br>
+                I. Members of a species varies.<br>
+                II. Organisms produce many offspring.<br>
+                III. The mechanism of evolution is inheritance of acquired characters.
+                IV. Changes in the phenotype is brought about by the individual itself.
+            </p>
+            <p>58. Which of the statements is/are related to the Darwin's theory of evolution?<br><input type="radio" name = "sel58" value="a">A. I only<br><input type="radio" name = "sel58" value="b">B. II only<br><input type="radio" name = "sel58" value="c">C. I, II and IV<br><input type="radio" name = "sel58" value="d">D. I and II only<br><input type="radio" name = "sel58" value="e">E. II and IV only</p>
+            <p>59. Which of the following fields of study may not yield strong evidence of evolution?<br><input type="radio" name = "sel59" value="a">A. Histology<br><input type="radio" name = "sel59" value="b">B. Ecology<br><input type="radio" name = "sel59" value="c">C. Genetics<br><input type="radio" name = "sel59" value="d">D. Cytology<br><input type="radio" name = "sel59" value="e">E. </p>
+            <p>60. Which of the following is the simplest method of finding the magnification of the drawing of a specimen?<br><input type="radio" name = "sel60" value="a">A. <sup>length of drawing/width of drawing</sup>/<sub>length of specimen/width of specimen</sub><br><input type="radio" name = "sel60" value="b">B. <sup>length of specimen/width of specimen</sup>/<sub>length of drawing/width of drawing</sub><br><input type="radio" name = "sel60" value="c">C. <sup>length of drawing</sup>/<sub>length of specimen</sub><br><input type="radio" name = "sel60" value="d">D. <sup>length of drawing</sup>/<sub>width of specimen</sub><br><input type="radio" name = "sel60" value="e">E. <sup>width of specimen x2</sup>/<sub>width of drawing</sub></p>
+        </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                  <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersBIO1996)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(60);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+    
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2018.html">2018</a></li>
+                            <li><a href="English 2017.html">2017</a></li>
+                            <li><a href="English 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 1997.html">1997</a></li>
+                            <li><a href="Biology 1995.html">1995</a></li>
+                            <li><a href="Biology 1994.html">1994</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Econimics</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>

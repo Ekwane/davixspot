@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+    <head>
+        <title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+            <source src="../aud/start.ogg" type="audio/ogg">
+            <source src="../aud/start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/optionselect.ogg" type="audio/ogg">
+            <source src="../aud/optionselect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="stopAudio">
+            <source src="../aud/stop.ogg" type="audio/ogg">
+            <source src="../aud/stop.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="passedAudio">
+            <source src="../aud/passed.ogg" type="audio/ogg">
+            <source src="../aud/passed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/failed.ogg" type="audio/ogg">
+            <source src="../aud/failed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="clickAudio">
+            <source src="../aud/btnclick.ogg" type="audio/ogg">
+            <source src="../aud/btnclick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="leftcolumnForMainPageHeader">
+			<div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+			<a href="@davixspot.html" class="fa fa-home" id="home"></a>
+		</div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>BIOLOGY WASSCE 2012</center></div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 60</div>
+            <center><p id="Obj"><strong>OBJECTIVE TEST</strong></p></center>
+            <p>1. The science of life is referred to as ______________ <br><input type="radio" name = "sel1" value="a">A. anatomy<br><input type="radio" name = "sel1" value="b">B. biology<br><input type="radio" name = "sel1" value="c">C. ecology<br><input type="radio" name = "sel1" value="d">D. phylogeny</p>
+            <p>2. The epidermis of a leaf is considered an example of a tissue because the cells ______________	<br><input type="radio" name = "sel2" value="a">A. allow sunlight to pass through<br><input type="radio" name = "sel2" value="b">B. are covered by a waxy cuticle<br><input type="radio" name = "sel2" value="c">C. all possess a similat structure and function<br><input type="radio" name = "sel2" value="d">D. allow water to enter them by osmosis</p>
+            <p>3. The organisms at the organ level of organisation of life is ______________ <br><input type="radio" name = "sel3" value="a">A. Euglena<br><input type="radio" name = "sel3" value="b">B. Spirogyra<br><input type="radio" name = "sel3" value="c">C. Ginger<br><input type="radio" name = "sel3" value="d">D. Tapeworm</p>
+            <p>4. The disadvantage of complexity of organisation in the higher organisms is that it leads to ______________ <br><input type="radio" name = "sel4" value="a">A. mutual interdepennce between component cells<br><input type="radio" name = "sel4" value="b">B. internal structural specialization<br><input type="radio" name = "sel4" value="c">C. increased adaptation to environment<br><input type="radio" name = "sel4" value="d">D. slower rate of diffusion of oxygen to individual cell</p>
+            <p>5. In which of the following multicellular organisms is interdependence of cell maintained?<br><input type="radio" name = "sel5" value="a">A. Spirogyra<br><input type="radio" name = "sel5" value="b">B. Volvox<br><input type="radio" name = "sel5" value="c">C. Euglena<br><input type="radio" name = "sel5" value="d">D. Pandorina</p>
+            <p>6. Which of the following processes occurs in the second phase of meiosis?<br><input type="radio" name = "sel6" value="a">A. Homologous chromosomes<br><input type="radio" name = "sel6" value="b">B. two daugther cells are formed<br><input type="radio" name = "sel6" value="c">C. fertilization ocuures<br><input type="radio" name = "sel6" value="d">D. segregation of genes occurs</p>
+            <p>7. The muscle cell fluid of an athlete was tested immediately after a 100m race and was found to contain a high concentration of lactic acid. Explain what could hgave caused this. The ______________ <br><input type="radio" name = "sel7" value="a">A. athlete must have eaten food containing lactic acid just before the race<br><input type="radio" name = "sel7" value="b">B. athlete must have injected lactic acid into his blood just before the race<br><input type="radio" name = "sel7" value="c">C. athlete's muscles must have carried out anaerobic respiration during the race<br><input type="radio" name = "sel7" value="d">D. athlete must have inhale lactic acid from the enviroment during the race</p>
+            <p>8. The graph below represents the growth pattern of an animal. Which of the following groups of animal shows this pattern of growth?<br><input type="radio" name = "sel8" value="a">A. Cestoda<br><input type="radio" name = "sel8" value="b">B. Reptilia<br><input type="radio" name = "sel8" value="c">C. Amphibia<br><input type="radio" name = "sel8" value="d">D. Insecta</p>
+            <p>9. The pulmonary circulation involves movement of the blood to and from the ______________ <br><input type="radio" name = "sel9" value="a">A. brain<br><input type="radio" name = "sel9" value="b">B. kidneys<br><input type="radio" name = "sel9" value="c">C. liver<br><input type="radio" name = "sel9" value="b">D. lungs</p>
+            <p>The table below shows the blood composition of four individuals. Use the information contained in the table to answer questions 10 and 11</p>
+	        <table cellpadding='3%' width='100%'>
+		          <tr><th>Individual</th><th>Plasma</th><th>Red blood cells</th><th>White blood cells</th><th>platelets</th></tr>
+		          <tr><td>I</td><td>Normal</td><td>Normal</td><td>High</td><td>Normal</td></tr>
+		          <tr><td>II</td><td>Normal</td><td>Normal</td><td>Normal</td><td>Normal</td></tr>
+		          <tr><td>III</td><td>Normal</td><td>Normal</td><td>Low</td><td>Normal</td></tr>
+		          <tr><td>IV</td><td>Normal</td><td>Normal</td><td>Normal</td><td>Low</td></tr>
+	        </table>
+	        <p>10. Which of the following individuals is likely to be suffering from haemophilia?<br><input type="radio" name = "sel10" value="a">A. I<br><input type="radio" name = "sel10" value="b">B. II<br><input type="radio" name = "sel10" value="c">C. III<br><input type="radio" name = "sel10" value="d">D. IV</p>
+            <p>11. Which of the following individuals is likely to have HIV?<br><input type="radio" name = "sel11" value="a">A. I<br><input type="radio" name = "sel11" value="b">B. II<br><input type="radio" name = "sel11" value="c">C. III<br><input type="radio" name = "sel11" value="d">D. IV</p>
+            <p>12. A student disecting an animal specimen discovered that it had two auricles and one ventricle. The animal is likely to be a/an ______________ <br><input type="radio" name = "sel12" value="a">A. fish<br><input type="radio" name = "sel12" value="b">B. reptile<br><input type="radio" name = "sel12" value="c">C. amphibian<br><input type="radio" name = "sel12" value="d">D. bird</p>
+            <p>13. The diagram above are parts of human lungs. Which of the labelled part is diagram Z taken from?<br><input type="radio" name = "sel13" value="a">A. II<br><input type="radio" name = "sel13" value="b">B. III<br><input type="radio" name = "sel13" value="c">C. IV<br><input type="radio" name = "sel13" value="d">D. V</p>
+            <p>14. The diagram above is an illustration of the human excretory system. Which of the labelled part contains the highest amount of nitrogenous waste?<br><input type="radio" name = "sel14" value="a">A. I<br><input type="radio" name = "sel14" value="b">B. II<br><input type="radio" name = "sel14" value="c">C. IV<br><input type="radio" name = "sel14" value="d">D. VI</p>
+            <p>15. Increasing the adrenalin content of the blood would be expected to decrease the flow of blood to the ______________ <br><input type="radio" name = "sel15" value="a">A. liver<br><input type="radio" name = "sel15" value="b">B. heart<br><input type="radio" name = "sel15" value="c">C. lungs<br><input type="radio" name = "sel15" value="d">D. brain</p>
+            <p>16. The following are all examples of a simple reflex action, except ______________ <br><input type="radio" name = "sel16" value="a">A. swallowing<br><input type="radio" name = "sel16" value="b">B. sneezing<br><input type="radio" name = "sel16" value="c">C. walking<br><input type="radio" name = "sel16" value="d">D. blinking</p>
+            <p>17. Impulses are conducted towards the nerve cell through the ______________ <br><input type="radio" name = "sel17" value="a">A. myelin sheath<br><input type="radio" name = "sel17" value="b">B. dendrons<br><input type="radio" name = "sel17" value="c">C. axons<br><input type="radio" name = "sel17" value="d">D. synaptic nodes</p>
+            <p>18. The function of the convex lens in the correction of eye defects is to ______________ <br><input type="radio" name = "sel18" value="a">A. diverge light rays from far objects to focus image on the retina<br><input type="radio" name = "sel18" value="b">B. converge light rays to focus image behind the retina<br><input type="radio" name = "sel18" value="c">C. coverge light rays to focus image before the retina<br><input type="radio" name = "sel18" value="d">D. converge light rays from far objects to focus their image on the retina</p>
+            <p>19. Which of the following parts of the eye contains light sensitive cell?<br><input type="radio" name = "sel19" value="a">A. Choroid<br><input type="radio" name = "sel19" value="b">B. Iris<br><input type="radio" name = "sel19" value="c">C. Retina<br><input type="radio" name = "sel19" value="d">D. Lens</p>
+            <p>20. The hair on the human skin would stand erect when the person is ______________ <br><input type="radio" name = "sel20" value="a">A. in air-conditioned room<br><input type="radio" name = "sel20" value="b">B. strolling in the sun<br><input type="radio" name = "sel20" value="c">C. taking a hot drink<br><input type="radio" name = "sel20" value="d">D. doing strenuous exercise</p>
+            <p>21. When fertilization occurs that leads to the formation of a zygote, which of the following prcesses takes place?<br><input type="radio" name = "sel21" value="a">A. the tail of the sperm fuses with the egg cell<br><input type="radio" name = "sel21" value="b">B. both tail and head of the sperm fuse with the egg cell<br><input type="radio" name = "sel21" value="c">C. the nucleus of the sprem fuses with the egg cell<br><input type="radio" name = "sel21" value="d">D. the egg cell develops on its own</p>
+            <p>22. Which of the followign structures in a flower develops into the seed?<br><input type="radio" name = "sel22" value="a">A. Testa<br><input type="radio" name = "sel22" value="b">B. Integument<br><input type="radio" name = "sel22" value="c">C. Ovule<br><input type="radio" name = "sel22" value="d">D. Ovary</p>
+            <p>23. An illustration of the human male reproductive system is shown above. Which of the labelled part can be cut to ensure permanent sterility?<br><input type="radio" name = "sel23" value="a">A. I<br><input type="radio" name = "sel23" value="b">B. II<br><input type="radio" name = "sel23" value="c">C. III<br><input type="radio" name = "sel23" value="d">D. IV</p>
+            <p>24. The brightly coloured petals in some plant is an adaptive colouration for ______________ <br><input type="radio" name = "sel24" value="a">A. feeding<br><input type="radio" name = "sel24" value="b">B. pollination<br><input type="radio" name = "sel24" value="c">C. dispersal<br><input type="radio" name = "sel24" value="d">D. shedding</p>
+            <p>25. Squirrels easily kill some trees because ______________ <br><input type="radio" name = "sel25" value="a">A. they inject poisonous substances into the trees<br><input type="radio" name = "sel25" value="b">B. most trees are susceptible to squirrel bite<br><input type="radio" name = "sel25" value="c">C. they feed voraciously on the roots<br><input type="radio" name = "sel25" value="d">D. they gnaw the bark and destroy the phloem</p>
+            <p>26. They major role played by accessory pigments during photosynthesis is to ______________ <br><input type="radio" name = "sel26" value="a">A. add colour to plant but not to trap light<br><input type="radio" name = "sel26" value="b">B. trap light energy that chlorophyll cannot absorb<br><input type="radio" name = "sel26" value="c">C. transfer energy from chlorophyll to other pigments<br><input type="radio" name = "sel26" value="d">D. prevent chlorophyll from having unnecessary light</p>
+            <p>27. The main raw materials required for photosynthesis are ______________ <br><input type="radio" name = "sel27" value="a">A. oxygen and water<br><input type="radio" name = "sel27" value="b">B. oxygen and carbondioxide<br><input type="radio" name = "sel27" value="c">C. oxygen and chlorophyll<br><input type="radio" name = "sel27" value="d">D. carbondioxide and water</p>
+            <p>28. What is the benefit of thunder and lightening to farmers?<br><input type="radio" name = "sel28" value="a">A. addition of nitrate to the soil<br><input type="radio" name = "sel28" value="b">B. aeration of the soil<br><input type="radio" name = "sel28" value="c">C. removal of harmful bacteria from the soil<br><input type="radio" name = "sel28" value="d">D. addition of rain water to the soil</p>
+            <p>29. Which of the following substances must be present in the soil for growth of a healthy green plant?<br><input type="radio" name = "sel29" value="a">A. amino acids<br><input type="radio" name = "sel29" value="b">B. carbon<br><input type="radio" name = "sel29" value="c">C. glucose salts<br><input type="radio" name = "sel29" value="d">D. magnesium ions</p>
+            <p>30. The purpose of proteins in the diet of a mammal is to ______________ <br><input type="radio" name = "sel30" value="a">A. promote growth and repair cells<br><input type="radio" name = "sel30" value="b">B. break down molecules<br><input type="radio" name = "sel30" value="c">C. regulate the flow of chyme<br><input type="radio" name = "sel30" value="d">D. serve as co-factors for enzymes</p>
+            <p>31. Excess carbohydrates can be stored in the muscles in the form of ______________ <br><input type="radio" name = "sel31" value="a">A. cellulose<br><input type="radio" name = "sel31" value="b">B. glucogen<br><input type="radio" name = "sel31" value="c">C. chitin<br><input type="radio" name = "sel31" value="d">D. lipids</p>
+            <p>32. The bones of the legs of a six year old boy are observed to be weak and crooked. Which of the following elements were deficient in his mother's diet at pregnancy?<br><input type="radio" name = "sel32" value="a">A. sodium and iron<br><input type="radio" name = "sel32" value="b">B. iron and manganese<br><input type="radio" name = "sel32" value="c">C. calcium and phosphorus<br><input type="radio" name = "sel32" value="d">D. magnesium and sulphur</p>
+            <p>33. The diagram above is an illustration of an experimental set-up to test the action of yeast. What test would be used to confirm the gas given off at I?<br><input type="radio" name = "sel33" value="a">A. insert a glowing splint<br><input type="radio" name = "sel33" value="b">B. pass the gas through lime water<br><input type="radio" name = "sel33" value="c">C. insert a piece of litmus paper<br><input type="radio" name = "sel33" value="d">D. smell the gas</p>
+            <p>34. Which of the following digestive enzymes would be greatly affected if the liver fails to produce bile?<br><input type="radio" name = "sel34" value="a">A. amylase<br><input type="radio" name = "sel34" value="b">B. cellulase<br><input type="radio" name = "sel34" value="c">C. lipase<br><input type="radio" name = "sel34" value="d">D. protease</p>
+            <p>35. The appropriate food to be given to the child in the picture above is ______________ <br><input type="radio" name = "sel35" value="a">A. beans<br><input type="radio" name = "sel35" value="b">B. garri<br><input type="radio" name = "sel35" value="c">C. bread<br><input type="radio" name = "sel35" value="d">D. avocado pear</p>
+            <p>36. Which of the following food substances will have little or no calorific value?<br><input type="radio" name = "sel36" value="a">A. proteins<br><input type="radio" name = "sel36" value="b">B. carbohydrates<br><input type="radio" name = "sel36" value="c">C. lipids<br><input type="radio" name = "sel36" value="d">D. water</p>
+            <p>37. A space containing a group of interactive organisms is called ______________ <br><input type="radio" name = "sel37" value="a">A. community<br><input type="radio" name = "sel37" value="b">B. habitat<br><input type="radio" name = "sel37" value="c">C. ecosystem<br><input type="radio" name = "sel37" value="d">D. population</p>
+            <p>38. The area around the earth where life activities go on is referred to as ______________ <br><input type="radio" name = "sel38" value="a">A. biosphere<br><input type="radio" name = "sel38" value="b">B. lithosphere<br><input type="radio" name = "sel38" value="c">C. habitat<br><input type="radio" name = "sel38" value="d">D. ecosystem</p>
+            <p>39. The following are abiotic component of the ecosystem except ______________ <br><input type="radio" name = "sel39" value="a">A. bacteria<br><input type="radio" name = "sel39" value="b">B. topography<br><input type="radio" name = "sel39" value="c">C. water<br><input type="radio" name = "sel39" value="d">D. wind</p>
+            <p>40. Which of the following instruments would be most appropriate in comparing the air pressure at different places in a habitat?<br><input type="radio" name = "sel40" value="a">A. hygrometer<br><input type="radio" name = "sel40" value="b">B. barometer<br><input type="radio" name = "sel40" value="c">C. photometer<br><input type="radio" name = "sel40" value="d">D. air pressure disc</p>
+            <p><center><stong>Study the diagram below and use it to answer questions 41 and 42</strong></p>
+	        <p>41. The best title for the above diagram is ______________ <br><input type="radio" name = "sel41" value="a">A. terrestrial food web<br><input type="radio" name = "sel41" value="b">B. terrestrial foood chain<br><input type="radio" name = "sel41" value="c">C. aquatic food web<br><input type="radio" name = "sel41" value="d">D. aquatic food chain</p>
+            <p>42. How many food chains are in the diagram?<br><input type="radio" name = "sel42" value="a">A. three<br><input type="radio" name = "sel42" value="b">B. four<br><input type="radio" name = "sel42" value="c">C. five<br><input type="radio" name = "sel42" value="d">D. six</p>
+            <p>43. Plants with breathing roots are characteristic features of vegetation in ______________ <br><input type="radio" name = "sel43" value="a">A. tropical grassland<br><input type="radio" name = "sel43" value="b">B. temperate grassland<br><input type="radio" name = "sel43" value="c">C. salt water swamp<br><input type="radio" name = "sel43" value="d">D. tropical rain forest</p>
+            <p><strong>Study the diagram of the zones of a marine habitat below and use it to answer questions 44 and 45</strong></p>
+	        <p>44. In which of the following zones can every few organisms be found?<br><input type="radio" name = "sel44" value="a">A. I<br><input type="radio" name = "sel44" value="b">B. II<br><input type="radio" name = "sel44" value="c">C. III<br><input type="radio" name = "sel44" value="d">D. IV</p>
+            <p>45. Which of the following factors exert a major effect on the distribution of living organisms in the habitat?<br><input type="radio" name = "sel45" value="a">A. salt<br><input type="radio" name = "sel45" value="b">B. pH<br><input type="radio" name = "sel45" value="c">C. light<br><input type="radio" name = "sel45" value="d">D. rainfall</p>
+            <p>46. The use if water closet and septic tanks is preferred to the use of buckets and pit latrines because ______________ <br><input type="radio" name = "sel46" value="a">A. it is cost effective<br><input type="radio" name = "sel46" value="b">B. contaminated faeces are completely kept away from flies<br><input type="radio" name = "sel46" value="c">C. the water for flushing contains chlorine which kills the germ<br><input type="radio" name = "sel46" value="d">D. it prevent flies from breeding</p>
+            <p>47. The detection of vibro cholerae in public drinking water is a sign of ______________ <br><input type="radio" name = "sel47" value="a">A. clean water<br><input type="radio" name = "sel47" value="b">B. outbreak of disease<br><input type="radio" name = "sel47" value="c">C. water pollution<br><input type="radio" name = "sel47" value="d">D. decayed organisms in the water</p>
+            <p>48. Which of the following factors would be least likely act as a density dependent limiting factor in a population of mice?<br><input type="radio" name = "sel48" value="a">A. build up of waste product<br><input type="radio" name = "sel48" value="b">B. predation<br><input type="radio" name = "sel48" value="c">C. parasitism<br><input type="radio" name = "sel48" value="d">D. unfavourable climate</p>
+            <p>49. The primary cause of species endangerment is ______________ <br><input type="radio" name = "sel49" value="a">A. disappearing habitats<br><input type="radio" name = "sel49" value="b">B. increase in temperatures<br><input type="radio" name = "sel49" value="c">C. acid rain<br><input type="radio" name = "sel49" value="d">D. exposure to hazardous waste</p>
+            <p>50. The following pairs of traits are example of continuous and discontinuous variations respectively except ______________ <br><input type="radio" name = "sel50" value="a">A. eye colour and body weight<br><input type="radio" name = "sel50" value="b">B. height and blood group<br><input type="radio" name = "sel50" value="c">C. skin colour and fingerprint<br><input type="radio" name = "sel50" value="d">D. body weight and tongue rolling</p>
+            <p>51. Which of the following statements is true about the ABO blood group system?<br><input type="radio" name = "sel51" value="a">A. antigens are located on the surface of white blood cells<br><input type="radio" name = "sel51" value="b">B. antobodies are located in the blood plasma<br><input type="radio" name = "sel51" value="c">C. antibosies are located on the body of the red blood cells<br><input type="radio" name = "sel51" value="d">D. antigens are located in the blood plasma</p>
+            <p>52. The classes of fingerprints in man are <br><input type="radio" name = "sel52" value="a">A. whorl, alternare, oposite and compound<br><input type="radio" name = "sel52" value="b">B. compound, loop, whorl and alternate<br><input type="radio" name = "sel52" value="c">C. whorl, arch, compound and loop<br><input type="radio" name = "sel52" value="d">D. arch, simple, compound and opposite</p>
+            <p>53. Which of the following diseases is transmittable through genes?<br><input type="radio" name = "sel53" value="a">A. HIV/AIDS<br><input type="radio" name = "sel53" value="b">B. sickle anaemia<br><input type="radio" name = "sel53" value="c">C. diabetes<br><input type="radio" name = "sel53" value="d">D. presbyopia</p>
+            <p>54. Two plants with red flowers were back crossed. Which of the following results indicates that the plants are heterozygous red flowers, where red flowers are dominant?<br><input type="radio" name = "sel54" value="a">A. 75% red and 25% white<br><input type="radio" name = "sel54" value="b">B. 50% red and 50% white<br><input type="radio" name = "sel54" value="c">C. 100% white<br><input type="radio" name = "sel54" value="d">D. 100% red</p>
+            <p>55. In the structure of DNA, which of the following statements is true?<br><input type="radio" name = "sel55" value="a">A. the double helix are held together by covalent bonds<br><input type="radio" name = "sel55" value="b">B. nucleotide is made up of ribose, phosphate and an organic nitrogen compound<br><input type="radio" name = "sel55" value="c">C. guanine is the opposite of cytosine<br><input type="radio" name = "sel55" value="d">D. adenine is the opposite of cytosine</p>
+            <p>56. In a case of complete dominance, what is the phenotypic ratio of the cross Bb X Bb where B = black and b = white<br><input type="radio" name = "sel56" value="a">A. 1 black : 1 grey : 2 whites<br><input type="radio" name = "sel56" value="b">B. 1 black : 3 whites<br><input type="radio" name = "sel56" value="c">C. 1 black : 2 blues : 1 white<br><input type="radio" name = "sel56" value="d">D. 3 blacks : 1 white</p>
+            <p>57. Two yellow-flowered hybrid plants each carrying a recessive factor for flowers with green colours were crossed. Which of the following ratios show the correct proportion of offspring that have green flowers?<br><input type="radio" name = "sel57" value="a">A. 2 in 2<br><input type="radio" name = "sel57" value="b">B. 1 in 3<br><input type="radio" name = "sel57" value="c">C. 1 in 4<br><input type="radio" name = "sel57" value="d">D. 1 in 5</p>
+            <p>58. What name is given to a sudden change in the gene or chromosome?<br><input type="radio" name = "sel58" value="a">A. allele<br><input type="radio" name = "sel58" value="b">B. genotype<br><input type="radio" name = "sel58" value="c">C. mutation<br><input type="radio" name = "sel58" value="d">D. phenotype</p>
+            <p>59. Bees are of great importance to the farmers because they ______________ <br><input type="radio" name = "sel59" value="a">A. provide him with money<br><input type="radio" name = "sel59" value="b">B. pollinate flowers<br><input type="radio" name = "sel59" value="c">C. sting crop pest to death<br><input type="radio" name = "sel59" value="d">D. destroy flowers by sucking nectar from them</p>
+            <p>60. Which of the following sequences is the correct evolutionary trends in plants?<br><input type="radio" name = "sel60" value="a">A. Algae &dash;&dash;> Liverworts &dash;&dash;> Mosses &dash;&dash;> Ferns<br><input type="radio" name = "sel60" value="b">B. Liverworts &dash;&dash;> Mosses &dash;&dash;> Ferns &dash;&dash;> Algae<br><input type="radio" name = "sel60" value="c">C. Mosses &dash;&dash;> Algae &dash;&dash;> Ferns &dash;&dash;> Liverworts<br><input type="radio" name = "sel60" value="d">D. Ferns &dash;&dash;> Liverworts &dash;&dash;> Mosses &dash;&dash;> Algae</p>
+        </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                  <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>  
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersBIO2012)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(60);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+    
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2018.html">2018</a></li>
+                            <li><a href="English 2017.html">2017</a></li>
+                            <li><a href="English 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2013.html">2013</a></li>
+                            <li><a href="Biology 2011.html">2011</a></li>
+                            <li><a href="Biology 2010.html">2010</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Econimics</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>

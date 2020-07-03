@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+    <head>
+        <title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+        <!-- <meta name="description" content="WAEC CBT with complete objective questions for each year to prepare secondary school students for their exams, mainly WAEC exams"> -->
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+		  <source src="../aud/start.ogg" type="audio/ogg">
+		  <source src="../aud/start.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="selectAudio">
+		  <source src="../aud/optionselect.ogg" type="audio/ogg">
+		  <source src="../aud/optionselect.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="stopAudio">
+		  <source src="../aud/stop.ogg" type="audio/ogg">
+		  <source src="../aud/stop.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="passedAudio">
+		  <source src="../aud/passed.ogg" type="audio/ogg">
+		  <source src="../aud/passed.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="selectAudio">
+		  <source src="../aud/failed.ogg" type="audio/ogg">
+		  <source src="../aud/failed.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="clickAudio">
+		  <source src="../aud/btnclick.ogg" type="audio/ogg">
+		  <source src="../aud/btnclick.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+        <div class="leftcolumnForMainPageHeader">
+			<div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+			<a href="@davixspot.html" class="fa fa-home" id="home"></a>
+		</div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>BIOLOGY WASSCE 1988</center></div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 60</div>
+            <center><p id="Obj"><strong>OBJECTIVE TEST</strong></p></center>
+            <p>1. Euglena moves by the ______________ <br><input type="radio" name = "sel1" value="a">A. whipping action of its flagellum<br><input type="radio" name = "sel1" value="b">B. beating of its cillia<br><input type="radio" name = "sel1" value="c">C. rotating action of the flagella<br><input type="radio" name = "sel1" value="d">D. pushing out a jet of water from an organelle<br><input type="radio" name = "sel1" value="e">E. beating the pseudopodia and cillia simultaneously</p>
+            <p>2. In unicellular organisms, essential nutrients can be transported directly to all parts of the body by the process of diffusion only because unicellular organisms have _____________ <br><input type="radio" name = "sel2" value="a">A. a large surface area to volume ratio<br><input type="radio" name = "sel2" value="b">B. a large volume to surface area ratio<br><input type="radio" name = "sel2" value="c">C. permeable cell membrane<br><input type="radio" name = "sel2" value="d">D. outer membrane made of cellulose<br><input type="radio" name = "sel2" value="e">E. their body is always immersed in the nutrient material</p>
+            <p>3. Which of the following is not present in nucleus of a cell<br><input type="radio" name = "sel3" value="a">A. chromosomes<br><input type="radio" name = "sel3" value="b">B. nucleolus<br><input type="radio" name = "sel3" value="c">C. mitochondrion<br><input type="radio" name = "sel3" value="d">D. genes<br><input type="radio" name = "sel3" value="e">E. chromatin</p>
+            <p>4. The network of double membrane that helps to convey materials through the cytoplasm is the _____________ <br><input type="radio" name = "sel4" value="a">A. plasma membrane<br><input type="radio" name = "sel4" value="b">B. vacuolar membrane<br><input type="radio" name = "sel4" value="c">C. nuclear membrane<br><input type="radio" name = "sel4" value="d">D. endoplasmic reticulum<br><input type="radio" name = "sel4" value="e">E. mitochondrion</p>
+            <p>5. In aerobic respiration, oxidative phosphorylation takes place in the _____________ <br><input type="radio" name = "sel5" value="a">A. cytoplasm<br><input type="radio" name = "sel5" value="b">B. mitochondria<br><input type="radio" name = "sel5" value="c">C. lysosome<br><input type="radio" name = "sel5" value="d">D. vacuoles<br><input type="radio" name = "sel5" value="e">E. ribosomes</p>
+            <strong>Study the diagram below and use it to answer questions 6 and 7</strong>
+            <p>6. What stage of mitotic division is represented in the diagram of the cell illustrated above<br><input type="radio" name = "sel6" value="a">A. prophase<br><input type="radio" name = "sel6" value="b">B. talophase<br><input type="radio" name = "sel6" value="c">C. anaphase<br><input type="radio" name = "sel6" value="d">D. metaphase<br><input type="radio" name = "sel6" value="e">E. interphase</p>
+            <p>7. This stage of mitosis is characterized by the _____________ <br><input type="radio" name = "sel7" value="a">A. movement of the chromosomes to the poles<br><input type="radio" name = "sel7" value="b">B. arrangement of chromosomes on the equitorial plate<br><input type="radio" name = "sel7" value="c">C. centromeres moving apart along the spindle<br><input type="radio" name = "sel7" value="d">D. interaction of the spindles with the chromosomes<br><input type="radio" name = "sel7" value="e">E. condensation of chromosomes and formation od spindles</p>
+            <p>8. The ability of organisms to mentain a constant internal environment is known as _____________ <br><input type="radio" name = "sel8" value="a">A. diuresis<br><input type="radio" name = "sel8" value="b">B. endosmosis<br><input type="radio" name = "sel8" value="c">C. plasmolysis<br><input type="radio" name = "sel8" value="d">D. dialysis<br><input type="radio" name = "sel8" value="e">E. homeostasis</p>
+            <p>9. Double fertilization is said to occur in flowering plants because _____________ <br><input type="radio" name = "sel9" value="a">A. two embryos are formed<br><input type="radio" name = "sel9" value="b">B. one egg is fertilized twice<br><input type="radio" name = "sel9" value="c">C. two sperms fertilize each eggs<br><input type="radio" name = "sel9" value="d">D. one embryo and an endosperm nucleus are formed<br><input type="radio" name = "sel9" value="e">E. two sperms and two pollen grains are formed </p>
+            <p>10. The biscupid vlave is located between the  _____________ <br><input type="radio" name = "sel10" value="a">A. left auricle and right ventricle<br><input type="radio" name = "sel10" value="b">B. aorta and left ventricle<br><input type="radio" name = "sel10" value="c">C. superior vena cava and the inferior vena cava<br><input type="radio" name = "sel10" value="d">D. right auricle and and superior vena cava<br><input type="radio" name = "sel10" value="e">E. right auricle and right ventricle</p>
+            <p>11. The pulmonary altery carries _____________ <br><input type="radio" name = "sel11" value="a">A. deoxygenated blood from the right ventricle to the lungs<br><input type="radio" name = "sel11" value="b">B. oxygenated blood from right ventricle to the lungs<br><input type="radio" name = "sel11" value="c">C. oxygenated from the left ventricle to the right auricle<br><input type="radio" name = "sel11" value="d">D. deoxygenated blood from the left ventricle to the right auricle<br><input type="radio" name = "sel11" value="e">E. oxygenated blood from lung to right auricle</p>
+            <p>12. Which of the following blood componenets has the greatest affinity for oxygen and carbondioxide<br><input type="radio" name = "sel12" value="a">A. blood plasma<br><input type="radio" name = "sel12" value="b">B. leukocytes<br><input type="radio" name = "sel12" value="c">C. thrombocytes<br><input type="radio" name = "sel12" value="d">D. erythrocytes<br><input type="radio" name = "sel12" value="e">E. lymphocytes</p>
+            <p>13. The thoracic cavity is separated from the abdominal cavity by a sheet of muscle called _____________ <br><input type="radio" name = "sel13" value="a">A. plueral membrane<br><input type="radio" name = "sel13" value="b">B. intercoastal muscle<br><input type="radio" name = "sel13" value="c">C. diaphragm<br><input type="radio" name = "sel13" value="d">D. pericardium<br><input type="radio" name = "sel13" value="e">E. epiglottis</p>
+            <p>14. Which of the following organs is responsible for controlling the body temperature regukation and water balance in mammals<br><input type="radio" name = "sel14" value="a">A. kidney<br><input type="radio" name = "sel14" value="b">B. hypothalamus<br><input type="radio" name = "sel14" value="c">C. parathyroid<br><input type="radio" name = "sel14" value="d">D. adrenal<br><input type="radio" name = "sel14" value="e">E. thymus</p>
+            <p>15. Deamination is a process during which _____________ <br><input type="radio" name = "sel15" value="a">A. excess amino acid is broken down into ammonia and a keto-acid<br><input type="radio" name = "sel15" value="b">B. fats and oils are converted into an mulsion for absorption<br><input type="radio" name = "sel15" value="c">C. excess glucose is converted and stored as glycogen in the liver<br><input type="radio" name = "sel15" value="d">D. glycogen is reconverted into glucose through the action of glucagon<br><input type="radio" name = "sel15" value="e">E. excess amino acids is converted into proteins</p>
+            <p>16. Which of the following statements of urine production is not correct <br><input type="radio" name = "sel16" value="a">A. concentrated urine is produced under the control of atidiuretic hormone<br><input type="radio" name = "sel16" value="b">B. The total volume of urine produced depends on the need for water excretion<br><input type="radio" name = "sel16" value="c">C. if there is excess intake of water, diluted urine is excreted<br><input type="radio" name = "sel16" value="d">D. if there is a shortage of water in the body, the volume of urine produced decreases<br><input type="radio" name = "sel16" value="e">E. in the presence of antidiuretic hormone, diluted urine is produced</p>
+            <p>17. The pigment in malpighian layer responsible for skin colouration is called _____________ <br><input type="radio" name = "sel17" value="a">A. haemoglobin<br><input type="radio" name = "sel17" value="b">B. haemocyanin<br><input type="radio" name = "sel17" value="c">C. chlorocruorin<br><input type="radio" name = "sel17" value="d">D. haemoerythrin<br><input type="radio" name = "sel17" value="e">E. melanin</p>
+            <p>18. Co-ordintion is achieved in the body of mammals through the action of the _____________ <br><input type="radio" name = "sel18" value="a">A. endocrine and nervous systems<br><input type="radio" name = "sel18" value="b">B. skeletal and nervous systems<br><input type="radio" name = "sel18" value="b">B. muscular and nervous systems<br><input type="radio" name = "sel18" value="d">D. circulatory and nervous systems<br><input type="radio" name = "sel18" value="e">E. skeletal, muscular and nervous systems</p>
+            <p>19. Which of the following statements is correct of hormones? Hormones are<br><input type="radio" name = "sel19" value="a">A. secreted into the blood through ducts<br><input type="radio" name = "sel19" value="b">B. secreted directly into the blood through stream<br><input type="radio" name = "sel19" value="c">C. inactive chemical substances in the blood stream<br><input type="radio" name = "sel19" value="d">D. non-specific in their mode of action<br><input type="radio" name = "sel19" value="e">E. secreted at the site of target organ</p>
+            <p>20. The pituitry gland is called 'master gland' because _____________ <br><input type="radio" name = "sel20" value="a">A. it is located in the brain<br><input type="radio" name = "sel20" value="b">B. its secretions are more numerous than those of any other gland<br><input type="radio" name = "sel20" value="c">C. its secretion controls other glands<br><input type="radio" name = "sel20" value="d">D. it is the only organ that produces hormone<br><input type="radio" name = "sel20" value="e">E. it regulates muscular movements</p>
+            <p>21. Auxins are produced in the _____________ <br><input type="radio" name = "sel21" value="a">A. petiole of leaves<br><input type="radio" name = "sel21" value="b">B. parenchyma of roots and shoots<br><input type="radio" name = "sel21" value="c">C. epidermis of roots and shoots<br><input type="radio" name = "sel21" value="d">D. apical region of roots and shoots<br><input type="radio" name = "sel21" value="e">E. sclerenchyma tissues of roots and shoots</p>
+            <p>22. The brain and the spinal cord make up the _____________ <br><input type="radio" name = "sel22" value="a">A. peripheral nervous system<br><input type="radio" name = "sel22" value="b">B. autonomic nervous system<br><input type="radio" name = "sel22" value="c">C. central nervous system<br><input type="radio" name = "sel22" value="d">D. somatic nervous system<br><input type="radio" name = "sel22" value="e">E. sympathetic nervous system</p>
+            <p>23. Which of the specialized structures are stimulated by touch, pressure, pain, heat and cold<br><input type="radio" name = "sel23" value="a">A. receptors<br><input type="radio" name = "sel23" value="b">B. synapse<br><input type="radio" name = "sel23" value="c">C. cell bodies<br><input type="radio" name = "sel23" value="d">D. myelin sheath<br><input type="radio" name = "sel23" value="e">E. relay neurones</p>
+            <p>24. Which of the following is not correct about a fruit? It <br><input type="radio" name = "sel24" value="a">A. may contain many seeds<br><input type="radio" name = "sel24" value="b">B. is a mature ovary<br><input type="radio" name = "sel24" value="c">C. is covered by the pericarp<br><input type="radio" name = "sel24" value="d">D. may develop from the receptacle<br><input type="radio" name = "sel24" value="e">E. posesses only one scar</p>
+            <p>25. Which structure in the maize grain stores food<br><input type="radio" name = "sel25" value="a">A. radicle<br><input type="radio" name = "sel25" value="b">B. Embryo<br><input type="radio" name = "sel25" value="c">C. cytoplasm<br><input type="radio" name = "sel25" value="d">D. seed coat<br><input type="radio" name = "sel25" value="e">E. endosperm</p>
+            <p>26. Which of the following does not occur during photosynthesis<br><input type="radio" name = "sel26" value="a">A. energy from sunlight is absorbed<br><input type="radio" name = "sel26" value="b">B. carbondioxide is evolved<br><input type="radio" name = "sel26" value="c">C. glucose is synthesized<br><input type="radio" name = "sel26" value="d">D. oxygen is given of<br><input type="radio" name = "sel26" value="e">E. Water is split</p>
+            <p>27. Even though some flowering plants contain accessory pigments which give them colors, they still contain the pigment _____________ <br><input type="radio" name = "sel27" value="a">A. melanin<br><input type="radio" name = "sel27" value="b">B. chloropyl11<br><input type="radio" name = "sel27" value="c">C. xanthophill<br><input type="radio" name = "sel27" value="d">D. carotene<br><input type="radio" name = "sel27" value="e">E. chlorocruorin</p>
+            <p>28. Which of the following is not regarded as a micro-nutrient or trace element essential for plant growth<br><input type="radio" name = "sel28" value="a">A. phosphorous <br><input type="radio" name = "sel28" value="b">B. zinc<br><input type="radio" name = "sel28" value="c">C. boron<br><input type="radio" name = "sel28" value="d">D. silicon<br><input type="radio" name = "sel28" value="e">E. molybdenum</p>
+            <p>29. In a water cultured experiment, a plant showed poor growth and yellowing of leaves. These symptoms are probably due to the absence of _____________ <br><input type="radio" name = "sel29" value="a">A. calcium<br><input type="radio" name = "sel29" value="b">B. phosphorous<br><input type="radio" name = "sel29" value="c">C. iron<br><input type="radio" name = "sel29" value="d">D. zinc<br><input type="radio" name = "sel29" value="e">E. copper</p>
+            <p>30. The relationship between a harbivore and the bacteria which live in their caecum is known as _____________ <br><input type="radio" name = "sel30" value="a">A. parasitism<br><input type="radio" name = "sel30" value="b">B. symbiosis<br><input type="radio" name = "sel30" value="c">C. commensalism<br><input type="radio" name = "sel30" value="d">D. saprophytism<br><input type="radio" name = "sel30" value="e">E. predation</p>
+            <p>31. Autotrophic nutrition may be defined in terms of food obtained <br><input type="radio" name = "sel31" value="a">A. from other organisms in exchange for some products<br><input type="radio" name = "sel31" value="b">B. by the break down of complex substances<br><input type="radio" name = "sel31" value="c">C. by an organism utilizing its own store of energy<br><input type="radio" name = "sel31" value="d">D. by synthesizing simple substances using energy from an external source<br><input type="radio" name = "sel31" value="e">E. in a synthesized form from other living organisms</p>
+            <p>32. Which of the following is not classified as a terrestial habitat<br><input type="radio" name = "sel32" value="a">A. forest<br><input type="radio" name = "sel32" value="b">B. guinea savannah<br><input type="radio" name = "sel32" value="c">C. afro alpine<br><input type="radio" name = "sel32" value="d">D. littoral zone<br><input type="radio" name = "sel32" value="e">E. desert</p>
+            <p>33. Which of the following does not contibute to the biomass of an ecosytem<br><input type="radio" name = "sel33" value="a">A. producers<br><input type="radio" name = "sel33" value="b">B. food chains<br><input type="radio" name = "sel33" value="c">C. consumers<br><input type="radio" name = "sel33" value="d">D. micro-organisms<br><input type="radio" name = "sel33" value="e">E. saprophytes</p>
+            <p>34. Which of the following is not a characteristic feature of of tropcal rain forest habitats<br><input type="radio" name = "sel34" value="a">A. Trees with longer boles than those in savanna<br><input type="radio" name = "sel34" value="b">B. fewer canopy strata  than the savanna<br><input type="radio" name = "sel34" value="c">C. many more trees and climbers than savanna <br><input type="radio" name = "sel34" value="d">D. plenty of leaf litter on the ground<br><input type="radio" name = "sel34" value="e">E. more diverse community than the savanna</p>
+            <p>35. Which of the following factors is not associated with acquatic habitat<br><input type="radio" name = "sel35" value="a">A. temperature<br><input type="radio" name = "sel35" value="b">B. light intensity<br><input type="radio" name = "sel35" value="c">C. humidity<br><input type="radio" name = "sel35" value="d">D. turbidity<br><input type="radio" name = "sel35" value="e">E. wave action</p>
+            <p>36. Terrestial organisms which are capable of maintaining their body temperatures constant within fairly close limits are know as <br><input type="radio" name = "sel36" value="a">A. thermoclines<br><input type="radio" name = "sel36" value="b">B. homotherms<br><input type="radio" name = "sel36" value="c">C. poikilotherms<br><input type="radio" name = "sel36" value="d">D. eurytherms<br><input type="radio" name = "sel36" value="e">E. sternotherms</p>
+            <p>37. Which of the following statements is not true of a climax vegetation<br><input type="radio" name = "sel37" value="a">A. it is an ecological phenomenon<br><input type="radio" name = "sel37" value="b">B. it is a stable community<br><input type="radio" name = "sel37" value="c">C. it eliminates competition<br><input type="radio" name = "sel37" value="d">D. it results from succession<br><input type="radio" name = "sel37" value="e">E. it involves the colonization of a habitat</p>
+            <p>38. The causative organisms of the sleeping sickness is the _____________ <br><input type="radio" name = "sel38" value="a">A. trypanosome<br><input type="radio" name = "sel38" value="b">B. plasmodium<br><input type="radio" name = "sel38" value="c">C. vibro bacterium<br><input type="radio" name = "sel38" value="d">D. penicillim<br><input type="radio" name = "sel38" value="e">E. tsetse fly</p>
+            <p>39. Which of the following are not causative organisms of plant diseases <br><input type="radio" name = "sel39" value="a">A. fungi<br><input type="radio" name = "sel39" value="b">B. viruses<br><input type="radio" name = "sel39" value="c">C. bacteria<br><input type="radio" name = "sel39" value="d">D. nematodes<br><input type="radio" name = "sel39" value="e">E. cercarie</p>
+            <p>40. The vector of the malaria parasite is the _____________ <br><input type="radio" name = "sel40" value="a">A. male Anopheles<br><input type="radio" name = "sel40" value="b">B. female Culex<br><input type="radio" name = "sel40" value="c">C. male Culex<br><input type="radio" name = "sel40" value="d">D. female Anopheles<br><input type="radio" name = "sel40" value="e">E. female Aedes</p>
+            <p>41. A constituent of the exhaust gases of motor vehicles which causes serious air pollution is _____________ <br><input type="radio" name = "sel41" value="a">A. water vapor<br><input type="radio" name = "sel41" value="b">B. carbondioxide<br><input type="radio" name = "sel41" value="c">C. carbonmonoxide<br><input type="radio" name = "sel41" value="d">D. oxygen<br><input type="radio" name = "sel41" value="e">E. ozone</p>
+            <p>42. Which of the following steps would not be taken to protect or conserve fishing grounds from over exploitation<br><input type="radio" name = "sel42" value="a">A. use oe nets with all sizes of mesh<br><input type="radio" name = "sel42" value="b">B. use of nets with a particular mesh size<br><input type="radio" name = "sel42" value="c">C. ban on harvesting of some species<br><input type="radio" name = "sel42" value="d">D. regulating the amount of ships allowed into fishing grounds<br><input type="radio" name = "sel42" value="e">E. limiting the period of fishing in the waters</p>
+            <p>43. Which of the following is not part of the objectives of conservation of natural resources<br><input type="radio" name = "sel43" value="a">A. to eliminatewild animals in order to enable other plants and animals survive<br><input type="radio" name = "sel43" value="b">B. to use our resources on sustainable yield basis<br><input type="radio" name = "sel43" value="c">C. to guard against indiscriminate killing of plants and animal<br><input type="radio" name = "sel43" value="d">D. to guard against extinction and exshaustion or natural resources<br><input type="radio" name = "sel43" value="e">E. to protect the environment</p>
+            <p>44. During blood transfusion, agglutination may occur as a result of the reaction between _____________ <br><input type="radio" name = "sel44" value="a">A. similar antigens and atibodies<br><input type="radio" name = "sel44" value="b">B. constrating antibodies and antigens <br><input type="radio" name = "sel44" value="c">C. two different antigens<br><input type="radio" name = "sel44" value="d">D. two different antibodies<br><input type="radio" name = "sel44" value="e">E. white blood cells from two individuals</p>
+            <p>45. Which of the following major ideas were proved by Grogor Mandel<br><input type="radio" name = "sel45" value="a">A. There is a tendency among organisms to increase rapidly in number if conditions are favourable<br><input type="radio" name = "sel45" value="b">B. There is a struggle for existence among a very large number of offspring<br><input type="radio" name = "sel45" value="c">C. nature selects organisms which will survive to produce their kind<br><input type="radio" name = "sel45" value="d">D. all species exhibit structural and functional variations<br><input type="radio" name = "sel45" value="e">E. characteristics of an organism are controlled by genes occuring in pairs</p>
+            <p>46. Assuming that "A" is the gene for normal skin and it is dominant, while "a" is a gene for albinism and it is recessive, what is the likely genetype of a couple which had 50% normal and 50% albinos<br><input type="radio" name = "sel46" value="a">A. AA.Aa<br><input type="radio" name = "sel46" value="b">B. AA.aa<br><input type="radio" name = "sel46" value="c">C. Aa.Aa<br><input type="radio" name = "sel46" value="d">D. Aa.aa<br><input type="radio" name = "sel46" value="e">E. AA.AA</p>
+            <p>47. Which of the following is not constituent of DNA<br><input type="radio" name = "sel47" value="a">A. purine<br><input type="radio" name = "sel47" value="b">B. phosphate<br><input type="radio" name = "sel47" value="c">C. cystocine<br><input type="radio" name = "sel47" value="d">D. deoxyribose<br><input type="radio" name = "sel47" value="e">E. uracil</p>
+            <p>48. Which of the following  best describes the homologous chromosomes? They are<br><input type="radio" name = "sel48" value="a">A. the product of the division of a chromosome<br><input type="radio" name = "sel48" value="b">B. two identical chromosomes from each parent<br><input type="radio" name = "sel48" value="c">C. chromosomes arranged on spindle fibres during cell division<br><input type="radio" name = "sel48" value="d">D. daugther chromatides formed during meiotic division <br><input type="radio" name = "sel48" value="e">E. chromosomes during telephase of mitotic division</p>
+            <p>49. The haploid number of chromosomes in man is _____________ <br><input type="radio" name = "sel49" value="a">A. 48<br><input type="radio" name = "sel49" value="b">B. 46<br><input type="radio" name = "sel49" value="c">C. 42<br><input type="radio" name = "sel49" value="d">D. 24<br><input type="radio" name = "sel49" value="e">E. 23</p>
+            <p>50. If a cross is made between a pure-breeding red flowered plant and a pure-breeding white flowered plant where R is dominant for red flower and r is recessive for white, the most likely F generation will be _____________ <br><input type="radio" name = "sel50" value="a">A. 75% red flowers and 25% white flowers<br><input type="radio" name = "sel50" value="b">B. all red flowers<br><input type="radio" name = "sel50" value="c">C. 75% white flowers and 25% red flowers<br><input type="radio" name = "sel50" value="d">D. 50% red flowers and 50% white flowers<br><input type="radio" name = "sel50" value="e">E. all white flowers</p>
+            <p>51. A man with blood group A (TAP) married a woman with blood group O(pp). Which of the following is the probable ratio of blood groups of the offspring<br><input type="radio" name = "sel51" value="a">A. 1:1<br><input type="radio" name = "sel51" value="b">B. 3:1<br><input type="radio" name = "sel51" value="c">C. 2:1:1<br><input type="radio" name = "sel51" value="d">D. 1:2:1<br><input type="radio" name = "sel51" value="e">E. 4:1</p>
+            <p>52. Increasing specialization of structure and function among animals of the same class or order for survival in new and different environments is called _____________ <br><input type="radio" name = "sel52" value="a">A. adaptive radiation<br><input type="radio" name = "sel52" value="b">B. phylogeny<br><input type="radio" name = "sel52" value="c">C. homology<br><input type="radio" name = "sel52" value="d">D. analogy<br><input type="radio" name = "sel52" value="e">E. ontogeny</p>
+            <p>53. When large number of organisms share limited space and resources, the result is _____________ <br><input type="radio" name = "sel53" value="a">A. immigration<br><input type="radio" name = "sel53" value="b">B. commensalism<br><input type="radio" name = "sel53" value="c">C. symbiosis<br><input type="radio" name = "sel53" value="d">D. extinction<br><input type="radio" name = "sel53" value="e">E. competition</p>
+            <p>54. The change in the color of chameleon serves as a means of _____________ <br><input type="radio" name = "sel54" value="a">A. attraction to opposite sex<br><input type="radio" name = "sel54" value="b">B. repulsion of the enemy<br><input type="radio" name = "sel54" value="c">C. a camouflage from a predator <br><input type="radio" name = "sel54" value="d">D. reguation of body temperature<br><input type="radio" name = "sel54" value="e">E. production of variety of skin pigments</p>
+            <p>55. Species can be defined as a group of organisms that _____________ <br><input type="radio" name = "sel55" value="a">A. resemble each other and live in the same habitat<br><input type="radio" name = "sel55" value="b">B. are of common origin and are always found together<br><input type="radio" name = "sel55" value="c">C. resemble each other and can be interbreed freely<br><input type="radio" name = "sel55" value="d">D. resemble each other and occupy the same niche<br><input type="radio" name = "sel55" value="e">E. are of common origin but cannot interbreed freely</p>
+            <p>56. Which of the following is not an evidence of evolution<br><input type="radio" name = "sel56" value="a">A. fossil<br><input type="radio" name = "sel56" value="b">B. anatomy<br><input type="radio" name = "sel56" value="c">C. embryology<br><input type="radio" name = "sel56" value="d">D. genetics<br><input type="radio" name = "sel56" value="e">E. behaviour</p>
+            <p>57. Which of the following is not true about gene mutation? It<br><input type="radio" name = "sel57" value="a">A. introduces new trait into a population<br><input type="radio" name = "sel57" value="b">B. cause changes in the DNA<br><input type="radio" name = "sel57" value="c">C. may have unnoticeale effect on the phenotype<br><input type="radio" name = "sel57" value="d">D. always affects the chromosome number<br><input type="radio" name = "sel57" value="e">E. is a source new genes</p>
+            <p><b>Study the diagrams below carefully. Use them to answer question 58 and 59</b></p>
+            <p>58. The plants best adapted for life in the deserts are _____________ <br><input type="radio" name = "sel58" value="a">A. I and IV only<br><input type="radio" name = "sel58" value="b">B. II and IV only<br><input type="radio" name = "sel58" value="c">C. III and IV only<br><input type="radio" name = "sel58" value="d">D. IV and V only<br><input type="radio" name = "sel58" value="e">E. I, II, III and V</p>
+            <p>59. The rate of transpiration will be high in _____________ <br><input type="radio" name = "sel59" value="a">A. I<br><input type="radio" name = "sel59" value="b">B. II<br><input type="radio" name = "sel59" value="c">C. III<br><input type="radio" name = "sel59" value="d">D. IV<br><input type="radio" name = "sel59" value="e">E. V</p>
+            <p>60. Which of the following has the most primitive respiratory system<br><input type="radio" name = "sel60" value="a">A. rat<br><input type="radio" name = "sel60" value="b">B. fish<br><input type="radio" name = "sel60" value="c">C. toad<br><input type="radio" name = "sel60" value="d">D. grasshopper<br><input type="radio" name = "sel60" value="e">E. lizard</p>
+            <p>&nbsp</p>
+        </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                  <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersBIO1988)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(60);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+    
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                <nav><span>English Language</span>
+                    <ul class="dropdown-content">
+                        <li><a href="English 2018.html">2018</a></li>
+                        <li><a href="English 2017.html">2017</a></li>
+                        <li><a href="English 2016.html">2016</a></li>
+                        <li><a href="#">more...</a></li>
+                    </ul>
+                </nav><br><!-- the Mathematics dropdown -->
+                <nav><span>Mathematics</span>
+                    <ul class="dropdown-content">
+                        <li><a href="Mathematics 2019.html">2019</a></li>
+                        <li><a href="Mathematics 2018.html">2018</a></li>
+                        <li><a href="Mathematics 2017.html">2017</a></li>
+                        <li><a href="#">more...</a></li>
+                    </ul>
+                </nav>
+                <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 1989.html">1989</a></li>
+                            <li><a href="Biology 2018.html">2018</a></li>
+                            <li><a href="Biology 2017.html">2017</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                <li><a href="www.google.com">Commerce</a></li>
+                <li><a href="www.google.com">Econimics</a></li>
+                <li><a href="#">Others</a></li>
+            </ul>
+            </div>
+            
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>
