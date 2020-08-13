@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+    <head>
+        <title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+            <source src="../aud/start.ogg" type="audio/ogg">
+            <source src="../aud/start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/optionselect.ogg" type="audio/ogg">
+            <source src="../aud/optionselect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="stopAudio">
+            <source src="../aud/stop.ogg" type="audio/ogg">
+            <source src="../aud/stop.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="passedAudio">
+            <source src="../aud/passed.ogg" type="audio/ogg">
+            <source src="../aud/passed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/failed.ogg" type="audio/ogg">
+            <source src="../aud/failed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="clickAudio">
+            <source src="../aud/btnclick.ogg" type="audio/ogg">
+            <source src="../aud/btnclick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="leftcolumnForMainPageHeader">
+            <div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+            <a href="@davixspot.html" class="fa fa-home" id="home"></a>
+        </div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>ECONOMICS WASCCE 1997</center></div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 40</div>
+            <center><p id="Obj"><strong>OBJECTIVE TEST</strong></p></center>
+            <p>1. Economics is often described as a science because it   <br><input type="radio" name = "sel1" value="a">A. adopts the use of laboratory experiments<br><input type="radio" name = "sel1" value="b">B. involves accurate prediction of human beings<br><input type="radio" name = "sel1" value="c">C. makes use of controlled experiments<br><input type="radio" name = "sel1" value="d">D. uses scientific method to explain observed phenomena<br><input type="radio" name = "sel1" value="e">E. deals with observation and field work</p>
+            <p>2. Scarcity in Economics means that  <br><input type="radio" name = "sel2" value="a">A. the economy can scarcely produce anything <br><input type="radio" name = "sel2" value="b">B. human wants are limitless<br><input type="radio" name = "sel2" value="c">C. the economy has very few resources<br><input type="radio" name = "sel2" value="d">D. human wants are limited, relative to resources<br><input type="radio" name = "sel2" value="e">E. resources are limited relative to wants</p>
+            <p>3. Which of the following has a derived demand?<br><input type="radio" name = "sel3" value="a">A. labour<br><input type="radio" name = "sel3" value="b">B. butter<br><input type="radio" name = "sel3" value="c">C. television sets<br><input type="radio" name = "sel3" value="d">D. bread<br><input type="radio" name = "sel3" value="e">E. motor cars</p>
+            <p>4. In Economics, production is complete when  <br><input type="radio" name = "sel4" value="a">A. goods are manufactured in factories<br><input type="radio" name = "sel4" value="b">B. commodities ares sold to the final consumer<br><input type="radio" name = "sel4" value="c">C. goods and services are distributed by the governments<br><input type="radio" name = "sel4" value="d">D. producers fix the price of goods produced<br><input type="radio" name = "sel4" value="e">E. goods and services get to the retailer</p>
+            <p>5. Goods are said to be in competitive demand when they  <br><input type="radio" name = "sel5" value="a">A. are substitutes<br><input type="radio" name = "sel5" value="b">B. are complementary to each other<br><input type="radio" name = "sel5" value="c">C. are jointly demanded<br><input type="radio" name = "sel5" value="d">D. have equal co-efficient of elasticity<br><input type="radio" name = "sel5" value="e">E. are identical</p>
+            <p>6. The formula for calculating price elasticity of demand coefficient is  <br><input type="radio" name = "sel6" value="a">A. <sup>percentage change in price</sup>/<sub>percentage change in quantity demanded</sub><br><input type="radio" name = "sel6" value="b">B. <sub>absolute decline in price</sub>/<sup>absolute increase in quantity demanded</sup><br><input type="radio" name = "sel6" value="c">C. <sup>percentage change in quantity demanded</sup>/<sub>percentage change in price</sub><br><input type="radio" name = "sel6" value="d">D. <sup>absolute decline in quantity demanded</sup>/<sup>absolute increase in price</sup><br><input type="radio" name = "sel6" value="e">E. <sup>change in quantity demanded</sup>/<sub>decrease in price</sub></p>
+            <p>7. When the price of a given product is reduced for &8358;100 to &8358;90, the quantity demanded increases from 50 to 60 units. From this we can conclude that the product's <br><input type="radio" name = "sel7" value="a">A. demand is elastic<br><input type="radio" name = "sel7" value="b">B. demand is inelastic<br><input type="radio" name = "sel7" value="c">C. demand is perfectly inelastic<br><input type="radio" name = "sel7" value="d">D. supply is not elastic<br><input type="radio" name = "sel7" value="e">E. demand has declined</p>
+            <p>8. A shift to the supply curve to the right will result in a  <br><input type="radio" name = "sel8" value="a">A. fall in both the price and supply<br><input type="radio" name = "sel8" value="b">B. fall in price but an increase in supply<br><input type="radio" name = "sel8" value="c">C. rise in both price and supply<br><input type="radio" name = "sel8" value="d">D. rise in price and fall in supply<br><input type="radio" name = "sel8" value="e">E. no change in price and supply</p>
+            <p>9. One of the disadvantages of division of labour is that it  <br><input type="radio" name = "sel9" value="a">A. saves time<br><input type="radio" name = "sel9" value="b">B. makes work monotonous<br><input type="radio" name = "sel9" value="c">C. encourages full utilization of capital<br><input type="radio" name = "sel9" value="d">D. makes workers skilled at their work<br><input type="radio" name = "sel9" value="e">E. allows greater use of machinery</p>
+            <p>10. The value of money is affected by the  <br><input type="radio" name = "sel10" value="a">A. speculative motive<br><input type="radio" name = "sel10" value="b">B. price level<br><input type="radio" name = "sel10" value="c">C. transactionary motive<br><input type="radio" name = "sel10" value="d">D. precautionary motive<br><input type="radio" name = "sel10" value="e">E. employment level</p>
+            <p>11. Which of the following is not a problem in the barter system?<br><input type="radio" name = "sel11" value="a">A. multiple exchange rate<br><input type="radio" name = "sel11" value="b">B. indivisibility of goods and services<br><input type="radio" name = "sel11" value="c">C. double coincidence of wants<br><input type="radio" name = "sel11" value="d">D. bulkiness of commodity<br><input type="radio" name = "sel11" value="e">E. inflation</p>
+            <p>12. The optimum population of a country is reached when the  <br><input type="radio" name = "sel12" value="a">A. production of goods and services is less than optimum<br><input type="radio" name = "sel12" value="b">B. output per head is at its highest with a given volume of resources<br><input type="radio" name = "sel12" value="c">C. total production increases with a given volume of resources<br><input type="radio" name = "sel12" value="d">D. national resources increases as population increases<br><input type="radio" name = "sel12" value="e">E. working population rises at a geometrical rate</p>
+            <p>13. When the death rate for old people and the infant mortality rate are high, with no migration, there will be in the population a high number of  <br><input type="radio" name = "sel13" value="a">A. younger people in the population<br><input type="radio" name = "sel13" value="b">B. children in the population<br><input type="radio" name = "sel13" value="c">C. old people in the population<br><input type="radio" name = "sel13" value="d">D. women in the population<br><input type="radio" name = "sel13" value="e">E. men in the population</p>
+            <p>14. In the long-run, potential GNP is variable because<br>I. technological change take place<br>II. the quantity of labour and capital is not fixed<br>III. unemployment is not constant<br><input type="radio" name = "sel14" value="a">A. I only<br><input type="radio" name = "sel14" value="b">B. II only<br><input type="radio" name = "sel14" value="c">C. I and II only<br><input type="radio" name = "sel14" value="d">D. I and III only<br><input type="radio" name = "sel14" value="e">E. III only</p>
+            <p>15. For two commodities A and B, MA and MB are the respective marginal utilities while PA and PB are the respective prices. Marginal utilities of the two commodities are maximized when  <br><input type="radio" name = "sel15" value="a">A. <sup>MA</sup>/<sub>PA</sub> = <sup>MB</sup>/<sub>PB</sub><br><input type="radio" name = "sel15" value="b">B. <sup>MA</sup>/<sub>PA</sub> > <sup>MB</sup>/<sub>PB</sub><br><input type="radio" name = "sel15" value="c">C. <sup>MA</sup>/<sub>PA</sub> < <sup>MB</sup>/<sub>PB</sub><br><input type="radio" name = "sel15" value="d">D. <sup>PA</sup>/<sub>MA</sub> < <sup>PB</sup>/<sub>MB</sub><br><input type="radio" name = "sel15" value="e">E. <sup>PA</sup>/<sub>MA</sub> > <sup>PB</sup>/<sub>MB</sub></p>
+            <p>16. If the price of product K declines, the demand curve for the complementary product J will  <br><input type="radio" name = "sel16" value="a">A. remain unchanged<br><input type="radio" name = "sel16" value="b">B. shift to the right<br><input type="radio" name = "sel16" value="c">C. decrease<br><input type="radio" name = "sel16" value="d">D. shift to the left<br><input type="radio" name = "sel16" value="e">E. slope upwards</p>
+            <p>17. A stock exchange is a market that  <br><input type="radio" name = "sel17" value="a">A. deals with the exchange of commodities<br><input type="radio" name = "sel17" value="b">B. deals with the purchase and sale of security<br><input type="radio" name = "sel17" value="c">C. exchanges stock fish for lady fish<br><input type="radio" name = "sel17" value="d">D. exchanges Treasury Bills for Bills of Exchange<br><input type="radio" name = "sel17" value="e">E. sells foreign exchange</p>
+            <p>18. The situation whereby the government revenue is less than government expenditure is referred to as  <br><input type="radio" name = "sel18" value="a">A. budget deficit<br><input type="radio" name = "sel18" value="b">B. balanced budget<br><input type="radio" name = "sel18" value="c">C. budget surplus<br><input type="radio" name = "sel18" value="d">D. budget statement<br><input type="radio" name = "sel18" value="e">E. unfavourable budget</p>
+            <p>19. Which of the following would not increase the population of a country?<br><input type="radio" name = "sel19" value="a">A. an increase in birth rate<br><input type="radio" name = "sel19" value="b">B. a decrease in death rate<br><input type="radio" name = "sel19" value="c">C. better medical services<br><input type="radio" name = "sel19" value="d">D. immigration<br><input type="radio" name = "sel19" value="e">E. emigration</p>
+            <p>20. The actual output of an economy is the output <br><input type="radio" name = "sel20" value="a">A. which would exist if all resources were fully employed<br><input type="radio" name = "sel20" value="b">B. produced by currently employed labour, capital and land<br><input type="radio" name = "sel20" value="c">C. produced in the consumer goods sector<br><input type="radio" name = "sel20" value="d">D. produced in the capital goods sector<br><input type="radio" name = "sel20" value="e">E. produced by the agricultural sector</p>
+            <p>21. One of the instruments of protection of infant industries is the  <br><input type="radio" name = "sel21" value="a">A. price control board<br><input type="radio" name = "sel21" value="b">B. open market operation<br><input type="radio" name = "sel21" value="c">C. tariff<br><input type="radio" name = "sel21" value="d">D. GDP-deflater<br><input type="radio" name = "sel21" value="e">E. multiplier</p>
+            <p>22. Inflation caused by increase in demand can be curbed by  <br><input type="radio" name = "sel22" value="a">A. exporting more goods and services<br><input type="radio" name = "sel22" value="b">B. hoarding of goods<br><input type="radio" name = "sel22" value="c">C. increasing the level of output<br><input type="radio" name = "sel22" value="d">D. increasing the level of money supply<br><input type="radio" name = "sel22" value="e">E. reducing importation</p>
+            <p>23. Which of the following is a function of commercial banks?<br><input type="radio" name = "sel23" value="a">A. issue currencies<br><input type="radio" name = "sel23" value="b">B. accept deposits<br><input type="radio" name = "sel23" value="c">C. are the banker's bank<br><input type="radio" name = "sel23" value="d">D. determine the rate of interest<br><input type="radio" name = "sel23" value="e">E. the lenders of last resort</p>
+            <p>24. Division of labour leads to  <br><input type="radio" name = "sel24" value="a">A. employment of everybody<br><input type="radio" name = "sel24" value="b">B. decrease in output<br><input type="radio" name = "sel24" value="c">C. monotony of work<br><input type="radio" name = "sel24" value="d">D. increase of time in workshops<br><input type="radio" name = "sel24" value="e">E. increase of time in learning a trade</p>
+            <p>25. The largest employment sector in a typical West African country is  <br><input type="radio" name = "sel25" value="a">A. construction<br><input type="radio" name = "sel25" value="b">B. transportation<br><input type="radio" name = "sel25" value="c">C. petroleum<br><input type="radio" name = "sel25" value="d">D. agriculture<br><input type="radio" name = "sel25" value="e">E. manufacturing</p>
+            <p>26. The Idigenisation Policy in Nigeria is aimed at  <br><input type="radio" name = "sel26" value="a">A. nationalizing foreign businesses <br><input type="radio" name = "sel26" value="b">B. alternating foreign investors<br><input type="radio" name = "sel26" value="c">C. commandeering foreign business in Nigeria<br><input type="radio" name = "sel26" value="d">D. expelling foreign investors and taking over their investments<br><input type="radio" name = "sel26" value="e">E. increasing equity participation and control by Nigerians</p>
+            <p>27. The forgone alternative in Economics is simply the  <br><input type="radio" name = "sel27" value="a">A. marginal cost<br><input type="radio" name = "sel27" value="b">B. cost of a foregone product<br><input type="radio" name = "sel27" value="c">C. total cost<br><input type="radio" name = "sel27" value="d">D. opportunity cost<br><input type="radio" name = "sel27" value="e">E. average cost</p>
+            <p>28. All the following are different forms of money except  <br><input type="radio" name = "sel28" value="a">A. bank notes<br><input type="radio" name = "sel28" value="b">B. demand deposits<br><input type="radio" name = "sel28" value="c">C. coins<br><input type="radio" name = "sel28" value="d">D. currency<br><input type="radio" name = "sel28" value="e">E. bank tellers</p>
+            <p>29. The development banks are essential different from commercial banks because they  <br><input type="radio" name = "sel29" value="a">A. give medium and long term loans<br><input type="radio" name = "sel29" value="b">B. open current accounts for their customers <br><input type="radio" name = "sel29" value="c">C. discount bills of exchange<br><input type="radio" name = "sel29" value="d">D. are lenders of last resort<br><input type="radio" name = "sel29" value="e">E. carry out open market operations</p>
+            <p>30. The outward shift of the production possibility curve could be due to  <br><input type="radio" name = "sel30" value="a">A. military conquest<br><input type="radio" name = "sel30" value="b">B. increased money supply<br><input type="radio" name = "sel30" value="c">C. inflation<br><input type="radio" name = "sel30" value="d">D. economic growth<br><input type="radio" name = "sel30" value="e">E. massive importation</p>
+            <p>31. Which of the following is not true of a firm in equilibrium condition in perfect competition?<br><input type="radio" name = "sel31" value="a">A. MC is rising<br><input type="radio" name = "sel31" value="b">B. MC curve cuts AC curve from below<br><input type="radio" name = "sel31" value="c">C. MR > AR<br><input type="radio" name = "sel31" value="d">D. MC = AC = MR = AR<br><input type="radio" name = "sel31" value="e">E. err</p>
+            <p>32. Hoarding in distributive trade leads to  <br><input type="radio" name = "sel32" value="a">A. non-availability of commodities<br><input type="radio" name = "sel32" value="b">B. production of inferior goods<br><input type="radio" name = "sel32" value="c">C. increase in the supply of goods<br><input type="radio" name = "sel32" value="d">D. decrease in the price of goods<br><input type="radio" name = "sel32" value="e">E. artificial scarcity of goods</p>
+            <p>33. If an economy grows at an annual rate of 6% of which 4% is deemed to be due to improvement in the productivity of labour and capital combined, the remaining 2% is generally attributed to the  <br><input type="radio" name = "sel33" value="a">A. amount of natural resources<br><input type="radio" name = "sel33" value="b">B. improvement in banking services<br><input type="radio" name = "sel33" value="c">C. size of the population<br><input type="radio" name = "sel33" value="d">D. quantity of human resources<br><input type="radio" name = "sel33" value="e">E. improvement in government fiscal policies</p>
+            <p>34. When the government imposes a unit tax on a commodity with perfectly inelastic demand, the  <br><input type="radio" name = "sel34" value="a">A. tax is borne entirely by the seller<br><input type="radio" name = "sel34" value="b">B. tax is shared equally between the seller and the buyer<br><input type="radio" name = "sel34" value="c">C. seller bears 70% and consumers bear 30% of the tax<br><input type="radio" name = "sel34" value="d">D. tax is borne entirely by the consumer<br><input type="radio" name = "sel34" value="e">E. tax is borne by nobody</p>
+            <p>35. Free trade means  <br><input type="radio" name = "sel35" value="a">A. producers are free to determine their prices<br><input type="radio" name = "sel35" value="b">B. market forces are allowed to determine prices<br><input type="radio" name = "sel35" value="c">C. non-restriction of internal trade<br><input type="radio" name = "sel35" value="d">D. goods are to be sold free of charge<br><input type="radio" name = "sel35" value="e">E. people are free to buy in foreign countries</p>
+            <p>36. In a public company, entrepreneurial functions are performed by the  <br><input type="radio" name = "sel36" value="a">A. workers<br><input type="radio" name = "sel36" value="b">B. shareholders<br><input type="radio" name = "sel36" value="c">C. creditors<br><input type="radio" name = "sel36" value="d">D. board of directors<br><input type="radio" name = "sel36" value="e">E. chairman</p>
+            <p>37. Terms of trade is the  <br><input type="radio" name = "sel37" value="a">A. ratio of capital movements to export movements<br><input type="radio" name = "sel37" value="b">B. ratio of import to short term export<br><input type="radio" name = "sel37" value="c">C. difference between exports and imports<br><input type="radio" name = "sel37" value="d">D. ratio of short term capital movements to long-term capital movements<br><input type="radio" name = "sel37" value="e">E. ratio of index of export prices to index of import prices</p>
+            <p>38. Tariff can be defined as a compulsory levy on  <br><input type="radio" name = "sel38" value="a">A. goods that are produced and consumed locally<br><input type="radio" name = "sel38" value="b">B. foreign exchange earnings<br><input type="radio" name = "sel38" value="c">C. imported but inferior goods<br><input type="radio" name = "sel38" value="d">D. foreigners working is a country<br><input type="radio" name = "sel38" value="e">E. imports and exports</p>
+            <p>39. International trade is different internal trade because of the <br><input type="radio" name = "sel39" value="a">A. manufactured goods involved<br><input type="radio" name = "sel39" value="b">B. currency differentials<br><input type="radio" name = "sel39" value="c">C. homogeneity of products<br><input type="radio" name = "sel39" value="d">D. heterogeneity of products<br><input type="radio" name = "sel39" value="e">E. uniformity of prices</p>
+            <p>40. Which of the following is not a visible item in international trade payments?<br><input type="radio" name = "sel40" value="a">A. payment for imported cars<br><input type="radio" name = "sel40" value="b">B. receipt for cocoa exports<br><input type="radio" name = "sel40" value="c">C. receipts from oil exports<br><input type="radio" name = "sel40" value="d">D. payment for steel imports<br><input type="radio" name = "sel40" value="e">E. payments to foreign shipping companies</p>
+        </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                  <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersECO1997)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(40);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+                
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2018.html">2018</a></li>
+                            <li><a href="English 2017.html">2017</a></li>
+                            <li><a href="English 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2018.html">2018</a></li>
+                            <li><a href="Biology 2017.html">2017</a></li>
+                            <li><a href="Biology 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Economics</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px;"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>

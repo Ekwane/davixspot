@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+    <head>
+        <title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+            <source src="../aud/start.ogg" type="audio/ogg">
+            <source src="../aud/start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/optionselect.ogg" type="audio/ogg">
+            <source src="../aud/optionselect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="stopAudio">
+            <source src="../aud/stop.ogg" type="audio/ogg">
+            <source src="../aud/stop.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="passedAudio">
+            <source src="../aud/passed.ogg" type="audio/ogg">
+            <source src="../aud/passed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/failed.ogg" type="audio/ogg">
+            <source src="../aud/failed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="clickAudio">
+            <source src="../aud/btnclick.ogg" type="audio/ogg">
+            <source src="../aud/btnclick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="leftcolumnForMainPageHeader">
+            <div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+            <a href="@davixspot.html" class="fa fa-home" id="home"></a>
+        </div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>ECONOMICS WASSCE 1994</center></div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 40</div>
+            <center><p id="Obj"><strong>OBJECTIVE TEST</strong></p></center>
+            <p>1. The definition of economics as "the science that studies human behaviour as a relationship between end and scarce means which have alternative uses" was given by  <br><input type="radio" name = "sel1" value="a">A. Adam Smith<br><input type="radio" name = "sel1" value="b">B. David Ricardo<br><input type="radio" name = "sel1" value="c">C. Lionel Robbins<br><input type="radio" name = "sel1" value="d">D. Thomas<br><input type="radio" name = "sel1" value="e">E. Matithus</p>
+            <p>2. The concept of economic efficiency primarily implies  <br><input type="radio" name = "sel2" value="a">A. obtaining the maximum output from available resources at the lowest possible cost<br><input type="radio" name = "sel2" value="b">B. conserving our pretroleum resources<br><input type="radio" name = "sel2" value="c">C. Equity in the distribution of nation wealth<br><input type="radio" name = "sel2" value="d">D. producing without waste<br><input type="radio" name = "sel2" value="e">E. the limited wants, unlimited resources delimma</p>
+            <p>3. Which of the following is true of NEPA as a public cooporation in Nigeria? It is  <br><input type="radio" name = "sel3" value="a">A. a solar energy distributor<br><input type="radio" name = "sel3" value="b">B. organized in perfectly competitive market<br><input type="radio" name = "sel3" value="c">C. a duopoly<br><input type="radio" name = "sel3" value="d">D. a monopolistically competitive industry<br><input type="radio" name = "sel3" value="e">E. a monopoly</p>
+            <p>4. A situation of full employment exists when  <br><input type="radio" name = "sel4" value="a">A. every adult is employed<br><input type="radio" name = "sel4" value="b">B. all adults who can work are employed<br><input type="radio" name = "sel4" value="c">C. all persons who have attained the age of 15 and above are employed<br><input type="radio" name = "sel4" value="d">D. only the disabled are not employed<br><input type="radio" name = "sel4" value="e">E. all those who are able and eligible to work are employed</p>
+            <p>5. Which of the following functions of money makes it possible for any person to provide for old age?<br><input type="radio" name = "sel5" value="a">A. medium of exchange<br><input type="radio" name = "sel5" value="b">B. store of value<br><input type="radio" name = "sel5" value="c">C. measure of value<br><input type="radio" name = "sel5" value="d">D. unit of account<br><input type="radio" name = "sel5" value="e">E. standard for deferred payments</p>
+            <p>6. The primary objective of the Agricultural Credit Guarantee Scheme is the provision of  <br><input type="radio" name = "sel6" value="a">A. guarantee for loans granted by banks for agriculatural purpose<br><input type="radio" name = "sel6" value="b">B. agriculatural input to facilitate credits from banks<br><input type="radio" name = "sel6" value="c">C. loans for every farmers<br><input type="radio" name = "sel6" value="d">D. agricultural products for farmers<br><input type="radio" name = "sel6" value="e">E. err</p>
+            <p>7. Which of the following is not an advantage of localization of industries?<br><input type="radio" name = "sel7" value="a">A. employment of external economies<br><input type="radio" name = "sel7" value="b">B. development of subsidiary industries <br><input type="radio" name = "sel7" value="c">C. development of organized markets<br><input type="radio" name = "sel7" value="d">D. growth of conurbation<br><input type="radio" name = "sel7" value="e">E. err</p>
+            <p>8. Which of the following is not an advantage of government ownership of enterprises?<br><input type="radio" name = "sel8" value="a">A. more capital is provided<br><input type="radio" name = "sel8" value="b">B. pricing policy may be in the of consumers <br><input type="radio" name = "sel8" value="c">C. government workers may be indifferent towards the public<br><input type="radio" name = "sel8" value="d">D. infrastructures are rapidly developed <br><input type="radio" name = "sel8" value="e">E. income may be evenly distributed</p>
+            <p>9. If the foreign exchange rate is &#8358;8 to 1&#163;, then bicycle bought for 40&#163; will cost  <br><input type="radio" name = "sel9" value="a">A. &#8358;15.00<br><input type="radio" name = "sel9" value="b">B. &#8358;60.00<br><input type="radio" name = "sel9" value="c">C. &#8358;100.00<br><input type="radio" name = "sel9" value="d">D. &#8358;250.00<br><input type="radio" name = "sel9" value="e">E. &#8358;320.00</p>
+            <p>10. All the following are assets of a commercial bank except  <br><input type="radio" name = "sel10" value="a">A. cash<br><input type="radio" name = "sel10" value="b">B. bills discounted<br><input type="radio" name = "sel10" value="c">C. bank deposits<br><input type="radio" name = "sel10" value="d">D. investment<br><input type="radio" name = "sel10" value="e">E. advances to customers</p>
+            <p>11. The central bank controls commercial banks through the following measures except  <br><input type="radio" name = "sel11" value="a">A. the use of directives<br><input type="radio" name = "sel11" value="b">B. the use of banks rate<br><input type="radio" name = "sel11" value="c">C. open market operation<br><input type="radio" name = "sel11" value="d">D. accepting deposits<br><input type="radio" name = "sel11" value="e">E. demanding special deposit</p>
+            <p>12. If a person supplements his current income by drawing on past savings in order to make both ends meet, he is said to be living  <br><input type="radio" name = "sel12" value="a">A. good life<br><input type="radio" name = "sel12" value="b">B. an average life<br><input type="radio" name = "sel12" value="c">C. on his savings<br><input type="radio" name = "sel12" value="d">D. a reckless life<br><input type="radio" name = "sel12" value="e">E. on borrowed money</p>
+            <p>13. Which of the following is not a set of measures of central tendency?<br><input type="radio" name = "sel13" value="a">A. mode and median<br><input type="radio" name = "sel13" value="b">B. mean and median<br><input type="radio" name = "sel13" value="c">C. means and mode<br><input type="radio" name = "sel13" value="d">D. median and percentage<br><input type="radio" name = "sel13" value="e">E. mode, mean and median</p>
+            <p>14. The diagram below is a  <br><input type="radio" name = "sel14" value="a">A. bar chart<br><input type="radio" name = "sel14" value="b">B. pie chart<br><input type="radio" name = "sel14" value="c">C. ball chart<br><input type="radio" name = "sel14" value="d">D. histogram<br><input type="radio" name = "sel14" value="e">E. histo chart</p>
+            <p>15. Which of the following pairs can be referred to as middleman?<br><input type="radio" name = "sel15" value="a">A. wholesalers and agents<br><input type="radio" name = "sel15" value="b">B. retailers and consumers<br><input type="radio" name = "sel15" value="c">C. consumers and agents<br><input type="radio" name = "sel15" value="d">D. wholesalers and retailers<br><input type="radio" name = "sel15" value="e">E. wholesalers and retailers</p>
+            <p>16. Mono-product economies are those that  <br><input type="radio" name = "sel16" value="a">A. have a rich cultural heritage<br><input type="radio" name = "sel16" value="b">B. produce only raw materials<br><input type="radio" name = "sel16" value="c">C. live on the exportation of their raw products<br><input type="radio" name = "sel16" value="d">D. produce one main commodity<br><input type="radio" name = "sel16" value="e">E. specialize in agriculural industries</p>
+            <p>17. In the figure above, the broken line labelled PM is the Marginal Revenue Curve of a  <br><input type="radio" name = "sel17" value="a">A. monopoly<br><input type="radio" name = "sel17" value="b">B. competitive firm<br><input type="radio" name = "sel17" value="c">C. state cooperation<br><input type="radio" name = "sel17" value="d">D. partnership<br><input type="radio" name = "sel17" value="e">E. monopsony</p>
+            <p>18. A Nigeria household's demand curve of semovita is downward sloping because  <br><input type="radio" name = "sel18" value="a">A. the demand for semovita is high<br><input type="radio" name = "sel18" value="b">B. the local markets are flooded with semovita<br><input type="radio" name = "sel18" value="c">C. semovita is produced in Nigeria<br><input type="radio" name = "sel18" value="d">D. every household can afford to buy semovita<br><input type="radio" name = "sel18" value="e">E. the higher the price of semovita, the lower the quantity demanded</p>
+            <p>19. To the economist, a stock of goods existing at a particular time and conforming to certain requirements such as having utility, money value and being limited in supply is known as  <br><input type="radio" name = "sel19" value="a">A. consumer goods<br><input type="radio" name = "sel19" value="b">B. products<br><input type="radio" name = "sel19" value="c">C. wealth<br><input type="radio" name = "sel19" value="d">D. commercial goods<br><input type="radio" name = "sel19" value="e">E. durable goods</p>
+            <p>20. The decision to consume more of one product will under normal circumstances imply that <br><input type="radio" name = "sel20" value="a">A. more of another product will be consumed<br><input type="radio" name = "sel20" value="b">B. less of something else will be consumed<br><input type="radio" name = "sel20" value="c">C. no other product will be consumed<br><input type="radio" name = "sel20" value="d">D. decision making is basics in Economics<br><input type="radio" name = "sel20" value="e">E. enough resources are available</p>
+            <p>21. The difference between Gross Domestic Product (GDP) and Gross National Product (GNP) is the  <br><input type="radio" name = "sel21" value="a">A. allowance for total depreciation<br><input type="radio" name = "sel21" value="b">B. total interest payment<br><input type="radio" name = "sel21" value="c">C. net income from abroad<br><input type="radio" name = "sel21" value="d">D. total tax and interest payment<br><input type="radio" name = "sel21" value="e">E. net internally generated income</p>
+            <p>22. One of the functions of a commercial bank is that it  <br><input type="radio" name = "sel22" value="a">A. is responsible for formulating monetary policies<br><input type="radio" name = "sel22" value="b">B. accept demand and time deposits from customers<br><input type="radio" name = "sel22" value="c">C. is the lender of last resort<br><input type="radio" name = "sel22" value="d">D. is the banker of the government<br><input type="radio" name = "sel22" value="e">E. is responsible for issuing currency notes</p>
+            <p>23. Which of the following is not a problem of distribution of goods in Nigeria?<br><input type="radio" name = "sel23" value="a">A. poor communication network<br><input type="radio" name = "sel23" value="b">B. inadequate storage facilities<br><input type="radio" name = "sel23" value="c">C. ignorance of consumers<br><input type="radio" name = "sel23" value="d">D. dishonesty of middlemen<br><input type="radio" name = "sel23" value="e">E. inadequate market</p>
+            <p>24. Mr. Idowu needs a television and a refrigerator. Each costs &#8358;500.00, the exact amount he has. If Mr. Idowu buys the television, the refrigirator would be regarded as the  <br><input type="radio" name = "sel24" value="a">A. marginal cost<br><input type="radio" name = "sel24" value="b">B. inferior item<br><input type="radio" name = "sel24" value="c">C. oppurtunity cost<br><input type="radio" name = "sel24" value="d">D. supplementary item<br><input type="radio" name = "sel24" value="e">E. prime cost</p>
+            <p>25. Petro-chemical industries are located in Rivers state of Nigeria due to the presence of  <br><input type="radio" name = "sel25" value="a">A. a favourable climate<br><input type="radio" name = "sel25" value="b">B. coal deposits<br><input type="radio" name = "sel25" value="c">C. oil palm products<br><input type="radio" name = "sel25" value="d">D. an undulating terrain<br><input type="radio" name = "sel25" value="e">E. oil deposits</p>
+            <p>26. Foreign exchange control in Nigeria is enforced by the  <br><input type="radio" name = "sel26" value="a">A. commercial banks<br><input type="radio" name = "sel26" value="b">B. marchant banks<br><input type="radio" name = "sel26" value="c">C. mortage banks<br><input type="radio" name = "sel26" value="d">D. central bank<br><input type="radio" name = "sel26" value="e">E. Agricultural Development Bank</p>
+            <p>27. The difference between the number of immigrants and emigrants is  <br><input type="radio" name = "sel27" value="a">A. internal mobility<br><input type="radio" name = "sel27" value="b">B. internal migration<br><input type="radio" name = "sel27" value="c">C. net migration<br><input type="radio" name = "sel27" value="d">D. marginal migration<br><input type="radio" name = "sel27" value="e">E. external migration</p>
+            <p>28. Risk bearing and managerial control are the main functions of the  <br><input type="radio" name = "sel28" value="a">A. managing director<br><input type="radio" name = "sel28" value="b">B. manager<br><input type="radio" name = "sel28" value="c">C. enterpreneur<br><input type="radio" name = "sel28" value="d">D. chief executive<br><input type="radio" name = "sel28" value="e">E. chief accountants</p>
+            <p>29. In the table below, the marginal cost when output is 2 units is 
+            <table style="border-collapse: collapse;">
+                <thead><th>Output</th><th>Total cost(&#8358;)</th></thead>
+                <tr><td>1</td><td>20</td></tr>
+                <tr><td>2</td><td>56</td></tr>
+                <tr><td>3</td><td>96</td></tr>
+                <tr><td>3</td><td>144</td></tr>
+                <tr><td>5</td><td>160</td></tr>
+            </table><br>
+            <input type="radio" name = "sel29" value="a">A. &#8358;16.00<br><input type="radio" name = "sel29" value="b">B. &#8358;20.00<br><input type="radio" name = "sel29" value="c">C. &#8358;36.00<br><input type="radio" name = "sel29" value="d">D. &#8358;40.00<br><input type="radio" name = "sel29" value="e">E. &#8358;48.00</p>
+            <p>30. If successive unit of labour are added to a piece of land while capital and technology remain constant, a point will be reached in the level of production when each additional unit of labour will add less to the output than previous units. This concept is known as the  <br><input type="radio" name = "sel30" value="a">A. productivity of labour<br><input type="radio" name = "sel30" value="b">B. law of diminishing marginal utility<br><input type="radio" name = "sel30" value="c">C. law of diminishing returns<br><input type="radio" name = "sel30" value="d">D. law of diminishing returns of a variable factor<br><input type="radio" name = "sel30" value="e">E. internal economies of scale</p>
+            <p>31. <table style="border-collapse: collapse;">
+                        <thead><th>Fixed unit of land(hectares)</th><th>Variable unit of labour</th><th>Total output (TO)</th><th>Marginal product (MP)</th></thead>
+                        <tr><td>5</td><td>1</td><td>10</td><td>10</td></tr>
+                        <tr><td>5</td><td>2</td><td>25</td><td>15</td></tr>
+                        <tr><td>5</td><td>3</td><td>X</td><td>21</td></tr>
+                        <tr><td>5</td><td>4</td><td>60</td><td>14</td></tr>
+                        <tr><td>5</td><td>5</td><td>73</td><td>13</td></tr>
+                        <tr><td>5</td><td>6</td><td>82</td><td>Y</td></tr>
+                   </table><br>
+            Which of the following pairs gives the values of X and Y in the table above?<br><input type="radio" name = "sel31" value="a">A. X = 20, Y = 6<br><input type="radio" name = "sel31" value="b">B. X = 10, Y = 10<br><input type="radio" name = "sel31" value="c">C. X = 38, Y = 9<br><input type="radio" name = "sel31" value="d">D. X = 46, Y = 9<br><input type="radio" name = "sel31" value="e">E. X = 46, Y = 14</p>
+            <p>32. When a firm's total revenue is at the maximum, marginal revenue is  <br><input type="radio" name = "sel32" value="a">A. at maximum<br><input type="radio" name = "sel32" value="b">B. negative<br><input type="radio" name = "sel32" value="c">C. zero<br><input type="radio" name = "sel32" value="d">D. positive<br><input type="radio" name = "sel32" value="e">E. constant</p>
+            <p>33. Under normal circumstances, a producer will bear the entire burdenon taxation on his output if the <br><input type="radio" name = "sel33" value="a">A. supply of his goods is more elastic than the demand<br><input type="radio" name = "sel33" value="b">B. demand for his product is completely elastic<br><input type="radio" name = "sel33" value="c">C. production of his commodities is subject to deminishing returns<br><input type="radio" name = "sel33" value="d">D. demand for his product is more elastic than the supply<br><input type="radio" name = "sel33" value="e">E. demand for his product is completely inelastic</p>
+            <p>34. Limited liability means that <br><input type="radio" name = "sel34" value="a">A. the debt of a company can only be paid from its own assets<br><input type="radio" name = "sel34" value="b">B. the debts of a company are paid from business as well as private funds of the owners<br><input type="radio" name = "sel34" value="c">C. a company does not have to pay its debts<br><input type="radio" name = "sel34" value="d">D. the debt of a company must be paid from private funds only<br><input type="radio" name = "sel34" value="e">E. government cannot tax a company</p>
+            <p>35. Factory buildings, machinery and raw materials are known in Economics as  <br><input type="radio" name = "sel35" value="a">A. personal wealth<br><input type="radio" name = "sel35" value="b">B. social wealth<br><input type="radio" name = "sel35" value="c">C. government wealth<br><input type="radio" name = "sel35" value="d">D. business wealth<br><input type="radio" name = "sel35" value="e">E. public wealth</p>
+            <p>36. Abstention from consumption enables capital to be produced. Such abstention is called  <br><input type="radio" name = "sel36" value="a">A. saving<br><input type="radio" name = "sel36" value="b">B. production<br><input type="radio" name = "sel36" value="c">C. accumulation<br><input type="radio" name = "sel36" value="d">D. factors of production<br><input type="radio" name = "sel36" value="e">E. opportunity cost</p>
+            <p>37. Tax evasion in Economics means  <br><input type="radio" name = "sel37" value="a">A. false declaration of assets<br><input type="radio" name = "sel37" value="b">B. paying tax only as and when due<br><input type="radio" name = "sel37" value="c">C. declaration of assets<br><input type="radio" name = "sel37" value="d">D. tax payment according to income received <br><input type="radio" name = "sel37" value="e">E. quarelling with tax collectors</p>
+            <p>38. The magnitude of the national income of a country depends on all the following except the  <br><input type="radio" name = "sel38" value="a">A. quantity of natural resources available<br><input type="radio" name = "sel38" value="b">B. level of technical know-how<br><input type="radio" name = "sel38" value="c">C. mobility of labour<br><input type="radio" name = "sel38" value="d">D. level of productivity<br><input type="radio" name = "sel38" value="e">E. quality and quantity of factors of production</p>
+            <p>39. The Quantity Theory of Money stats that an increase in the quantity of money will bring about <br><input type="radio" name = "sel39" value="a">A. a geomatrical rise in prices<br><input type="radio" name = "sel39" value="b">B. an unequal rise in prices<br><input type="radio" name = "sel39" value="c">C. a proportionate rise in prices<br><input type="radio" name = "sel39" value="d">D. an absolute rise in prices<br><input type="radio" name = "sel39" value="e">E. a less than proportionate increase in prices</p>
+            <p>40. Under the ECOWAS agreement, a Nigerian can enter and stay in Ghana without a visa for a period of  <br><input type="radio" name = "sel40" value="a">A. 14 days<br><input type="radio" name = "sel40" value="b">B. 30 days<br><input type="radio" name = "sel40" value="c">C. 60 days<br><input type="radio" name = "sel40" value="d">D. 90 days<br><input type="radio" name = "sel40" value="e">E. 100 days</p>
+        </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                  <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersECO1994)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(40);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+                
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2018.html">2018</a></li>
+                            <li><a href="English 2017.html">2017</a></li>
+                            <li><a href="English 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2018.html">2018</a></li>
+                            <li><a href="Biology 2017.html">2017</a></li>
+                            <li><a href="Biology 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Economics</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px;"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>

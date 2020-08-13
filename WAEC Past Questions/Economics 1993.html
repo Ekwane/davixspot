@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+    <head>
+        <title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+            <source src="../aud/start.ogg" type="audio/ogg">
+            <source src="../aud/start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/optionselect.ogg" type="audio/ogg">
+            <source src="../aud/optionselect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="stopAudio">
+            <source src="../aud/stop.ogg" type="audio/ogg">
+            <source src="../aud/stop.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="passedAudio">
+            <source src="../aud/passed.ogg" type="audio/ogg">
+            <source src="../aud/passed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/failed.ogg" type="audio/ogg">
+            <source src="../aud/failed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="clickAudio">
+            <source src="../aud/btnclick.ogg" type="audio/ogg">
+            <source src="../aud/btnclick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="leftcolumnForMainPageHeader">
+            <div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+            <a href="@davixspot.html" class="fa fa-home" id="home"></a>
+        </div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>ECONOMICS WASSCE 1993</center></div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 40</div>
+            <center><p id="Obj"><strong>OBJECTIVE TEST</strong></p></center>
+            <p>1.  Economics is the study of how to  <br><input type="radio" name = "sel1" value="a">A. choose between alternatives and given limited resources<br><input type="radio" name = "sel1" value="b">B. regulate the money that is in circulation in a country<br><input type="radio" name = "sel1" value="c">C. be prudent in the use of available resources<br><input type="radio" name = "sel1" value="d">D. improve the standard of living of the society at large<br><input type="radio" name = "sel1" value="e">E. arrange our needs in order of usefulness before satisfying them</p>
+            <p>2. Scarcity in Economics arises because <br><input type="radio" name = "sel2" value="a">A. the resources available are adequate<br><input type="radio" name = "sel2" value="b">B. individuals have limited time<br><input type="radio" name = "sel2" value="c">C. resources are limited in supply<br><input type="radio" name = "sel2" value="d">D. human beings have limited wants<br><input type="radio" name = "sel2" value="e">E. individual wants are equal to the sources available</p>
+            <p>3. The real cost of a commodity is  <br><input type="radio" name = "sel3" value="a">A. the cost of the alternative that has to be sacrificed for it<br><input type="radio" name = "sel3" value="b">B. the alternative that has to be forgone in order to purchase it<br><input type="radio" name = "sel3" value="c">C. its market price<br><input type="radio" name = "sel3" value="d">D. the alternative cost involved when the opportunity of buying the commodity is missed<br><input type="radio" name = "sel3" value="e">E. the sacfrifice that is made after buying the commodity</p>
+            <p>4. Public cooporations in West Africa are set up to  <br><input type="radio" name = "sel4" value="a">A. make maximum profit<br><input type="radio" name = "sel4" value="b">B. provide jobs for the people<br><input type="radio" name = "sel4" value="c">C. provide welfare service for the people<br><input type="radio" name = "sel4" value="d">D. show that the government can do business<br><input type="radio" name = "sel4" value="e">E. compete with private enterprises</p>
+            <p>5. Supply in Economics means making  <br><input type="radio" name = "sel5" value="a">A. goods and services available to consumers<br><input type="radio" name = "sel5" value="b">B. goods available to the market at a given price and at a given period<br><input type="radio" name = "sel5" value="c">C. the available goods and services which consumers require<br><input type="radio" name = "sel5" value="d">D. err<br><input type="radio" name = "sel5" value="e">E. err</p>
+            <p>6. An inferior good is one  <br><input type="radio" name = "sel6" value="a">A. that is too bad for consumption<br><input type="radio" name = "sel6" value="b">B. whose price is lower than the prices of other goods<br><input type="radio" name = "sel6" value="c">C. that is easily perishable<br><input type="radio" name = "sel6" value="d">D. whose demand falls when the income of its consumers increases<br><input type="radio" name = "sel6" value="e">E. that is not durable</p>
+            <p>7. Price elasticity of demand is defined as the  <br><input type="radio" name = "sel7" value="a">A. responsiveness of demand to changes in prices<br><input type="radio" name = "sel7" value="b">B. responsiveness of price to changes in demand<br><input type="radio" name = "sel7" value="c">C. increase in demand resulting from a rise in price<br><input type="radio" name = "sel7" value="d">D. unit decrease in price resulting from a fall in demand<br><input type="radio" name = "sel7" value="e">E. unit decrease in quantity demanded when prices rise</p>
+            <p>8. The rural areas of West African countries lack industries because <br><input type="radio" name = "sel8" value="a">A. rural people are not meant to work in industries<br><input type="radio" name = "sel8" value="b">B. rural people are uneducated<br><input type="radio" name = "sel8" value="c">C. of inadequate infrastucture<br><input type="radio" name = "sel8" value="d">D. of low population density<br><input type="radio" name = "sel8" value="e">E. they are not suitable for industries</p>
+            <p>9. An enterpreneur will locate his industry in a place <br><input type="radio" name = "sel9" value="a">A. nearest to his home town<br><input type="radio" name = "sel9" value="b">B. where the cost of production will be minimised<br><input type="radio" name = "sel9" value="c">C. nearest to his wife's hometown<br><input type="radio" name = "sel9" value="d">D. where the government directs him to locate it<br><input type="radio" name = "sel9" value="e">E. where there is no other industry</p>
+            <p>10. Which important economic principle is illustrated by the graph above?<br><input type="radio" name = "sel10" value="a">A. Law of Comparative Cost<br><input type="radio" name = "sel10" value="b">B. Law of Diminishing Marginal Utility<br><input type="radio" name = "sel10" value="c">C. Law of Diminishing Returns<br><input type="radio" name = "sel10" value="d">D. Malthusian Law of Population<br><input type="radio" name = "sel10" value="e">E. Law of Supply</p>
+            <p>11. Which of the following reasons is responsible for the inefficient distribution of goods in West African Countries? The  <br><input type="radio" name = "sel11" value="a">A. large number of distribution companies<br><input type="radio" name = "sel11" value="b">B. import and export restrictions by the government<br><input type="radio" name = "sel11" value="c">C. narrow market for the commodities produced<br><input type="radio" name = "sel11" value="d">D. poor transport and communication systems<br><input type="radio" name = "sel11" value="e">E. large influence of foreign traders</p>
+            <p>12. Which of the following does not apply to private companies?<br><input type="radio" name = "sel12" value="a">A. the number of shareholders is limited<br><input type="radio" name = "sel12" value="b">B. the liabilities of shareholders is limited<br><input type="radio" name = "sel12" value="c">C. accounts have to be publicized<br><input type="radio" name = "sel12" value="d">D. the companies are separate legal entities<br><input type="radio" name = "sel12" value="e">E. shares are not easily transferable</p>
+            <p>13. In Economics, the reward for labour is in the form of  <br><input type="radio" name = "sel13" value="a">A. wages<br><input type="radio" name = "sel13" value="b">B. profit<br><input type="radio" name = "sel13" value="c">C. rent<br><input type="radio" name = "sel13" value="d">D. dividends<br><input type="radio" name = "sel13" value="e">E. interest</p>
+            <p>14. A nation with a working population that is insufficient to exploit its resources is said to be  <br><input type="radio" name = "sel14" value="a">A. over-populated<br><input type="radio" name = "sel14" value="b">B. under-populated<br><input type="radio" name = "sel14" value="c">C. experiencing decreasing population<br><input type="radio" name = "sel14" value="d">D. experiencing decreasing population<br><input type="radio" name = "sel14" value="e">E. having optimum population</p>
+            <p>15. Which of the following may not be included in explaining the term production?<br><input type="radio" name = "sel15" value="a">A. provision of services<br><input type="radio" name = "sel15" value="b">B. manufacture of goods<br><input type="radio" name = "sel15" value="c">C. changing raw materials to finished goods<br><input type="radio" name = "sel15" value="d">D. use of consumer goods<br><input type="radio" name = "sel15" value="e">E. making goods available where and when they are needed</p>
+            <p>16. Which of the following business extablishments are not motivated mainly by profit?<br><input type="radio" name = "sel16" value="a">A. Public Limited Companies<br><input type="radio" name = "sel16" value="b">B. Private Limited Companies<br><input type="radio" name = "sel16" value="c">C. Holding Companies<br><input type="radio" name = "sel16" value="d">D. Partnerships<br><input type="radio" name = "sel16" value="e">E. Co-operatives</p>
+            <p>17. Production is not complete until the <br><input type="radio" name = "sel17" value="a">A. goods get to the wholesalers<br><input type="radio" name = "sel17" value="b">B. goods reach the final consumer<br><input type="radio" name = "sel17" value="c">C. factors of production are combined<br><input type="radio" name = "sel17" value="d">D. goods are ready for transportation<br><input type="radio" name = "sel17" value="e">E. wholesalers ask the firms to produce</p>
+            <p>18. Which of the following is the correct way to calculate total cost?<br><input type="radio" name = "sel18" value="a">A. addition of fixed cost to variable cost<br><input type="radio" name = "sel18" value="b">B. division of total cost by total output<br><input type="radio" name = "sel18" value="c">C. multiplication of fixed cost by variable cost<br><input type="radio" name = "sel18" value="d">D. subtraction of fixed cost from total cost<br><input type="radio" name = "sel18" value="e">E. addition of marginal cost to average cost</p>
+            <p>19. Robert T. Malthus postulated in his population theory that  <br><input type="radio" name = "sel19" value="a">A. the death rate may become so high that people may not survive<br><input type="radio" name = "sel19" value="b">B. people will eventually stop having children<br><input type="radio" name = "sel19" value="c">C. people will migrate from one place to another in search of food<br><input type="radio" name = "sel19" value="d">D. positive efforts should be made to increase population<br><input type="radio" name = "sel19" value="e">E. population growth may out-grow the means of subsistence</p>
+            <p>20. Division of labour maybe restricted when  <br><input type="radio" name = "sel20" value="a">A. an ailing economy has improved<br><input type="radio" name = "sel20" value="b">B. producers live in villages<br><input type="radio" name = "sel20" value="c">C. market is small<br><input type="radio" name = "sel20" value="d">D. there is full employment<br><input type="radio" name = "sel20" value="e">E. there is inflation</p>
+            <p>21. Land is often distinguished as a factor of production because it  <br><input type="radio" name = "sel21" value="a">A. is a free gift of nature<br><input type="radio" name = "sel21" value="b">B. constitutes one-third of the entire world<br><input type="radio" name = "sel21" value="c">C. is unlimited in supply<br><input type="radio" name = "sel21" value="d">D. is owned by individuals<br><input type="radio" name = "sel21" value="e">E. is owned by government</p>
+            <p>22. Which of the following is not an advantage of division of labour? It  <br><input type="radio" name = "sel22" value="a">A. saves time<br><input type="radio" name = "sel22" value="b">B. makes possible, the use of machine<br><input type="radio" name = "sel22" value="c">C. is monotonous<br><input type="radio" name = "sel22" value="d">D. leads to specialization<br><input type="radio" name = "sel22" value="e">E. aids the development of skills</p>
+            <p>23. The location of timber and plywood industries in West Africa is mainly influenced by the  <br><input type="radio" name = "sel23" value="a">A. availability of transport<br><input type="radio" name = "sel23" value="b">B. good climate<br><input type="radio" name = "sel23" value="c">C. availability of power supply <br><input type="radio" name = "sel23" value="d">D. adequate labour supply<br><input type="radio" name = "sel23" value="e">E. presence of a luxiriant forest</p>
+            <p>24. The occupational distribution of population in most West African countries shows the highest concentration in  <br><input type="radio" name = "sel24" value="a">A. agriculture and allied industry<br><input type="radio" name = "sel24" value="b">B. mining and manufacturing<br><input type="radio" name = "sel24" value="c">C. the distributive trade<br><input type="radio" name = "sel24" value="d">D. commerce and industry<br><input type="radio" name = "sel24" value="e">E. mining and services</p>
+            <p>25. The growth rate of population is the  <br><input type="radio" name = "sel25" value="a">A. annual increase in population<br><input type="radio" name = "sel25" value="b">B. total population of a country at a given time<br><input type="radio" name = "sel25" value="c">C. addition to the total population over a given  period<br><input type="radio" name = "sel25" value="d">D. increase in the working population over a given period<br><input type="radio" name = "sel25" value="e">E. percentage increase in the population in a given year</p>
+            <p>26. A situation in which an increase in demand for certain goods leads to a fall in the demand of other goods is known as  <br><input type="radio" name = "sel26" value="a">A. joint supply<br><input type="radio" name = "sel26" value="b">B. derived demand<br><input type="radio" name = "sel26" value="c">C. competitive demand<br><input type="radio" name = "sel26" value="d">D. competitive supply<br><input type="radio" name = "sel26" value="e">E. composite demand</p>
+            <p>27. A market equilibrium exists when  <br><input type="radio" name = "sel27" value="a">A. demand and supply are equal<br><input type="radio" name = "sel27" value="b">B. the market is large<br><input type="radio" name = "sel27" value="c">C. the price is flunctuating<br><input type="radio" name = "sel27" value="d">D. no buyer goes home empty-handed<br><input type="radio" name = "sel27" value="e">E. no seller has an unsold stock</p>
+            <p>28. The price system is  <br><input type="radio" name = "sel28" value="a">A. the market price of commodities<br><input type="radio" name = "sel28" value="b">B. a market where a single price rules<br><input type="radio" name = "sel28" value="c">C. a system of price allocation to the product of the same firm<br><input type="radio" name = "sel28" value="d">D. a system of resource allocation through supply and demand interactions<br><input type="radio" name = "sel28" value="e">E. a system which the market price is determined only through haggling</p>
+            <p>29. The main objective of production by an enterpreneur is to  <br><input type="radio" name = "sel29" value="a">A. equate marginal revenue with marginal cost<br><input type="radio" name = "sel29" value="b">B. provide employment oppurtunities<br><input type="radio" name = "sel29" value="c">C. equate total revenue with total cost<br><input type="radio" name = "sel29" value="d">D. equate average revenue with average cost<br><input type="radio" name = "sel29" value="e">E. accumulate wealth for the nation</p>
+            <p>30. If price falls below the equilibrium, <br><input type="radio" name = "sel30" value="a">A. demand will equal supply<br><input type="radio" name = "sel30" value="b">B. demand will be greater than supply<br><input type="radio" name = "sel30" value="c">C. supply will be greater than demand<br><input type="radio" name = "sel30" value="d">D. price will become indeterminate<br><input type="radio" name = "sel30" value="e">E. quantity supplied will be zero</p>
+            <p>31. Which of the following is not a source if finance for one-man business?<br><input type="radio" name = "sel31" value="a">A. money lenders<br><input type="radio" name = "sel31" value="b">B. inheritance<br><input type="radio" name = "sel31" value="c">C. loans from insurance companies<br><input type="radio" name = "sel31" value="d">D. loans from banks<br><input type="radio" name = "sel31" value="e">E. sale on shares</p>
+            <p>32. Land is a most significant factor in terms of contribution to economy because  <br><input type="radio" name = "sel32" value="a">A. it enables us to build industries<br><input type="radio" name = "sel32" value="b">B. we build houses on it<br><input type="radio" name = "sel32" value="c">C. all our high ways are constructed on it<br><input type="radio" name = "sel32" value="d">D. we get a lot of fishes from it<br><input type="radio" name = "sel32" value="e">E. vital resources from it enrich the economy</p>
+            <p>33. Capital as a factor of production is important because <br><input type="radio" name = "sel33" value="a">A. it enables us to carry out tasks which cannot be done by human efforts only<br><input type="radio" name = "sel33" value="b">B. most tasks can be done with bare hands<br><input type="radio" name = "sel33" value="c">C. people can work without capital<br><input type="radio" name = "sel33" value="d">D. without capital, all other factors are useless<br><input type="radio" name = "sel33" value="e">E. it provides money which is essential for the growth of business</p>
+            <p>34. A firm's compulsory cost whether it is in production or not, is referred to as its  <br><input type="radio" name = "sel34" value="a">A. prime cost<br><input type="radio" name = "sel34" value="b">B. variable cost<br><input type="radio" name = "sel34" value="c">C. marginal cost<br><input type="radio" name = "sel34" value="d">D. fixed cost<br><input type="radio" name = "sel34" value="e">E. average cost</p>
+            <p>35. A scale of preference is a list <br><input type="radio" name = "sel35" value="a">A. consumer's wants in order of importance<br><input type="radio" name = "sel35" value="b">B. that helps the individual to make rational choice<br><input type="radio" name = "sel35" value="c">C. that enables the consumer to make a wise decision about his choice<br><input type="radio" name = "sel35" value="d">D. that is necessary because human beings are faced with competing wants<br><input type="radio" name = "sel35" value="e">E. of all satisfied wants arranged in order of magnitude</p>
+            <p>36. An economic system in which the state owns and controls the means of production is known as  <br><input type="radio" name = "sel36" value="a">A. free enterprise<br><input type="radio" name = "sel36" value="b">B. socialist economy<br><input type="radio" name = "sel36" value="c">C. mixed economy<br><input type="radio" name = "sel36" value="d">D. capitalist economy<br><input type="radio" name = "sel36" value="e">E. walfare economy</p>
+            <p>37. Which of the following is not a middleman in the distribution channel? The  <br><input type="radio" name = "sel37" value="a">A. wholesaler<br><input type="radio" name = "sel37" value="b">B. distribution<br><input type="radio" name = "sel37" value="c">C. agent<br><input type="radio" name = "sel37" value="d">D. consumer<br><input type="radio" name = "sel37" value="e">E. retailer</p>
+            <p>38. Division of labour gives rise to  <br><input type="radio" name = "sel38" value="a">A. the exchange of goods and services<br><input type="radio" name = "sel38" value="b">B. the use of barter system<br><input type="radio" name = "sel38" value="c">C. the production of limited goods<br><input type="radio" name = "sel38" value="d">D. unemployment<br><input type="radio" name = "sel38" value="e">E. delay in production</p>
+            <p>39. One-man business are popular in West Africa because of all the following except the  <br><input type="radio" name = "sel39" value="a">A. ease of entry<br><input type="radio" name = "sel39" value="b">B. small capital required<br><input type="radio" name = "sel39" value="c">C. limited enterpreneurial skill needed<br><input type="radio" name = "sel39" value="d">D. ease of decision making<br><input type="radio" name = "sel39" value="e">E. tendency to become joint-stock companies</p>
+            <p>40. Which of the following is not a reason why statutory cooporations are run only by the governments?<br><input type="radio" name = "sel40" value="a">A. the duplication of some services will lead to resource wastage<br><input type="radio" name = "sel40" value="b">B. all cooporations provide services which individuals cannot provide<br><input type="radio" name = "sel40" value="c">C. essential services must be provided irrespective of the economic system adopted<br><input type="radio" name = "sel40" value="d">D. some cooporations require large financial capital which may not be easy to acquire by individuals<br><input type="radio" name = "sel40" value="e">E. there is need to protect consumers from exploitation</p>
+        </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                  <div id='timer'><button id="startBtn" onclick="startExam(100)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersECO1993)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(40);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+                
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2018.html">2018</a></li>
+                            <li><a href="English 2017.html">2017</a></li>
+                            <li><a href="English 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2018.html">2018</a></li>
+                            <li><a href="Biology 2017.html">2017</a></li>
+                            <li><a href="Biology 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Economics</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px;"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>

@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+    <head>
+        <title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+            <source src="../aud/start.ogg" type="audio/ogg">
+            <source src="../aud/start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/optionselect.ogg" type="audio/ogg">
+            <source src="../aud/optionselect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="stopAudio">
+            <source src="../aud/stop.ogg" type="audio/ogg">
+            <source src="../aud/stop.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="passedAudio">
+            <source src="../aud/passed.ogg" type="audio/ogg">
+            <source src="../aud/passed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/failed.ogg" type="audio/ogg">
+            <source src="../aud/failed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="clickAudio">
+            <source src="../aud/btnclick.ogg" type="audio/ogg">
+            <source src="../aud/btnclick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="leftcolumnForMainPageHeader">
+            <div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+            <a href="@davixspot.html" class="fa fa-home" id="home"></a>
+        </div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>ECONOMICS WASSCE 1999</center></div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 50</div>
+            <center><p id="Obj"><strong>OBJECTIVE TEST</strong></p></center>
+            <p>1. The money payment made to owners of land and labour are  <br><input type="radio" name = "sel1" value="a">A. rent and wages<br><input type="radio" name = "sel1" value="b">B. interest and profit<br><input type="radio" name = "sel1" value="c">C. wages and interest<br><input type="radio" name = "sel1" value="d">D. dividend and salary</p>
+            <p>2. The price elasticity coefficient indicates  <br><input type="radio" name = "sel2" value="a">A. how far business can reduce cost<br><input type="radio" name = "sel2" value="b">B. the degree of competition<br><input type="radio" name = "sel2" value="c">C. the extent to which cost shifts<br><input type="radio" name = "sel2" value="d">D. consumer responsiveness to price changes</p>
+            <p>3. Every society strives to pursue all the following economic objectives except  <br><input type="radio" name = "sel3" value="a">A. increased production<br><input type="radio" name = "sel3" value="b">B. price stability<br><input type="radio" name = "sel3" value="c">C. an inequitable distribution of income<br><input type="radio" name = "sel3" value="d">D. sustainable growth and development</p>
+            <p>4. Which of the following best describes capital as a factor of production?<br><input type="radio" name = "sel4" value="a">A. a natural resource everywhere<br><input type="radio" name = "sel4" value="b">B. a stock of physical assets used for production<br><input type="radio" name = "sel4" value="c">C. the organization of human and material resources for production<br><input type="radio" name = "sel4" value="d">D. resources used in training labour</p>
+            <p>5. The system whereby goods are exchanged fr goods is known as  <br><input type="radio" name = "sel5" value="a">A. stock exchange<br><input type="radio" name = "sel5" value="b">B. barter system<br><input type="radio" name = "sel5" value="c">C. banking<br><input type="radio" name = "sel5" value="d">D. cooperative system</p>
+            <p>6. The graph of the function X = a + bY is  <br><input type="radio" name = "sel6" value="a">A. linear<br><input type="radio" name = "sel6" value="b">B. quadratic<br><input type="radio" name = "sel6" value="c">C. cubical<br><input type="radio" name = "sel6" value="d">D. exponential</p>
+            <p>7. Productivity, per worker, is best measured by  <br><input type="radio" name = "sel7" value="a">A. total output less number of workers<br><input type="radio" name = "sel7" value="b">B. total output multiplied by number of workers<br><input type="radio" name = "sel7" value="c">C. number of workers less total output<br><input type="radio" name = "sel7" value="d">D. total output divided by number of workers</p>
+            <p>8. In determining costs, economists consider  <br><input type="radio" name = "sel8" value="a">A. implicit costs only<br><input type="radio" name = "sel8" value="b">B. explicit costs only<br><input type="radio" name = "sel8" value="c">C. implicit and explicit costs<br><input type="radio" name = "sel8" value="d">D. explicit cost less implicit cost</p>
+            <p>9. The precautionary motive for holding money is to enable the owner to  <br><input type="radio" name = "sel9" value="a">A. buy stocks when interests are high<br><input type="radio" name = "sel9" value="b">B. overcome unforeseen contingencies<br><input type="radio" name = "sel9" value="c">C. buy goods and services on daily basis<br><input type="radio" name = "sel9" value="d">D. buy fixed assets</p>
+            <p>10. In the long run, all factor inputs are  <br><input type="radio" name = "sel10" value="a">A. variable<br><input type="radio" name = "sel10" value="b">B. diminishing<br><input type="radio" name = "sel10" value="c">C. constant<br><input type="radio" name = "sel10" value="d">D. fixed</p>
+            <p>11. The benefits that results from concentrating similar firms in an area is referred to as  <br><input type="radio" name = "sel11" value="a">A. external dis-economies  of scale<br><input type="radio" name = "sel11" value="b">B. internal dis-economies of scale<br><input type="radio" name = "sel11" value="c">C. internal economies of scale<br><input type="radio" name = "sel11" value="d">D. external economies of scale</p>
+            <p>12. Per capita income in any West African country is measured by  <br><input type="radio" name = "sel12" value="a">A. dividing the GNP by total population<br><input type="radio" name = "sel12" value="b">B. adding the total savings to the GNP<br><input type="radio" name = "sel12" value="c">C. multiplying the GNP by the total population<br><input type="radio" name = "sel12" value="d">D. subtracting the GNP from the GDP</p>
+            <p>13. A priority rating of aggregate individual wants is called  <br><input type="radio" name = "sel13" value="a">A. scarcity<br><input type="radio" name = "sel13" value="b">B. choice<br><input type="radio" name = "sel13" value="c">C. scale of preference<br><input type="radio" name = "sel13" value="d">D. opportunity cost</p>
+            <p>14. Profit can be calculated by  <br><input type="radio" name = "sel14" value="a">A. subtracting total cost from total revenue<br><input type="radio" name = "sel14" value="b">B. subtracting average revenue from total cost<br><input type="radio" name = "sel14" value="c">C. dividing total revenue by total output<br><input type="radio" name = "sel14" value="d">D. dividing marginal revenue by marginal cost</p>
+            <p>15. The marginal revenue cost of a monopolist is  <br><input type="radio" name = "sel15" value="a">A. upward sloping from right to left<br><input type="radio" name = "sel15" value="b">B. downward sloping from right to left<br><input type="radio" name = "sel15" value="c">C. parallel to the quantity axis<br><input type="radio" name = "sel15" value="d">D. downward sloping from left to right</p>
+            <p>16. When all factor inputs are doubled, the production possibility curve will  <br><input type="radio" name = "sel16" value="a">A. shift from left to right and return to its original position<br><input type="radio" name = "sel16" value="b">B. shift from left to right<br><input type="radio" name = "sel16" value="c">C. remain in its former position<br><input type="radio" name = "sel16" value="d">D. shift from right to left</p>
+            <p>17. Income elasticity of demand is the measurement of the responsiveness of  <br><input type="radio" name = "sel17" value="a">A. price to changes in income<br><input type="radio" name = "sel17" value="b">B. quantity demanded to changes in income<br><input type="radio" name = "sel17" value="c">C. changes in expenditure to changes in income<br><input type="radio" name = "sel17" value="d">D. changes in expenditure to changes price of the commodity</p>
+            <p>18. The establishment of rural areas will help to reduce  <br><input type="radio" name = "sel18" value="a">A. urban-rural migration<br><input type="radio" name = "sel18" value="b">B. urban-urban poorer countries<br><input type="radio" name = "sel18" value="c">C. rural-urban migration<br><input type="radio" name = "sel18" value="d">D. rural-rural migration</p>
+            <p>19. Government imposes taxes mainly to  <br><input type="radio" name = "sel19" value="a">A. punish the citizens<br><input type="radio" name = "sel19" value="b">B. provide social amenities<br><input type="radio" name = "sel19" value="c">C. donate to poorer countries<br><input type="radio" name = "sel19" value="d">D. execute white elephant projects</p>
+            <p>20. In a perfect market, price and quantity to be bought are determined by the  <br><input type="radio" name = "sel20" value="a">A. consumers and retailers<br><input type="radio" name = "sel20" value="b">B. producers and wholesalers<br><input type="radio" name = "sel20" value="c">C. forces of demand and supply<br><input type="radio" name = "sel20" value="d">D. interest f government and producers</p>
+            <p>21. When price elasticity of supply is equal to 0.5, supply is said to be  <br><input type="radio" name = "sel21" value="a">A. inelastic<br><input type="radio" name = "sel21" value="b">B. elastic<br><input type="radio" name = "sel21" value="c">C. unitary elastic<br><input type="radio" name = "sel21" value="d">D. public utilities</p>
+            <p>22. In the money market, money can only be borrowed for  <br><input type="radio" name = "sel22" value="a">A. long term<br><input type="radio" name = "sel22" value="b">B. short term<br><input type="radio" name = "sel22" value="c">C. capital project<br><input type="radio" name = "sel22" value="d">D. public utilities</p>
+            <p>23. Deflation can be controlled by increasing  <br><input type="radio" name = "sel23" value="a">A. the bank rate<br><input type="radio" name = "sel23" value="b">B. income tax<br><input type="radio" name = "sel23" value="c">C. the price level<br><input type="radio" name = "sel23" value="d">D. the budget deficit</p>
+            <p>24. Mortgage banks give loans to investors on long term basis to  <br><input type="radio" name = "sel24" value="a">A. finance agriculture<br><input type="radio" name = "sel24" value="b">B. establish banks<br><input type="radio" name = "sel24" value="c">C. acquire machinery<br><input type="radio" name = "sel24" value="d">D. build houses</p>
+            <p>25. The situation whereby a government spends more than its budget for a fiscal year is known as  <br><input type="radio" name = "sel25" value="a">A. extra budget<br><input type="radio" name = "sel25" value="b">B. surplus budget<br><input type="radio" name = "sel25" value="c">C. mid-year budget<br><input type="radio" name = "sel25" value="d">D. deficit budget</p>
+            <p>26. In a socialist economy, factors of production are owned and controlled by the  <br><input type="radio" name = "sel26" value="a">A. citizens<br><input type="radio" name = "sel26" value="b">B. businessmen<br><input type="radio" name = "sel26" value="c">C. government<br><input type="radio" name = "sel26" value="d">D. foreigners</p>
+            <p>27. One quality of money which makes it possible to be carried easily is its  <br><input type="radio" name = "sel27" value="a">A. scarcity<br><input type="radio" name = "sel27" value="b">B. durability<br><input type="radio" name = "sel27" value="c">C. portability<br><input type="radio" name = "sel27" value="d">D. acceptability</p>
+            <p>28. A form of tax in which the poor pay a higher rate than the rich is known as  <br><input type="radio" name = "sel28" value="a">A. regressive tax<br><input type="radio" name = "sel28" value="b">B. backward tax<br><input type="radio" name = "sel28" value="c">C. oppressive tax<br><input type="radio" name = "sel28" value="d">D. retrogressive tax</p>
+            <p>29. The reduction in the value of a country's currency relative to the value of the currencies of other nations is known as  <br><input type="radio" name = "sel29" value="a">A. deflation<br><input type="radio" name = "sel29" value="b">B. devaluation<br><input type="radio" name = "sel29" value="c">C. inflation<br><input type="radio" name = "sel29" value="d">D. revaluation</p>
+            <p>30. The creation of utility can be referred to as  <br><input type="radio" name = "sel30" value="a">A. value added<br><input type="radio" name = "sel30" value="b">B. profit maximization<br><input type="radio" name = "sel30" value="c">C. entrepreneurship<br><input type="radio" name = "sel30" value="d">D. production</p>
+            <p>31. Government revenue will increase if tax is imposed on a good whose demand is  <br><input type="radio" name = "sel31" value="a">A. elastic<br><input type="radio" name = "sel31" value="b">B. inelastic<br><input type="radio" name = "sel31" value="c">C. unitary elastic<br><input type="radio" name = "sel31" value="d">D. perfectly elastic</p>
+            <p>32. Occupational distribution of population is mainly influenced by  <br><input type="radio" name = "sel32" value="a">A. economic factors<br><input type="radio" name = "sel32" value="b">B. religious factors<br><input type="radio" name = "sel32" value="c">C. geographical factors<br><input type="radio" name = "sel32" value="d">D. social factors</p>
+            <p>33. Proportional tax refers to  <br><input type="radio" name = "sel33" value="a">A. taxation of the rich only<br><input type="radio" name = "sel33" value="b">B. equal tax rate for all people<br><input type="radio" name = "sel33" value="c">C. unequal tax rate for all people<br><input type="radio" name = "sel33" value="d">D. taxation of civil servants only</p>
+            <p>34. Which of the following is not an item of capital expenditure?<br><input type="radio" name = "sel34" value="a">A. construction of highways<br><input type="radio" name = "sel34" value="b">B. building of dams<br><input type="radio" name = "sel34" value="c">C. payment of salaries and wages<br><input type="radio" name = "sel34" value="d">D. building of a new university</p>
+            <p>35. The population which yields the highest level of income per head is known as  <br><input type="radio" name = "sel35" value="a">A. over-population<br><input type="radio" name = "sel35" value="b">B. under-population<br><input type="radio" name = "sel35" value="c">C. extreme population<br><input type="radio" name = "sel35" value="d">D. optimum population</p>
+            <p>36. Price discrimination can only occur when there is  <br><input type="radio" name = "sel36" value="a">A. perfect competition<br><input type="radio" name = "sel36" value="b">B. imperfect competition<br><input type="radio" name = "sel36" value="c">C. merger<br><input type="radio" name = "sel36" value="d">D. partnership</p>
+            <p>37. Commodity market can best be described as a market in which <br><input type="radio" name = "sel37" value="a">A. goods are sold<br><input type="radio" name = "sel37" value="b">B. labour is sold and bought<br><input type="radio" name = "sel37" value="c">C. short-term loans are obtained<br><input type="radio" name = "sel37" value="d">D. coated stock are bought</p>
+            <p>38. Provision of services is classified under  <br><input type="radio" name = "sel38" value="a">A. primary production<br><input type="radio" name = "sel38" value="b">B. secondary production<br><input type="radio" name = "sel38" value="c">C. tertiary production<br><input type="radio" name = "sel38" value="d">D. production possibilities</p>
+            <p>39. In ordinary partnership, the risks are <br><input type="radio" name = "sel39" value="a">A. borne by the workers<br><input type="radio" name = "sel39" value="b">B. borne by the creditors<br><input type="radio" name = "sel39" value="c">C. shared among the partners<br><input type="radio" name = "sel39" value="d">D. undertaking by the active partner</p>
+            <p>40. Balance of trade is defined as the relation between  <br><input type="radio" name = "sel40" value="a">A. invisible imports and exports<br><input type="radio" name = "sel40" value="b">B. visible and invisible exports<br><input type="radio" name = "sel40" value="c">C. import and export of services<br><input type="radio" name = "sel40" value="d">D. visible exports and visible imports</p>
+            <p>41. Which of the following combination of qualities ensures a good tax system?<br><input type="radio" name = "sel41" value="a">A. deflationary equity, certainty and convenience<br><input type="radio" name = "sel41" value="b">B. economic convenience, certainty and equity<br><input type="radio" name = "sel41" value="c">C. economy, deflationary, deflationary and certainty<br><input type="radio" name = "sel41" value="d">D. economy, convenience, certainty and inflationary</p>
+            <p>42. The quantity demanded of a commodity is influenced only by changes in  <br><input type="radio" name = "sel42" value="a">A. taste<br><input type="radio" name = "sel42" value="b">B. weather<br><input type="radio" name = "sel42" value="c">C. price of the commodity<br><input type="radio" name = "sel42" value="d">D. price of other commodities</p>
+            <p>43. Which of the following is an indirect tax?<br><input type="radio" name = "sel43" value="a">A. income tax<br><input type="radio" name = "sel43" value="b">B. company tax<br><input type="radio" name = "sel43" value="c">C. profit tax<br><input type="radio" name = "sel43" value="d">D. sales tax</p>
+            <p>44. Where a pen and a book are demanded together, the demand is said to be  <br><input type="radio" name = "sel44" value="a">A. composite<br><input type="radio" name = "sel44" value="b">B. competitive <br><input type="radio" name = "sel44" value="c">C. joint<br><input type="radio" name = "sel44" value="d">D. derived</p>
+            <p>45. The reward for capital is  <br><input type="radio" name = "sel45" value="a">A. interest<br><input type="radio" name = "sel45" value="b">B. rent<br><input type="radio" name = "sel45" value="c">C. risk<br><input type="radio" name = "sel45" value="d">D. premium</p>
+            <p>46. Infant industries are industries that <br><input type="radio" name = "sel46" value="a">A. deal in the production of infant foods<br><input type="radio" name = "sel46" value="b">B. are in their earlier stages of production<br><input type="radio" name = "sel46" value="c">C. produce dresses for infants<br><input type="radio" name = "sel46" value="d">D. are well established</p>
+            <p>47. The most common form of business enterprise in West Africa is the  <br><input type="radio" name = "sel47" value="a">A. sole proprietorship<br><input type="radio" name = "sel47" value="b">B. cooperative<br><input type="radio" name = "sel47" value="c">C. partnership<br><input type="radio" name = "sel47" value="d">D. joint stock company</p>
+            <p>48. In order to boost agriculture, West African countries should pay more attention to  <br><input type="radio" name = "sel48" value="a">A. shifting cultivation<br><input type="radio" name = "sel48" value="b">B. animal husbandry<br><input type="radio" name = "sel48" value="c">C. seed multiplication<br><input type="radio" name = "sel48" value="d">D. mechanization</p>
+            <p>49. Gross National Product (GNP) less depreciated is known as  <br><input type="radio" name = "sel49" value="a">A. Gross Domestic Product<br><input type="radio" name = "sel49" value="b">B. Gross National Income<br><input type="radio" name = "sel49" value="c">C. Fixed National Income<br><input type="radio" name = "sel49" value="d">D. Net National Product</p>
+            <p>50. West African economies can best be described as  <br><input type="radio" name = "sel50" value="a">A. agriculture<br><input type="radio" name = "sel50" value="b">B. backward<br><input type="radio" name = "sel50" value="c">C. developed<br><input type="radio" name = "sel50" value="d">D. industrialized</p>
+        </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                  <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersECO1999)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(50);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+                
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2018.html">2018</a></li>
+                            <li><a href="English 2017.html">2017</a></li>
+                            <li><a href="English 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2018.html">2018</a></li>
+                            <li><a href="Biology 2017.html">2017</a></li>
+                            <li><a href="Biology 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Economics</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px;"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>

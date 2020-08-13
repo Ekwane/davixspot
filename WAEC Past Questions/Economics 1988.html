@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+    <head>
+        <title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+    <audio id="welcomeAudio">
+		  <source src="../aud/start.ogg" type="audio/ogg">
+		  <source src="../aud/start.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="selectAudio">
+		  <source src="../aud/optionselect.ogg" type="audio/ogg">
+		  <source src="../aud/optionselect.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="stopAudio">
+		  <source src="../aud/stop.ogg" type="audio/ogg">
+		  <source src="../aud/stop.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="passedAudio">
+		  <source src="../aud/passed.ogg" type="audio/ogg">
+		  <source src="../aud/passed.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="selectAudio">
+		  <source src="../aud/failed.ogg" type="audio/ogg">
+		  <source src="../aud/failed.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="clickAudio">
+		  <source src="../aud/btnclick.ogg" type="audio/ogg">
+		  <source src="../aud/btnclick.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+	</head>
+    <body>
+        <div class="leftcolumnForMainPageHeader">
+            <div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+            <a href="@davixspot.html" class="fa fa-home" id="home"></a>
+        </div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>ECONOMICS WASSCE 1988</center></div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 40</div>
+            <center><p id="Obj">OBJECTIVE TEST<br><strong>SECTION A</strong></p></center>  
+            <p>1. Economics is a science which studies human behaviour as a relationship between ends and scarce means which have alternative uses. 'Ends' here refers to  <br><input type="radio" name = "sel1" value="a">A. resources<br><input type="radio" name = "sel1" value="b">B. wants<br><input type="radio" name = "sel1" value="c">C. choices<br><input type="radio" name = "sel1" value="d">D. outputs<br><input type="radio" name = "sel1" value="e">E. factors</p>
+            <p>2. A review of occupational distribution of population from time to time helps us to know the  <br><input type="radio" name = "sel2" value="a">A. rate at which the population grows<br><input type="radio" name = "sel2" value="b">B. number of people that make up the labour force<br><input type="radio" name = "sel2" value="c">C. efficiency of the working population<br><input type="radio" name = "sel2" value="d">D. industries which are becoming less important<br><input type="radio" name = "sel2" value="e">E. number of people that are not employed</p>
+            <p>3. The price if commodity is determined by the  <br><input type="radio" name = "sel3" value="a">A. supplier<br><input type="radio" name = "sel3" value="b">B. consumer<br><input type="radio" name = "sel3" value="c">C. quality of goods demanded<br><input type="radio" name = "sel3" value="d">D. quantity of goods supplied<br><input type="radio" name = "sel3" value="e">E. interaction of demand and supplier</p>
+            <p>4. In which of the following economic systems is the comsumer referred to as "The King"<br><input type="radio" name = "sel4" value="a">A. planned economy<br><input type="radio" name = "sel4" value="b">B. mixed economy<br><input type="radio" name = "sel4" value="c">C. traditional economy<br><input type="radio" name = "sel4" value="d">D. free market economy<br><input type="radio" name = "sel4" value="e">E. socialist economy</p>
+            <p>5. Into which of these following organization would you classify the International Monetary Fund (IMF)<br><input type="radio" name = "sel5" value="a">A. political organization<br><input type="radio" name = "sel5" value="b">B. trade organization<br><input type="radio" name = "sel5" value="c">C. financial organization<br><input type="radio" name = "sel5" value="d">D. social organization<br><input type="radio" name = "sel5" value="e">E. commercial</p>
+            <p>6. A normal demand curve  <br><input type="radio" name = "sel6" value="a">A. is concave to the mid point of origin<br><input type="radio" name = "sel6" value="b">B. is convex to the mid point of origin<br><input type="radio" name = "sel6" value="c">C. is parallel to X axis<br><input type="radio" name = "sel6" value="d">D. is parallel to Y axis<br><input type="radio" name = "sel6" value="e">E. slopes upward from left to right</p>
+            <p>7. A demand schedule is  <br><input type="radio" name = "sel7" value="a">A. a table containing the price of goods<br><input type="radio" name = "sel7" value="b">B. a table showing the relationship between price and quantity demanded of a commodity<br><input type="radio" name = "sel7" value="c">C. a table showing the consumer demand in order of importance <br><input type="radio" name = "sel7" value="d">D. quantity of goods the the consumer is prepared to buy<br><input type="radio" name = "sel7" value="e">E. the market demand</p>
+            <p>8. <br>P&nbsp;&nbsp=&nbsp;&nbsp;Population<br>GNP&nbsp;&nbsp;=&nbsp;&nbsp;Gross National Product<br>GDP&nbsp;&nbsp;=&nbsp;&nbsp;Gross Domestic Product<br>NI&nbsp;&nbsp;=&nbsp;&nbsp;National Product<br>From the above, the formula for calculating Real Per Capital Income is  <br><input type="radio" name = "sel8" value="a">A. <sup>NI</sup>/<sub>P</sub><br><input type="radio" name = "sel8" value="b">B. <sup>GDP</sup>/<sub>P</sub><br><input type="radio" name = "sel8" value="c">C. <sup>P</sup>/<sub>GDP</sub><br><input type="radio" name = "sel8" value="d">D. <sup>GNP</sup>/<sub>P</sub><br><input type="radio" name = "sel8" value="e">E. <sup>P</sup>/<sub>GNP</sub></p>
+            <p>9. <table><caption>Age distribution table</caption><tr><td>0-15</td><td>16-35</td><td>36-60</td><td>61 and above</td></tr><tr><td>10,000</td><td>3,000</td><td>5,000</td><td>2,000</td></tr></table>The above table shows the of a town in Nigeria. what is the dependency ratio of the town. <br><input type="radio" name = "sel9" value="a">A. 10 : 3<br><input type="radio" name = "sel9" value="b">B. 1 : 2<br><input type="radio" name = "sel9" value="c">C. 3 : 2<br><input type="radio" name = "sel9" value="b">B. 4 : 3<br><input type="radio" name = "sel9" value="e">E. 5 : 2</p>
+            <p>10. The equilibrium position of a firm is attained <br><input type="radio" name = "sel10" value="a">A. when MC = AR<br><input type="radio" name = "sel10" value="b">B. when MC = P<br><input type="radio" name = "sel10" value="c">C. when MC = MR<br><input type="radio" name = "sel10" value="d">D. when AC = AR<br><input type="radio" name = "sel10" value="e">E. when AR = MR</p>
+            <p>11. Which of the following is not an advantage of price control?<br><input type="radio" name = "sel11" value="a">A. control of inflation<br><input type="radio" name = "sel11" value="b">B. distortion of price mechanism<br><input type="radio" name = "sel11" value="c">C. prevention of exploitation<br><input type="radio" name = "sel11" value="d">D. control of producer's profit<br><input type="radio" name = "sel11" value="e">E. helping low income eaners</p>
+            <p>12. Which of these factors does cause a change in demand<br><input type="radio" name = "sel12" value="a">A. income<br><input type="radio" name = "sel12" value="b">B. taste and fashion<br><input type="radio" name = "sel12" value="c">C. population<br><input type="radio" name = "sel12" value="d">D. price of other commodities<br><input type="radio" name = "sel12" value="e">E. price of commodity concerned</p>
+            <p>13. Price control can be defined as the fixing by government of maximum or minimum prices of  <br><input type="radio" name = "sel13" value="a">A. luxury goods<br><input type="radio" name = "sel13" value="b">B. inferior goods<br><input type="radio" name = "sel13" value="c">C. imported capital goods<br><input type="radio" name = "sel13" value="d">D. certain selected goods<br><input type="radio" name = "sel13" value="e">E. goods consumed by low income earners</p>
+            <p>14. When the price of commodity A increases, the demand for commodity B decreases, the A and B are  <br><input type="radio" name = "sel14" value="a">A. close substitutes<br><input type="radio" name = "sel14" value="b">B. commplementary goods<br><input type="radio" name = "sel14" value="c">C. supplemantary goods<br><input type="radio" name = "sel14" value="d">D. giifen goods<br><input type="radio" name = "sel14" value="e">E. luxurious goods</p>
+            <p>15. When the demand for a commodity is inelastic, total revenue will fall it  <br><input type="radio" name = "sel15" value="a">A. price is increased<br><input type="radio" name = "sel15" value="b">B. priced is reduced<br><input type="radio" name = "sel15" value="c">C. price remains constant<br><input type="radio" name = "sel15" value="d">D. price is not given<br><input type="radio" name = "sel15" value="e">E. the commodity is a luxury</p>
+            <p>16. In an economic system, which of the following is not an economic problem?<br><input type="radio" name = "sel16" value="a">A. what goods and services to produce<br><input type="radio" name = "sel16" value="b">B. for whom to produce the goods and services<br><input type="radio" name = "sel16" value="c">C. what techniques of production to be adopted<br><input type="radio" name = "sel16" value="d">D. equal distribution of the goods and services<br><input type="radio" name = "sel16" value="e">E. how to ensure that the economy grow over</p>
+            <p>17. The major currency used for granting credits to member countries of the Internationla Monetary Fund (IMF)<br><input type="radio" name = "sel17" value="a">A. US dollar<br><input type="radio" name = "sel17" value="b">B. Canadian dollar<br><input type="radio" name = "sel17" value="c">C. pound sterling<br><input type="radio" name = "sel17" value="d">D. deutschemark<br><input type="radio" name = "sel17" value="e">E. belgin franc</p>
+            <p>18. The tow largest producers of crude oil in Nigeria are  <br><input type="radio" name = "sel18" value="a">A. Borno and Ondo states<br><input type="radio" name = "sel18" value="b">B. Oyo and Bendel states<br><input type="radio" name = "sel18" value="c">C. Kwara and Benue states <br><input type="radio" name = "sel18" value="d">D. Rivers and Bendel states<br><input type="radio" name = "sel18" value="e">E. Niger and River states</p>
+            <p>19. If a producer sells 1kg of rice for &#8358;2.00 and his marginal product is 100kg, what is the highest wage he can pay the marginal labourer?<br><input type="radio" name = "sel19" value="a">A. &#8358;20.00<br><input type="radio" name = "sel19" value="b">B. &#8358;30.00<br><input type="radio" name = "sel19" value="c">C. &#8358;50.00<br><input type="radio" name = "sel19" value="d">D. &#8358;100.00<br><input type="radio" name = "sel19" value="e">E. &#8358;200.00</p>
+            <p>20. Nigeria indigenization decree was promulgated in order to  <br><input type="radio" name = "sel20" value="a">A. allow indigenes to have full participation in the economic activities of the country<br><input type="radio" name = "sel20" value="b">B. drive away foreigners<br><input type="radio" name = "sel20" value="c">C. give equal chances to indigenes and foreigners in making economic decisions in the country<br><input type="radio" name = "sel20" value="d">D. give industrial training to indigenes<br><input type="radio" name = "sel20" value="e">E. indigenes expose the economic activities of the country</p>
+            <p>21. An economic system in which most capital goods are owned by individuals and private firms is know as  <br><input type="radio" name = "sel21" value="a">A. mixed economy<br><input type="radio" name = "sel21" value="b">B. planned economy<br><input type="radio" name = "sel21" value="c">C. capitalist economy<br><input type="radio" name = "sel21" value="d">D. traditional economy<br><input type="radio" name = "sel21" value="e">E. civilized economy</p>
+            <p>22. Which of the following is not a feature of the Sole Proprietorship?<br><input type="radio" name = "sel22" value="a">A. the Sole Proprietor provides the capital to start the business<br><input type="radio" name = "sel22" value="b">B. the Sole Proprietor is the boos of his business<br><input type="radio" name = "sel22" value="c">C. there is unlimited liability<br><input type="radio" name = "sel22" value="d">D. continuity is doubtful at the death of the proprietor <br><input type="radio" name = "sel22" value="e">E. decision can be taken only by 10 people</p>
+            <p>23. The International Bank for Reconstruction and Development (IBRD) is important to the developing nations because it  <br><input type="radio" name = "sel23" value="a">A. gives loans to members for legal proceedings<br><input type="radio" name = "sel23" value="b">B. offers grants and aids for defence<br><input type="radio" name = "sel23" value="c">C. ehnhances financial relationship among countries<br><input type="radio" name = "sel23" value="d">D. offers soft loans for educational and health services<br><input type="radio" name = "sel23" value="e">E. offers grants and aids to finance private projects</p>
+            <p>24. Which of these best explains the Malthusian thoery of population?<br><input type="radio" name = "sel24" value="a">A. an increase population causes hunger and death <br><input type="radio" name = "sel24" value="b">B. the population increases faster than food supply<br><input type="radio" name = "sel24" value="c">C. the population grows at arithmetic progression while food production grows at geometric progression<br><input type="radio" name = "sel24" value="d">D. people could be sent to "No man's land" when the population increases<br><input type="radio" name = "sel24" value="e">E. people should produce as many children as the could because passion cannot be controlled</p>
+            <p>25. Which of the following is the most liquid asset to commercial banks?<br><input type="radio" name = "sel25" value="a">A. money at call and short notice<br><input type="radio" name = "sel25" value="b">B. treasury bill<br><input type="radio" name = "sel25" value="c">C. commercial bills<br><input type="radio" name = "sel25" value="d">D. stocks and shares<br><input type="radio" name = "sel25" value="e">E. cash</p>
+            <p>26. Which of the following statements is true about terms of trade?<br><input type="radio" name = "sel26" value="a">A. terms of trade shows the difference between the value of exports and imports<br><input type="radio" name = "sel26" value="b">B. terms of trade indicates the rate at which exports exchange for imports<br><input type="radio" name = "sel26" value="c">C. it is the ratio of the price index of exports to imports<br><input type="radio" name = "sel26" value="d">D. it is usually expressed as a percentage<br><input type="radio" name = "sel26" value="e">E. a rise in the price to exports relative to imports is an improvements</p>
+            <p>27. Which of these does not relate to the law of comparative advantage?<br><input type="radio" name = "sel27" value="a">A. the law of comparative advantage was propounded by David Ricardo<br><input type="radio" name = "sel27" value="b">B. the law stresses the importance of relative efficiency<br><input type="radio" name = "sel27" value="c">C. in order to specialized, a country must have absolute advantage<br><input type="radio" name = "sel27" value="d">D. the law is based on oppurtunity cost principle<br><input type="radio" name = "sel27" value="e">E. the principle if followed, shoul increase total world output</p>
+            <p>28. A condition which adversly affects expansion of productioni is  <br><input type="radio" name = "sel28" value="a">A. effective management<br><input type="radio" name = "sel28" value="b">B. limited size of the market<br><input type="radio" name = "sel28" value="c">C. availability of funds<br><input type="radio" name = "sel28" value="d">D. increased profit prospects<br><input type="radio" name = "sel28" value="e">E. increasing returns to scale</p>
+            <p>29. International trade and domestic trade are similar in all aspects except that <br><input type="radio" name = "sel29" value="a">A. transportation by land, water and air is involved<br><input type="radio" name = "sel29" value="b">B. goods are exchanged <br><input type="radio" name = "sel29" value="c">C. services are exchange<br><input type="radio" name = "sel29" value="d">D. the same currency is used as medium of exchange<br><input type="radio" name = "sel29" value="e">E. specialization and increased consumption is encouraged</p>
+            <p>30. The drawer of a cheque is the  <br><input type="radio" name = "sel30" value="a">A. person who is to be paid the sum of money as written on the cheque<br><input type="radio" name = "sel30" value="b">B. person who takes the cheque to the bank<br><input type="radio" name = "sel30" value="c">C. bank on which the cheque is drawn<br><input type="radio" name = "sel30" value="d">D. person who writes out the cheque<br><input type="radio" name = "sel30" value="e">E. bank official who certifies the cheque</p>
+            <p>31. Which of the following is not an item of capital expenditure?<br><input type="radio" name = "sel31" value="a">A. building of roads and bridges<br><input type="radio" name = "sel31" value="b">B. supply of electricity<br><input type="radio" name = "sel31" value="c">C. building of dams<br><input type="radio" name = "sel31" value="d">D. building of harbours<br><input type="radio" name = "sel31" value="e">E. payment of interests on loans</p>
+            <p>32. Which of the following role is being played by the Organization of Petroleum Exporting Countries (OPEC) with regards to Nigeria's crude oil?<br><input type="radio" name = "sel32" value="a">A. exploiting<br><input type="radio" name = "sel32" value="b">B. exploring<br><input type="radio" name = "sel32" value="c">C. refining<br><input type="radio" name = "sel32" value="d">D. marketing<br><input type="radio" name = "sel32" value="e">E. exporting</p>
+            <p>33. The co-efficient of price elasticity of demand is zero when demand is  <br><input type="radio" name = "sel33" value="a">A. fairly elastic<br><input type="radio" name = "sel33" value="b">B. perfectly inelastic<br><input type="radio" name = "sel33" value="c">C. fairly inelastic<br><input type="radio" name = "sel33" value="d">D. unitary elastic<br><input type="radio" name = "sel33" value="e">E. perfectly elactic</p>
+            <p>34. External economies occurs when  <br><input type="radio" name = "sel34" value="a">A. industries are scattered all around<br><input type="radio" name = "sel34" value="b">B. a firm decides to expand<br><input type="radio" name = "sel34" value="c">C. industries are producing below capacity<br><input type="radio" name = "sel34" value="d">D. firms comprising an industry are concentrated in one area<br><input type="radio" name = "sel34" value="e">E. a firm is located near raw materials</p>
+            <p>35. When the demand for a commodity is inelastic, who bears greater burden of the indirect tax?<br><input type="radio" name = "sel35" value="a">A. the producer<br><input type="radio" name = "sel35" value="b">B. the government<br><input type="radio" name = "sel35" value="c">C. the retailer<br><input type="radio" name = "sel35" value="d">D. the consumer<br><input type="radio" name = "sel35" value="e">E. the wholesaler</p>
+            <p>36. Which of the following crops can be referred to as Nigeria's current export crops?<br><input type="radio" name = "sel36" value="a">A. Rubber, Groundnuts, Beniseed, Cotton<br><input type="radio" name = "sel36" value="b">B. Shear butter, Sorghum, Onions<br><input type="radio" name = "sel36" value="c">C. Rubber, Cocoa, Coffee, Palm Kernel<br><input type="radio" name = "sel36" value="d">D. Palm oil, Palm Kernel, Sugarcane<br><input type="radio" name = "sel36" value="e">E. Soya beans, Rice, Groundnut, Cashew nut</p>
+            <p>37. The imposition of high incpme tax to cut down demand is known as  <br><input type="radio" name = "sel37" value="a">A. monetary policy<br><input type="radio" name = "sel37" value="b">B. budgetary policy<br><input type="radio" name = "sel37" value="c">C. fiscal policy<br><input type="radio" name = "sel37" value="d">D. internal policy<br><input type="radio" name = "sel37" value="e">E. development policy</p>
+            <p>38. Which of these factors does not affect revenue allocation in Nigeria?<br><input type="radio" name = "sel38" value="a">A. needs of an area<br><input type="radio" name = "sel38" value="b">B. size of the population in an area<br><input type="radio" name = "sel38" value="c">C. number of indutries and land area<br><input type="radio" name = "sel38" value="d">D. revenue derivable from an area <br><input type="radio" name = "sel38" value="e">E. development needs of the country</p>
+            <p>39. The term marginal propensity to consume can best be explained as the  <br><input type="radio" name = "sel39" value="a">A. desire to spend more income on consumption<br><input type="radio" name = "sel39" value="b">B. change in consumption as a percentage of the change in income<br><input type="radio" name = "sel39" value="c">C. average income regularty spent on consumption<br><input type="radio" name = "sel39" value="d">D. total expenditure on consumption<br><input type="radio" name = "sel39" value="e">E. inclination to spend only a little on consumption</p>
+            <p>40. Subsistence farming means producing food <br><input type="radio" name = "sel40" value="a">A. mainly for the need of our immediate and extended family<br><input type="radio" name = "sel40" value="b">B. crops for sail mainly<br><input type="radio" name = "sel40" value="c">C. crops mainly for export<br><input type="radio" name = "sel40" value="d">D. to feed the community around<br><input type="radio" name = "sel40" value="e">E. in order to satisfy the government directives</p>
+        </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                  <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>  
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersECO1988)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(40);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+    
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2018.html">2018</a></li>
+                            <li><a href="English 2017.html">2017</a></li>
+                            <li><a href="English 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 1995.html">1995</a></li>
+                            <li><a href="Biology 1993.html">1993</a></li>
+                            <li><a href="Biology 1992.html">1992</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Econimics</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>

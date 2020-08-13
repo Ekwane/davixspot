@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+    <head>
+        <title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+            <source src="../aud/start.ogg" type="audio/ogg">
+            <source src="../aud/start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/optionselect.ogg" type="audio/ogg">
+            <source src="../aud/optionselect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="stopAudio">
+            <source src="../aud/stop.ogg" type="audio/ogg">
+            <source src="../aud/stop.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="passedAudio">
+            <source src="../aud/passed.ogg" type="audio/ogg">
+            <source src="../aud/passed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/failed.ogg" type="audio/ogg">
+            <source src="../aud/failed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="clickAudio">
+            <source src="../aud/btnclick.ogg" type="audio/ogg">
+            <source src="../aud/btnclick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="leftcolumnForMainPageHeader">
+            <div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+            <a href="@davixspot.html" class="fa fa-home" id="home"></a>
+        </div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>Economics WASSCE 1991</center></div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 40</div>
+            <center><p id="Obj"><strong>OBJECTIVE TEST</strong></p></center>
+            <p>1.  The price system refers to the system by which  <br><input type="radio" name = "sel1" value="a">A. the government control prices in the economy<br><input type="radio" name = "sel1" value="b">B. prices tend to rise to a general level<br><input type="radio" name = "sel1" value="c">C. price allocates resources between consumer and producer goods<br><input type="radio" name = "sel1" value="d">D. government allocates resources to consumers and producers<br><input type="radio" name = "sel1" value="e">E. the producers fix the price of their product</p>
+            <p>2. Choice is necessary because resources <br><input type="radio" name = "sel2" value="a">A. are available<br><input type="radio" name = "sel2" value="b">B. can be found everywhere<br><input type="radio" name = "sel2" value="c">C. are constant<br><input type="radio" name = "sel2" value="d">D. are scare<br><input type="radio" name = "sel2" value="e">E. are unlimited</p>
+            <p>3. Agriculture plays a dominant role in West Africa economies because  <br><input type="radio" name = "sel3" value="a">A. the Green Revolution of Nigeria is agriculture<br><input type="radio" name = "sel3" value="b">B. it supplies all the food stuff consumed in Ghana alone<br><input type="radio" name = "sel3" value="c">C. there are large plantations of cocoa, groundnut and oil palm in West Africa<br><input type="radio" name = "sel3" value="d">D. it is the main source of energy in Sierra Leone alone<br><input type="radio" name = "sel3" value="e">E. it employs more than 50% of the total lalour force in West Africa</p>
+            <p>4. The effect of emigration on a country's population, all other things remaining constant, is to  <br><input type="radio" name = "sel4" value="a">A. increase its size<br><input type="radio" name = "sel4" value="b">B. cause overpopulation<br><input type="radio" name = "sel4" value="c">C. increase its growth rate<br><input type="radio" name = "sel4" value="d">D. reduce the proportion of children<br><input type="radio" name = "sel4" value="e">E. reduce its size</p>
+            <p>5. The monetary system that requires a double coincedence of wants is known as the  <br><input type="radio" name = "sel5" value="a">A. gold standard<br><input type="radio" name = "sel5" value="b">B. barter system<br><input type="radio" name = "sel5" value="c">C. commodity system<br><input type="radio" name = "sel5" value="d">D. gold exchange standard<br><input type="radio" name = "sel5" value="e">E. cheque system</p>
+            <p>6. If over a period of time there is more money in the economy than the available goods and services, the economy is likely to experience  <br><input type="radio" name = "sel6" value="a">A. devaluation<br><input type="radio" name = "sel6" value="b">B. inflation<br><input type="radio" name = "sel6" value="c">C. deflation<br><input type="radio" name = "sel6" value="d">D. demonetization<br><input type="radio" name = "sel6" value="e">E. over-valuation</p>
+            <strong>Use the diagram to answer questions 7 and 8</strong>
+            <p>7. In the diagram above, the equilibrium price is  <br><input type="radio" name = "sel7" value="a">A. OQ<sub>0</sub><br><input type="radio" name = "sel7" value="b">B. OQ<sub>0</sub><br><input type="radio" name = "sel7" value="c">C. P<sub>1</sub>P<sub>0</sub><br><input type="radio" name = "sel7" value="d">D. P<sub>0</sub>P<sub>2</sub><br><input type="radio" name = "sel7" value="e">E. OP<sub>0</sub></p>
+            <p>8. At price OP<sub>2</sub>, <br><input type="radio" name = "sel8" value="a">A. demand exceeds supply<br><input type="radio" name = "sel8" value="b">B. supply exceeds demand<br><input type="radio" name = "sel8" value="c">C. demand equal supply<br><input type="radio" name = "sel8" value="d">D. OQ<sub>2</sub> is the qauntity supplied<br><input type="radio" name = "sel8" value="e">E. OQ<sub>1</sub> is the quantity demanded</p>
+            <p>9. The value of money is determined by the  <br><input type="radio" name = "sel9" value="a">A. rate of interest<br><input type="radio" name = "sel9" value="b">B. general price level<br><input type="radio" name = "sel9" value="c">C. quantity of money in circulation<br><input type="radio" name = "sel9" value="d">D. level of economic development<br><input type="radio" name = "sel9" value="e">E. weight of the currency notes and coins</p>
+            <p>10. Open market operations are the processes by which  <br><input type="radio" name = "sel10" value="a">A. the Central Bank purchases and sells security<br><input type="radio" name = "sel10" value="b">B. commercial banks purchase and sell securities<br><input type="radio" name = "sel10" value="c">C. business firms buy raw materials freely<br><input type="radio" name = "sel10" value="d">D. households buy consumer goods openly<br><input type="radio" name = "sel10" value="e">E. the money market takes over the function of the central bank</p>
+            <p>11. Devaluation means  <br><input type="radio" name = "sel11" value="a">A. a reduction in the value of the national currency<br><input type="radio" name = "sel11" value="b">B. a reduction in the purchasing power of foreign currencies<br><input type="radio" name = "sel11" value="c">C. a reduction in the value of domestic currency relative to foreign currencies<br><input type="radio" name = "sel11" value="d">D. an increase in the value of the national currency<br><input type="radio" name = "sel11" value="e">E. a decrease in the purchasing power of foreign currencies</p>
+            <p>12. A disequilibrium in a country's balance of payment implies  <br><input type="radio" name = "sel12" value="a">A. that her imports exceeds her export<br><input type="radio" name = "sel12" value="b">B. an overall deficit oor supply in her current account and capital account<br><input type="radio" name = "sel12" value="c">C. that her capital inflow exceeds her capital outflow<br><input type="radio" name = "sel12" value="d">D. an overall deficit in its trade balance with other countries<br><input type="radio" name = "sel12" value="e">E. that her export earnings exceed the cost of its imports</p>
+            <p>13. Which of the following functions do retailers in an economy?<br><input type="radio" name = "sel13" value="a">A. production<br><input type="radio" name = "sel13" value="b">B. exchange<br><input type="radio" name = "sel13" value="c">C. hoarding<br><input type="radio" name = "sel13" value="d">D. distribution<br><input type="radio" name = "sel13" value="e">E. investment</p>
+            <p>14. A movement along the demand curve for some goods maybe caused by a change in  <br><input type="radio" name = "sel14" value="a">A. consumer income<br><input type="radio" name = "sel14" value="b">B. the price of goods<br><input type="radio" name = "sel14" value="c">C. consumer taste<br><input type="radio" name = "sel14" value="d">D. the price of other goods<br><input type="radio" name = "sel14" value="e">E. population</p>
+            <p>15. Which of the following items is not indicated in measuring national income by the income approach?<br><input type="radio" name = "sel15" value="a">A. wages and salaries of public servants<br><input type="radio" name = "sel15" value="b">B. student's grants and scholarship<br><input type="radio" name = "sel15" value="c">C. profits of companies<br><input type="radio" name = "sel15" value="d">D. income earned by self employed persons such as lawyers<br><input type="radio" name = "sel15" value="e">E. rents on property</p>
+            <p>16. If an economy is growing at an annual rate of 7%, and 4% of it is known to be due to the improvement in labour and capital combined, the balance of 3% is usually attributed to  <br><input type="radio" name = "sel16" value="a">A. land and enterpreneur<br><input type="radio" name = "sel16" value="b">B. abundance of natural resources<br><input type="radio" name = "sel16" value="c">C. level of human capital<br><input type="radio" name = "sel16" value="d">D. technical progress and related factor<br><input type="radio" name = "sel16" value="e">E. discipline in political leadership</p>
+            <p>17. A government treasury bill is a form of debt instrument which falls due to repayment after  <br><input type="radio" name = "sel17" value="a">A. 3 montths<br><input type="radio" name = "sel17" value="b">B. 9 months<br><input type="radio" name = "sel17" value="c">C. 2 years<br><input type="radio" name = "sel17" value="d">D. 5 years<br><input type="radio" name = "sel17" value="e">E. 10 or more years</p>
+            <p>18. Which of the following is not regarded as monye in Economics?<br><input type="radio" name = "sel18" value="a">A. coins<br><input type="radio" name = "sel18" value="b">B. currency note<br><input type="radio" name = "sel18" value="c">C. bank deposits<br><input type="radio" name = "sel18" value="d">D. cheques<br><input type="radio" name = "sel18" value="e">E. naira and kobo</p>
+            <p>19. Public expenditure creates expansionary effects in the economy when it is  <br><input type="radio" name = "sel19" value="a">A. in excess of government revenue<br><input type="radio" name = "sel19" value="b">B. channelled into the provision of consumer goods<br><input type="radio" name = "sel19" value="c">C. diverted to the importation of luxury goods<br><input type="radio" name = "sel19" value="d">D. financed through oil revenue<br><input type="radio" name = "sel19" value="e">E. financed completely</p>
+            <p>20. Which of the following is not a reason why people migrate from one place to another?<br><input type="radio" name = "sel20" value="a">A. to find jobs and improve their standard of living<br><input type="radio" name = "sel20" value="b">B. to live in a more suitable climate<br><input type="radio" name = "sel20" value="c">C. for the sake of change<br><input type="radio" name = "sel20" value="d">D. to escape from religious, political or social situation in a country<br><input type="radio" name = "sel20" value="e">E. to buy foreign goods for sale in their country</p>
+            <p>21. A major function of midllemen in Nigeria is the distribution of <br><input type="radio" name = "sel21" value="a">A. commodities to all consumers regardless of income<br><input type="radio" name = "sel21" value="b">B. commodities to consuming centers<br><input type="radio" name = "sel21" value="c">C. economic warefare facilitiies to all<br><input type="radio" name = "sel21" value="d">D. wealth to all<br><input type="radio" name = "sel21" value="e">E. income within the society</p>
+            <p>22. International trade in necessary mainly because  <br><input type="radio" name = "sel22" value="a">A. no country can live in economic isolation<br><input type="radio" name = "sel22" value="b">B. different countries are endowed with the same natural and man made resources<br><input type="radio" name = "sel22" value="c">C. some countries have comparative cost advantage in the production of certain commodities<br><input type="radio" name = "sel22" value="d">D. the world demand for and supply of various categories of commodities expanding very fast<br><input type="radio" name = "sel22" value="e">E. countries want to build up their foreign exchange reserves</p>
+            <p>23. Which of the following is the approximate working age in Nigeria<br><input type="radio" name = "sel23" value="a">A. 1 - 15<br><input type="radio" name = "sel23" value="b">B. 15 - 65<br><input type="radio" name = "sel23" value="c">C. 30 - 40<br><input type="radio" name = "sel23" value="d">D. 40 - 65<br><input type="radio" name = "sel23" value="e">E. 65 and above</p>
+            <p>24. Dumping in Economics means the selling of goods in a foreign market <br><input type="radio" name = "sel24" value="a">A. at a price below that recieved in the home market<br><input type="radio" name = "sel24" value="b">B. at a price above that recieved in the home market<br><input type="radio" name = "sel24" value="c">C. at a price equal to the cost price in the home market<br><input type="radio" name = "sel24" value="d">D. in other to encourage indegenious producers<br><input type="radio" name = "sel24" value="e">E. at a price equal to the selling price in the home market</p>
+            <p>25. The shift of the demand curve to the right when the supply curve remains constant, implies that  <br><input type="radio" name = "sel25" value="a">A. both price and quantity demanded will increase<br><input type="radio" name = "sel25" value="b">B. only price increases<br><input type="radio" name = "sel25" value="c">C. both price and quantity demanded will decrease<br><input type="radio" name = "sel25" value="d">D. the price remains constant<br><input type="radio" name = "sel25" value="e">E. the price falls</p>
+            <p>26. The natural growth rate of a population is the  <br><input type="radio" name = "sel26" value="a">A. sum of the birth rate and the death rate<br><input type="radio" name = "sel26" value="b">B. sum of the birth rate and net immigration rate<br><input type="radio" name = "sel26" value="c">C. birth rate minus death rate<br><input type="radio" name = "sel26" value="d">D. birth rate divided by the net immigration<br><input type="radio" name = "sel26" value="e">E. death rate minus the net immigration</p>
+            <strong>Use the following market schedule for semovita to answer questions 27 and 28</strong>
+            <table style="border: none; border-collapse: collapse;">
+                <thead><th>Price for 5kg bag</th><th>Quantity demanded in bags</th><th>Quantity supplied in bags</th></thead>
+                <tr><td>N3.00</td><td>15,000</td><td>1,500</td></tr>
+                <tr><td>N4.00</td><td>13,000</td><td>3,000</td></tr>
+                <tr><td>N5.00</td><td>10,000</td><td>6,000</td></tr>
+                <tr><td>N6.00</td><td>7,000</td><td>7,000</td></tr>
+                <tr><td>N7.00</td><td>5,000</td><td>9,000</td></tr>
+                <tr><td>N8.00</td><td>4,000</td><td>12,000</td></tr>
+                <tr><td>N9.00</td><td>2,000</td><td>14,000</td></tr>
+            </table>
+            <p>27. What is the equilibrium price?<br><input type="radio" name = "sel27" value="a">A. N5.00<br><input type="radio" name = "sel27" value="b">B. N6.00<br><input type="radio" name = "sel27" value="c">C. N7.00<br><input type="radio" name = "sel27" value="d">D. N8.00<br><input type="radio" name = "sel27" value="e">E. N9.00</p>
+            <p>28. If the equilibrium price falls by N2.00 what will be the change in quantity demanded and supplied?<br><input type="radio" name = "sel28" value="a">A. 7,000 and 6,000 bags respectively<br><input type="radio" name = "sel28" value="b">B. 6,000 and 4,000 bags respectively<br><input type="radio" name = "sel28" value="c">C. 5,000 and 4,500 bags respectively<br><input type="radio" name = "sel28" value="d">D. 3,000 and 3,000 bags respectively<br><input type="radio" name = "sel28" value="e">E. 2,000 and 2,000 bags respectively</p>
+            <p>29. In the event of a limited liability company going into liquidation, each shareholder <br><input type="radio" name = "sel29" value="a">A. may lose a macimum of the amount he has invested<br><input type="radio" name = "sel29" value="b">B. losses nothing<br><input type="radio" name = "sel29" value="c">C. losses everything including his house<br><input type="radio" name = "sel29" value="d">D. may have an unlimited liability<br><input type="radio" name = "sel29" value="e">E. will lose the amount he has invested plus a proportion of his bank account</p>
+            <p>30. The diagram shows that <br><input type="radio" name = "sel30" value="a">A. supply is infinitely elastic<br><input type="radio" name = "sel30" value="b">B. the higher the price, the greater the quantity supplied<br><input type="radio" name = "sel30" value="c">C. the higher the price, the lower the quantity supplied<br><input type="radio" name = "sel30" value="d">D. supply has a unitary elasticity<br><input type="radio" name = "sel30" value="e">E. demand of labour is completely inelastic</p>
+            <p>31. Division of labour is greatly limited by  <br><input type="radio" name = "sel31" value="a">A. its resultant monotony to work<br><input type="radio" name = "sel31" value="b">B. its associated decline in craftmanship<br><input type="radio" name = "sel31" value="c">C. its attendant risk of unemployment<br><input type="radio" name = "sel31" value="d">D. the extent of the market<br><input type="radio" name = "sel31" value="e">E. the boredom it creates</p>
+            <p>32. Which of the following are direct taxes?<br><input type="radio" name = "sel32" value="a">A. sales taxes<br><input type="radio" name = "sel32" value="b">B. excise duties<br><input type="radio" name = "sel32" value="c">C. income and company taxes<br><input type="radio" name = "sel32" value="d">D. tariff duties<br><input type="radio" name = "sel32" value="e">E. commodity taxes</p>
+            <p>33. Which of the following is a function of money? It is <br><input type="radio" name = "sel33" value="a">A. portable<br><input type="radio" name = "sel33" value="b">B. a standard of differed payment<br><input type="radio" name = "sel33" value="c">C. relatively stable in value<br><input type="radio" name = "sel33" value="d">D. generally acceptable<br><input type="radio" name = "sel33" value="e">E. an easily divisible item</p>
+            <p>34. The productivity of labour does not depend only on its effort own effort and efficiency but also on I. The level of technical knowledge II. the quality of other factors III. racial qualities which allows persons from certain races to have good physique and be very active. Which of the above statement is/are correct?<br><input type="radio" name = "sel34" value="a">A. I only<br><input type="radio" name = "sel34" value="b">B. I and II only<br><input type="radio" name = "sel34" value="c">C. I and III only<br><input type="radio" name = "sel34" value="d">D. II and III only<br><input type="radio" name = "sel34" value="e">E. III only</p>
+            <p>35. A tax is said to be good when  <br><input type="radio" name = "sel35" value="a">A. it yields more revenue to the state at the expense of the people's ability to pay<br><input type="radio" name = "sel35" value="b">B. the cost of collecting it is equal to the revenue it generates<br><input type="radio" name = "sel35" value="c">C. it is imposed so suddenly that no one can dodge its payment<br><input type="radio" name = "sel35" value="d">D. its payment cause minimum inconvinience to the tax payer <br><input type="radio" name = "sel35" value="e">E. it induces workers to prefer more leisure to extra work</p>
+            <p>36. Which of the following is not a public cooperation?<br><input type="radio" name = "sel36" value="a">A. Roads (Nigeria) Plc<br><input type="radio" name = "sel36" value="b">B. National Oil and Chemical Marketing Co. Plc<br><input type="radio" name = "sel36" value="c">C. Union Bank of Nigeria Plc<br><input type="radio" name = "sel36" value="d">D. Volkswagen of Nigeria Plc<br><input type="radio" name = "sel36" value="e">E. National Electric Power Authority</p>
+            <p>37. In a sole proprietorship decisions are made by the  <br><input type="radio" name = "sel37" value="a">A. government<br><input type="radio" name = "sel37" value="b">B. owner<br><input type="radio" name = "sel37" value="c">C. shareholders conference<br><input type="radio" name = "sel37" value="d">D. management<br><input type="radio" name = "sel37" value="e">E. board of directors</p>
+            <p>38. Which of the following is not true in an inflationary period?<br><input type="radio" name = "sel38" value="a">A. the purchasing power of money diminishes<br><input type="radio" name = "sel38" value="b">B. wages rise simultaneously with prices<br><input type="radio" name = "sel38" value="c">C. more money runs after a limited quantity of goods<br><input type="radio" name = "sel38" value="d">D. fixed income earners lose<br><input type="radio" name = "sel38" value="e">E. aggregate real demand exceeds aggregate real supply</p>
+            <p>39. Palm oil industry in located in Bendel state because the state  <br><input type="radio" name = "sel39" value="a">A. imports raw materials for industry<br><input type="radio" name = "sel39" value="b">B. has a poor soil which is unsuitable for other crops<br><input type="radio" name = "sel39" value="c">C. is a palm-tree growing area<br><input type="radio" name = "sel39" value="d">D. government does not engage in the growing of other crops<br><input type="radio" name = "sel39" value="e">E. has the highest demand for palm oil in Nigeria</p>
+            <p>40. Which of the following is not an argument for locating rural areas?<br><input type="radio" name = "sel40" value="a">A. rural area supply agricultural raw materials<br><input type="radio" name = "sel40" value="b">B. the pace of development of rural areas will be quickened<br><input type="radio" name = "sel40" value="c">C. employment will be provided for rural inhabitants<br><input type="radio" name = "sel40" value="d">D. capital is easily available in rural areas <br><input type="radio" name = "sel40" value="e">E. rural-urban migration will decrease</p>
+        </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                  <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersECO1991)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(40);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+                
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2018.html">2018</a></li>
+                            <li><a href="English 2017.html">2017</a></li>
+                            <li><a href="English 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2018.html">2018</a></li>
+                            <li><a href="Biology 2017.html">2017</a></li>
+                            <li><a href="Biology 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Economics</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px;"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>

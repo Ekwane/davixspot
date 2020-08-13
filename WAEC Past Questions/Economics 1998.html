@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+    <head>
+        <title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+            <source src="../aud/start.ogg" type="audio/ogg">
+            <source src="../aud/start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/optionselect.ogg" type="audio/ogg">
+            <source src="../aud/optionselect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="stopAudio">
+            <source src="../aud/stop.ogg" type="audio/ogg">
+            <source src="../aud/stop.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="passedAudio">
+            <source src="../aud/passed.ogg" type="audio/ogg">
+            <source src="../aud/passed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/failed.ogg" type="audio/ogg">
+            <source src="../aud/failed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="clickAudio">
+            <source src="../aud/btnclick.ogg" type="audio/ogg">
+            <source src="../aud/btnclick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="leftcolumnForMainPageHeader">
+            <div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+            <a href="@davixspot.html" class="fa fa-home" id="home"></a>
+        </div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>ECONOMICS WASSCE 1998</center></div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 40</div>
+            <center><p id="Obj"><strong>OBJECTIVE TEST</strong></p></center>
+            <p>1. The study of Economics enables the individual to  <br><input type="radio" name = "sel1" value="a">A. be miserly in the spending of his money<br><input type="radio" name = "sel1" value="b">B. derive maximum satisfaction from the money he spends<br><input type="radio" name = "sel1" value="c">C. determine the right market to visit<br><input type="radio" name = "sel1" value="d">D. avoid the purchase of luxurious items<br><input type="radio" name = "sel1" value="e">E. derive solution to all problems</p>
+            <p>2. One way of solving the problem of scarcity that faces individuals is for  <br><input type="radio" name = "sel2" value="a">A. the government to import goods massively so that the citizens can get all they want<br><input type="radio" name = "sel2" value="b">B. them to work very hard so that they are able to buy all their wants<br><input type="radio" name = "sel2" value="c">C. them to choose between alternatives since they cannot meet all their wants<br><input type="radio" name = "sel2" value="d">D. the government to study people's behaviour in order to know their wants<br><input type="radio" name = "sel2" value="e">E. them to use their resources as they want</p>
+            <strong>Use the table below to answer questions 3 and 4</strong>
+            <table style="border-collapse: collapse; width: 50%;">
+                <thead><th>Scores(X)</th><td>0</td><td>2</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></thead>
+                <thead><th>Frequency(F)</th><td>11</td><td>6</td><td>7</td><td>7</td><td>4</td><td>3</td><td></td></thead>
+            </table>
+            <p>3. In the distribution above, the mode is  <br><input type="radio" name = "sel3" value="a">A. 2 <input type="radio" name = "sel3" value="b">B. 3 <input type="radio" name = "sel3" value="c">C. 4 <input type="radio" name = "sel3" value="d">D. 5 <input type="radio" name = "sel3" value="e">E. 6</p>
+            <p>4. The median is  <br><input type="radio" name = "sel4" value="a">A. 2 <input type="radio" name = "sel4" value="b">B. 3 <input type="radio" name = "sel4" value="c">C. 4 <input type="radio" name = "sel4" value="d">D. 5 <input type="radio" name = "sel4" value="e">E. 6</p>
+            <p>5. At what price will the trader be ready to sell 6 oranges using the  equation: p = <sup>1</sup>/<sub>2</sub>q + 2 where p is price and q is quantity?<br><input type="radio" name = "sel5" value="a">A. &#8358;3.00 <input type="radio" name = "sel5" value="b">B. &8358;4.00 <input type="radio" name = "sel5" value="c">C. &8358;5.00 <input type="radio" name = "sel5" value="d">D. &8358;6.00 <input type="radio" name = "sel5" value="e">E. &8358;8.00</p>
+            <p>6. If the last Naira spent on each commodity by a consumer gave him equal satisfaction, it means the consumer has been able to  <br><input type="radio" name = "sel6" value="a">A. cut costs<br><input type="radio" name = "sel6" value="b">B. maximize costs<br><input type="radio" name = "sel6" value="c">C. increase profits<br><input type="radio" name = "sel6" value="d">D. maximize utility<br><input type="radio" name = "sel6" value="e">E. manage scarce resources</p>
+            <p>7. Which of the following will shirt the demand for Milo to the right?<br><input type="radio" name = "sel7" value="a">A. an increase in consumer's income<br><input type="radio" name = "sel7" value="b">B. a rise in the price of Milo<br><input type="radio" name = "sel7" value="c">C. a tax on cocoa producers<br><input type="radio" name = "sel7" value="d">D. a fall in quantity demanded of Milo<br><input type="radio" name = "sel7" value="e">E. a fall in the price of Milo</p>
+            <p>8. An exceptional demand is one in which the  <br><input type="radio" name = "sel8" value="a">A. supplier sells all that he takes to the market<br><input type="radio" name = "sel8" value="b">B. consumers do not buy from the market<br><input type="radio" name = "sel8" value="c">C. quantity demand falls as price falls<br><input type="radio" name = "sel8" value="d">D. purchases of services and not product is considered<br><input type="radio" name = "sel8" value="e">E. quantity demand and price move in opposite directions</p>
+            <p>9. The equilibrium price of mangoes is &8358;1.00. If the price falls to 50k, there will be <br><input type="radio" name = "sel9" value="a">A. an excess demand<br><input type="radio" name = "sel9" value="b">B. an excess supply<br><input type="radio" name = "sel9" value="c">C. a surplus in the market<br><input type="radio" name = "sel9" value="d">D. many sellers in the market<br><input type="radio" name = "sel9" value="e">E. no seller in the market</p>
+            <p>10. The introduction of division of labour in a firm will lead to  <br><input type="radio" name = "sel10" value="a">A. a fall in output<br><input type="radio" name = "sel10" value="b">B. a decline in the efficiency of labour<br><input type="radio" name = "sel10" value="c">C. an increased output<br><input type="radio" name = "sel10" value="d">D. the separation of ownership from management<br><input type="radio" name = "sel10" value="e">E. an increase in unit cost</p>
+            <p>11. Total cost is the addition of  <br><input type="radio" name = "sel11" value="a">A. real cost and money cost<br><input type="radio" name = "sel11" value="b">B. price and taxes<br><input type="radio" name = "sel11" value="c">C. fixed cost and variable cost <br><input type="radio" name = "sel11" value="d">D. average cost and marginal cost<br><input type="radio" name = "sel11" value="e">E. cost of raw materials and wages</p>
+            <p>12. External economies refers to the  <br><input type="radio" name = "sel12" value="a">A. cost-saving advantages a firm enjoys by being close to other firms in the same industry<br><input type="radio" name = "sel12" value="b">B. disadvantages to a firm that is close to other firms<br><input type="radio" name = "sel12" value="c">C. economies of large scale production<br><input type="radio" name = "sel12" value="d">D. err<br><input type="radio" name = "sel12" value="e">E. err</p>
+            <p>13. To the economist, efficiency of resource use means  <br><input type="radio" name = "sel13" value="a">A. maximum use of resources to get to achieve minimum objective<br><input type="radio" name = "sel13" value="b">B. the reduction of cost for adequate output<br><input type="radio" name = "sel13" value="c">C. relating value of input to that of output<br><input type="radio" name = "sel13" value="d">D. using appropriate resources for desired wants<br><input type="radio" name = "sel13" value="e">E. maximizing output from a given amount of resources</p>
+            <p>14. The shape of the Average Cost (AC) curve shows that as production increases, <br><input type="radio" name = "sel14" value="a">A. total cost decreases<br><input type="radio" name = "sel14" value="b">B. average cost decreases and then increases<br><input type="radio" name = "sel14" value="c">C. average cost increases<br><input type="radio" name = "sel14" value="d">D. marginal cost steadily increases<br><input type="radio" name = "sel14" value="e">E. total cost remains constant</p>
+            <p>15. One of the advantages of localization of industry is that firms  <br><input type="radio" name = "sel15" value="a">A. make abnormal profits<br><input type="radio" name = "sel15" value="b">B. are given tax holidays<br><input type="radio" name = "sel15" value="c">C. are unified under one management<br><input type="radio" name = "sel15" value="d">D. pay high wages<br><input type="radio" name = "sel15" value="e">E. can have a large pool of skilled labour</p>
+            <p>16. Which of the following is not a type of industry?<br><input type="radio" name = "sel16" value="a">A. export<br><input type="radio" name = "sel16" value="b">B. construction<br><input type="radio" name = "sel16" value="c">C. mining<br><input type="radio" name = "sel16" value="d">D. manufacturing<br><input type="radio" name = "sel16" value="e">E. transport</p>
+            <p>17. In a joint stock company, shareholders are the  <br><input type="radio" name = "sel17" value="a">A. owners<br><input type="radio" name = "sel17" value="b">B. managers<br><input type="radio" name = "sel17" value="c">C. chief executives<br><input type="radio" name = "sel17" value="d">D. company advisers<br><input type="radio" name = "sel17" value="e">E. day-to-day decision makers</p>
+            <p>18. The distribution of goods by the price system is distorted when <br><input type="radio" name = "sel18" value="a">A. there is a high degree of competition among producers<br><input type="radio" name = "sel18" value="b">B. producers and consumers operate freely<br><input type="radio" name = "sel18" value="c">C. factors of production are mobile<br><input type="radio" name = "sel18" value="d">D. no allowance is made for social costs and benefits<br><input type="radio" name = "sel18" value="e">E. there is price control measure in the system</p>
+            <p>19. An appropriate industrialization strategy in an under-populated country is  <br><input type="radio" name = "sel19" value="a">A. import substitution<br><input type="radio" name = "sel19" value="b">B. capital intensive<br><input type="radio" name = "sel19" value="c">C. the contract method<br><input type="radio" name = "sel19" value="d">D. the use of foreigners in factories<br><input type="radio" name = "sel19" value="e">E. labour intensive</p>
+            <p>20. The power of trade unions my be weakened when there is  <br><input type="radio" name = "sel20" value="a">A. optimum population<br><input type="radio" name = "sel20" value="b">B. a weak government in power<br><input type="radio" name = "sel20" value="c">C. over-population<br><input type="radio" name = "sel20" value="d">D. a civilian government in power<br><input type="radio" name = "sel20" value="e">E. under-population</p>
+            <p>21. Malthus' major contention is that<br><input type="radio" name = "sel21" value="a">A. population increased in arithmetic progression while food production increased in geometric production<br><input type="radio" name = "sel21" value="b">B. population increased in geometric progression while food production increased in arithmetic progression<br><input type="radio" name = "sel21" value="c">C. population and food growth rate will, in the future, be at per<br><input type="radio" name = "sel21" value="d">D. nations have to get enough manpower to cultivate available land for food<br><input type="radio" name = "sel21" value="e">E. output from agriculture decreased as more and more of the poorer lands were bought into cultivation</p>
+            <p>22. The problem of small market in West Africa can be solved through  <br><input type="radio" name = "sel22" value="a">A. separate planning among the West African countries<br><input type="radio" name = "sel22" value="b">B. meaningful cooperations among the West African countries<br><input type="radio" name = "sel22" value="c">C. political stability in West Africa<br><input type="radio" name = "sel22" value="d">D. imposition of high tariffs on West African exports<br><input type="radio" name = "sel22" value="e">E. the central banks of West African countries</p>
+            <p>23. An imperfect competitor is in equilibrium when  <br><input type="radio" name = "sel23" value="a">A. Marginal Cost (MC) is equal to Marginal Revenue (MR)<br><input type="radio" name = "sel23" value="b">B. Marginal Revenue (MR) is equal to Price (P)<br><input type="radio" name = "sel23" value="c">C. Average Revenue (AR) is equal to Average Cost (AC) <br><input type="radio" name = "sel23" value="d">D. Output (Q) is equal to Average Revenue (AR)<br><input type="radio" name = "sel23" value="e">E. Average Revenue (AR) is equal to Marginal Revenue (MR)</p>
+            <p>24. Which of the following is used to measure inflation?<br><input type="radio" name = "sel24" value="a">A. open market operations<br><input type="radio" name = "sel24" value="b">B. cash -deposit ratio<br><input type="radio" name = "sel24" value="c">C. price index<br><input type="radio" name = "sel24" value="d">D. multiplier<br><input type="radio" name = "sel24" value="e">E. fiscal policy</p>
+            <p>25. If a government which owed a company &8358;10,000 in 1976 paid the debt fully in 1985 when the value of money had depreciated by 20 percent, such a government had  <br><input type="radio" name = "sel25" value="a">A. lost<br><input type="radio" name = "sel25" value="b">B. being placed at par with the company<br><input type="radio" name = "sel25" value="c">C. gained<br><input type="radio" name = "sel25" value="d">D. stabilized the value of money<br><input type="radio" name = "sel25" value="e">E. increased the value of money</p>
+            <p>26. Banks create money by  <br><input type="radio" name = "sel26" value="a">A. giving draft to customers<br><input type="radio" name = "sel26" value="b">B. printing more money<br><input type="radio" name = "sel26" value="c">C. lending out deposits to borrowers<br><input type="radio" name = "sel26" value="d">D. issuing cheques<br><input type="radio" name = "sel26" value="e">E. depositing excess cash in the tills</p>
+            <p>27. The West African Clearing House was established to  <br><input type="radio" name = "sel27" value="a">A. finance development projects in africa<br><input type="radio" name = "sel27" value="b">B. enhance financial transaction among member countries<br><input type="radio" name = "sel27" value="c">C. provided technical assistance to member countries<br><input type="radio" name = "sel27" value="d">D. stabilize price in developing countries<br><input type="radio" name = "sel27" value="e">E. service the debts of the African countries</p>
+            <p>28. Which of the following is a factor affecting the size of national income?<br><input type="radio" name = "sel28" value="a">A. size of the active population<br><input type="radio" name = "sel28" value="b">B. taste of the consumers<br><input type="radio" name = "sel28" value="c">C. number of registered trade unions<br><input type="radio" name = "sel28" value="d">D. credit-worthiness of the neighbouring countries <br><input type="radio" name = "sel28" value="e">E. regularity of payment of national debt</p>
+            <p>29. The expenditure of a firm of goods and services for the expansion of its productive capacity is known as  <br><input type="radio" name = "sel29" value="a">A. income<br><input type="radio" name = "sel29" value="b">B. investment<br><input type="radio" name = "sel29" value="c">C. savings<br><input type="radio" name = "sel29" value="d">D. profits<br><input type="radio" name = "sel29" value="e">E. interest</p>
+            <p>30. An increase in marginal propensity to save will lead to  <br><input type="radio" name = "sel30" value="a">A. an increase in marginal propensity to consume<br><input type="radio" name = "sel30" value="b">B. a decrease in level of consumption<br><input type="radio" name = "sel30" value="c">C. an immediate decrease in the net national income<br><input type="radio" name = "sel30" value="d">D. an increase in the level of consumption<br><input type="radio" name = "sel30" value="e">E. a decrease in the level of savings</p>
+            <p>31. Progressive system of taxation implies that the  <br><input type="radio" name = "sel31" value="a">A. poor pay relatively more<br><input type="radio" name = "sel31" value="b">B. tax rate falls as the tax base increases<br><input type="radio" name = "sel31" value="c">C. tax rate increases as the tax base increases<br><input type="radio" name = "sel31" value="d">D. average and marginal rate of tax will be the same<br><input type="radio" name = "sel31" value="e">E. rich and the poor pay the same amount of tax</p>
+            <p>32. Development plans in Nigeria have deviated from their targets due to  <br><input type="radio" name = "sel32" value="a">A. lack of manpower<br><input type="radio" name = "sel32" value="b">B. political instability<br><input type="radio" name = "sel32" value="c">C. high population growth rate<br><input type="radio" name = "sel32" value="d">D. brain drain in the country<br><input type="radio" name = "sel32" value="e">E. inadequate land</p>
+            <p>33. The level of economic development is low in Nigeria because<br><input type="radio" name = "sel33" value="a">A. planning has no practical relevance<br><input type="radio" name = "sel33" value="b">B. of the pattern of consumers' spending<br><input type="radio" name = "sel33" value="c">C. the country is too large<br><input type="radio" name = "sel33" value="d">D. of ineffective plan implementation<br><input type="radio" name = "sel33" value="e">E. there is no unique planning model</p>
+            <p>34. The stability of the Nigerian economy depends mainly on the export price of  <br><input type="radio" name = "sel34" value="a">A. groundnut<br><input type="radio" name = "sel34" value="b">B. cotton<br><input type="radio" name = "sel34" value="c">C. cocoa<br><input type="radio" name = "sel34" value="d">D. mineral oil<br><input type="radio" name = "sel34" value="e">E. palm kernel</p>
+            <p>35. Which of the following countries is a major trading partner of Nigeria?<br><input type="radio" name = "sel35" value="a">A. Britain<br><input type="radio" name = "sel35" value="b">B. Canada<br><input type="radio" name = "sel35" value="c">C. Japan<br><input type="radio" name = "sel35" value="d">D. Germany<br><input type="radio" name = "sel35" value="e">E. China</p>
+            <p>36. The instruments used in many countries to restrict imports include  <br><input type="radio" name = "sel36" value="a">A. high tariffs<br><input type="radio" name = "sel36" value="b">B. price index<br><input type="radio" name = "sel36" value="c">C. excise duties<br><input type="radio" name = "sel36" value="d">D. bank rate<br><input type="radio" name = "sel36" value="e">E. subsidies</p>
+            <p>37. One of the major objectives of the African Development Bank (ADB) is the mobilization of  <br><input type="radio" name = "sel37" value="a">A. blacks in developed countries to assist Africa<br><input type="radio" name = "sel37" value="b">B. qualified manpower of member states<br><input type="radio" name = "sel37" value="c">C. foreigners to assist Africa<br><input type="radio" name = "sel37" value="d">D. women for economic development<br><input type="radio" name = "sel37" value="e">E. Africans towards economic progress</p>
+            <p>38. Which of the following constitutes the largest export of the developing countries to the developed ones?<br><input type="radio" name = "sel38" value="a">A. raw materials<br><input type="radio" name = "sel38" value="b">B. finished consumer goods<br><input type="radio" name = "sel38" value="c">C. labour services<br><input type="radio" name = "sel38" value="d">D. arms and ammunition<br><input type="radio" name = "sel38" value="e">E. automobiles</p>
+            <p>39. The economic system in which decision about what to produce, how to produce and for whom to produce are made by private firms called  <br><input type="radio" name = "sel39" value="a">A. socialism<br><input type="radio" name = "sel39" value="b">B. welfarism<br><input type="radio" name = "sel39" value="c">C. communism<br><input type="radio" name = "sel39" value="d">D. capitalism<br><input type="radio" name = "sel39" value="e">E. traditionalism</p>
+            <p>40. A major setback is any mixed economy is  <br><input type="radio" name = "sel40" value="a">A. that its combines both capitalist and socialists systems<br><input type="radio" name = "sel40" value="b">B. the freedom of choice in the production and consumption of goods and services <br><input type="radio" name = "sel40" value="c">C. that government intervenes to secure full utilization of resources<br><input type="radio" name = "sel40" value="d">D. that economic decisions are determined by market forces<br><input type="radio" name = "sel40" value="e">E. that the absence of profit motive in the public sector may reduce incentive for hard work</p>
+        </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                  <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersECO1998)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(40);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+                
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2018.html">2018</a></li>
+                            <li><a href="English 2017.html">2017</a></li>
+                            <li><a href="English 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2018.html">2018</a></li>
+                            <li><a href="Biology 2017.html">2017</a></li>
+                            <li><a href="Biology 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Economics</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px;"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>

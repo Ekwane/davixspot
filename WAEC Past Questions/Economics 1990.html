@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+    <head>
+        <title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+            <source src="../aud/start.ogg" type="audio/ogg">
+            <source src="../aud/start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/optionselect.ogg" type="audio/ogg">
+            <source src="../aud/optionselect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="stopAudio">
+            <source src="../aud/stop.ogg" type="audio/ogg">
+            <source src="../aud/stop.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="passedAudio">
+            <source src="../aud/passed.ogg" type="audio/ogg">
+            <source src="../aud/passed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/failed.ogg" type="audio/ogg">
+            <source src="../aud/failed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="clickAudio">
+            <source src="../aud/btnclick.ogg" type="audio/ogg">
+            <source src="../aud/btnclick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="leftcolumnForMainPageHeader">
+            <div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+            <a href="@davixspot.html" class="fa fa-home" id="home"></a>
+        </div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>Economics<br> WASSCE 1990</center></div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 40</div>
+            <center><p id="Obj"><strong>OBJECTIVE TEST</strong></p></center>
+            <p>1. Economics can be best defined as the study of  <br><input type="radio" name = "sel1" value="a">A. how to spend the family income efficiently<br><input type="radio" name = "sel1" value="b">B. how to find minimum cost of production<br><input type="radio" name = "sel1" value="c">C. the interpretation of scarce resources and data<br><input type="radio" name = "sel1" value="d">D. how scare resources can be used efficiently<br><input type="radio" name = "sel1" value="e">E. why resources are scare</p>
+            <p>2. Which of the following are resources for holding money instead of investing it?<br>I. Transaction motive<br>II. Precautionary motive<br>III. Speculative motive<br>IV. Liquidity motive<br><input type="radio" name = "sel2" value="a">A. I and II only<br><input type="radio" name = "sel2" value="b">B. I and III only<br><input type="radio" name = "sel2" value="c">C. I, II and III only<br><input type="radio" name = "sel2" value="d">D. I, II and IV only<br><input type="radio" name = "sel2" value="e">E. II, III and IV only</p>
+            <p>3. It is generally believed that inflation in West Africa is caused by all the factors listed below except  <br><input type="radio" name = "sel3" value="a">A. excessieve bank lending<br><input type="radio" name = "sel3" value="b">B. budget deficit<br><input type="radio" name = "sel3" value="c">C. rising incomes<br><input type="radio" name = "sel3" value="d">D. shortages in supply<br><input type="radio" name = "sel3" value="e">E. decrease in money supply</p>
+            <p>4. All the following are specific examples of indirect tax except  <br><input type="radio" name = "sel4" value="a">A. purchases  tax<br><input type="radio" name = "sel4" value="b">B. import duty<br><input type="radio" name = "sel4" value="c">C. export duty<br><input type="radio" name = "sel4" value="d">D. excise duty<br><input type="radio" name = "sel4" value="e">E. poll tax</p>
+            <p>5. Demand in Economics is synonymous with  <br><input type="radio" name = "sel5" value="a">A. needs<br><input type="radio" name = "sel5" value="b">B. wants of the of the consumers<br><input type="radio" name = "sel5" value="c">C. all goods demanded in the market <br><input type="radio" name = "sel5" value="d">D. wants supported with the ability to pay<br><input type="radio" name = "sel5" value="e">E. all cosumer goods</p>
+            <p>6. All the following factors will cause a change in the demand except  <br><input type="radio" name = "sel6" value="a">A. the consumer's income<br><input type="radio" name = "sel6" value="b">B. the consumer's taste<br><input type="radio" name = "sel6" value="c">C. a change in population size<br><input type="radio" name = "sel6" value="d">D. a change in wheather condition<br><input type="radio" name = "sel6" value="e">E. the price of the commodity</p>
+            <p>7. A rational consumer tends to do all the following except  <br><input type="radio" name = "sel7" value="a">A. buy more at a high price than at a low price<br><input type="radio" name = "sel7" value="b">B. buy more at a low price than at a high price<br><input type="radio" name = "sel7" value="c">C. buying at utility maximization<br><input type="radio" name = "sel7" value="d">D. reacting to price changes<br><input type="radio" name = "sel7" value="e">E. complying with the law of demand</p>
+            <p>8. A firm that charges different prices for goods or services that have the same technical qualities is called  <br><input type="radio" name = "sel8" value="a">A. a perfect competitor<br><input type="radio" name = "sel8" value="b">B. a monopsony<br><input type="radio" name = "sel8" value="c">C. an oligopoly<br><input type="radio" name = "sel8" value="d">D. a discriminating monopoly<br><input type="radio" name = "sel8" value="e">E. a duopoly</p>
+            <p>9. A perfect market has all the following features except that  <br><input type="radio" name = "sel9" value="a">A. there are many buyers but few sellers<br><input type="radio" name = "sel9" value="b">B. the commodities bought and sold are homogenous<br><input type="radio" name = "sel9" value="c">C. there is a free entry and exit<br><input type="radio" name = "sel9" value="d">D. buyers and sellers have perfect knowledge of the market<br><input type="radio" name = "sel9" value="e">E. there is only one ruling price</p>
+            <p>10. The purchasing power of the naira will fall when  <br><input type="radio" name = "sel10" value="a">A. workers are retrenched<br><input type="radio" name = "sel10" value="b">B. the colour of naira change<br><input type="radio" name = "sel10" value="c">C. the government cuts all salaries and wages<br><input type="radio" name = "sel10" value="d">D. there is inflation<br><input type="radio" name = "sel10" value="e">E. the naira is overlued</p>
+            <p>11. Time deposit has the same meaning as  <br><input type="radio" name = "sel11" value="a">A. current account<br><input type="radio" name = "sel11" value="b">B. demand deposit<br><input type="radio" name = "sel11" value="c">C. deposit account<br><input type="radio" name = "sel11" value="d">D. bank deposit<br><input type="radio" name = "sel11" value="e">E. bank rate</p>
+            <p>12. Which of the following best explains an inflationary situation at current price level?<br><input type="radio" name = "sel12" value="a">A. demand, supply<br><input type="radio" name = "sel12" value="b">B. demand supply<br><input type="radio" name = "sel12" value="c">C. demand = supply<br><input type="radio" name = "sel12" value="d">D. demand/supply<br><input type="radio" name = "sel12" value="e">E. demand = zero</p>
+            <p>13. The theory of consumer behaviour is based on all the following assumptions except that  <br><input type="radio" name = "sel13" value="a">A. consumer is assumed irrational<br><input type="radio" name = "sel13" value="b">B. consumer taste remains constant<br><input type="radio" name = "sel13" value="c">C. consumer has budget constrait<br><input type="radio" name = "sel13" value="d">D. consumer aims at maximizing his utility<br><input type="radio" name = "sel13" value="e">E. consumer is exposed to more than one commodity</p>
+            <p>14. The Joint Stock Company can be private company whose minimum membership is  <br><input type="radio" name = "sel14" value="a">A. 2 <input type="radio" name = "sel14" value="b">B. 5 <input type="radio" name = "sel14" value="c">C. 7 <input type="radio" name = "sel14" value="d">D. 10 <input type="radio" name = "sel14" value="e">E. 20</p>
+            <p>15. Limited liabity in Economics means that <br><input type="radio" name = "sel15" value="a">A. a shareholder's liability in the event of debts or bankruptcy is limited to the amount he has invested<br><input type="radio" name = "sel15" value="b">B. a shareholder's liability for the debt company is dependent on how much he is owing<br><input type="radio" name = "sel15" value="c">C. shareholders cannot be asked to pay for the debts of the company<br><input type="radio" name = "sel15" value="d">D. shareholders try to ensure that only a small proportion of the debts come to them<br><input type="radio" name = "sel15" value="e">E. shareholders wants all debts paid equally</p>
+            <p>16. Regressive tax is not a good tax system because it  <br><input type="radio" name = "sel16" value="a">A. is not convinient to pay<br><input type="radio" name = "sel16" value="b">B. is not certain what to pay <br><input type="radio" name = "sel16" value="c">C. is not economical to collect<br><input type="radio" name = "sel16" value="d">D. does not ensure equity in payment<br><input type="radio" name = "sel16" value="e">E. is not neutral to price trends</p>
+            <p>17. The price and quantity of crude oil and petrol sold to other countries by Nigeria is fixed by the  <br><input type="radio" name = "sel17" value="a">A. ECOWAS<br><input type="radio" name = "sel17" value="b">B. IMF<br><input type="radio" name = "sel17" value="c">C. OPEC<br><input type="radio" name = "sel17" value="d">D. NNPC<br><input type="radio" name = "sel17" value="e">E. ECA</p>
+            <p>18. Which of the following is not a member of the OPEC?<br><input type="radio" name = "sel18" value="a">A. Indonesia<br><input type="radio" name = "sel18" value="b">B. Iran<br><input type="radio" name = "sel18" value="c">C. Venezuela<br><input type="radio" name = "sel18" value="d">D. United Arab Emirates<br><input type="radio" name = "sel18" value="e">E. Egypt</p>
+            <p>19. Which of the following statements is not true of capital income?<br><input type="radio" name = "sel19" value="a">A. it helps in the assessment of standard of living<br><input type="radio" name = "sel19" value="b">B. it is calculated as National Income Population<br><input type="radio" name = "sel19" value="c">C. it is calculated as Population National Income<br><input type="radio" name = "sel19" value="d">D. it is used by the UNO to asses and assist developing countries<br><input type="radio" name = "sel19" value="e">E. it is used as one of the indicators of economic growth</p>
+            <p>20. The notion of short-run and long-run periods is responsible for grouping costs into  <br><input type="radio" name = "sel20" value="a">A. fixed and variable<br><input type="radio" name = "sel20" value="b">B. implicit and explicit<br><input type="radio" name = "sel20" value="c">C. average and total<br><input type="radio" name = "sel20" value="d">D. capital and running<br><input type="radio" name = "sel20" value="e">E. money and opportunity</p>
+            <p>21. Which of the following statements is not true of cheques? They  <br><input type="radio" name = "sel21" value="a">A. provide an alternative to carrying large large sums of money around<br><input type="radio" name = "sel21" value="b">B. can be written out for any amount needed<br><input type="radio" name = "sel21" value="c">C. are legal tender<br><input type="radio" name = "sel21" value="d">D. provide a form of receipt<br><input type="radio" name = "sel21" value="e">E. provide a record for payments made</p>
+            <p>22. The liquidity ratio of a commercial bank refers to the  <br><input type="radio" name = "sel22" value="a">A. proportions of the bank's total assets which should be held in cash and liquid form<br><input type="radio" name = "sel22" value="b">B. total amount of cash for the bank's treasury<br><input type="radio" name = "sel22" value="c">C. total amount of cash for the bank in the central bank<br><input type="radio" name = "sel22" value="d">D. proportion of the bank's cash that should be on loan<br><input type="radio" name = "sel22" value="e">E. proportion of the bank's cash and assets that should be kept with other banks</p>
+            <p>23. Which of the following are not agents of distribution?<br><input type="radio" name = "sel23" value="a">A. wholesalers<br><input type="radio" name = "sel23" value="b">B. retailers<br><input type="radio" name = "sel23" value="c">C. concumers<br><input type="radio" name = "sel23" value="d">D. government agencies <br><input type="radio" name = "sel23" value="e">E. cooperative societies</p>
+            <p>24. One of the greatest demerits of the middlemen in Nigeria is that they  <br><input type="radio" name = "sel24" value="a">A. increase the prices of goods and services at will <br><input type="radio" name = "sel24" value="b">B. sell in small units only<br><input type="radio" name = "sel24" value="c">C. store goods in wharehouses that are not spacious enough<br><input type="radio" name = "sel24" value="d">D. sell on credit to retailers only<br><input type="radio" name = "sel24" value="e">E. do not advertise their goods</p>
+            <p>25. When a business has  unlimited liability, <br><input type="radio" name = "sel25" value="a">A. the owners are not responsible for all its financial debts<br><input type="radio" name = "sel25" value="b">B. all its profits can be taxed by government<br><input type="radio" name = "sel25" value="c">C. the owners are responsible for all its financial debts<br><input type="radio" name = "sel25" value="d">D. all its assets belong to the members of it board of directors<br><input type="radio" name = "sel25" value="e">E. it ceases to exist at the death of one of the owners</p>
+            <p>26. When a country has a large labour force, it is beneficial to use a method of production which is  <br><input type="radio" name = "sel26" value="a">A. capital intensive<br><input type="radio" name = "sel26" value="b">B. land intensive<br><input type="radio" name = "sel26" value="c">C. labour intensive<br><input type="radio" name = "sel26" value="d">D. mechanically intensive<br><input type="radio" name = "sel26" value="e">E. technically intensive</p>
+            <p>27. Which of the following are determinants of the rates of population growth?<br><input type="radio" name = "sel27" value="a">A. birth rate, immigration and death rate<br><input type="radio" name = "sel27" value="b">B. death rate, birth rate and emigration<br><input type="radio" name = "sel27" value="c">C. death rate, birth rate and net emigration<br><input type="radio" name = "sel27" value="d">D. migration, large families and birth rate<br><input type="radio" name = "sel27" value="e">E. death rate, migration and mortality rate</p>
+            <p>28. The conentration of industries in one area is referred to as  <br><input type="radio" name = "sel28" value="a">A. location of industries<br><input type="radio" name = "sel28" value="b">B. multiplication of industries<br><input type="radio" name = "sel28" value="c">C. pluralization of of industries<br><input type="radio" name = "sel28" value="d">D. proliferation of industries<br><input type="radio" name = "sel28" value="e">E. localization of industries</p>
+            <p>29. Which of the following best describes the budget? A  <br><input type="radio" name = "sel29" value="a">A. plan of government's needs and expenditure for a year<br><input type="radio" name = "sel29" value="b">B. detailed estimated of government's financial operation for a year<br><input type="radio" name = "sel29" value="c">C. satisfactory balance between income and expenditure for a year<br><input type="radio" name = "sel29" value="d">D. plan for importation of essential goods and services for one year<br><input type="radio" name = "sel29" value="e">E. plan for control of government industries and cooperations for one years</p>
+            <p>30. Which of the following is not done by the NNPC?<br><input type="radio" name = "sel30" value="a">A.  production of crude oil<br><input type="radio" name = "sel30" value="b">B. refining of crude oil<br><input type="radio" name = "sel30" value="c">C. exploration of crude oil<br><input type="radio" name = "sel30" value="d">D. exploitation of crude oil<br><input type="radio" name = "sel30" value="e">E. pricing of crude oil</p>
+            <p>31. One major function of the central bank is to  <br><input type="radio" name = "sel31" value="a">A. mint money<br><input type="radio" name = "sel31" value="b">B. hold demand deposits and hounour cheques<br><input type="radio" name = "sel31" value="c">C. act as a medium of exchange<br><input type="radio" name = "sel31" value="d">D. creat money<br><input type="radio" name = "sel31" value="e">E. control and regulate money supply</p>
+            <p>32. Distribution involves the  <br><input type="radio" name = "sel32" value="a">A. movement of raw materials to procuction centers<br><input type="radio" name = "sel32" value="b">B. transfer of goods and services from one market to another<br><input type="radio" name = "sel32" value="c">C. movement of goods and services by middle men to urban centers <br><input type="radio" name = "sel32" value="d">D. transfor of goods and services from from wholesalers to consumers<br><input type="radio" name = "sel32" value="e">E. transfer of goods and services from procudtion centers to consumers</p>
+            <p>33. Disguised unemployment <br><input type="radio" name = "sel33" value="a">A. is a statictical artifact with no economic meaning<br><input type="radio" name = "sel33" value="b">B. can be eliminated is the capital output ratio is increased<br><input type="radio" name = "sel33" value="c">C. can be eliminated if the press is free<br><input type="radio" name = "sel33" value="d">D. calls for the implementation of five-year plans<br><input type="radio" name = "sel33" value="e">E. exists when man power is not being utilized efficiently</p>
+            <p>34. The Nigerian economy can best be describes as  <br><input type="radio" name = "sel34" value="a">A. socialist economy<br><input type="radio" name = "sel34" value="b">B. capitalist economy<br><input type="radio" name = "sel34" value="c">C. mixed economy<br><input type="radio" name = "sel34" value="d">D. controlled economy<br><input type="radio" name = "sel34" value="e">E. deomestic economy</p>
+            <table  width="100%" style="border-collapse: collapse;">
+                <thead><td>Units of quantity consumed</td><td>Total utility</td><td>Marginal utility</td></thead>
+                <tr><td>0</td><td>-</td><td>-</td></tr>
+                <tr><td>1</td><td>10</td><td>10</td></tr>
+                <tr><td>2</td><td>15</td><td>5</td></tr>
+                <tr><td>3</td><td>17</td><td>2</td></tr>
+                <tr><td>4</td><td>18</td><td>1</td></tr>
+                <tr><td>5</td><td>18</td><td>0</td></tr>
+            </table>
+            <p>35. The table above illustrates the law of  <br><input type="radio" name = "sel35" value="a">A. diminishing marginal utility<br><input type="radio" name = "sel35" value="b">B. diminishing marginal productivity<br><input type="radio" name = "sel35" value="c">C. diminishing returns<br><input type="radio" name = "sel35" value="d">D. increasing returns<br><input type="radio" name = "sel35" value="e">E. increasing productivity</p>
+            <p>36. The amount of money to be created by commercial banks is actually influenced by the  <br><input type="radio" name = "sel36" value="a">A. legal reserve ratio<br><input type="radio" name = "sel36" value="b">B. external reserve<br><input type="radio" name = "sel36" value="c">C. external borrowing<br><input type="radio" name = "sel36" value="d">D. availability of money and capital market<br><input type="radio" name = "sel36" value="e">E. bank deposits</p>
+            <p>37. Another name for International Bank for Reconstruction and Development  (IBRD) is  <br><input type="radio" name = "sel37" value="a">A. International Monetary Fund<br><input type="radio" name = "sel37" value="b">B. International Development Bank<br><input type="radio" name = "sel37" value="c">C. World Bank<br><input type="radio" name = "sel37" value="d">D. International Bank of Africa<br><input type="radio" name = "sel37" value="e">E. International Bank for West Africa</p>
+            <p>38. The headquarters of the Organization of Petroleom Exporting Countries (OPEC) is in  <br><input type="radio" name = "sel38" value="a">A. Geneva, Switzerland<br><input type="radio" name = "sel38" value="b">B. Vienna, Austria<br><input type="radio" name = "sel38" value="c">C. Paris, France<br><input type="radio" name = "sel38" value="d">D. London, Britain<br><input type="radio" name = "sel38" value="e">E. New York, USA</p>
+            <p>39. The wholesaler provides all the following services to the manufacturer except  <br><input type="radio" name = "sel39" value="a">A. wharehousing<br><input type="radio" name = "sel39" value="b">B. financial production<br><input type="radio" name = "sel39" value="c">C. marketing the product<br><input type="radio" name = "sel39" value="d">D. granting credit<br><input type="radio" name = "sel39" value="e">E. after-sales services</p>
+            <p>40. The country that makes the largest contribution to the IMF is  <br><input type="radio" name = "sel40" value="a">A. The USA<br><input type="radio" name = "sel40" value="b">B. Britain<br><input type="radio" name = "sel40" value="c">C. West Germany<br><input type="radio" name = "sel40" value="d">D. France<br><input type="radio"name = "sel40" value="e">E. Norway</p>
+        </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                  <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersECO1990)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(40);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+                
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2018.html">2018</a></li>
+                            <li><a href="English 2017.html">2017</a></li>
+                            <li><a href="English 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2018.html">2018</a></li>
+                            <li><a href="Biology 2017.html">2017</a></li>
+                            <li><a href="Biology 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Economics</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px;"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>

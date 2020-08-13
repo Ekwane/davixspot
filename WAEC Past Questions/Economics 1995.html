@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+    <head>
+        <title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+            <source src="../aud/start.ogg" type="audio/ogg">
+            <source src="../aud/start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/optionselect.ogg" type="audio/ogg">
+            <source src="../aud/optionselect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="stopAudio">
+            <source src="../aud/stop.ogg" type="audio/ogg">
+            <source src="../aud/stop.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="passedAudio">
+            <source src="../aud/passed.ogg" type="audio/ogg">
+            <source src="../aud/passed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/failed.ogg" type="audio/ogg">
+            <source src="../aud/failed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="clickAudio">
+            <source src="../aud/btnclick.ogg" type="audio/ogg">
+            <source src="../aud/btnclick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="leftcolumnForMainPageHeader">
+            <div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+            <a href="@davixspot.html" class="fa fa-home" id="home"></a>
+        </div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>ECONOMICS WASSCE 1995</center></div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 40</div>
+            <center><p id="Obj"><strong>OBJECTIVE TEST</strong></p></center>
+            <p>1. Economics is a social science which studies how <br><input type="radio" name = "sel1" value="a">A. tto redistribute income<br><input type="radio" name = "sel1" value="b">B. human beings behave<br><input type="radio" name = "sel1" value="c">C. the market price is fixed<br><input type="radio" name = "sel1" value="d">D. scarce resources are allocated to satisfy human wants<br><input type="radio" name = "sel1" value="e">E. wasteful spend is eliminated</p>
+            <p>2. Scarcity in Economics means  <br><input type="radio" name = "sel2" value="a">A. shortage of commodity<br><input type="radio" name = "sel2" value="b">B. unlimited demand for consumer goods<br><input type="radio" name = "sel2" value="c">C. limited supply of goods and services<br><input type="radio" name = "sel2" value="d">D. total absence of commodity in the market<br><input type="radio" name = "sel2" value="e">E. high cost of a commodity</p>
+            <p>3. The decision on what to produce is a problem in  <br><input type="radio" name = "sel3" value="a">A. all economic systems<br><input type="radio" name = "sel3" value="b">B. a mixed economic system<br><input type="radio" name = "sel3" value="c">C. a democratic socialist economy only<br><input type="radio" name = "sel3" value="d">D. a free enterprise system only<br><input type="radio" name = "sel3" value="e">E. a planned economic system only</p>
+            <p>4. The law of demand states that  <br><input type="radio" name = "sel4" value="a">A. as price increases, quantity demanded remains constant<br><input type="radio" name = "sel4" value="b">B. demand increases as price increases<br><input type="radio" name = "sel4" value="c">C. as price falls, quantity demanded also falls<br><input type="radio" name = "sel4" value="d">D. as price falls, quantity demanded increases<br><input type="radio" name = "sel4" value="e">E. demand and supply remain constant whether price falls or increases</p>
+            <p>5. Which of the following is an important limiting factor in the application of division of labour?<br><input type="radio" name = "sel5" value="a">A. market size<br><input type="radio" name = "sel5" value="b">B. availability of infrastructure<br><input type="radio" name = "sel5" value="c">C. wage rate<br><input type="radio" name = "sel5" value="d">D. raw materials<br><input type="radio" name = "sel5" value="e">E. availability of land</p>
+            <p>6. Which of the following factors does not encourage the location of industries?<br><input type="radio" name = "sel6" value="a">A. nearness to market<br><input type="radio" name = "sel6" value="b">B. availability of infrastructural facilities<br><input type="radio" name = "sel6" value="c">C. government influence in sitting industries<br><input type="radio" name = "sel6" value="d">D. political instability<br><input type="radio" name = "sel6" value="e">E. abundance oof cheap labour</p>
+            <p>7. All the underlisted factors directly affects the supply of a commodity except  <br><input type="radio" name = "sel7" value="a">A. price<br><input type="radio" name = "sel7" value="b">B. improved production method<br><input type="radio" name = "sel7" value="c">C. access to capital<br><input type="radio" name = "sel7" value="d">D. demand for the commodity<br><input type="radio" name = "sel7" value="e">E. level of income</p>
+            <p>8. Which of the following economic system is in operation in Nigeria?<br><input type="radio" name = "sel8" value="a">A. capitalist economy<br><input type="radio" name = "sel8" value="b">B. socialist and mixed economy<br><input type="radio" name = "sel8" value="c">C. socialist economy<br><input type="radio" name = "sel8" value="d">D. capitalist and free economy<br><input type="radio" name = "sel8" value="e">E. mixed economy</p>
+            <p>9. Giffen commodities are those commodities <br><input type="radio" name = "sel9" value="a">A. which gives rise to a cobweb situation<br><input type="radio" name = "sel9" value="b">B. for which demand increases as price increases<br><input type="radio" name = "sel9" value="c">C. which have a low price elasticity of demand<br><input type="radio" name = "sel9" value="d">D. which are in short supply<br><input type="radio" name = "sel9" value="e">E. which have a high income elasticity of demand</p>
+            <p>10. Effective demand in Economics means  <br><input type="radio" name = "sel10" value="a">A. the desire for a commodity<br><input type="radio" name = "sel10" value="b">B. a proposal to purchase a good on credit<br><input type="radio" name = "sel10" value="c">C. the desire for a commodity or service backed by purchasing power<br><input type="radio" name = "sel10" value="d">D. an irrevocable instruction to the seller to meet up the needs of the buyers<br><input type="radio" name = "sel10" value="e">E. the propensity to consume goods produced by manufacturers</p>
+            <p>11. Government can influence aggregate demand through all the following measures except  <br><input type="radio" name = "sel11" value="a">A. reduction in personal income tax<br><input type="radio" name = "sel11" value="b">B. retirement of directors-general in the public service<br><input type="radio" name = "sel11" value="c">C. creation of employment opportunities<br><input type="radio" name = "sel11" value="d">D. compulsory deductions from salaries of all categories of workers<br><input type="radio" name = "sel11" value="e">E. upward revision of workers' fringe benefits</p>
+            <p>12. The term production in Economics means  <br><input type="radio" name = "sel12" value="a">A. manufacturing of goods<br><input type="radio" name = "sel12" value="b">B. the creation of utilities<br><input type="radio" name = "sel12" value="c">C. giving birth to children<br><input type="radio" name = "sel12" value="d">D. the distribution of goods and services<br><input type="radio" name = "sel12" value="e">E. using labour in creating something</p>
+            <p>13. Under the socialist economy, the decision on what to produce is determined by the  <br><input type="radio" name = "sel13" value="a">A. producers<br><input type="radio" name = "sel13" value="b">B. level of expected profit<br><input type="radio" name = "sel13" value="c">C. price<br><input type="radio" name = "sel13" value="d">D. government<br><input type="radio" name = "sel13" value="e">E. preferences for consumers</p>
+            <p>14. Credit creation by banks is limited by  <br><input type="radio" name = "sel14" value="a">A. an increase in bank deposits<br><input type="radio" name = "sel14" value="b">B. the establishment of specialized banks<br><input type="radio" name = "sel14" value="c">C. the non-availability of collateral security<br><input type="radio" name = "sel14" value="d">D. the use of cheques for all transactions of the banks<br><input type="radio" name = "sel14" value="e">E. abolishing the reserve ratio</p>
+            <p>15. Which of the following explains marginal cost?<br><input type="radio" name = "sel15" value="a">A. overhead cost plus variable costs resulting from production<br><input type="radio" name = "sel15" value="b">B. the average cost of producing more units of the product<br><input type="radio" name = "sel15" value="c">C. the extra cost of producing more units of the product<br><input type="radio" name = "sel15" value="d">D. overhead cost minus variable cost<br><input type="radio" name = "sel15" value="e">E. the addition to total cost resulting from the production of an additional unit</p>
+            <p>16. The effect of an increase in price on the demand of a commodity with elastic demand will be  <br><input type="radio" name = "sel16" value="a">A. an increase in the demand for the commodity<br><input type="radio" name = "sel16" value="b">B. a decrease in the demand for the commodity<br><input type="radio" name = "sel16" value="c">C. a further increase in the price of the commodity<br><input type="radio" name = "sel16" value="d">D. reduction in the number of distributors of the commodity<br><input type="radio" name = "sel16" value="e">E. a general increase in the cost of production</p>
+            <p>17. If AC = Average cost of production, FC = Fixed cost of production, VC = Variable cost of production and TC = Total cost of production, then <br><input type="radio" name = "sel17" value="a">A. VC = <sup>TC</sup>/<sub>FC</sub><br><input type="radio" name = "sel17" value="b">B. VC = FC + AC<br><input type="radio" name = "sel17" value="c">C. VC = TC - AC<br><input type="radio" name = "sel17" value="d">D. VC = TC - FC<br><input type="radio" name = "sel17" value="e">E. VC = <sup>TC - FC</sup>/<sub>VC</sub></p>
+            <p>18. In perfect competition, the marginal cost curve intersects the average cost curve <br><input type="radio" name = "sel18" value="a">A. from below at its lowest point<br><input type="radio" name = "sel18" value="b">B. from above at its lowest point<br><input type="radio" name = "sel18" value="c">C. from below before the lowest point<br><input type="radio" name = "sel18" value="d">D. at the zero point<br><input type="radio" name = "sel18" value="e">E. from below after the lower point</p>
+            <p>19. Which of the following does not require the use of information from census?<br><input type="radio" name = "sel19" value="a">A. allocating central government revenue among states or regions<br><input type="radio" name = "sel19" value="b">B. planning for development in the states or regions<br><input type="radio" name = "sel19" value="c">C. demarcating constituencies for elections in the states or regions<br><input type="radio" name = "sel19" value="d">D. providing adequate social amenities and services in the states or regions<br><input type="radio" name = "sel19" value="e">E. controlling geographical mobility of labour among the states or regions</p>
+            <p>20. Which of the following is not a function of an insurance company?<br><input type="radio" name = "sel20" value="a">A. mobilization of funds through premiums collected<br><input type="radio" name = "sel20" value="b">B. encouragement of savings habit through life assurances<br><input type="radio" name = "sel20" value="c">C. collection of deposits from the public<br><input type="radio" name = "sel20" value="d">D. granting of loans on long-term basis for investment<br><input type="radio" name = "sel20" value="e">E. encourage of investment by security of capital</p>
+            <p>21. Malthus observed in his theory that population was growing <br><input type="radio" name = "sel21" value="a">A. at a regular rate<br><input type="radio" name = "sel21" value="b">B. in arithmetical progression<br><input type="radio" name = "sel21" value="c">C. in geometrical progression <br><input type="radio" name = "sel21" value="d">D. in mathematical progression <br><input type="radio" name = "sel21" value="e">E. in trigonometrical progression</p>
+            <p>22. AT optimum population level, a country has its  <br><input type="radio" name = "sel22" value="a">A. maximum population<br><input type="radio" name = "sel22" value="b">B. ageing population <br><input type="radio" name = "sel22" value="c">C. highest birth rate<br><input type="radio" name = "sel22" value="d">D. highest output per head<br><input type="radio" name = "sel22" value="e">E. lowest death rate</p>
+            <p>23. Which of the following does not give a characteristics of money?<br><input type="radio" name = "sel23" value="a">A. durable<br><input type="radio" name = "sel23" value="b">B. portable<br><input type="radio" name = "sel23" value="c">C. division into small units<br><input type="radio" name = "sel23" value="d">D. generally acceptable<br><input type="radio" name = "sel23" value="e">E. medium of exchange</p>
+            <p>24. Which of the following constitutes the major component of money supply in a developed economy?<br><input type="radio" name = "sel24" value="a">A. demand deposits<br><input type="radio" name = "sel24" value="b">B. paper money<br><input type="radio" name = "sel24" value="c">C. bank drafts<br><input type="radio" name = "sel24" value="d">D. coins<br><input type="radio" name = "sel24" value="e">E. time deposits</p>
+            <p>25. A point along a customer's indifference curve shows  <br><input type="radio" name = "sel25" value="a">A. the different commodities he can consume<br><input type="radio" name = "sel25" value="b">B. a combination of all commodities he is willing to buy<br><input type="radio" name = "sel25" value="c">C. a combination of two commodities from which he drives the same satisfaction<br><input type="radio" name = "sel25" value="d">D. the quantities of commodities demanded by him<br><input type="radio" name = "sel25" value="e">E. the difference between quantity supplied and quantity demanded</p>
+            <p>26. Is a monopolist is attempting to maximize profit, which of the following should he attempt to do?<br><input type="radio" name = "sel26" value="a">A. equate average cost to average revenue<br><input type="radio" name = "sel26" value="b">B. equate marginal cost to marginal revenue<br><input type="radio" name = "sel26" value="c">C. equate marginal cost to average revenue<br><input type="radio" name = "sel26" value="d">D. fix price and output<br><input type="radio" name = "sel26" value="e">E. equate price to total cost</p>
+            <p>27. The greatest foreign exchange earner for Nigeria before the advent of petroleum was  <br><input type="radio" name = "sel27" value="a">A. mining<br><input type="radio" name = "sel27" value="b">B. handicraft<br><input type="radio" name = "sel27" value="c">C. agriculture<br><input type="radio" name = "sel27" value="d">D. manufacturing<br><input type="radio" name = "sel27" value="e">E. tourism</p>
+            <p>28. A budget is defined as a  <br><input type="radio" name = "sel28" value="a">A. summary of expected expenditure by individuals and governments<br><input type="radio" name = "sel28" value="b">B. summary of expected incomes<br><input type="radio" name = "sel28" value="c">C. record of value of services rendered in a year<br><input type="radio" name = "sel28" value="d">D. record of goods produced in a year<br><input type="radio" name = "sel28" value="e">E. summary of expected income and expenditure</p>
+            <p>29. The real value of money is  <br><input type="radio" name = "sel29" value="a">A. its face value<br><input type="radio" name = "sel29" value="b">B. what is can buy at a particular time<br><input type="radio" name = "sel29" value="c">C. its rate of exchange with other currencies<br><input type="radio" name = "sel29" value="d">D. its intrinsic worth<br><input type="radio" name = "sel29" value="e">E. its rate of circulation</p>
+            <p>30. A tax whose rate increases as income increases is  <br><input type="radio" name = "sel30" value="a">A. an indirect tax<br><input type="radio" name = "sel30" value="b">B. progressive tax<br><input type="radio" name = "sel30" value="c">C. a regressive tax<br><input type="radio" name = "sel30" value="d">D. a direct tax<br><input type="radio" name = "sel30" value="e">E. a proportional tax</p>
+            <p>31. Which of the following best describes the multiplier?<br><input type="radio" name = "sel31" value="a">A. product of income and expenditure<br><input type="radio" name = "sel31" value="b">B. curves or saving and expenditure<br><input type="radio" name = "sel31" value="c">C. ratio of change in income to the expenditure that bought it<br><input type="radio" name = "sel31" value="d">D. constant level of income<br><input type="radio" name = "sel31" value="e">E. equality of marginal propensities to consume and save</p>
+            <p>32. Net National Product (NNP) is equal to the   <br><input type="radio" name = "sel32" value="a">A. Gross Domestic Product (GDP) less depreciation<br><input type="radio" name = "sel32" value="b">B. Gross National Product (GNP) less depreciation<br><input type="radio" name = "sel32" value="c">C. Gross Domestic Product (GDP) plus depreciation<br><input type="radio" name = "sel32" value="d">D. Gross National Product (GNP) plus depreciation<br><input type="radio" name = "sel32" value="e">E. Gross National Income (GNI) plus taxation</p>
+            <p>33. Terms of trade simply means the price <br><input type="radio" name = "sel33" value="a">A. ratio of import to export<br><input type="radio" name = "sel33" value="b">B. ratio of import multiplied by import<br><input type="radio" name = "sel33" value="c">C. ratio of export to import<br><input type="radio" name = "sel33" value="d">D. ratio of export multiplied by price ratio of import<br><input type="radio" name = "sel33" value="e">E. of export minus price of import</p>
+            <p>34. Balance of trade can be defined as   <br><input type="radio" name = "sel34" value="a">A. the value of imports in relation to the value of a country's exports<br><input type="radio" name = "sel34" value="b">B. the price ratio of imports against that of exports<br><input type="radio" name = "sel34" value="c">C. equality in the total receipts and payments of a country in a year<br><input type="radio" name = "sel34" value="d">D. percentage value of imports over percentage value of exports<br><input type="radio" name = "sel34" value="e">E. prices of export versus prices of imports</p>
+            <p>35. Which of the following is not a feature of a perfect market?<br><input type="radio" name = "sel35" value="a">A. large number of buyers and sellers<br><input type="radio" name = "sel35" value="b">B. homogeneity of products<br><input type="radio" name = "sel35" value="c">C. preferential treatment<br><input type="radio" name = "sel35" value="d">D. absence of transport cost<br><input type="radio" name = "sel35" value="e">E. perfect knowledge of market situation</p>
+            <p>36. Which of the following is not a source of raising funds for a public limited liability company in West Africa?<br><input type="radio" name = "sel36" value="a">A. bank loans<br><input type="radio" name = "sel36" value="b">B. issue of shares<br><input type="radio" name = "sel36" value="c">C. issue of debentures<br><input type="radio" name = "sel36" value="d">D. ploughing back profits<br><input type="radio" name = "sel36" value="e">E. sales of bonds</p>
+            <p>37. Which of the following is not an objective of the Indigenisation Policy in Nigeria? To   <br><input type="radio" name = "sel37" value="a">A. make Nigerians dominate their economy<br><input type="radio" name = "sel37" value="b">B. increase Nigerian participation in the economy<br><input type="radio" name = "sel37" value="c">C. prevent foreign monopoly of the economy<br><input type="radio" name = "sel37" value="d">D. eliminate foreign participation in the Nigerian economy<br><input type="radio" name = "sel37" value="e">E. protect the national interest and security</p>
+            <p>38. Where was oil first discovered in commercial quantities in Nigeria?<br><input type="radio" name = "sel38" value="a">A. Oloibiri<br><input type="radio" name = "sel38" value="b">B. Warri<br><input type="radio" name = "sel38" value="c">C. Elesa Eleme<br><input type="radio" name = "sel38" value="d">D. Onitsha<br><input type="radio" name = "sel38" value="e">E. Port Harcourt</p>
+            <p>39. Where is the headquaters of the African Development Bank (ADB) locaed?<br><input type="radio" name = "sel39" value="a">A. Lome<br><input type="radio" name = "sel39" value="b">B. Adis Ababa<br><input type="radio" name = "sel39" value="c">C. Accra<br><input type="radio" name = "sel39" value="d">D. Lagos<br><input type="radio" name = "sel39" value="e">E. Abidjan</p>
+            <p>40. International trade takes place because of differences in   <br><input type="radio" name = "sel40" value="a">A. production cost<br><input type="radio" name = "sel40" value="b">B. language<br><input type="radio" name = "sel40" value="c">C. government policy<br><input type="radio" name = "sel40" value="d">D. currency<br><input type="radio" name = "sel40" value="e">E. international boundary</p>
+        </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                  <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersECO1995)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(40);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+                
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2018.html">2018</a></li>
+                            <li><a href="English 2017.html">2017</a></li>
+                            <li><a href="English 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2018.html">2018</a></li>
+                            <li><a href="Biology 2017.html">2017</a></li>
+                            <li><a href="Biology 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Economics</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px;"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>

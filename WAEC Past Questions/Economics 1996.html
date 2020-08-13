@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+    <head>
+        <title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+            <source src="../aud/start.ogg" type="audio/ogg">
+            <source src="../aud/start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/optionselect.ogg" type="audio/ogg">
+            <source src="../aud/optionselect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="stopAudio">
+            <source src="../aud/stop.ogg" type="audio/ogg">
+            <source src="../aud/stop.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="passedAudio">
+            <source src="../aud/passed.ogg" type="audio/ogg">
+            <source src="../aud/passed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/failed.ogg" type="audio/ogg">
+            <source src="../aud/failed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="clickAudio">
+            <source src="../aud/btnclick.ogg" type="audio/ogg">
+            <source src="../aud/btnclick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="leftcolumnForMainPageHeader">
+            <div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+            <a href="@davixspot.html" class="fa fa-home" id="home"></a>
+        </div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>ECONOMICS WASSCE 1996</center></div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 40</div>
+            <center><p id="Obj"><strong>OBJECTIVE TEST</strong></p></center>
+            <p>1. The basic problem that economists attempt to solve is the  <br><input type="radio" name = "sel1" value="a">A. ranking of goods and services<br><input type="radio" name = "sel1" value="b">B. pricing of goods and services<br><input type="radio" name = "sel1" value="c">C. scarcity of resources<br><input type="radio" name = "sel1" value="d">D. foregoing of alternatives<br><input type="radio" name = "sel1" value="e">E. satisfaction of producers needs</p>
+            <p>2. The ranking of a consumer's needs in order of importance is termed  <br><input type="radio" name = "sel2" value="a">A. opportunity cost<br><input type="radio" name = "sel2" value="b">B. economics of scale<br><input type="radio" name = "sel2" value="c">C. scale of preference<br><input type="radio" name = "sel2" value="d">D. making of choice<br><input type="radio" name = "sel2" value="e">E. direct production</p>
+            <strong>Use the diagram below to answer questions 3 to 5. The total number of fruits consumed by a family in a year is 720 and this is represented by the pie chart below.</strong>
+            <p>3. The quantity of banana consumed by the family is  <br><input type="radio" name = "sel3" value="a">A. 60 <input type="radio" name = "sel3"value="b">B. 120 <input type="radio" name = "sel3" value="c">C. 200 <input type="radio" name = "sel3" value="d">D. 240 <input type="radio" name = "sel3" value="e">E. 300</p>
+            <p>4. The sum total of the quantity of mango and orange consumed by the family is  <br><input type="radio" name = "sel4" value="a">A. 120 <input type="radio" name = "sel4" value="b">B. 200 <input type="radio" name = "sel4" value="c">C. 360 <input type="radio" name = "sel4" value="d">D. 400 <input type="radio" name = "sel4" value="e">E. 520</p>
+            <p>5. The quantity of carrot consumed by the family is  <br><input type="radio" name = "sel5" value="a">A. 200 <input type="radio" name = "sel5" value="b">B. 360 <input type="radio" name = "sel5" value="c">C. 400 <input type="radio" name = "sel5" value="d">D. 520 <input type="radio" name = "sel5" value="e">E. 600</p>
+            <p>6. If the price of a commodity rises from &#8358;2.00 to &#8358;4.00, and its supply increases from 100 to 125 then the coefficient of elasticity of supply is  <br><input type="radio" name = "sel6" value="a">A. 0.025 <input type="radio" name = "sel6" value="b">B. 0.25 <input type="radio" name = "sel6" value="c">C. 0.22 <input type="radio" name = "sel6" value="d">D. 0.25 <input type="radio" name = "sel6" value="e">E. 0.23</p>
+            <p>7. If as a result of a fall in the price of commodity X, the quantity demanded for commodity Y falls, then commodities X and Y are  <br><input type="radio" name = "sel7" value="a">A. complementary<br><input type="radio" name = "sel7" value="b">B. in joint demand<br><input type="radio" name = "sel7" value="c">C. luxuries<br><input type="radio" name = "sel7" value="d">D. in composite demand<br><input type="radio" name = "sel7" value="e">E. substitutes</p>
+            <p>8. MUX = PX; MUY = PY (where X and Y are goods, MU = Marginal Utility and P = Price)<br>The above represents the  <br><input type="radio" name = "sel8" value="a">A. marginal utility equation<br><input type="radio" name = "sel8" value="b">B. equation for consumer dis-equilibrium<br><input type="radio" name = "sel8" value="c">C. utility maximization equation<br><input type="radio" name = "sel8" value="d">D. equation for total utility<br><input type="radio" name = "sel8" value="e">E. equation for price elasticity</p>
+            <p>9. Subsistence agriculture means  <br><input type="radio" name = "sel9" value="a">A. cultivation for external use<br><input type="radio" name = "sel9" value="b">B. cultivation for local industries<br><input type="radio" name = "sel9" value="c">C. farming for the urban dwellers<br><input type="radio" name = "sel9" value="d">D. cultivation for household consumption<br><input type="radio" name = "sel9" value="e">E. cultivation for foreign currency</p>
+            <p>10. Farm produce are graded, packed and distributed by  <br><input type="radio" name = "sel10" value="a">A. purchasing cooperatives<br><input type="radio" name = "sel10" value="b">B. agricultural cooperative bank<br><input type="radio" name = "sel10" value="c">C. consumers cooperative society<br><input type="radio" name = "sel10" value="d">D. marketing cooperative<br><input type="radio" name = "sel10" value="e">E. wholesaler cooperative</p>
+            <p>11. Localization of industries is  <br><input type="radio" name = "sel11" value="a">A. the industrialization of a country<br><input type="radio" name = "sel11" value="b">B. the concentration of the firms of an industry in a particular area<br><input type="radio" name = "sel11" value="c">C. the location of a firm at a particular locality<br><input type="radio" name = "sel11" value="d">D. the economic development of a locality<br><input type="radio" name = "sel11" value="e">E. government intervention in the location of industries</p>
+            <p>12. Which of the following correctly illustrates the chain of distribution?<br><input type="radio" name = "sel12" value="a">A. manufacturer &#151;&#187; wholesaler &#151;&#187; retailer &#151;&#187; &#151;&#187; consumers<br><input type="radio" name = "sel12" value="b">B. consumer &#151;&#187; retailer &#151;&#187; wholesaler &#151;&#187; manufacturer<br><input type="radio" name = "sel12" value="c">C. wholesaler &#151;&#187; manufacturer &#151;&#187; retailer &#151;&#187; consumer<br><input type="radio" name = "sel12" value="d">D. distributor &#151;&#187; consumers &#151;&#187; wholesaler &#151;&#187; manufacturer<br><input type="radio" name = "sel12" value="e">E. producer &#151;&#187; manufacturer &#151;&#187; wholesaler &#151;&#187; retailer</p>
+            <p>13. The natural growth rate of a population is the  <br><input type="radio" name = "sel13" value="a">A. death rate plus net immigration<br><input type="radio" name = "sel13" value="b">B. rate of migration divided by birth rate<br><input type="radio" name = "sel13" value="c">C. birth rate minus death rate<br><input type="radio" name = "sel13" value="d">D. sum of birth rate and net immigration rate<br><input type="radio" name = "sel13" value="e">E. sum of birth rate and death rate</p>
+            <p>14. Decreasing returns to scale implies that if all factors of production are doubled, output will be  <br><input type="radio" name = "sel14" value="a">A. more than doubled<br><input type="radio" name = "sel14" value="b">B. less than doubled<br><input type="radio" name = "sel14" value="c">C. doubled<br><input type="radio" name = "sel14" value="d">D. exchanged <br><input type="radio" name = "sel14" value="e">E. trebled</p>
+            <p>15. Rent and interest are rewards to  <br><input type="radio" name = "sel15" value="a">A. labour and capital respectively<br><input type="radio" name = "sel15" value="b">B. land only<br><input type="radio" name = "sel15" value="c">C. capital only<br><input type="radio" name = "sel15" value="d">D. labour and land respectively<br><input type="radio" name = "sel15" value="e">E. land and capital respectively</p>
+            <p>16. The process that leads to an agreement on the conditions of service between employers and employees is termed  <br><input type="radio" name = "sel16" value="a">A. salary negotiation<br><input type="radio" name = "sel16" value="b">B. arbitration <br><input type="radio" name = "sel16" value="c">C. collective bargaining<br><input type="radio" name = "sel16" value="d">D. conciliation<br><input type="radio" name = "sel16" value="e">E. reconciliation</p>
+            <p>17. Diminishing returns occur in the short run when there is reduction in the  <br><input type="radio" name = "sel17" value="a">A. average product of the fixed factor<br><input type="radio" name = "sel17" value="b">B. total product on the variable factor<br><input type="radio" name = "sel17" value="c">C. total product on the fixed factor<br><input type="radio" name = "sel17" value="d">D. marginal product on the variable factor<br><input type="radio" name = "sel17" value="e">E. marginal product on the fixed factor</p>
+            <p>18. In production, factory buildings are regarded as  <br><input type="radio" name = "sel18" value="a">A. variable costs<br><input type="radio" name = "sel18" value="b">B. average costs<br><input type="radio" name = "sel18" value="c">C. marginal costs<br><input type="radio" name = "sel18" value="d">D. total costs<br><input type="radio" name = "sel18" value="e">E. fixed costs</p>
+            <p>19. The ownership of Public Limited Company is made up of  <br><input type="radio" name = "sel19" value="a">A. two to twenty persons<br><input type="radio" name = "sel19" value="b">B. a minimum of seven shareholders<br><input type="radio" name = "sel19" value="c">C. a minimum of fifty and maximum of one hundred shareholders<br><input type="radio" name = "sel19" value="d">D. two to fifty shareholders<br><input type="radio" name = "sel19" value="e">E. a maximum of fifty shareholders</p>
+            <p>20. All the following are economic reasons for establishing public enterprise except the provision of  <br><input type="radio" name = "sel20" value="a">A. an avenue for expressing national prestige<br><input type="radio" name = "sel20" value="b">B. services at a cheaper cost<br><input type="radio" name = "sel20" value="c">C. socially necessary facilities<br><input type="radio" name = "sel20" value="d">D. services which are natural monopolies<br><input type="radio" name = "sel20" value="e">E. employment opportunities </p>
+            <p>21. The unemployment associated with decrease in demand is referred to as  <br><input type="radio" name = "sel21" value="a">A. disguised<br><input type="radio" name = "sel21" value="b">B. imposed<br><input type="radio" name = "sel21" value="c">C. cyclical<br><input type="radio" name = "sel21" value="d">D. voluntary<br><input type="radio" name = "sel21" value="e">E. functional</p>
+            <p>22. Monopoly can best be described as a market in which<br><input type="radio" name = "sel22" value="a">A. a single seller sells a product which has no close substitute<br><input type="radio" name = "sel22" value="b">B. few sellers sell a product at different prices<br><input type="radio" name = "sel22" value="c">C. the entry of other firms is restricted by the few firms in the market<br><input type="radio" name = "sel22" value="d">D. two or more sellers sell a product which is differentiated<br><input type="radio" name = "sel22" value="e">E. a single buyer buys a product which has no close substitute</p>
+            <p>23. Which of the following market structures are imperfect in competition?
+            <br>I. Monopoly<br>II. Duopoly<br>III. Oligopoly<br><input type="radio" name = "sel23" value="a">A. I only<br><input type="radio" name = "sel23" value="b">B. II and III only<br><input type="radio" name = "sel23" value="c">C. I and II only<br><input type="radio" name = "sel23" value="d">D. I and III<br><input type="radio" name = "sel23" value="e">E. I, II and III</p>
+            <p>24. Demand-pull inflation results when there is  <br><input type="radio" name = "sel24" value="a">A. inadequate improvement in the wage rate of workers<br><input type="radio" name = "sel24" value="b">B. excessive demand due to high purchasing power<br><input type="radio" name = "sel24" value="c">C. excessive supply of raw materials for production<br><input type="radio" name = "sel24" value="d">D. rise in productivity of the factors of production<br><input type="radio" name = "sel24" value="e">E. excessive rise in the standard of living</p>
+            <p>25. Changes in the value of money can be measured by  <br><input type="radio" name = "sel25" value="a">A. the distributors<br><input type="radio" name = "sel25" value="b">B. a price index<br><input type="radio" name = "sel25" value="c">C. a demand index<br><input type="radio" name = "sel25" value="d">D. a supply index<br><input type="radio" name = "sel25" value="e">E. the use of cheques</p>
+            <p>26. The efficiency of a country's labour force depends on all the following except  <br><input type="radio" name = "sel26" value="a">A. improved working conditions<br><input type="radio" name = "sel26" value="b">B. better health care facilities<br><input type="radio" name = "sel26" value="c">C. adequate training<br><input type="radio" name = "sel26" value="d">D. stable economy<br><input type="radio" name = "sel26" value="e">E. frequent strikes and lock-outs</p>
+            <p>27. Which of the following is bank's responsibility to its shareholders?<br><input type="radio" name = "sel27" value="a">A. making profits<br><input type="radio" name = "sel27" value="b">B. creating money<br><input type="radio" name = "sel27" value="c">C. paying high interest rate<br><input type="radio" name = "sel27" value="d">D. preventing inflation<br><input type="radio" name = "sel27" value="e">E. issuing currencies</p>
+            <p>28. Deficit financing means  <br><input type="radio" name = "sel28" value="a">A. receiving grants from the INF<br><input type="radio" name = "sel28" value="b">B. having budget surplus<br><input type="radio" name = "sel28" value="c">C. excessive government spendings on banks<br><input type="radio" name = "sel28" value="d">D. borrowing to finance a budget<br><input type="radio" name = "sel28" value="e">E. inadequate supply of money from the finance companies</p>
+            <p>29. Development banks mainly provide  <br><input type="radio" name = "sel29" value="a">A. savings account facilities for a developing economy<br><input type="radio" name = "sel29" value="b">B. foreign exchange facilities for importers and exporters<br><input type="radio" name = "sel29" value="c">C. capital for development of specific sectors<br><input type="radio" name = "sel29" value="d">D. capital for hire-purchase of machinery<br><input type="radio" name = "sel29" value="e">E. capital for the development of special banks</p>
+            <p>30. In calculating the Gross National Product (GNP) by the income approach, all the following are included except  <br><input type="radio" name = "sel30" value="a">A. wages and salaries<br><input type="radio" name = "sel30" value="b">B. direct taxes paid by persons and companies<br><input type="radio" name = "sel30" value="c">C. rents on houses<br><input type="radio" name = "sel30" value="d">D. retirement benefits<br><input type="radio" name = "sel30" value="e">E. business profits</p>
+            <p>31. Exchange control is a weapon used in regulating  <br><input type="radio" name = "sel31" value="a">A. internal trade<br><input type="radio" name = "sel31" value="b">B. stock exchange<br><input type="radio" name = "sel31" value="c">C. foreign trade<br><input type="radio" name = "sel31" value="d">D. barter trade<br><input type="radio" name = "sel31" value="e">E. exchange of personal property</p>
+            <p>32. The current and capital accounts in Nigeria's balance payment contain all the following items except  <br><input type="radio" name = "sel32" value="a">A. oil export<br><input type="radio" name = "sel32" value="b">B. receipts for shipping services<br><input type="radio" name = "sel32" value="c">C. cost of aviation<br><input type="radio" name = "sel32" value="d">D. foreign investments<br><input type="radio" name = "sel32" value="e">E. IMF Standard Drawing Right (SDR)</p>
+            <p>33. Who bears the greater burden of the indirect tax when the demand for a commodity is inelastic? The  <br><input type="radio" name = "sel33" value="a">A. wholesaler<br><input type="radio" name = "sel33" value="b">B. shareholder<br><input type="radio" name = "sel33" value="c">C. retailer<br><input type="radio" name = "sel33" value="d">D. consumer<br><input type="radio" name = "sel33" value="e">E. entrepreneur</p>
+            <p>34. Economic growth specifically refers to the  <br><input type="radio" name = "sel34" value="a">A. reliance on imported goods in preference to homemade goods<br><input type="radio" name = "sel34" value="b">B. sustained increase in the output of goods and services per head<br><input type="radio" name = "sel34" value="c">C. changes in technical and institutional arrangement of the economy<br><input type="radio" name = "sel34" value="d">D. continued increase in the depletion of a country's natural resources<br><input type="radio" name = "sel34" value="e">E. increase in the total number of people in the economy</p>
+            <p>35. The hourly wages of five employees of the Nigerian Ports Authority are &8358;2.52, &8358;3.96, &8358;3.28, &8358;9.20 and &8358;3.75 respectively. The median hourly wage is  <br><input type="radio" name = "sel35" value="a">A. &8358;2.52<br><input type="radio" name = "sel35" value="b">B. &8358;3.28<br><input type="radio" name = "sel35" value="c">C. &8358;3.75<br><input type="radio" name = "sel35" value="d">D. &8358;3.96<br><input type="radio" name = "sel35" value="e">E. &8358;9.20</p>
+            <p>36. The petroleum industry in Nigeria is an example of a  <br><input type="radio" name = "sel36" value="a">A. capital-intensive industry<br><input type="radio" name = "sel36" value="b">B. service industry<br><input type="radio" name = "sel36" value="c">C. labour-intensive industry<br><input type="radio" name = "sel36" value="d">D. tertiary production industry<br><input type="radio" name = "sel36" value="e">E. localized industry</p>
+            <p>37. The international cartel formed to stabilize the world oil market is the  <br><input type="radio" name = "sel37" value="a">A. Economic Commission for Africa <br><input type="radio" name = "sel37" value="b">B. International Monetary Fund<br><input type="radio" name = "sel37" value="c">C. Organization of Petroleum Exporting countries<br><input type="radio" name = "sel37" value="d">D. Organization of Petroleum Importing Countries<br><input type="radio" name = "sel37" value="e">E. International Trade Organization</p>
+            <p>38. The United Nations Conference on Trade And Development (UNCTAD) is a forum designed specifically for discussing the <br><input type="radio" name = "sel38" value="a">A. political conflicts in the United Nations Security Council<br><input type="radio" name = "sel38" value="b">B. educational needs of the developed countries<br><input type="radio" name = "sel38" value="c">C. religions affairs in Southern Africa<br><input type="radio" name = "sel38" value="d">D. revenue allocation in Nigeria<br><input type="radio" name = "sel38" value="e">E. better terms of trade in the world</p>
+            <p>39. The International Monetary Fund (IMF) is an international organization which <br><input type="radio" name = "sel39" value="a">A. gives annual grants to all developing countries<br><input type="radio" name = "sel39" value="b">B. assists countries to solve their balance of payment problems<br><input type="radio" name = "sel39" value="c">C. execute the development projects<br><input type="radio" name = "sel39" value="d">D. helps to promote regional economic groupings<br><input type="radio" name = "sel39" value="e">E. is owned by all developed countries</p>
+            <p>40. An economic system in which most means of production are owned and controlled by the state is known as a  <br><input type="radio" name = "sel40" value="a">A. socialist economy<br><input type="radio" name = "sel40" value="b">B. capitalist economy<br><input type="radio" name = "sel40" value="c">C. mixed economy<br><input type="radio" name = "sel40" value="d">D. political economy<br><input type="radio" name = "sel40" value="e">E. feudal economy</p>
+                    </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                  <div id='timer'><button id="startBtn" onclick="startExam(100)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults()">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore();">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+                
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2018.html">2018</a></li>
+                            <li><a href="English 2017.html">2017</a></li>
+                            <li><a href="English 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2018.html">2018</a></li>
+                            <li><a href="Biology 2017.html">2017</a></li>
+                            <li><a href="Biology 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Economics</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px;"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>

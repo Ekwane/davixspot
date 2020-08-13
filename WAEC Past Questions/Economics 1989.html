@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+    <head>
+        <title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+            <source src="../aud/start.ogg" type="audio/ogg">
+            <source src="../aud/start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/optionselect.ogg" type="audio/ogg">
+            <source src="../aud/optionselect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="stopAudio">
+            <source src="../aud/stop.ogg" type="audio/ogg">
+            <source src="../aud/stop.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="passedAudio">
+            <source src="../aud/passed.ogg" type="audio/ogg">
+            <source src="../aud/passed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/failed.ogg" type="audio/ogg">
+            <source src="../aud/failed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="clickAudio">
+            <source src="../aud/btnclick.ogg" type="audio/ogg">
+            <source src="../aud/btnclick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="leftcolumnForMainPageHeader">
+            <div id = "mainPageHeader">SCHOOL MANAGER</div>
+        </div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>ECONOMICS<br> WASSCE 1989</center></div>
+            <div id="time">Time:  1 hour</div>
+            <div id="num">Number of Questions: 40</div>
+            <center><p id="Obj"><strong>OBJECTIVE TEST</strong></p></center>
+            <p>1.  Scarcity in Economics means that resources <br><input type="radio" name = "sel1" value="a">A. are not enough to share among the producers of goods and services<br><input type="radio" name = "sel1" value="b">B. needed to satisfy human wants are limited<br><input type="radio" name = "sel1" value="c">C. are never enough to share among consumers of goods and services<br><input type="radio" name = "sel1" value="d">D. required to meet our essential wants are limited<br><input type="radio" name = "sel1" value="e">E. can be managed if those who use them bahve rationally</p>
+            <p>2. The table which shows the price of a commodity and the quantity of it that is determined per unit time is a  <br><input type="radio" name = "sel2" value="a">A. time series<br><input type="radio" name = "sel2" value="b">B. demand series<br><input type="radio" name = "sel2" value="c">C. demand curve<br><input type="radio" name = "sel2" value="d">D. demand schedule<br><input type="radio" name = "sel2" value="e">E. time schedule</p>
+            <p>3. The greatest disadvantage of the barter system is the need for  <br><input type="radio" name = "sel3" value="a">A. durability<br><input type="radio" name = "sel3" value="b">B. divisibility<br><input type="radio" name = "sel3" value="c">C. homogeneity<br><input type="radio" name = "sel3" value="d">D. double coincedence of wants<br><input type="radio" name = "sel3" value="e">E. portability</p>
+            <p>4. An inflation in which which the price level rises steadily at an average rate of about 2% per annum is best described as  <br><input type="radio" name = "sel4" value="a">A. galloping<br><input type="radio" name = "sel4" value="b">B. induced<br><input type="radio" name = "sel4" value="c">C. creeping<br><input type="radio" name = "sel4" value="d">D. suppressed<br><input type="radio" name = "sel4" value="e">E. run-away</p>
+            <p>5. In Economics, market is defined as  <br><input type="radio" name = "sel5" value="a">A. a play where buyers and sellers come together to exchange goods<br><input type="radio" name = "sel5" value="b">B. any agreement made for consumers to buy all they need<br><input type="radio" name = "sel5" value="c">C. any arrangement made for producers to sell all their goods<br><input type="radio" name = "sel5" value="d">D. any arrangement whereby the buyers and sellers are in close touch with one another<br><input type="radio" name = "sel5" value="e">E. a place where only consumer goods sold</p>
+            <p>6. Money supply at any given point in time refers to  <br><input type="radio" name = "sel6" value="a">A. bank notes, coins and demand deposits<br><input type="radio" name = "sel6" value="b">B. notes and coins only<br><input type="radio" name = "sel6" value="c">C. minted money<br><input type="radio" name = "sel6" value="d">D. hoarded money<br><input type="radio" name = "sel6" value="e">E. money recieved as gifts</p>
+            <p>7. All the following are sources of finance to a Join Stock Company except  <br><input type="radio" name = "sel7" value="a">A. bank loan<br><input type="radio" name = "sel7" value="b">B. equity shares<br><input type="radio" name = "sel7" value="c">C. debentures<br><input type="radio" name = "sel7" value="d">D. preference shares<br><input type="radio" name = "sel7" value="e">E. coooperative thrift</p>
+            <p>8. Data presented in tables are usually arranged in  <br><input type="radio" name = "sel8" value="a">A. charts and tables<br><input type="radio" name = "sel8" value="b">B. rows and columns<br><input type="radio" name = "sel8" value="c">C. graphs and rows<br><input type="radio" name = "sel8" value="d">D. pictograms and columns<br><input type="radio" name = "sel8" value="e">E. maps and pie charts</p>
+            <p>9. Which of the following is not a function of money?<br><input type="radio" name = "sel9" value="a">A. store of value<br><input type="radio" name = "sel9" value="b">B. unit of account<br><input type="radio" name = "sel9" value="c">C. measure of value<br><input type="radio" name = "sel9" value="d">D. standard for differed payment<br><input type="radio" name = "sel9" value="e">E. stability in value</p>
+            <p>10. Which of the following is not appropriate in calculating national income figures?<br><input type="radio" name = "sel10" value="a">A. output method<br><input type="radio" name = "sel10" value="b">B. income method<br><input type="radio" name = "sel10" value="c">C. expendition method<br><input type="radio" name = "sel10" value="d">D. value added method<br><input type="radio" name = "sel10" value="e">E. depreciation method</p>
+            <p>11. What is the correct term for thise group of exports: tractors, television, components, drugs and cars?<br><input type="radio" name = "sel11" value="a">A. current account items<br><input type="radio" name = "sel11" value="b">B. visible exports<br><input type="radio" name = "sel11" value="c">C. capital account items<br><input type="radio" name = "sel11" value="d">D. invisible exports<br><input type="radio" name = "sel11" value="e">E. visible exports</p>
+            <p>12. The indicator of the value of money in the market is  <br><input type="radio" name = "sel12" value="a">A. the general price level<br><input type="radio" name = "sel12" value="b">B. effective supply<br><input type="radio" name = "sel12" value="c">C. the equilibrium price<br><input type="radio" name = "sel12" value="d">D. effective demand<br><input type="radio" name = "sel12" value="e">E. consumer's income</p>
+            <p>13. Mobility of labour is not affected by  <br><input type="radio" name = "sel13" value="a">A. the optimum size of population<br><input type="radio" name = "sel13" value="b">B. marriage and family<br><input type="radio" name = "sel13" value="c">C. the regulation of trade unions<br><input type="radio" name = "sel13" value="d">D. the period of training<br><input type="radio" name = "sel13" value="e">E. cultural and relegious believe</p>
+            <p>14. Given that fixed cost is &#8358;500.00, variable cost is &#8358;1,500.00 and output is 50 units, what would be the average cost of producing one unit?<br><input type="radio" name = "sel14" value="a">A. &#8358;2,000.00<br><input type="radio" name = "sel14" value="b">B. &#8358;60.00<br><input type="radio" name = "sel14" value="c">C. &#8358;50.00<br><input type="radio" name = "sel14" value="d">D. &#8358;40.00<br><input type="radio" name = "sel14" value="e">E. &#8358;30.00</p>
+            <p>15. Which of the following is regarded as fixed cost?<br><input type="radio" name = "sel15" value="a">A. cost of raw materials<br><input type="radio" name = "sel15" value="b">B. cost of fuel<br><input type="radio" name = "sel15" value="c">C. cost or light<br><input type="radio" name = "sel15" value="d">D. rent on land<br><input type="radio" name = "sel15" value="e">E. labour wages</p>
+            <p>16. Which of the following reasons explains the upward sloping supply curve in a competitive market?<br><input type="radio" name = "sel16" value="a">A. Ceteres paribus, marginal cost increases as output increases<br><input type="radio" name = "sel16" value="b">B. as new firm enters the market, factor prices move up<br><input type="radio" name = "sel16" value="c">C. firms are in business to satisfy consumers<br><input type="radio" name = "sel16" value="d">D. marginal cost often increases in a competitive market<br><input type="radio" name = "sel16" value="e">E. firms are in business to produce goods</p>
+            <p>17. A firm is said to be a Joint-Stock company when it  <br><input type="radio" name = "sel17" value="a">A. is owned by the government<br><input type="radio" name = "sel17" value="b">B. operates as a public corporation<br><input type="radio" name = "sel17" value="c">C. is a limited liability company<br><input type="radio" name = "sel17" value="d">D. sells its shares to members of the public<br><input type="radio" name = "sel17" value="e">E. is administered by the public</p>
+            <p>18. Which of the following factors is not important in deciding the locaton of an industry?<br><input type="radio" name = "sel18" value="a">A. the native language of the people<br><input type="radio" name = "sel18" value="b">B. availability of suitable labour<br><input type="radio" name = "sel18" value="c">C. sources of cheap powers and raw materials<br><input type="radio" name = "sel18" value="d">D. proximity to the location of a similar industry<br><input type="radio" name = "sel18" value="e">E. proximity to the market</p>
+            <p>19. The clearing house os all commercial banks in Nigeria is the  <br><input type="radio" name = "sel19" value="a">A. General Post Office<br><input type="radio" name = "sel19" value="b">B. Bank for Commerce and Industry<br><input type="radio" name = "sel19" value="c">C. Nigeria Industrial Development Bank<br><input type="radio" name = "sel19" value="d">D. Mortage Bank<br><input type="radio" name = "sel19" value="e">E. Central Bank</p>
+            <p>20. One of the advantages of a sole proprietorship is that <br><input type="radio" name = "sel20" value="a">A. risks are unlimited<br><input type="radio" name = "sel20" value="b">B. technological progress is often out of reach<br><input type="radio" name = "sel20" value="c">C. shares and stocks can be issued to raise funds<br><input type="radio" name = "sel20" value="d">D. initiatives can be used in all cases<br><input type="radio" name = "sel20" value="e">E. it folds up the case of death, lunacy or insolvency</p>
+            <p>21. Which of the following does not hinder the effective distribution of goods in West Africa?<br><input type="radio" name = "sel21" value="a">A. inadequate transportation network<br><input type="radio" name = "sel21" value="b">B. inadequate storage facilities for agricultural goods<br><input type="radio" name = "sel21" value="c">C. inadequate credit facilities for potential distributors<br><input type="radio" name = "sel21" value="d">D. government participation in the distributive trade<br><input type="radio" name = "sel21" value="e">E. the tendency to hoard and smuggle</p>
+            <p>22. Which of the following categories of people do not gain during inflation?<br><input type="radio" name = "sel22" value="a">A. debtors<br><input type="radio" name = "sel22" value="b">B. businessmen<br><input type="radio" name = "sel22" value="c">C. shareholders<br><input type="radio" name = "sel22" value="d">D. investors<br><input type="radio" name = "sel22" value="e">E. creditors</p>
+            <p>23. One of the arguments against the presence of middlemen in the distribution chain is that they  <br><input type="radio" name = "sel23" value="a">A. cause increases in the prices of commodities<br><input type="radio" name = "sel23" value="b">B. are commissioned agents<br><input type="radio" name = "sel23" value="c">C. helps in keeping prices stable<br><input type="radio" name = "sel23" value="d">D. grade and blend goods<br><input type="radio" name = "sel23" value="e">E. can be found almost anywhere</p>
+            <p>24. Which of the following is the normal channel by which commodities reach the final consumers?<br><input type="radio" name = "sel24" value="a">A. manufacturer - wholesaler - agent - retailer - consumer<br><input type="radio" name = "sel24" value="b">B. manufacturer - wholeselar - retailer - consumer<br><input type="radio" name = "sel24" value="c">C. manufacturer - wholesaler - sales representative - retailer - consumer<br><input type="radio" name = "sel24" value="d">D. manufacturer - wholesaler - retailer - agent - consumer<br><input type="radio" name = "sel24" value="e">E. manufacturer - wholesaler - retailer - sales representative - consumer</p>
+            <p>25. The movement of a worker from one grade to another within the same industry is a form of mobility of labour which is  <br><input type="radio" name = "sel25" value="a">A. geographical<br><input type="radio" name = "sel25" value="b">B. vertical<br><input type="radio" name = "sel25" value="c">C. occupational<br><input type="radio" name = "sel25" value="d">D. horizontal<br><input type="radio" name = "sel25" value="e">E. lateral</p>
+            <p>26. A person who buys in bulk and sells in bits is a  <br><input type="radio" name = "sel26" value="a">A. manufacturer<br><input type="radio" name = "sel26" value="b">B. sales representatives<br><input type="radio" name = "sel26" value="c">C. retailer<br><input type="radio" name = "sel26" value="d">D. advertiser<br><input type="radio" name = "sel26" value="e">E. distributor</p>
+            <p>27. Which of the following is not correct?<br><input type="radio" name = "sel27" value="a">A. population refers to the number of people living in place <br><input type="radio" name = "sel27" value="b">B. the population of a place is not static<br><input type="radio" name = "sel27" value="c">C. population is known through a census<br><input type="radio" name = "sel27" value="d">D. population is affected by the amount of money in circulation<br><input type="radio" name = "sel27" value="e">E. population can be affected by natural disaster</p>
+            <p>28. The money paid per hour or week for work done is known as  <br><input type="radio" name = "sel28" value="a">A. cost<br><input type="radio" name = "sel28" value="b">B. time rate<br><input type="radio" name = "sel28" value="c">C. bonus<br><input type="radio" name = "sel28" value="d">D. wage rate<br><input type="radio" name = "sel28" value="e">E. labour</p>
+            <p>29. In a rapidly growing economy where human labour is being replaced by machine, there is likely to be a  <br><input type="radio" name = "sel29" value="a">A. classical unemployment<br><input type="radio" name = "sel29" value="b">B. fractional unemployment<br><input type="radio" name = "sel29" value="c">C. seasonal unemployment<br><input type="radio" name = "sel29" value="d">D. residual unemployment<br><input type="radio" name = "sel29" value="e">E. cyclical unemployment</p>
+            <p>30. Distribution is part of production because it  <br><input type="radio" name = "sel30" value="a">A. makes goods and services available to the final consumer<br><input type="radio" name = "sel30" value="b">B. transports the goods from place to place<br><input type="radio" name = "sel30" value="c">C. offers employment to people<br><input type="radio" name = "sel30" value="d">D. encourages the provision of good roads, waterways and railways<br><input type="radio" name = "sel30" value="e">E. links the consumers with the producers</p>
+            <p>31. The grouping of population into males and females is known as the  <br><input type="radio" name = "sel31" value="a">A. geographical distribution<br><input type="radio" name = "sel31" value="b">B. age distribution<br><input type="radio" name = "sel31" value="c">C. sex distribution<br><input type="radio" name = "sel31" value="d">D. man-woman distribution<br><input type="radio" name = "sel31" value="e">E. occupational distribution</p>
+            <p>32. Which of the following is the most important reason why wages differ among occupations?<br><input type="radio" name = "sel32" value="a">A. length and cost of training<br><input type="radio" name = "sel32" value="b">B. supply of labour<br><input type="radio" name = "sel32" value="c">C. attractiveness of the job<br><input type="radio" name = "sel32" value="d">D. influence of trade unions<br><input type="radio" name = "sel32" value="e">E. government decision</p>
+            <p>33. A legal tender is any  <br><input type="radio" name = "sel33" value="a">A. form of money<br><input type="radio" name = "sel33" value="b">B. means of exchange authorized by the state<br><input type="radio" name = "sel33" value="c">C. commodity generally acceptable as a means of exchange<br><input type="radio" name = "sel33" value="d">D. total productivity of labour<br><input type="radio" name = "sel33" value="e">E. amount of goods and services that the wage can fetch</p>
+            <p>34. Wages are to some extent determined by the  <br><input type="radio" name = "sel34" value="a">A. marginal utility of labour<br><input type="radio" name = "sel34" value="b">B. marginal productivity of labour<br><input type="radio" name = "sel34" value="c">C. average productivity of labour<br><input type="radio" name = "sel34" value="d">D. total productivity of labour<br><input type="radio" name = "sel34" value="e">E. amount of goods and services that the wage can fetch</p>
+            <p>35. Inflation in any economy  <br><input type="radio" name = "sel35" value="a">A. has no monetary connection<br><input type="radio" name = "sel35" value="b">B. implies a sustained decrease in the general price level<br><input type="radio" name = "sel35" value="c">C. always increases the value of the national currency<br><input type="radio" name = "sel35" value="d">D. tends to redistribute income arbitrarily<br><input type="radio" name = "sel35" value="e">E. tends to bring down market prices</p>
+            <p>36. Which of these does not encourage industrial development?<br><input type="radio" name = "sel36" value="a">A. tax exemption<br><input type="radio" name = "sel36" value="b">B. provision of financial institutions<br><input type="radio" name = "sel36" value="c">C. provision of infrastructural facilities<br><input type="radio" name = "sel36" value="d">D. limitation of market for industrial products<br><input type="radio" name = "sel36" value="e">E. government direct participation</p>
+            <p>37. Industry can simply be defined as  <br><input type="radio" name = "sel37" value="a">A. many firms producing different products<br><input type="radio" name = "sel37" value="b">B. a firm or firms producing similar goods and services<br><input type="radio" name = "sel37" value="c">C. different firms producing different goods<br><input type="radio" name = "sel37" value="d">D. different firms producing equal number of similar goods and services<br><input type="radio" name = "sel37" value="e">E. many firms producing unidentical goods and services</p>
+            <p>38. The reward of a debenture holder of a public company is a fixed rate of  <br><input type="radio" name = "sel38" value="a">A. interest<br><input type="radio" name = "sel38" value="b">B. return<br><input type="radio" name = "sel38" value="c">C. dividend<br><input type="radio" name = "sel38" value="d">D. rent<br><input type="radio" name = "sel38" value="e">E. allowance</p>
+            <p>39. The downward sloping of the Average Revenue Curve of the monopolists indicates that he  <br><input type="radio" name = "sel39" value="a">A. can control both output and price<br><input type="radio" name = "sel39" value="b">B. can only break even<br><input type="radio" name = "sel39" value="c">C. can control either the output or the price, but not both<br><input type="radio" name = "sel39" value="d">D. <br><input type="radio" name = "sel39" value="e">E. exploits the consumers</p>
+            <p>40. Which of the following hard currencies is usually used in the pricing of oil at the world market particularly by the Organization of Petroleum Exporting Countries (OPEC)? The  <br><input type="radio" name = "sel40" value="a">A. US dolar<br><input type="radio" name = "sel40" value="b">B. Japanese yen<br><input type="radio" name = "sel40" value="c">C. Pound sterling<br><input type="radio" name = "sel40" value="d">D. Deutschemark<br><input type="radio" name = "sel40" value="e">E. Naira</p>
+        </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                  <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersECO1989)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(40);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+                
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2018.html">2018</a></li>
+                            <li><a href="English 2017.html">2017</a></li>
+                            <li><a href="English 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2018.html">2018</a></li>
+                            <li><a href="Biology 2017.html">2017</a></li>
+                            <li><a href="Biology 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Economics</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px;"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>
