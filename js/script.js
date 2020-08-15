@@ -872,6 +872,108 @@ var answersBIO2015 = ['', '', '', '', '', '', '', '',
 					  '', '', '', '', '', '', '', '', 
 					  '', '', '', '', '', '', '', '', 
 					  '', '', '', '', '', '', '', '',
+					  '', '']; 
+var answersECO1988 = ['b', 'b', 'e', 'd', 'c', 'b', 'b', 'd', 
+					  'c', 'c', 'b', 'e', 'd', 'a', 'b', 'd', 
+					  'a', 'd', 'e', 'a', 'c', 'e', 'c', 'b', 
+					  'e', 'c', 'c', 'b', 'd', 'd', 'e', 'd', 
+					  'b', 'd', 'd', 'c', 'c', 'c', 'b', 'a'];
+var answersECO1989 = ['b', 'd', 'd', 'c', 'd', 'a', 'e', 'b', 
+					  'e', 'e', 'b', 'a', 'a', 'd', 'd', 'a', 
+					  'd', 'a', 'e', 'd', 'd', 'e', 'a', 'b', 
+					  'd', 'c', 'd', 'd', 'b', 'a', 'c', 'b', 
+					  'c', 'b', 'd', 'd', 'b', 'a', 'c', 'a'];
+var answersECO1990 = ['d', 'c', 'e', 'e', 'd', 'e', 'a', 'd', 
+					  'a', 'd', 'c', 'a', 'a', 'a', 'a', 'd', 
+					  'c', 'e', 'b', 'a', 'c', 'a', 'c', 'a',
+					  'c', 'c', 'c', 'e', 'b', 'e', 'e', 'e', 
+					  'e', 'c', 'a', 'a', 'c', 'b', 'e', 'a'];
+var answersECO1991 = ['c', 'd', 'e', 'e', 'b', 'b', 'e', 'a', 
+					  'b', 'a', 'c', 'b', 'd', 'b', 'b', 'c', 
+					  'a', 'd', 'a', 'e', 'b', 'c', 'b', 'a', 
+					  'a', 'c', 'b', 'b', 'a', 'a', 'd', 'c', 
+					  'b', 'b', 'd', 'e', 'b', 'b', 'c', 'd'];
+var answersECO1992 = ['a', 'e', 'c', 'e', 'b', 'd', 'e', 'c', 
+					  'd', 'd', 'd', 'b', 'a', 'b', 'd', 'c', 
+					  'd', 'a', 'c', 'd', 'e', 'a', 'c', 'a', 
+					  'b', 'e', 'd', 'c', 'c', 'b', 'd', 'b', 
+					  'd', 'b', 'b', 'c', 'e', 'a', 'a', 'a'];
+var answersECO1993 = ['a', 'c', 'b', 'c', 'b', 'd', 'a', 'c', 
+					  'b', 'c', 'd', 'e', 'a', 'b', 'd', 'e', 
+					  'b', 'a', 'e', 'c', 'a', 'c', 'e', 'a', 
+					  'a', 'c', 'a', 'd', 'a', 'b', 'e', 'e', 
+					  'e', 'd', 'a', 'b', 'd', 'a', 'e', 'a'];
+var answersECO1994 = ['c', 'a', 'e', 'e', 'b', 'a', 'd', 'c', 
+					  'e', 'e', 'd', 'c', 'd', 'b', 'd', 'd', 
+					  'a', 'e', 'c', 'b', 'c', 'b', 'c', 'c', 
+					  'e', 'd', 'c', 'c', 'c', 'c', 'd', 'e', 
+					  'b', 'a', 'd', 'a', 'a', 'c', 'c', 'd'];
+var answersECO1994 = ['c', 'a', 'e', 'e', 'b', 'a', 'd', 'c', 
+					  'e', 'e', 'd', 'c', 'd', 'b', 'd', 'c', 
+					  'a', 'e', 'c', 'b', 'c', 'b', 'c', 'c', 
+					  'e', 'd', 'c', 'c', 'c', 'c', 'd', 'e', 
+					  'b', 'a', 'd', 'a', 'a', 'c', 'c', 'd'];
+var answersECO1995 = ['d', 'c', 'a', 'd', 'a', 'd', 'e', 'e', 
+					  'b', 'c', 'b', 'b', 'd', 'c', 'e', 'b', 
+					  'd', 'a', 'e', 'c', 'c', 'd', 'e', 'a', 
+					  'c', 'b', 'c', 'e', 'b', 'b', 'c', 'b', 
+					  'c', 'a', 'c', 'e', 'd', 'a', 'e', 'a'];
+var answersECO1996 = ['c', 'c', 'b', 'd', 'a', 'd', 'e', 'c', 
+					  'd', 'd', 'b', 'a', 'c', 'b', 'e', 'c', 
+					  'd', 'e', 'b', 'a', 'c', 'a', 'e', 'b', 
+					  'b', 'e', 'a', 'd', 'c', 'd', 'c', 'e', 
+					  'b', 'c', 'a', 'c', 'c', 'e', 'b', 'a'];
+var answersECO1997 = ['d', 'e', 'a', 'b', 'a', 'c', 'b', 'b', 
+					  'b', 'b', 'e', 'b', 'a', 'c', 'a', 'd', 
+					  'b', 'a', 'e', 'a', 'c', 'c', 'b', 'c', 
+					  'd', 'e', 'd', 'e', 'a', 'd', 'c', 'e', 
+					  'a', 'd', 'c', 'd', 'e', 'e', 'b', 'e'];
+var answersECO1998 = ['b', 'c', 'a', 'c', 'c', 'd', 'e', 'c', 
+					  'a', 'c', 'c', 'a', 'e', 'b', 'e', 'a', 
+					  'a', 'e', 'b', 'c', 'b', 'c', 'a', 'c', 
+					  'c', 'c', 'b', 'a', 'b', 'b', 'c', 'b', 
+					  'd', 'd', 'a', 'a', 'e', 'a', 'd', 'e'];
+var answersECO1999 = ['a', 'd', 'c', 'b', 'b', 'a', 'd', 'c', 
+					  'b', 'a', 'd', 'a', 'c', 'a', 'd', 'b', 
+					  'b', 'c', 'b', 'c', 'a', 'b', 'c', 'd', 
+					  'd', 'c', 'c', 'a', 'b', 'd', 'b', 'a', 
+					  'b', 'c', 'd', 'b', 'a', 'c', 'c', 'd', 
+					  'b', 'c', 'd', 'c', 'a', 'b', 'a', 'd',
+					  'd', 'a'];
+var answersECO2000 = ['c', 'd', 'd', 'b', 'b', 'd', 'b', 'b', 
+					  'b', 'd', 'a', 'c', 'd', 'b', 'c', 'a', 
+					  'b', 'c', 'c', 'a', 'b', 'c', 'b', 'c', 
+					  'a', 'a', 'a', 'c', 'c', 'a', 'd', 'c', 
+					  'b', 'd', 'a', 'a', 'b', 'c', 'd', 'b', 
+					  'd', 'b', 'd', 'b', 'a', 'a', 'd', 'a',
+					  'd', 'c'];
+var answersECO2001 = ['a', 'a', 'd', 'd', 'b', 'a', 'a', 'b', 
+					  'c', 'b', 'a', 'c', 'a', 'c', 'c', 'd', 
+					  'b', 'd', 'a', 'c', 'a', 'b', 'a', 'b', 
+					  'd', 'c', 'b', 'b', 'c', 'b', 'b', 'a', 
+					  'b', 'c', 'c', 'd', 'b', 'd', 'b', 'd', 
+					  'c', 'c', 'a', 'c', 'a', 'c', 'b', 'd',
+					  'b', 'a']; 
+var answersECO2002 = ['c', 'c', 'a', 'a', 'b', 'a', 'c', 'c', 
+					  'd', 'd', 'a', 'b', 'd', 'd', 'c', 'b', 
+					  'b', 'd', 'd', 'b', 'a', 'a', 'd', 'b', 
+					  'b', 'd', 'd', 'c', 'a', 'c', 'a', 'b', 
+					  'c', 'c', 'a', 'd', 'a', 'a', 'd', 'c', 
+					  'd', 'b', 'c', 'd', 'd', 'a', 'c', 'c',
+					  'd', 'a'];
+var answersECO2003 = ['c', 'd', 'c', 'c', 'a', 'c', 'a', 'c', 
+					  'a', 'a', 'b', 'b', 'd', 'c', 'c', 'a', 
+					  'b', 'b', 'a', 'c', 'a', 'c', 'c', 'b', 
+					  'd', 'a', 'c', 'd', 'c', 'b', 'a', 'd', 
+					  'c', 'b', 'c', 'c', 'a', 'a', 'b', 'a', 
+					  'b', 'd', 'd', 'c', 'b', 'b', 'd', 'a',
+					  'a', 'd'];
+var answersECO2004 = ['', '', '', '', '', '', '', '', 
+					  '', '', '', '', '', '', '', '', 
+					  '', '', '', '', '', '', '', '', 
+					  '', '', '', '', '', '', '', '', 
+					  '', '', '', '', '', '', '', '', 
+					  '', '', '', '', '', '', '', '',
 					  '', '']; //David, always make extra copies
 var responses=[], // user's selected values
 user = {score: 0, spent: 0, left: 0, duration: 0, correctanswers: 0, totalanswered: 0, questioncount: 0}, // user object
@@ -892,10 +994,17 @@ function examiner(examMode)
 	}
 }
 
-function displayResults(answers)
+function displayResults(answers, event)
 {
+	if (event.target.name == 'eng1991'||event.target.name == 'eng1992'){
+		this.answers = answers;
+		this.responses = eng1991_1992Res();
+		checkResponses(this.responses,this.answers);
+		document.getElementById("clickAudio").play();
+		return;
+	}
 	this.answers = answers; // get the requesting html page's answer set
-	this.responses = getResponses()&&eng1991_1992Res(); // get the responses on the requesting page
+	this.responses = getResponses();// get the responses on the requesting page
 	checkResponses(this.responses,this.answers); // check the responses, update user.correctanswers value and resultSheet display
 	document.getElementById("clickAudio").play();
 }
@@ -1253,7 +1362,7 @@ function checkResponses(responses,answers)
 	for (var i=0,length=responses.length; i<length; i++) {
 		if (responses[i]!=null) // update display, if answer is not correct, otherwise update user.correctanswers value and display
 		if (responses[i].value==answers[i]){ document.getElementById('resultSheet').innerHTML += ""+(i+1)+". " + responses[i].value +" was correct"+"<br>"; user.correctanswers++; }
-		else{ document.getElementById('resultSheet').innerHTML += "<br> "+(i+1)+". "+ responses[i].value + " was wrong. " + " Correct answer:  " + answers[i] + " <br> "; }
+		else{ document.getElementById('resultSheet').innerHTML += "<br> "+(i+1)+". "+ responses[i].value + " was wrong. " + "Correct answer: " + answers[i] + " <br> "; }
         }
         
 }
@@ -1261,7 +1370,7 @@ function checkResponses(responses,answers)
 function displayScore(questioncount)
 {
 	user.questioncount = questioncount; // register the count of questions answered in test
-	displayResults(this.answers); // register user.correctanswers by getting and checking answers and responses, and displaying the assessment on resultSheet
+	displayResults(this.answers, event); // register user.correctanswers by getting and checking answers and responses, and displaying the assessment on resultSheet
 	user.score = checkPerformance(user.questioncount); // register percentScore
 	document.getElementById("clickAudio").play();
 }
@@ -1353,16 +1462,16 @@ function resetExam()
 	startExam(user.duration/60); // restart the exam using the saved exam duration
 }
 
-function resetResponse(item) // REPAIR THIS METHOD; REMOVE SELECTION FROM ITEM
+function resetResponse(item) // remove selection from item
 {
-	if (item!=null) item.checked = ''; // count any found item and set it to be not selected
+	if (item!=null) item.checked = false; // count any found item and set it to be not selected
 }
 
 function stopExam()
 {
     pensUp = true; // disallow the user to write
 	this.responses = getResponses(); // get the responses on the requesting page
-	displayResults(this.answers); // register user.correctanswers by getting and checking answers and responses, and displaying the assessment on resultSheet
+	displayResults(this.answers, event); // register user.correctanswers by getting and checking answers and responses, and displaying the assessment on resultSheet
 	this.responses.forEach(resetResponse); // reset the responses on the requesting page
 	document.getElementById('resetBtn').disabled = false; // enable the Reset button
 	document.getElementById('stopBtn').style.visibility = "hidden"; // hide the Stop button
@@ -1411,7 +1520,7 @@ function updateSpent()
 function updateLeft(duration) 
 {
 	if (user.spent<duration*60) user.left = (duration*60) - user.spent + 1; // update the time left using test duration and time spent
-	else if (user.spent>=duration*60||user.left<=0) { var al = alert('The time for your test has elapsed.'); return;} // inform user that time has elapsed and end
+	else if (user.spent>=duration*60||user.left<=0) { var al = alert('The time for your test has elapsed.'); return } // inform user that time has elapsed and end
 	user.left -= 0.5; // register a loss of 0.5s from the time left
 	convertAndShowTime(user.left,'timeLeft'); // convert seconds left to time and display on timeLeft
 	
