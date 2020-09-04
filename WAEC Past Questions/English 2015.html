@@ -1,9 +1,11 @@
 <!doctype html>
 <html>
     <head>
-		<link rel="stylesheet" href="../css/style.css" type="text/css">
-		<script src="../js/script.js" type="text/javascript"></script>
-		<title>English 2015 WAEC past questions</title>
+		<title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
 	</head>
     <body onload="examiner(false)">
 		<audio id="welcomeAudio">
@@ -37,24 +39,17 @@
 		  Your browser does not support the audio element.
 		</audio>
         <div class="leftcolumnForMainPageHeader">
-            <div id = "mainPageHeader">
-                SCHOOL MANAGER
-            </div>
-            <div id="motto">Learning made Easier</div>
-        </div>        
+			<div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+			<a href="@davixspot.html" class="fa fa-home" id="home"></a>
+		</div>        
         <div class="leftcolumn">
-            <br>
-            <div id="pageHeader">
-              <center>ENGLISH LANGUAGE 2<br> WASSCE 2015</center>
-            </div>
+            <div id="pageHeader"><center>ENGLISH LANGUAGE 2 WASSCE 2015</center></div>
             <div id="time">Time: 1 hour</div>
-            <div id="num">Number of Questions: 100</div>
-           <center>
-              <p id="Obj">OBJECTIVE TEST<br><strong>SECTION A</strong></p>
-            </center>
-            <center>
-            <em><strong>Instruction: </strong>In each of the following sentences, there is one underlined word and a gap. From the list of words lettered A to D, choose the one that most nearly opposite in meaning to the underlined word and that would at the same time, correctly fill the gap in the sentence.</em>            
-            </center>
+            <div id="num">Number of Questions: 80</div>
+            <center><p id="Obj">OBJECTIVE TEST<br><strong>SECTION A</strong></p></center>
+            <center><em>
+                <strong>Instruction: </strong>In each of the following sentences, there is one underlined word and a gap. From the list of words lettered A to D, choose the one that most nearly opposite in meaning to the underlined word and that would at the same time, correctly fill the gap in the sentence.
+            </em></center>
             <p>1. The officer was expecting to be ___________ by his boss, but he was <u><b>censured</b></u> <br><input type="radio" name = "sel1" value="questioned">A. questioned <br><input type="radio" name = "sel1" value="praised">B. praised <br><input type="radio" name = "sel1" value="decorated">C. decorated <br><input type="radio" name = "sel1" value="guided">D. guided</p>
             <p>2. The honor that was <u><b>conferred</b></u> on the general has been ___________ <br><input type="radio" name = "sel2" value="withdrawn">A. withdrawn <br><input type="radio" name = "sel2" value="confirmed">B. confirmed <br><input type="radio" name = "sel2" value="rejected">C. rejected <br><input type="radio" name = "sel2" value="destroyed">D. destroyed</p>
             <p>3. The modest young man was <u><b>rewarded</b></u> while his ______________ brother was punished <br><input type="radio" name = "sel3" value="intelligent">A. intelligent <br><input type="radio" name = "sel3" value="handsome">B. handsome <br><input type="radio" name = "sel3" value="conceited">C. cconcieted <br><input type="radio" name = "sel3" value="wicked">D. wicked</p>
@@ -155,73 +150,99 @@
                 </strong><br>
                 <em><strong>Instruction: </strong>In the following passage, the numbered gaps indicate missing words. Choose the word that is most suitable to fill the numbered gaps in the passage.</em>
             </center>
-            <div id="sec6">
+            <div>
                 The life of a professional sportman is always hectic. Consider his typical day. As soon as he wakes up in the morning, he jumps out of bed hurriedly and wears his <select id="sel71"><option>-71-</option><option value="a">a. jump suit</option><option value="b">B. tracksuit</option><option value="c">C. swim suit</option><option value="d">D. shell suit</option></select>. Promptly, he goes out to
                 <select id="sel72"><option>-72-</option><option value="a">A. trot</option><option value="b">B. skip</option><option value="c">C. jog</option><option value="d">D. jump</option></select> for an hour or so, covering a few miles. However, on some other days, he might choose to practice with the skipping <select id="sel73"><option>-73-</option><option value="a">A. cord</option><option value="b">B. rope</option><option value="c">C. string</option><option value="d">D. twine</option></select>
                 at home. Having completed whichever one it is, he goes in for a shower and dresses for the days training <select id="sel74"><option>-74-</option><option value="a">A. practice</option><option value="b">B. sessions</option><option value="c">C. regime</option><option value="d">D. rehearsal</option></select>. This phase varies according to his speciality. If he is a boxer, he goes into the <select id="sel75"><option>-75-</option><option value="a">A. stadium</option><option value="b">B. sports club</option><option value="c">C. sports center</option><option value="d">D. gymnasium</option></select>
-                to deal with the punching bag and later with a sparring partner, usually under the watchful <select id="sel76"><option>-76-</option><option value="a">A. supervision</option><option value="b">B. custody</option><option value="c">C. command</option><option value="d">D. charge</option></select> of his coach. If he is a sprinter, he engages in continuous practice <select id="sel77"><option>-77-</option><option value="a">A. calculating</option><option value="b">B. gauging</option><option value="c">C. timing</option><option value="d">D. assessing</option></select>his performance with a stopwatch
-                . If he is in football, netball, volley ball, or lawn tennis, he can best practice with others while the coach watches, calling attention to specific skills and <select id="sel78"><option>-78-</option><option value="a">A. techniques</option><option value="b">B. systems</option><option value="c">C. methods</option><option value="d">D. procedures</option></select> not well mastered. In most cases, training last virtually the better parts of a day, and often ends in discussions where certain technicalities are ironed out . Now, when medals are
+                to deal with the punching bag and later with a sparring partner, usually under the watchful <select id="sel76"><option>-76-</option><option value="a">A. supervision</option><option value="b">B. custody</option><option value="c">C. command</option><option value="d">D. charge</option></select> of his coach. If he is a sprinter, he engages in continuous practice <select id="sel77"><option>-77-</option><option value="a">A. calculating</option><option value="b">B. gauging</option><option value="c">C. timing</option><option value="d">D. assessing</option></select>his performance with a stopwatch.
+                If he is in football, netball, volley ball, or lawn tennis, he can best practice with others while the coach watches, calling attention to specific skills and <select id="sel78"><option>-78-</option><option value="a">A. techniques</option><option value="b">B. systems</option><option value="c">C. methods</option><option value="d">D. procedures</option></select> not well mastered. In most cases, training last virtually the better parts of a day, and often ends in discussions where certain technicalities are ironed out . Now, when medals are
                 <select id="sel79"><option>-79-</option><option value="a">A. achieved</option><option value="b">B. secured</option><option value="c">C. won</option><option value="d">D. lifted</option></select>, Most people just watch actions on the television hardly realize what it takes to become a star. When all the <select id="sel80"><option>-80-</option><option value="a">A. struggles</option><option value="b">B. pains</option><option value="c">C. hurts</option><option value="d">D. rigours</option></select> are considered and the high risks taken into account, one would realize that a star is worth the millions he earns.
             </div>
             <p>&nbsp</p>
-            <center>
-               <a href="oralenglish" class="oralLink">Take a test on 2015 Oral English</a>
-            </center>
+            <div id='mainBody'>
+                <div class='essayque'>
+                    Write a letter to your friend in another school giving him/her three reasons why your school has been excelling in academic work.
+                </div><br>
+                <div class='essayque'>
+                    Write an article suitable for publication in a national newspaper on the topic: "<i>The importance of national sports festivals.</i>"
+                </div><br>
+                <div class='essayque'>
+                    The School Hero in an award meant for the student considered to have exhibited examplary leadership qualities. As the senior prefect, Write a letter to the head of your school, giving three reasons why your nominee should be given the award.
+                </div><br>
+                <div class='essayque'>
+                    You are the main speaker in a debate on the topic: <i>"Students in rural schools have more advantages than those in the urban centers."</i> Write your arguments for or against the motion.
+                </div><br>
+                <div class='essayque'>
+                    Write a story ending with the statement: We apologized to each other and reconciled.
+                </div><br><br>
+            </div>
+            <div id='TestLinks'>
+                <center>
+                   <a href="English 2015 Test of Oral.html">Take a test on 2015 WAEC Oral English</a>&nbsp;<a id='essay'>Essay Exam</a>
+                </center>
+            </div>
         </div>
         <div class="rightcolumn">
             <div class="floatingDiv">
                 <span id="clockntimer">
-                    <button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button><br><label id="clockLabel"></label><br>
-                    Spent:<label id="timeSpent"></label><br>
+                    <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>  
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
                     Left:<label id="timeLeft"></label>
                 </span>
-                <center><button class="submit" onclick = "displayResults(answersENG2015)">Answers</button></center>
-                <center><button class="submit2" onclick = "displayScore(79)">Total score in percentage</button></center>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersENG2015, event)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(80);">Performance</button></center>
+                </div> 
                 <div id="resultSheet">
-    
+        
                 </div>
             </div>
         </div>
         <div id="footer">
-            <center><p>Click <a href="#top">here</a> to go back to top.</p></center>
-            <p>For more past questions on WAEC, NECO and other exams, visit <a href="https://www.tutusfx.com/@davixspot">@Davixspot</a>.<br><br>
-              Available past questions include<br>
-            <ul>
-            <!-- the English Language dropdown -->
-            <nav><span>English Language</span>
-                <ul class="dropdown-content">
-                    <li><a href="English 2018.html">2018</a><br></li>
-                    <li><a href="English 2017.html">2017</a><br></li>
-                    <li><a href="English 2016.html">2016</a><br></li>
-                    <li><a href="English 2014.html">2014</a><br></li>
-                    <li><a href="English 2013.html">2013</a><br></li>
-                    <li><a href="English 2012.html">2012</a><br></li>
-                    <li><a href="English 2011.html">2011</a><br></li>
-                    <li><a href="English 2010.html">2010</a><br></li>
-                    <li><a href="English 2009.html">2009</a><br></li>
-                    <li><a href="English 2008.html">2008</a><br></li>
-                    <li><a href="English 2007.html">2007</a><br></li>
-                    <li><a href="English 2006.html">2006</a><br></li>
-                    <li><a href="English 2005.html">2005</a><br></li>
-                    <li><a href="English 2004.html">2004</a><br></li>
-                    <li><a href="English 1992.html">1992</a><br></li>
-                    <li><a href="English 1991.html">1991</a><br></li>
-                    <li><a href="English 1990.html">1990</a><br></li>
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2016.html">2016</a></li>
+                            <li><a href="English 2014.html">2014</a></li>
+                            <li><a href="English 2013.html">2013</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2018.html">2018</a></li>
+                            <li><a href="Biology 2017.html">2017</a></li>
+                            <li><a href="Biology 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Economics</a></li>
+                    <li><a href="#">Others</a></li>
                 </ul>
-            </nav><br><!-- the Mathematics dropdown -->
-            <nav><span>Mathematics</span>
-                <ul class="dropdown-content">
-                    <li><a href="Mathematics 2018.html">2018</a><br></li>
-                    <li><a href="Mathematics 2017.html">2017</a><br></li>
-                    <li><a href="Mathematics 2016.html">2016</a><br></li>
-                    <li><a href="Mathematics 2014.html">2014</a><br></li>
-                </ul>
-            </nav>
-            <li><a href="https://www.google.com">Government</a><br></li>
-            <li><a href="https://www.google.com">Commerce</a><br></li>
-            <li><a href="https://www.google.com">Economics</a><br></li>
-            <li><a href="#">more...</a><br></li>
+            </div>
+            
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
         </div>
-        <button id="footerBtn" class="footerBtn" onclick="showFooter()">Hide footer</button>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
     </body>
 </html>

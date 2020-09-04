@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+    <head>
+    	<title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+            <source src="../aud/start.ogg" type="audio/ogg">
+            <source src="../aud/start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/optionselect.ogg" type="audio/ogg">
+            <source src="../aud/optionselect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="stopAudio">
+            <source src="../aud/stop.ogg" type="audio/ogg">
+            <source src="../aud/stop.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="passedAudio">
+            <source src="../aud/passed.ogg" type="audio/ogg">
+            <source src="../aud/passed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/failed.ogg" type="audio/ogg">
+            <source src="../aud/failed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="clickAudio">
+            <source src="../aud/btnclick.ogg" type="audio/ogg">
+            <source src="../aud/btnclick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="leftcolumnForMainPageHeader">
+			<div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+			<a href="@davixspot.html" class="fa fa-home" id="home"></a>
+		</div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>ENGLISH 2019 WAEC TEST OF ORALS</center></div>
+            <div id="time">Time: 45 Minutes</div>
+            <div id="num">Number of Questions: 60</div>
+            <center><p id="Obj">OBJECTIVE TEST<br><strong>SECTION A</strong></p></center>
+            <center><em><strong>From the words lettered A to D, choose the word the has the same vowel sound as the one represented by the letter(s) underlined</strong></em></center>
+            <p>1.  m<u><b>a</b></u>rry <br><input type="radio" name = "sel1" value="a">A. batter<br><input type="radio" name = "sel1" value="b">B. bartar<br><input type="radio" name = "sel1" value="c">C. perk<br><input type="radio" name = "sel1" value="d">D. martyr</p>
+            <p>2. litm<u><b>u</b></u>s<br><input type="radio" name = "sel2" value="a">A. papa<br><input type="radio" name = "sel2" value="b">B. don<br><input type="radio" name = "sel2" value="c">C. rust<br><input type="radio" name = "sel2" value="d">D. bash</p>
+            <p>3. h<u><b>ur</b></u>dle<br><input type="radio" name = "sel3" value="a">A. hurray<br><input type="radio" name = "sel3" value="b">B. bird<br><input type="radio" name = "sel3" value="c">C. shop<br><input type="radio" name = "sel3" value="d">D. bundle</p>
+            <p>4. Wr<u><b>e</b></u>tch<br><input type="radio" name = "sel4" value="a">A. rickety<br><input type="radio" name = "sel4" value="b">B. remiss<br><input type="radio" name = "sel4" value="c">C. wean<br><input type="radio" name = "sel4" value="d">D. welter</p>
+            <p>5. c<u><b>ou</b></u>ntry<br><input type="radio" name = "sel5" value="a">A. around<br><input type="radio" name = "sel5" value="b">B. lock<br><input type="radio" name = "sel5" value="c">C. tongue<br><input type="radio" name = "sel5" value="d">D. talk</p>
+            <p>6. b<u><b>aw</b></u>l<br><input type="radio" name = "sel6" value="a">A. port<br><input type="radio" name = "sel6" value="b">B. cook<br><input type="radio" name = "sel6" value="c">C. pal<br><input type="radio" name = "sel6" value="d">D. lout</p>
+            <p>7. fam<u><b>i</b></u>liar<br><input type="radio" name = "sel7" value="a">A. peeve<br><input type="radio" name = "sel7" value="b">B. stir<br><input type="radio" name = "sel7" value="c">C. theft<br><input type="radio" name = "sel7" value="d">D. slipped</p>
+            <p>8. b<u><b>a</b></u>ck<br><input type="radio" name = "sel8" value="a">A. flame<br><input type="radio" name = "sel8" value="b">B. pat<br><input type="radio" name = "sel8" value="c">C. bet<br><input type="radio" name = "sel8" value="d">D. lark</p>
+            <p>9. can<u><b>oe</b></u><br><input type="radio" name = "sel9" value="a">A. louse<br><input type="radio" name = "sel9" value="b">B. going<br><input type="radio" name = "sel9" value="c">C. brunt<br><input type="radio" name = "sel9" value="d">D. brew</p>
+            <p>10. l<u><b>ea</b></u>gue<br><input type="radio" name = "sel10" value="a">A. dead<br><input type="radio" name = "sel10" value="b">B. critic<br><input type="radio" name = "sel10" value="c">C. willing<br><input type="radio" name = "sel10" value="d">D. fit</p>
+            <p>11. fl<u><b>ou</b></u>t<br><input type="radio" name = "sel11" value="a">A. follow<br><input type="radio" name = "sel11" value="b">B. plough<br><input type="radio" name = "sel11" value="c">C. light<br><input type="radio" name = "sel11" value="d">D. once</p>
+            <p>12. k<u><b>i</b></u>te<br><input type="radio" name = "sel12" value="a">A. pundit<br><input type="radio" name = "sel12" value="b">B. brighter<br><input type="radio" name = "sel12" value="c">C. dizzy<br><input type="radio" name = "sel12" value="d">D. litter</p>
+            <p>13. pr<u><b>o</b></u>tein <br><input type="radio" name = "sel13" value="a">A. potty<br><input type="radio" name = "sel13" value="b">B. chicken<br><input type="radio" name = "sel13" value="c">C. gobble<br><input type="radio" name = "sel13" value="d">D. go</p>
+            <p>14. destr<u><b>oy</b></u><br><input type="radio" name = "sel14" value="a">A. poor<br><input type="radio" name = "sel14" value="b">B. bolt<br><input type="radio" name = "sel14" value="c">C. poison<br><input type="radio" name = "sel14" value="d">D. idea</p>
+            <p>15. w<u><b>a</b></u>ste<br><input type="radio" name = "sel15" value="a">A. wasn't<br><input type="radio" name = "sel15" value="b">B. poutry<br><input type="radio" name = "sel15" value="c">C. great<br><input type="radio" name = "sel15" value="d">D. fret</p>
+            <center><strong>SECTION 2<br><em>Instruction: From the words lettered A to D, choose the word that has the same consonant sound(s) as the the one represented by the letter(s) underlined.</em></strong></center>
+            <p>16. la<u><b>mb</b></u><br><input type="radio" name = "sel16" value="a">A. lobby<br><input type="radio" name = "sel16" value="b">B. land<br><input type="radio" name = "sel16" value="c">C. babby<br><input type="radio" name = "sel16" value="d">D. dam</p>
+            <p>17. ki<u><b>ng</b></u><br><input type="radio" name = "sel17" value="a">A. dig<br><input type="radio" name = "sel17" value="b">B. sin<br><input type="radio" name = "sel17" value="c">C. tag<br><input type="radio" name = "sel17" value="d">D. long</p>
+            <p>18. <u><b>c</b></u>ourt<br><input type="radio" name = "sel18" value="a">A. censure<br><input type="radio" name = "sel18" value="b">B. quickly<br><input type="radio" name = "sel18" value="c">C. certian<br><input type="radio" name = "sel18" value="d">D. gratis</p>
+            <p>19. ru<u><b>bb</b></u>er<br><input type="radio" name = "sel19" value="a">A. super<br><input type="radio" name = "sel19" value="b">B. plumber<br><input type="radio" name = "sel19" value="c">C. copper<br><input type="radio" name = "sel19" value="d">D. tingle</p>
+            <p>20. <u><b>f</b></u>ashion<br><input type="radio" name = "sel20" value="a">A. passion<br><input type="radio" name = "sel20" value="b">B. save<br><input type="radio" name = "sel20" value="c">C. ivy<br><input type="radio" name = "sel20" value="d">D. trough</p>
+            <p>21. tru<u><b>th</b></u><br><input type="radio" name = "sel21" value="a">A. teak<br><input type="radio" name = "sel21" value="b">B. trend<br><input type="radio" name = "sel21" value="c">C. threw<br><input type="radio" name = "sel21" value="d">D. though</p>
+            <p>22. <u><b>s</b></u>older<br><input type="radio" name = "sel22" value="a">A. shore<br><input type="radio" name = "sel22" value="b">B. society<br><input type="radio" name = "sel22" value="c">C. brush<br><input type="radio" name = "sel22" value="d">D. bees</p>
+            <p>23. tha<u><b>tch</b></u><br><input type="radio" name = "sel23" value="a">A. path<br><input type="radio" name = "sel23" value="b">B. technical<br><input type="radio" name = "sel23" value="c">C. shin<br><input type="radio" name = "sel23" value="d">D. challenge</p>
+            <p>24. <u><b>sh</b></u>ining<br><input type="radio" name = "sel24" value="a">A. chauffeur<br><input type="radio" name = "sel24" value="b">B. chilly<br><input type="radio" name = "sel24" value="c">C. bristle<br><input type="radio" name = "sel24" value="d">D. sighting</p>
+            <p>25. ba<u><b>dge</b></u><br><input type="radio" name = "sel25" value="a">A. vision<br><input type="radio" name = "sel25" value="b">B. tangible<br><input type="radio" name = "sel25" value="c">C. target<br><input type="radio" name = "sel25" value="d">D. brag</p>
+            <p>26. a<u><b>pr</b></u>on<br><input type="radio" name = "sel26" value="a">A. unkept<br><input type="radio" name = "sel26" value="b">B. plunder<br><input type="radio" name = "sel26" value="c">C. print<br><input type="radio" name = "sel26" value="d">D. baton</p>
+            <p>27. die<u><b>s</b></u>el<br><input type="radio" name = "sel27" value="a">A. boys<br><input type="radio" name = "sel27" value="b">B. dicey<br><input type="radio" name = "sel27" value="c">C. salty<br><input type="radio" name = "sel27" value="d">D. decor</p>
+            <p>28. d<u><b>r</b></u>eam<br><input type="radio" name = "sel28" value="a">A. gird<br><input type="radio" name = "sel28" value="b">B. term<br><input type="radio" name = "sel28" value="c">C. guard<br><input type="radio" name = "sel28" value="d">D. thrill</p>
+            <p>29. lo<u><b>ll</b></u>y<br><input type="radio" name = "sel29" value="a">A. balm<br><input type="radio" name = "sel29" value="b">B. carry<br><input type="radio" name = "sel29" value="c">C. calcium<br><input type="radio" name = "sel29" value="d">D. psalm</p>
+            <p>30. <u><b>w</b></u>ater<br><input type="radio" name = "sel30" value="a">A. pewter<br><input type="radio" name = "sel30" value="b">B. wrong<br><input type="radio" name = "sel30" value="c">C. twirl<br><input type="radio" name = "sel30" value="d">D. brew</p>
+            <center><strong>SECTION 3<br><em>Instruction: From the words lettered A to D, choose the word the rhymes with the given word.</em></strong></center>
+            <p>31. horde<br><input type="radio" name = "sel31" value="a">A. horse<br><input type="radio" name = "sel31" value="b">B. board<br><input type="radio" name = "sel31" value="c">C. hard<br><input type="radio" name = "sel31" value="d">D. bud</p>
+            <p>32. file<br><input type="radio" name = "sel32" value="a">A. sigh<br><input type="radio" name = "sel32" value="b">B. pine<br><input type="radio" name = "sel32" value="c">C. blitz<br><input type="radio" name = "sel32" value="d">D. aisle</p>
+            <p>33. treasure<br><input type="radio" name = "sel33" value="a">A. vapour<br><input type="radio" name = "sel33" value="b">B. treason<br><input type="radio" name = "sel33" value="c">C. leisure<br><input type="radio" name = "sel33" value="d">D. texture</p>
+            <p>34. great<br><input type="radio" name = "sel34" value="a">A. hearty<br><input type="radio" name = "sel34" value="b">B. hay<br><input type="radio" name = "sel34" value="c">C. data<br><input type="radio" name = "sel34" value="d">D. weight</p>
+            <p>35. message<br><input type="radio" name = "sel35" value="a">A. budget<br><input type="radio" name = "sel35" value="b">B. passage<br><input type="radio" name = "sel35" value="c">C. message<br><input type="radio" name = "sel35" value="d">D. ageing</p>
+            <center><strong>SECTION 4<br><em>Instruction: In each of the following questions, the main/primary stress is idicated by writting the syllable on which it occurs in capital letters. From the words lettered A to D, choose the one that has the correct stress.</em></strong></center>
+            <p>36. constitution<br><input type="radio" name = "sel36" value="a">A. CON-sti-tu-tion<br><input type="radio" name = "sel36" value="b">B. con-STI-tu-tion<br><input type="radio" name = "sel36" value="c">C. con-sti-TU-tion<br><input type="radio" name = "sel36" value="d">D. con-sti-tu-TION</p>
+            <p>37. extravagant<br><input type="radio" name = "sel37" value="a">A. EX-tr-va-gant<br><input type="radio" name = "sel37" value="b">B. ex-TRA-va-gant<br><input type="radio" name = "sel37" value="c">C. ex-tra-VA-gant<br><input type="radio" name = "sel37" value="d">D. ex-tra-va-GANT</p>
+            <p>38. interrogate<br><input type="radio" name = "sel38" value="a">A. IN-ter-ro-gate<br><input type="radio" name = "sel38" value="b">B. in-TER-ro-gate<br><input type="radio" name = "sel38" value="c">C. in-ter-RO-gate<br><input type="radio" name = "sel38" value="d">D. in-ter-ro-GATE</p>
+            <p>39. catastrophic<br><input type="radio" name = "sel39" value="a">A. CA-ta-stro-phic<br><input type="radio" name = "sel39" value="b">B. ca-TA-stro-phic<br><input type="radio" name = "sel39" value="c">C. ca-ta-STRO-phic<br><input type="radio" name = "sel39" value="d">D. ca-ta-stro-PHIC</p>
+            <p>40. population<br><input type="radio" name = "sel40" value="a">A. PO-pu-la-tion<br><input type="radio" name = "sel40" value="b">B. po-PU-la-tion<br><input type="radio" name = "sel40" value="c">C. po-pu-LA-tion<br><input type="radio" name = "sel40" value="d">D. po-pu-la-TION</p>
+            <center><strong>SECTION 5<br><em>Instruction: In the following options lettered A to D, all the words except one have the same stress pattern. Identify the one with the different stress pattern. </em></strong></center>
+            <p>41. <input type="radio" name = "sel41" value="a">A. cleric<br><input type="radio" name = "sel41" value="b">B. allow<br><input type="radio" name = "sel41" value="c">C. classic<br><input type="radio" name = "sel41" value="d">D. partridge</p>
+            <p>42. <input type="radio" name = "sel42" value="a">A. repellent<br><input type="radio" name = "sel42" value="b">B. publicly<br><input type="radio" name = "sel42" value="c">C. particle<br><input type="radio" name = "sel42" value="d">D. primary</p>
+            <p>43. <input type="radio" name = "sel43" value="a">A. prevalent<br><input type="radio" name = "sel43" value="b">B. conalesce<br><input type="radio" name = "sel43" value="c">C. circumstance<br><input type="radio" name = "sel43" value="d">D. relegate</p>
+            <p>44. <input type="radio" name = "sel44" value="a">A. sinister<br><input type="radio" name = "sel44" value="b">B. religion<br><input type="radio" name = "sel44" value="c">C. efficient<br><input type="radio" name = "sel44" value="d">D. encourage</p>
+            <p>45. <input type="radio" name = "sel45" value="a">A. suggest<br><input type="radio" name = "sel45" value="b">B. obey<br><input type="radio" name = "sel45" value="c">C. denounce<br><input type="radio" name = "sel45" value="d">D. vehicle</p>
+            <center><strong>SECTION 6<br><em>Instruction: In each of the following sentences, the word that recieves the emphatic stress is written in capital letters. From the options lettered A to D, choose the one to which the given sentence is the appropriate answer</em></strong></center>
+            <p>46. John was a football LEGEND<br><input type="radio" name = "sel46" value="a">A. was Ernest a football legend<br><input type="radio" name = "sel46" value="b">B. was John a football coach<br><input type="radio" name = "sel46" value="c">C. was John a hockey legend<br><input type="radio" name = "sel46" value="d">D. Is John a football legend</p>
+            <p>47. Three top executives REQUESTED to see the manager<br><input type="radio" name = "sel47" value="a">A. did three top executives request to see the clerk<br><input type="radio" name = "sel47" value="b">B. did three top executives decline to see the manager<br><input type="radio" name = "sel47" value="c">C. did three junior executives request to see the manager<br><input type="radio" name = "sel47" value="d">D. did three top executives request to accompany the manager</p>
+            <p>48. DORIS is a meticulous worker<br><input type="radio" name = "sel48" value="a">A. is James a meticulous worker<br><input type="radio" name = "sel48" value="b">B. is Doris a careless worker <br><input type="radio" name = "sel48" value="c">C. is Doris a meticulous student<br><input type="radio" name = "sel48" value="d">D. was Doris a meticulous worker</p>
+            <p>49. The junior BOY cleaned the floor<br><input type="radio" name = "sel49" value="a">A. did the junior boy sweep the floor<br><input type="radio" name = "sel49" value="b">B. did the junior girl clean the floor<br><input type="radio" name = "sel49" value="c">C. did the senior boy clean the floor<br><input type="radio" name = "sel49" value="d">D. did the junior boy clean the compound</p>
+            <p>50. Omo's brother won a RADIO<br><input type="radio" name = "sel50" value="a">A. did Omo's brother lose a radio<br><input type="radio" name = "sel50" value="b">B. did Omo's sister win a radio<br><input type="radio" name = "sel50" value="c">C. did Omo's brother win a phone<br><input type="radio" name = "sel50" value="d">D. did Tayo's brother win a radio</p>
+            <center><strong>SECTION 7<br><em>Instruction: From the words lettered A to D, choose the word that contains the sound represented by the given phonetic symbol.</em></strong></center>
+            <p>51. /iǝ/<br><input type="radio" name = "sel51" value="a">A. care<br><input type="radio" name = "sel51" value="b">B. delicate<br><input type="radio" name = "sel51" value="c">C. crate<br><input type="radio" name = "sel51" value="d">D. fears</p>
+            <p>52. /^/<br><input type="radio" name = "sel52" value="a">A. platform<br><input type="radio" name = "sel52" value="b">B. constant<br><input type="radio" name = "sel52" value="c">C. coloured<br><input type="radio" name = "sel52" value="d">D. cautious</p>
+            <p>53. /au/<br><input type="radio" name = "sel53" value="a">A. costume<br><input type="radio" name = "sel53" value="b">B. counsel<br><input type="radio" name = "sel53" value="c">C. badge<br><input type="radio" name = "sel53" value="d">D. aura</p>
+            <p>54. /Ɔ:/<br><input type="radio" name = "sel54" value="a">A. attribute<br><input type="radio" name = "sel54" value="b">B. wonder<br><input type="radio" name = "sel54" value="c">C. surrender<br><input type="radio" name = "sel54" value="d">D. authentic</p>
+            <p>55. /a:/<br><input type="radio" name = "sel55" value="a">A. pack<br><input type="radio" name = "sel55" value="b">B. heart<br><input type="radio" name = "sel55" value="c">C. player<br><input type="radio" name = "sel55" value="d">D. alone</p>
+            <p>56. /t/<br><input type="radio" name = "sel56" value="a">A. tidy<br><input type="radio" name = "sel56" value="b">B. catch<br><input type="radio" name = "sel56" value="c">C. portion<br><input type="radio" name = "sel56" value="d">D. thick</p>
+            <p>57. /p/<br><input type="radio" name = "sel57" value="a">A. pneumonia<br><input type="radio" name = "sel57" value="b">B. compare<br><input type="radio" name = "sel57" value="c">C. cupboard<br><input type="radio" name = "sel57" value="d">D. psychology</p>
+            <p>58. /Ʒ/<br><input type="radio" name = "sel58" value="a">A. pressure<br><input type="radio" name = "sel58" value="b">B. patient<br><input type="radio" name = "sel58" value="c">C. charade<br><input type="radio" name = "sel58" value="d">D. leisure</p>
+            <p>59. /dƷ/<br><input type="radio" name = "sel59" value="a">A. snigger<br><input type="radio" name = "sel59" value="b">B. plumage<br><input type="radio" name = "sel59" value="c">C. dogged<br><input type="radio" name = "sel59" value="d">D. astound</p>
+            <p>60. /tʃ/<br><input type="radio" name = "sel60" value="a">A. clutter<br><input type="radio" name = "sel60" value="b">B. furnish<br><input type="radio" name = "sel60" value="c">C. technical<br><input type="radio" name = "sel60" value="d">D. teacher</p>
+        </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                  <div id='timer'><button id="startBtn" onclick="startExam(45)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersORAL2019, event)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(60);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+    
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                    <ul class="dropdown-content">
+                        <li><a href="English 2018 Test of Oral.html">2018</a><br></li>
+                        <li><a href="English 2017 Test of Oral.html">2017</a><br></li>
+                        <li><a href="English 2016 Test of Oral.html">2016</a><br></li>
+                        <li><a href="#">more...</a><br></li>
+                    </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a><br></li>
+                            <li><a href="Mathematics 2017.html">2017</a><br></li>
+                            <li><a href="Mathematics 2016.html">2016</a><br></li>
+                            <li><a href="#">more...</a><br></li>
+                        </ul>
+                    </nav>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            
+                            <li><a href="Biology 2018.html">2018</a><br></li>
+                            <li><a href="Biology 2017.html">2017</a><br></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a><br></li>
+                    <li><a href="www.google.com">Economics</a><br></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            
+            <div style="width: 19.2%; float: left;">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>

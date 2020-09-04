@@ -1,9 +1,11 @@
 <!doctype html>
 <html>
     <head>
-		<link rel="stylesheet" href="../css/style.css" type="text/css">
-		<script src="../js/script.js" type="text/javascript"></script>
-		<title>English 2012 WAEC past questions</title>
+		<title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
 	</head>
     <body onload="examiner(false)">
 		<audio id="welcomeAudio">
@@ -37,21 +39,14 @@
 		  Your browser does not support the audio element.
 		</audio>
         <div class="leftcolumnForMainPageHeader">
-            <div id = "mainPageHeader">
-                SCHOOL MANAGER
-            </div>
-            <div id="motto">Learning made Easier</div>
-        </div>
+			<div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+			<a href="@davixspot.html" class="fa fa-home" id="home"></a>
+		</div>
         <div class="leftcolumn">
-            <br>
-            <div id="pageHeader">
-              <center>ENGLISH LANGUAGE 2<br> WASSCE 2012</center>
-            </div>
+            <div id="pageHeader"><center>ENGLISH LANGUAGE 2 WASSCE 2012</center></div>
             <div id="time">Time: 1 hour</div>
             <div id="num">Number of Questions: 100</div>
-           <center>
-              <p id="Obj">OBJECTIVE TEST<br><strong>SECTION A</strong></p>
-            </center>
+            <center><p id="Obj">OBJECTIVE TEST<br><strong>SECTION A</strong></p></center>
             <center><em>
                 In each of the following sentences, there is one underlined word and a gap. From the list of words lettered A to D, choose the one that most nearly opposite in meaning to the underlined word and that would at the same time, correctly fill the gap in the sentence.
             </em></center>
@@ -158,7 +153,7 @@
                 </strong><br>
                 <em>In the following passages, the numbered gaps indicate missing words. Choose the word that is most suitable to fill the numbered gaps in the passage</em>
             </center>
-            <div id="sec6">
+            <div>
                 <center><big>PASSAGE A</big></center>
                 Fred loves true weekends because they afford him the opportunity to visit the popular <select id="sel74"><option>-74-</option><option value="a">A. newsagent</option><option value="risks">B. newsstand</option><option value="c">C. newsletter</option><option value="d">D. newscast</option></select> where his friend, the <select id="sel75"><option>-75-</option><option value="a">A. vendor</option><option value="b">hawker</option><option value="c">C. trader</option><option value="d">D. merchant</option></select>,
                 always allows him to go trough the newspaper at no cost to him. There are usually many daily and weekly <select id="sel76"><option>-76-</option><option value="a">A. reprints</option><option value="b">B. impressions</option><option value="c">c. units</option><option value="d">D. editions</option></select> of newspaper, magazine and journals on sale. Fred's habit is quickly note from the
@@ -177,65 +172,91 @@
                 <select id="sel98"><option>-98-</option><option value="a">A. pharmacist</option><option value="b">B. scientist</option><option value="c">C. practitioner</option><option value="d">D. nurse</option></select>. He assured Mrs. Cooker that the treatment he had prescribed  would <select id="sel99"><option>-99-</option><option value="a">A. revive</option><option value="b">B. restore</option><option value="c">C. repair</option><option value="d">D. cure</option></select> the child to good
                 <select id="sel100"><option>-100-</option><option value="a">A. standard</option><option value="b">B. state</option><option value="c">C. health</option><option value="d">D. position</option></select> in two or three days.
             </div>
-            <p class="pagebottom">&nbsp;</p>
-            <center>
-               <a href="oralenglish" class="oralLink">Take a test on 2012 WAEC Oral English</a>
-            </center>
+            <p>&nbsp;</p>
+            <div id='mainBody'>
+                <div class='essayque'>
+                    You have spent six weeks in your new school. Write a letter to your father telling him about your experiences so far.
+                </div><br>
+                <div class='essayque'>
+                    Write an article for publication in your school magazine on the dangers of keeping bad company in school.
+                </div><br>
+                <div class='essayque'>
+                    Activities such as debates, drama, and excursions are now rare in schools in your country. As the senior prefect. Write a letter to your principal suggesting the revival of these activities and pointing out what students stand to gain from taking part in them.
+                </div><br>
+                <div class='essayque'>
+                    You are the chief speaker in a debate on the topic: "<i>Violent video games  should be band.</i>" Write your argument for or against the topic.
+                </div><br>
+                <div class='essayque'>
+                    Write a story to illustrate the saying: Where there is a will, there's a way.
+                </div><br><br>
+            </div>
+            <div id='TestLinks'>
+                <center>
+                   <a href="English 2012 Test of Oral.html">Take a test on 2012 WAEC Oral English</a>&nbsp;<a id='essay'>Essay Exam</a>
+                </center>
+            </div>
         </div>
         <div class="rightcolumn">
             <div class="floatingDiv">
                 <span id="clockntimer">
-                    <button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button><br><label id="clockLabel"></label><br>
-                    Spent:<label id="timeSpent"></label><br>
+                  <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>  
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
                     Left:<label id="timeLeft"></label>
                 </span>
-                <center><button class="submit" onclick = "displayResults(answersENG2012)">Answers</button></center>
-                <center><button class="submit2" onclick = "displayScore(100)">Total score in percentage</button></center>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersENG2012, event)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(100);">Performance</button></center>
+                </div> 
                 <div id="resultSheet">
     
-                </div>        
+                </div>
             </div>
         </div>
         <div id="footer">
-            <center><p>Click <a href="#top">here</a> to go back to top.</p></center>
-            <p>For more past questions on WAEC, NECO and other exams, visit <a href="https://www.tutusfx.com/@davixspot">@Davixspot</a>.<br><br>
-              Available past questions include<br>
-            <ul>
-            <!-- the English Language dropdown -->
-            <nav><span>English Language</span>
-                <ul class="dropdown-content">
-                    <li><a href="English 2018.html">2018</a><br></li>
-                    <li><a href="English 2017.html">2017</a><br></li>
-                    <li><a href="English 2016.html">2016</a><br></li>
-                    <li><a href="English 2015.html">2015</a><br></li>
-                    <li><a href="English 2014.html">2014</a><br></li>
-                    <li><a href="English 2013.html">2013</a><br></li>
-                    <li><a href="English 2011.html">2011</a><br></li>
-                    <li><a href="English 2010.html">2010</a><br></li>
-                    <li><a href="English 2009.html">2009</a><br></li>
-                    <li><a href="English 2008.html">2008</a><br></li>
-                    <li><a href="English 2007.html">2007</a><br></li>
-                    <li><a href="English 2006.html">2006</a><br></li>
-                    <li><a href="English 2005.html">2005</a><br></li>
-                    <li><a href="English 2004.html">2004</a><br></li>
-                    <li><a href="English 1992.html">1992</a><br></li>
-                    <li><a href="English 1991.html">1991</a><br></li>
-                    <li><a href="English 1990.html">1990</a><br></li>
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2013.html">2013</a></li>
+                            <li><a href="English 2011.html">2011</a></li>
+                            <li><a href="English 2010.html">2010</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2018.html">2018</a></li>
+                            <li><a href="Biology 2017.html">2017</a></li>
+                            <li><a href="Biology 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Economics</a></li>
+                    <li><a href="#">Others</a></li>
                 </ul>
-            </nav><br><!-- the Mathematics dropdown -->
-            <nav><span>Mathematics</span>
-                <ul class="dropdown-content">
-                    <li><a href="Mathematics 2018.html">2018</a><br></li>
-                    <li><a href="Mathematics 2017.html">2017</a><br></li>
-                    <li><a href="Mathematics 2016.html">2016</a><br></li>
-                    <li><a href="Mathematics 2014.html">2014</a><br></li>
-                </ul>
-            </nav>
-            <li><a href="https://www.google.com">Government</a><br></li>
-            <li><a href="https://www.google.com">Commerce</a><br></li>
-            <li><a href="https://www.google.com">Economics</a><br></li>
-            <li><a href="#">more...</a><br></li>
+            </div>
+            
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
         </div>
-        <button id="footerBtn" class="footerBtn" onclick="showFooter()">Hide footer</button>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
     </body>
 </html>

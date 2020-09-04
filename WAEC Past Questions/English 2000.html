@@ -1,259 +1,261 @@
 <!doctype html>
 <html>
     <head>
-		<link rel="stylesheet" href="../css/style.css" type="text/css">
+		<title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
         <script src="../js/JQuery.js" type="text/javascript"></script>
-		<script src="../js/script.js" type="text/javascript"></script>
-		<title>English 2000 WAEC past questions</title>
+        <script src="../js/script.js" type="text/javascript"></script>
 	</head>
     <body onload="examiner(false)">
-		<audio id="welcomeAudio">
-		  <source src="../aud/start.ogg" type="audio/ogg">
-		  <source src="../aud/start.mp3" type="audio/mpeg">
-		  Your browser does not support the audio element.
-		</audio>
-		<audio id="selectAudio">
-		  <source src="../aud/optionselect.ogg" type="audio/ogg">
-		  <source src="../aud/optionselect.mp3" type="audio/mpeg">
-		  Your browser does not support the audio element.
-		</audio>
-		<audio id="stopAudio">
-		  <source src="../aud/stop.ogg" type="audio/ogg">
-		  <source src="../aud/stop.mp3" type="audio/mpeg">
-		  Your browser does not support the audio element.
-		</audio>
-		<audio id="passedAudio">
-		  <source src="../aud/passed.ogg" type="audio/ogg">
-		  <source src="../aud/passed.mp3" type="audio/mpeg">
-		  Your browser does not support the audio element.
-		</audio>
-		<audio id="selectAudio">
-		  <source src="../aud/failed.ogg" type="audio/ogg">
-		  <source src="../aud/failed.mp3" type="audio/mpeg">
-		  Your browser does not support the audio element.
-		</audio>
-		<audio id="clickAudio">
-		  <source src="../aud/btnclick.ogg" type="audio/ogg">
-		  <source src="../aud/btnclick.mp3" type="audio/mpeg">
-		  Your browser does not support the audio element.
-		</audio>
+        <audio id="welcomeAudio">
+            <source src="../aud/start.ogg" type="audio/ogg">
+            <source src="../aud/start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/optionselect.ogg" type="audio/ogg">
+            <source src="../aud/optionselect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="stopAudio">
+            <source src="../aud/stop.ogg" type="audio/ogg">
+            <source src="../aud/stop.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="passedAudio">
+            <source src="../aud/passed.ogg" type="audio/ogg">
+            <source src="../aud/passed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/failed.ogg" type="audio/ogg">
+            <source src="../aud/failed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="clickAudio">
+            <source src="../aud/btnclick.ogg" type="audio/ogg">
+            <source src="../aud/btnclick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
         <div class="leftcolumnForMainPageHeader">
-            <div id = "mainPageHeader">
-                SCHOOL MANAGER
+			<div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+			<a href="@davixspot.html" class="fa fa-home" id="home"></a>
+		</div>
+        <div class="leftcolumn">
+            <div id="pageHeader">
+              <center>ENGLISH LANGUAGE 2<br> WASSCE 2000</center>
             </div>
-            <div id="motto">Learning made Easier</div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 100</div>
+           <center>
+              <p id="Obj">OBJECTIVE TEST<br><strong>SECTION A</strong></p>
+            </center>
+            <center><em>
+                In each of the following sentences, there is one underlined word and a gap. From the list of words lettered A to D, choose the one that most nearly opposite in meaning to the underlined word and that would at the same time, correctly fill the gap in the sentence.
+            </em></center>
+            <p>1. "Hello Musa" is a ______________  opening for a friendly letter, but it is <u><b>inappropriate</b></u> for a formal letter<br><input type="radio" name = "sel1" value="a">A. casual<br><input type="radio" name = "sel1" value="b">B. serious<br><input type="radio" name = "sel1" value="c">C. happy<br><input type="radio" name = "sel1" value="d">D. suitable</p>
+            <p>2. We <u><b>blamed</b></u> Obi for breaking the door, but when Ade confessed that he did it, Obi was ______________ <br><input type="radio" name = "sel2" value="a">A. rewarded<br><input type="radio" name = "sel2" value="b">B. exonerated<br><input type="radio" name = "sel2" value="c">C. released <br><input type="radio" name = "sel2" value="d">D. jailed</p>
+            <p>3. Parking on the street is ______________  on weekdays but <u><b>permitted</b></u> at weekends<br><input type="radio" name = "sel3" value="a">A. rejected<br><input type="radio" name = "sel3" value="b">B. sanctioned<br><input type="radio" name = "sel3" value="c">C. abolished<br><input type="radio" name = "sel3" value="d">D. prohibited</p>
+            <p>4. They had to ______________ the old building to <u><b>construct</b></u> the five-star hotel<br><input type="radio" name = "sel4" value="a">A. close<br><input type="radio" name = "sel4" value="b">B. remove<br><input type="radio" name = "sel4" value="c">C. demolish<br><input type="radio" name = "sel4" value="d">D. damage</p>
+            <p>5. If we can <u><b>commence</b></u> the meeting on time, we should be able to ______________ by 4:00p.m<br><input type="radio" name = "sel5" value="a">A. return<br><input type="radio" name = "sel5" value="b">B. vacate<br><input type="radio" name = "sel5" value="c">C. convene<br><input type="radio" name = "sel5" value="d">D. adjourn</p>
+            <p>6. The children expected to be <u><b>praised</b></u> for putting out the fire, but they were ______________ for taking such a risk<br><input type="radio" name = "sel6" value="a">A. rebuked<br><input type="radio" name = "sel6" value="b">B. accused<br><input type="radio" name = "sel6" value="c">C. despised<br><input type="radio" name = "sel6" value="d">D. sentenced</p>
+            <p>7. A child got <u><b>stuck</b></u> trying to squeeze through an iron fence, but some adults try to ______________ him<br><input type="radio" name = "sel7" value="a">A. extract<br><input type="radio" name = "sel7" value="b">B. push<br><input type="radio" name = "sel7" value="c">C. save<br><input type="radio" name = "sel7" value="d">D. extricate</p>
+            <p>8. They ended the discussion on <u><b>amicable</b></u> terms though they were ______________ to each other at the beginning<br><input type="radio" name = "sel8" value="a">A. unacceptable<br><input type="radio" name = "sel8" value="b">B. hostile<br><input type="radio" name = "sel8" value="c">C. unknown<br><input type="radio" name = "sel8" value="d">D. annoying</p>
+            <center>
+                <strong>
+                    SECTION 2
+                </strong><br>
+                <em>From each of the word lettered A to D, choose the word that best completes each of the following sentences</em>
+            </center>
+            <p>9. The class prefect's ______________ of the quarrel is different from yours<br><input type="radio" name = "sel9" value="a">A. statement<br><input type="radio" name = "sel9" value="b">B. account<br><input type="radio" name = "sel9" value="c">C. outline<br><input type="radio" name = "sel9" value="b">B. summary</p>
+            <p>10. I refused to ______________ my statement because it was true<br><input type="radio" name = "sel10" value="a">A. retract<br><input type="radio" name = "sel10" value="b">B. make<br><input type="radio" name = "sel10" value="c">C. withhold<br><input type="radio" name = "sel10" value="d">D. voice</p>
+            <p>11. But for the timely ______________ of the police, there would have been a riot<br><input type="radio" name = "sel11" value="a">A. interference<br><input type="radio" name = "sel11" value="b">B. intrusion<br><input type="radio" name = "sel11" value="c">C. intervention<br><input type="radio" name = "sel11" value="d">D. interruption</p>
+            <p>12. The boys were about to trade blows, but I managed to hold one of them back while my friend ______________ the other<br><input type="radio" name = "sel12" value="a">A. restrained<br><input type="radio" name = "sel12" value="b">B. subdued<br><input type="radio" name = "sel12" value="c">C. coaxed<br><input type="radio" name = "sel12" value="d">D. captured</p>
+            <p>13. We were waiting to hear the weather ______________ for tomorrow<br><input type="radio" name = "sel13" value="a">A. broadcast<br><input type="radio" name = "sel13" value="b">B. declaration<br><input type="radio" name = "sel13" value="c">C. report<br><input type="radio" name = "sel13" value="d">D. forecast</p>
+            <p>14. I will tell you the secret if you promise not to ______________ it<br><input type="radio" name = "sel14" value="a">A. divulge<br><input type="radio" name = "sel14" value="b">B. show<br><input type="radio" name = "sel14" value="c">C. scatter<br><input type="radio" name = "sel14" value="d">D. relay</p>
+            <p>15. The hilltop was a hundred metres above the sea level and from that ______________ the whole town could be seen beautifully laid out<br><input type="radio" name = "sel15" value="a">A. magnitude<br><input type="radio" name = "sel15" value="b">B. altitude<br><input type="radio" name = "sel15" value="c">C. latitude<br><input type="radio" name = "sel15" value="d">D. longitude</p>
+            <p>16. Until now, Etim has always started the fights, but this Adamu is clearly the ______________ <br><input type="radio" name = "sel16" value="a">A. oppresor<br><input type="radio" name = "sel16" value="b">B. fighter<br><input type="radio" name = "sel16" value="c">C. aggressor<br><input type="radio" name = "sel16" value="d">D. underdog</p>
+            <p>17. If found guilty, a person may appeal to a high court in the hope that it will ______________ the verdict<br><input type="radio" name = "sel17" value="a">A. discharge<br><input type="radio" name = "sel17" value="b">B. revise<br><input type="radio" name = "sel17" value="c">C. dismiss<br><input type="radio" name = "sel17" value="d">D. reverse</p>
+            <p>18. The visit of the patron of the club ______________ the morale of the players<br><input type="radio" name = "sel18" value="a">A. elated<br><input type="radio" name = "sel18" value="b">B. induced<br><input type="radio" name = "sel18" value="b">B. boasted<br><input type="radio" name = "sel18" value="d">D. boosted</p>
+            <center>
+                <strong>
+                    SECTION 3
+                </strong><br>
+                <em>After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that you consider most appropriate for each sentence</em>
+            </center>
+            <p>19. Although Aliyu was acquitted  by the court for want of evidence, the police still kept a tab on him. <br>This means that they<br><input type="radio" name = "sel19" value="a">A. kept him under close observation<br><input type="radio" name = "sel19" value="b">B. set a trap to catch him again<br><input type="radio" name = "sel19" value="c">C. attached a tag to his clothes<br><input type="radio" name = "sel19" value="d">D. kept him behind bars</p>
+            <p>20. When it came to the question of an increase in allowance, the striking workers spoke to one another. <br>This means that the workers<br><input type="radio" name = "sel20" value="a">A. became frightened<br><input type="radio" name = "sel20" value="b">B. appointed one of them as their spokesman<br><input type="radio" name = "sel20" value="c">C. repeated their demand in a chorus<br><input type="radio" name = "sel20" value="d">D. were unanimous in their position</p>
+            <p>21. The restaurant owner offered Olu a drink on the house. <br>This means that<br><input type="radio" name = "sel21" value="a">A. the drink was taken to Olu's house<br><input type="radio" name = "sel21" value="b">B. Olu was invited to the owner's house<br><input type="radio" name = "sel21" value="c">C. the drink was free of charge<br><input type="radio" name = "sel21" value="d">D. Olu was served inside the restaurant</p>
+            <p>22. When the Chior Master introduced Jane as a brilliant singer, everyone knew that he was speaking with his tongue in his cheek.<br>This means that<br><input type="radio" name = "sel22" value="a">A. was ignorant of the quality of Jane's singing<br><input type="radio" name = "sel22" value="b">B. did not intend to be taken seriously<br><input type="radio" name = "sel22" value="c">C. wanted to deceive Jane <br><input type="radio" name = "sel22" value="d">D. wanted to deceive everyone but failed</p>
+            <p>23. When the accountant made those remarks he knew that he was putting his job on the lane. <br>This means that the accountant was<br><input type="radio" name = "sel23" value="a">A. risking loosing his job<br><input type="radio" name = "sel23" value="b">B. announcing his resignation<br><input type="radio" name = "sel23" value="c">C. urging people to take his profession<br><input type="radio" name = "sel23" value="d">D. revealing secrets about his job</p>
+            <p>24. The newly acquired air-bus plane is a white elephant. <br>This means that the plane is<br><input type="radio" name = "sel24" value="a">A. very costly but worthless<br><input type="radio" name = "sel24" value="b">B. very useful<br><input type="radio" name = "sel24" value="c">C. as big as an elephant<br><input type="radio" name = "sel24" value="d">D. the biggest plane on the fleet</p>
+            <p>25. Despite the measures taken by the government, the economy of the country is still on the doldrums. <br> <br><input type="radio" name = "sel25" value="a">A. the economy is recovering<br><input type="radio" name = "sel25" value="b">B. the government is tackling the problem vigorously<br><input type="radio" name = "sel25" value="c">C. the economic problems are widely known<br><input type="radio" name = "sel25" value="d">D. the economy is not making any project</p>
+            <p>26. The new teacher urged the lazy students to turn over a new leaf. <br> This means that the teacher urged the students to <br><input type="radio" name = "sel26" value="a">A. improve their behaviour<br><input type="radio" name = "sel26" value="b">B. turn to the next page of their book<br><input type="radio" name = "sel26" value="c">C. stir the leaves in the compost pit<br><input type="radio" name = "sel26" value="d">D. strike a balance between play and hardwork</p>
+            <p>27. Amina always flies off at a tangent when a serious matter is being discussed<br><input type="radio" name = "sel27" value="a">A. gets over-excited<br><input type="radio" name = "sel27" value="b">B. keeps digressing<br><input type="radio" name = "sel27" value="c">C. keeps the discussion lively<br><input type="radio" name = "sel27" value="d">D. has noting to contribute</p>
+            <p>28. You should take what he tells with a pinch of salt. <br>This means that you should<br><input type="radio" name = "sel28" value="a">A. reject everything he says because he is a liar<br><input type="radio" name = "sel28" value="b">B. pay close attention to him<br><input type="radio" name = "sel28" value="c">C. doubt what he says<br><input type="radio" name = "sel28" value="d">D. question him closely</p>
+            <center>
+                <strong>
+                    SECTION 4
+                </strong>
+                <em>From the words lettered A to D, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence</em>
+            </center>
+            <p>29. the bride was praised by her mother-in-law for her <u><b>impeccable</b></u> behaviour<br><input type="radio" name = "sel29" value="a">A. spotless<br><input type="radio" name = "sel29" value="b">B. appropriate<br><input type="radio" name = "sel29" value="c">C. beautiful<br><input type="radio" name = "sel29" value="d">D. fautless</p>
+            <p>30. Ogene was the least <u><b>cowed</b></u> by the bully's threat<br><input type="radio" name = "sel30" value="a">A. intimidated<br><input type="radio" name = "sel30" value="b">B. worried<br><input type="radio" name = "sel30" value="c">C. encouraged<br><input type="radio" name = "sel30" value="d">D. distracted</p>
+            <p>31. The dissidents held several <u><b>clandestine</b></u> meetings before the attack.<br><input type="radio" name = "sel31" value="a">A. secret<br><input type="radio" name = "sel31" value="b">B. important<br><input type="radio" name = "sel31" value="c">C. impromptu<br><input type="radio" name = "sel31" value="d">D. exclusive</p>
+            <p>32. The principal warned the final-year students about the consequences of <u><b>procrastination</b></u><br><input type="radio" name = "sel32" value="a">A. haste<br><input type="radio" name = "sel32" value="b">B. delay<br><input type="radio" name = "sel32" value="c">C. protesting<br><input type="radio" name = "sel32" value="d">D. rioting</p>
+            <p>33. The <u><b>incessant</b></u> <br><input type="radio" name = "sel33" value="a">A. excited<br><input type="radio" name = "sel33" value="b">B. meaningless<br><input type="radio" name = "sel33" value="c">C. unceasing<br><input type="radio" name = "sel33" value="d">D. illogical</p>
+            <p>34. With his <u><b>cogent</b></u> argument in favor of the proposal he was able to check further opposition<br><input type="radio" name = "sel34" value="a">A. insistent<br><input type="radio" name = "sel34" value="b">B. urgent<br><input type="radio" name = "sel34" value="c">C. convincing<br><input type="radio" name = "sel34" value="d">D. uncompromising</p>
+            <p>35. The professor's explanation of that point was quite <u><b>lucid</b></u><br><input type="radio" name = "sel35" value="a">A. lengthy<br><input type="radio" name = "sel35" value="b">B. complicated<br><input type="radio" name = "sel35" value="c">C. clear<br><input type="radio" name = "sel35" value="d">D. surprising</p>
+            <p>36. The fore man believed that with the <u><b>augmented</b></u> workforce, the construction job would take one more month to complete<br><input type="radio" name = "sel36" value="a">A. skilled<br><input type="radio" name = "sel36" value="b">B. enlarged<br><input type="radio" name = "sel36" value="c">C. hired<br><input type="radio" name = "sel36" value="d">D. determined</p>
+            <p>37. The children were warned not to unduly <u><b>inquisitive</b></u><br><input type="radio" name = "sel37" value="a">A. naughty<br><input type="radio" name = "sel37" value="b">B. playful<br><input type="radio" name = "sel37" value="c">C. troublesome<br><input type="radio" name = "sel37" value="d">D. curious</p>
+            <p>38. The accused <u><b>vehemently</b></u> denied the charges against him<br><input type="radio" name = "sel38" value="a">A. ignorantly<br><input type="radio" name = "sel38" value="b">B. stupidly<br><input type="radio" name = "sel38" value="c">C. deliberately<br><input type="radio" name = "sel38" value="d">D. strongly</p>
+            <center>
+                <strong>
+                    SECTION 5
+                </strong><br>
+                <em>From the words or group of words lettered a to D, choose the word or group of words that <b>best completes</b> each of the following sentences</em>
+            </center>
+            <p>39. The man advised his children not to ______________ to the temptations of the city<br><input type="radio" name = "sel39" value="a">A. off<br><input type="radio" name = "sel39" value="b">B. up<br><input type="radio" name = "sel39" value="c">C. in<br><input type="radio" name = "sel39" value="d">D. out</p>
+            <p>40. Ebiere turned ______________ all the advances made by the men<br><input type="radio" name = "sel40" value="a">A. aside<br><input type="radio" name = "sel40" value="b">B. off<br><input type="radio" name = "sel40" value="c">C. away<br><input type="radio" name = "sel40" value="d">D. down</p>
+            <p>41. Ada is ______________ to do that kind of thing<br><input type="radio" name = "sel41" value="a">A. too intelligent much<br><input type="radio" name = "sel41" value="b">B. too much intelligent<br><input type="radio" name = "sel41" value="c">C. intelligent too much<br><input type="radio" name = "sel41" value="d">D. much too intelligent</p>
+            <p>42. ______________ were sent to the library by the English teacher<br><input type="radio" name = "sel42" value="a">A. I and Udoh<br><input type="radio" name = "sel42" value="b">B. Udoh and me<br><input type="radio" name = "sel42" value="c">C. Udoh and I<br><input type="radio" name = "sel42" value="d">D. Myself and Udoh</p>
+            <p>43. The teachers ______________ politics when I entered the staff room <br><input type="radio" name = "sel43" value="a">A. are discussing<br><input type="radio" name = "sel43" value="b">B. were discussing about<br><input type="radio" name = "sel43" value="c">C. are discussing on<br><input type="radio" name = "sel43" value="d">D. were discussing</p>
+            <p>44. The quarrel between the two men soon resulted ______________ a fight<br><input type="radio" name = "sel44" value="a">A. to <br><input type="radio" name = "sel44" value="b">B. in<br><input type="radio" name = "sel44" value="c">C. towards<br><input type="radio" name = "sel44" value="d">D. into</p>
+            <p>45. You're not too tired to continue ______________?<br><input type="radio" name = "sel45" value="a">A. are you<br><input type="radio" name = "sel45" value="b">B. isn't it<br><input type="radio" name = "sel45" value="c">C. can't you<br><input type="radio" name = "sel45" value="d">D. is it</p>
+            <p>46. The hunter, with his dogs, ______________ going into the forest<br><input type="radio" name = "sel46" value="a">A. was seen<br><input type="radio" name = "sel46" value="b">B. are being seen<br><input type="radio" name = "sel46" value="c">C. have been seen<br><input type="radio" name = "sel46" value="d">D. were seen</p>
+            <p>47. Mother could not prepare the dish because there was ______________ oil available <br><input type="radio" name = "sel47" value="a">A. small<br><input type="radio" name = "sel47" value="b">B. little<br><input type="radio" name = "sel47" value="c">C. a little<br><input type="radio" name = "sel47" value="d">D. some</p>
+            <p>48. Because it had been raining heavily all morning, ______________ people turned out to welcome the august visitor<br><input type="radio" name = "sel48" value="a">A. few<br><input type="radio" name = "sel48" value="b">B. quite a few<br><input type="radio" name = "sel48" value="c">C. only fewer<br><input type="radio" name = "sel48" value="d">D. a few</p>
+            <p>49. Unfortunately, his plans to go abroad fell ______________ <br><input type="radio" name = "sel49" value="a">A. off<br><input type="radio" name = "sel49" value="b">B. down<br><input type="radio" name = "sel49" value="c">C. under<br><input type="radio" name = "sel49" value="d">D. through</p>
+            <p>50. The man asked me ______________ <br><input type="radio" name = "sel50" value="a">A. who am I?<br><input type="radio" name = "sel50" value="b">B. that who are you?<br><input type="radio" name = "sel50" value="c">C. who I am?<br><input type="radio" name = "sel50" value="d">D. who I was?</p>
+            <p>51. "It's high time you ______________ crying" the woman told her mother gently<br><input type="radio" name = "sel51" value="a">A. stop<br><input type="radio" name = "sel51" value="b">B. should stop<br><input type="radio" name = "sel51" value="c">C. stopped<br><input type="radio" name = "sel51" value="d">D. must stop</p>
+            <p>52. He would rather resign ______________ part in such a dishonest deal<br><input type="radio" name = "sel52" value="a">A. instead of taking<br><input type="radio" name = "sel52" value="b">B. than taking<br><input type="radio" name = "sel52" value="c">C. than takes<br><input type="radio" name = "sel52" value="d">D. than take</p>
+            <p>53. Those who owed the company were urged to ______________ their debts<br><input type="radio" name = "sel53" value="a">A. make good<br><input type="radio" name = "sel53" value="b">B. pay out<br><input type="radio" name = "sel53" value="c">C. run in<br><input type="radio" name = "sel53" value="d">D. pay for</p>
+            <p>54. ______________ home, his dead uncle burial had already taking place<br><input type="radio" name = "sel54" value="a">A. Getting<br><input type="radio" name = "sel54" value="b">B. As he get<br><input type="radio" name = "sel54" value="c">C. On getting<br><input type="radio" name = "sel54" value="d">D. When he got</p>
+            <p>55. Luck ______________ the robbers on that faithful day <br><input type="radio" name = "sel55" value="a">A. came down on<br><input type="radio" name = "sel55" value="b">B. ran out on<br><input type="radio" name = "sel55" value="c">C. ended up with<br><input type="radio" name = "sel55" value="d">D. made away with</p>
+            <p>56. He never seemed to get it right ______________ <br><input type="radio" name = "sel56" value="a">A. however he tried out<br><input type="radio" name = "sel56" value="b">B. he tried hard however<br><input type="radio" name = "sel56" value="c">C. he however tried hard<br><input type="radio" name = "sel56" value="d">D. however hard he tried</p>
+            <p>57. The day that Musa's uncle died was the ______________ day of his life<br><input type="radio" name = "sel57" value="a">A. more sadder<br><input type="radio" name = "sel57" value="b">B. sadder<br><input type="radio" name = "sel57" value="c">C. saddest<br><input type="radio" name = "sel57" value="d">D. more saddest</p>
+            <p>58. With his reading glasses on, he could see the words ______________ <br><input type="radio" name = "sel58" value="a">A. much more clearly<br><input type="radio" name = "sel58" value="b">B. clearly much more<br><input type="radio" name = "sel58" value="c">C. much clearly more<br><input type="radio" name = "sel58" value="d">D. much much clearer</p>
+            <p>59. Neither Obi nor Jumoke ______________ present at the meeting<br><input type="radio" name = "sel59" value="a">A. was <br><input type="radio" name = "sel59" value="b">B. were<br><input type="radio" name = "sel59" value="c">C. have been<br><input type="radio" name = "sel59" value="d">D. are</p>
+            <p>60. Hardly had the journey started ______________ the car engine developed a fault<br><input type="radio" name = "sel60" value="a">A. that<br><input type="radio" name = "sel60" value="b">B. when<br><input type="radio" name = "sel60" value="c">C. than<br><input type="radio" name = "sel60" value="d">D. soon</p>
+            <p>61. At the end of this year, Grandmother ______________ with us for seven years<br><input type="radio" name = "sel61" value="a">A. is living<br><input type="radio" name = "sel61" value="b">B. has lived<br><input type="radio" name = "sel61" value="c">C. will have lived<br><input type="radio" name = "sel61" value="d">D. has been living</p>
+            <p>62. One of the robbers who snatched the car ______________ been arrested by the police<br><input type="radio" name = "sel62" value="a">A. have<br><input type="radio" name = "sel62" value="b">B. was<br><input type="radio" name = "sel62" value="c">C. is<br><input type="radio" name = "sel62" value="d">D. has</p>
+            <p>63. A student at the back of the class complained that he ______________ the teacher<br><input type="radio" name = "sel63" value="a">A. was not hearing<br><input type="radio" name = "sel63" value="b">B. could not hear<br><input type="radio" name = "sel63" value="c">C. does not hear<br><input type="radio" name = "sel63" value="d">D. is not hearing</p>
+            <p>64. The little boy could not move the heavy stone ______________ he tried<br><input type="radio" name = "sel64" value="a">A. as much as<br><input type="radio" name = "sel64" value="b">B. how much<br><input type="radio" name = "sel64" value="c">C. no matter that<br><input type="radio" name = "sel64" value="d">D. however hard</p>
+            <p>65. The two girls have not been speaking ______________ since their quarrel<br><input type="radio" name = "sel65" value="a">A. one to the other<br><input type="radio" name = "sel65" value="b">B. to themselves<br><input type="radio" name = "sel65" value="c">C. to each other<br><input type="radio" name = "sel65" value="d">D. to each other</p>
+            <p>66. We recieved ______________ that the workers would go on strike<br><input type="radio" name = "sel66" value="a">A. an information<br><input type="radio" name = "sel66" value="b">B. informations<br><input type="radio" name = "sel66" value="c">C. those information<br><input type="radio" name = "sel66" value="d">D. information</p>
+            <p>67. He dabbles ______________ politics from time to time <br><input type="radio" name = "sel67" value="a">A. in <br><input type="radio" name = "sel67" value="b">B. with <br><input type="radio" name = "sel67" value="c">C. through<br><input type="radio" name = "sel67" value="d">D. into</p>
+            <p>68. The government has set up a ______________ panel to investigate the fire incident<br><input type="radio" name = "sel68" value="a">A. five-men<br><input type="radio" name = "sel68" value="b">B. five men<br><input type="radio" name = "sel68" value="c">C. five-man<br><input type="radio" name = "sel68" value="d">D. five man</p>
+            <p>69. The students week was rounded ______________ with dance<br><input type="radio" name = "sel69" value="a">A. off<br><input type="radio" name = "sel69" value="b">B. up<br><input type="radio" name = "sel69" value="c">C. out<br><input type="radio" name = "sel69" value="d">D. through</p>
+            <p>70. The factory workers refused to take the matter of their sacked colleagues lying ______________ <br><input type="radio" name = "sel70" value="a">A. about<br><input type="radio" name = "sel70" value="b">B. low<br><input type="radio" name = "sel70" value="c">C. down<br><input type="radio" name = "sel70" value="d">D. idle</p>
+            <p>71. After a while, we noticed that the unconscious  accident victim was coming ______________ <br><input type="radio" name = "sel71" value="a">A. round<br><input type="radio" name = "sel71" value="b">B. on<br><input type="radio" name = "sel71" value="c">C. top<br><input type="radio" name = "sel71" value="d">D. through</p>
+            <p>72. Seun accepted the conditions we gave him ______________ for my liking<br><input type="radio" name = "sel72" value="a">A. quickly too much<br><input type="radio" name = "sel72" value="b">B. too much quickly<br><input type="radio" name = "sel72" value="c">C. much too quickly<br><input type="radio" name = "sel72" value="d">D. much quickly too</p>
+            <p>73. The careless manager has caused his bank to ______________ millions of naira<br><input type="radio" name = "sel73" value="a">A. loose<br><input type="radio" name = "sel73" value="b">B. losing<br><input type="radio" name = "sel73" value="c">C. lose<br><input type="radio" name = "sel73" value="d">D. lost</p>
+            <p>74. Both questions are alternatives, you answer ______________ one ______________ the other<br><input type="radio" name = "sel74" value="a">A. neither, nor<br><input type="radio" name = "sel74" value="b">B. both, and<br><input type="radio" name = "sel74" value="c">C. neither, or<br><input type="radio" name = "sel74" value="d">D. either, or</p>
+            <p>75. The sick man, ______________ in bed for three months<br><input type="radio" name = "sel75" value="a">A. lay<br><input type="radio" name = "sel75" value="b">B. lain<br><input type="radio" name = "sel75" value="c">C. lied<br><input type="radio" name = "sel75" value="d">D. lie</p>
+            <p>76. Oguagu has always ______________ me as a good-mannered child<br><input type="radio" name = "sel76" value="a">A. strike<br><input type="radio" name = "sel76" value="b">B. struck<br><input type="radio" name = "sel76" value="c">C. stricken<br><input type="radio" name = "sel76" value="d">D. striking</p>
+            <center>
+                <strong>
+                    SECTION 6
+                </strong><br>
+                <em>In the following passages, the numbered gaps indicate missing words. Choose the word that is most suitable to fill the numbered gaps in the passage</em>
+            </center>
+            <div>
+                <br><center><strong>PASSAGE A</strong></center>
+                For thousands of years, man lives  in a primitive way. Before the recent <select id="sel77"><option>-77-</option><option value="a">A. developments</option><option value="b">B. growth</option><option value="c">C. adventures</option><option value="d">D. experiments</option></select> in agriculture; medicine and industry, life was difficult. it was hard to <select id="sel78"><option>-78-</option><option value="a">A. get</option><option value="b">B. realize</option><option value="c">C. make</option><option value="d">D. extract</option></select> a living form the <select id="sel79"><option>79-</option><option value="a">A. ground</option><option value="b">B. soil</option><option value="c">C. world</option><option value="d">D. earth</option></select>
+                without modern farming <select id="sel80"><option>-80-</option><option value="a">A. methods</option><option value="b">B. procedures</option><option value="c">C. steps</option><option value="d">D. ways</option></select> and a single year of crop <select id="sel81"><option>-81-</option><option value="a">A. collapse</option><option value="b">B. withdrawal</option><option value="c">C. decease</option><option value="d">D. failure</option></select> could mean famine and therefore death. Illiness as <select id="sel82"><option>-82-</option><option value="a">A. meek</option><option value="b">B. weak</option><option value="c">C. mild</option><option value="d">D. benign</option></select> and as <select id="sel83"><option>-83-</option><option value="a">A. common</option><option value="b">B. ubiquitous</option><option value="c">C. omnipresent</option><option value="d">D. numerous</option></select>
+                as influenza could kill a stone-aged man weakened by hunger, appendicitis was always <select id="sel84"><option>-84-</option><option value="a">A. vanguished</option><option value="b">B. fatal</option><option value="c">C. killing</option><option value="d">D. deadly</option></select> before the day of modern <select id="sel85"><option>-85-</option><option value="a">A. medication</option><option value="b">B. counseling</option><option value="c">C. therapy</option><option value="d">D. surgery</option></select>. Even child birth was an hazardous process. Under these conditions, human race needed to <select id="sel86"><option>-86-</option><option value="a">A. recreate</option><option value="b">B. replenish</option><option value="c">C. reproduce</option><option value="d">D. recycle</option></select>
+                at a high <select id="sel87"><option>-87-</option><option value="a">A. speed</option><option value="b">B. rate</option><option value="c">C. pace</option><option value="d">D. frequency</option></select>just to keep in existence. However, with a sharp fall in the <select id="sel88"><option>-88-</option><option value="a">A. maternity</option><option value="b">B. morality</option><option value="c">C. paternity</option><option value="d">D. mortality</option></select> rate relative to the <select id="sel89"><option>-89-</option><option value="a">A. birth-rate</option><option value="b">B. living</option><option value="c">C. healthy</option><option value="d">D. woman</option></select>, the world's population is now increasing very rapidly. This increase needs to be put in
+                <select id="sel90"><option>-90-</option><option value="a">A. detention</option><option value="b">B. bondage</option><option value="c">C. check</option><option value="d">D. reverse</option></select> to avoid the looming consequence of population <select id="sel91"><option>-91-</option><option value="a">A. enlargement</option><option value="b">B. explosion</option><option value="c">C. bank</option><option value="d">D. expansion</option></select>
+                <br><br><center><strong>PASSAGE B</strong></center>
+                When my elder brother decided to <select id="sel92"><option>-92-</option><option value="a">A. start</option><option value="b">B. open</option><option value="c">C. begin</option><option value="d">D. close</option></select> a current account with the United bank for Africa, he walked into one of its <select id="sel93"><option>-93-</option><option value="a">A. branches</option><option value="b">B. offices</option><option value="c">C. premises</option><option value="d">D. houses</option></select> and obtained the necessary <select id="sel94"><option>-94-</option><option value="a">A. bills</option><option value="b">B. booklets</option><option value="c">C. applications</option><option value="d">D. forms</option></select> which he completed and returned to the
+                <select id="sel95"><option>-95-</option><option value="a">A. principal</option><option value="b">B. directors</option><option value="c">C. managers</option><option value="d">D. chairman</option></select>. He was then given paying in <select id="sel96"><option>-96-</option><option value="a">A. papers</option><option value="b">B. bonds</option><option value="c">C. tallies</option><option value="d">D. slips</option></select> soon, he started issuing <select id="sel97"><option>-97-</option><option value="a">A. cheques</option><option value="b">B. money</option><option value="c">C. numbers</option><option value="d">D. contracts</option></select> to people with whom h transacted business. Whenever his signature was irregular, his cheque was not <select id="sel98"><option>-98-</option><option value="a">A. accepted</option><option value="b">B. honoured</option><option value="c">C. paid</option><option value="d">D. recieved</option></select>.
+                Once, he wanted to obtain a <select id="sel99"><option>-99-</option><option value="a">A. credit</option><option value="b">B. debit</option><option value="c">C. loan</option><option value="d">D. balance</option></select>and the bank insisted on <select id="sel100"><option>-100-</option><option value="a">A. a witness</option><option value="b">B. a guarantor</option><option value="c">C. collateral</option><option value="d">D. interest</option></select>
+            </div>
+            <p>&nbsp</p>
+            <div id='mainBody'>
+                <div class='essayque'>
+                    A nagging problem in your family has so much defied all solutions. Write a letter to an uncle of yours stating what the problem is and giving reasons why he should intervene.
+                </div><br>
+                <div class='essayque'>
+                    Write an article for publication in your school magazine on the topic: "Why I should like to be _____________ ". Choose an occupation or career and give at least three reasons why it appeals to you.
+                </div><br>
+                <div class='essayque'>
+                    Write a letter to the Director of Environmental Protection Agency in your country camplaining about the environmental pollution in your area and requesting that urgent action is taking to improve the situation.
+                </div><br>
+                <div class='essayque'>
+                    Write a story ending with the words, "Indeed, it was a blessing in disguise".
+                </div><br>
+                <div class='essayque'>
+                    You are a speaker in an inter-school debate on the topic: "It is better to attend a school near your home than one outside your neighbourhood". Write your speech for or against the proposition.
+                </div><br><br>
+            </div>
+            <div id='TestLinks'>
+                <center>
+                   <a href="English 2000 Test of Oral.html">Take a test on 2000 WAEC Oral English</a>&nbsp;<a id='essay'>Essay Exam</a>
+                </center>
+            </div>
         </div>
-            <div class="leftcolumn">
-                <div id="pageHeader">
-                  <center>ENGLISH LANGUAGE 2<br> WASSCE 2000</center>
-                </div>
-                <div id="time">Time: 1 hour</div>
-                <div id="num">Number of Questions: 100</div>
-               <center>
-                  <p id="Obj">OBJECTIVE TEST<br><strong>SECTION A</strong></p>
-                </center>
-                <center><em>
-                    In each of the following sentences, there is one underlined word and a gap. From the list of words lettered A to D, choose the one that most nearly opposite in meaning to the underlined word and that would at the same time, correctly fill the gap in the sentence.
-                </em></center>
-                <p>1. "Hello Musa" is a ______________  opening for a friendly letter, but it is <u><b>inappropriate</b></u> for a formal letter<br><input type="radio" name = "sel1" value="a">A. casual<br><input type="radio" name = "sel1" value="b">B. serious<br><input type="radio" name = "sel1" value="c">C. happy<br><input type="radio" name = "sel1" value="d">D. suitable</p>
-                <p>2. We <u><b>blamed</b></u> Obi for breaking the door, but when Ade confessed that he did it, Obi was ______________ <br><input type="radio" name = "sel2" value="a">A. rewarded<br><input type="radio" name = "sel2" value="b">B. exonerated<br><input type="radio" name = "sel2" value="c">C. released <br><input type="radio" name = "sel2" value="d">D. jailed</p>
-                <p>3. Parking on the street is ______________  on weekdays but <u><b>permitted</b></u> at weekends<br><input type="radio" name = "sel3" value="a">A. rejected<br><input type="radio" name = "sel3" value="b">B. sanctioned<br><input type="radio" name = "sel3" value="c">C. abolished<br><input type="radio" name = "sel3" value="d">D. prohibited</p>
-                <p>4. They had to ______________ the old building to <u><b>construct</b></u> the five-star hotel<br><input type="radio" name = "sel4" value="a">A. close<br><input type="radio" name = "sel4" value="b">B. remove<br><input type="radio" name = "sel4" value="c">C. demolish<br><input type="radio" name = "sel4" value="d">D. damage</p>
-                <p>5. If we can <u><b>commence</b></u> the meeting on time, we should be able to ______________ by 4:00p.m<br><input type="radio" name = "sel5" value="a">A. return<br><input type="radio" name = "sel5" value="b">B. vacate<br><input type="radio" name = "sel5" value="c">C. convene<br><input type="radio" name = "sel5" value="d">D. adjourn</p>
-                <p>6. The children expected to be <u><b>praised</b></u> for putting out the fire, but they were ______________ for taking such a risk<br><input type="radio" name = "sel6" value="a">A. rebuked<br><input type="radio" name = "sel6" value="b">B. accused<br><input type="radio" name = "sel6" value="c">C. despised<br><input type="radio" name = "sel6" value="d">D. sentenced</p>
-                <p>7. A child got <u><b>stuck</b></u> trying to squeeze through an iron fence, but some adults try to ______________ him<br><input type="radio" name = "sel7" value="a">A. extract<br><input type="radio" name = "sel7" value="b">B. push<br><input type="radio" name = "sel7" value="c">C. save<br><input type="radio" name = "sel7" value="d">D. extricate</p>
-                <p>8. They ended the discussion on <u><b>amicable</b></u> terms though they were ______________ to each other at the beginning<br><input type="radio" name = "sel8" value="a">A. unacceptable<br><input type="radio" name = "sel8" value="b">B. hostile<br><input type="radio" name = "sel8" value="c">C. unknown<br><input type="radio" name = "sel8" value="d">D. annoying</p>
-                <center>
-                    <strong>
-                        SECTION 2
-                    </strong><br>
-                    <em>From each of the word lettered A to D, choose the word that best completes each of the following sentences</em>
-                </center>
-                <p>9. The class prefect's ______________ of the quarrel is different from yours<br><input type="radio" name = "sel9" value="a">A. statement<br><input type="radio" name = "sel9" value="b">B. account<br><input type="radio" name = "sel9" value="c">C. outline<br><input type="radio" name = "sel9" value="b">B. summary</p>
-                <p>10. I refused to ______________ my statement because it was true<br><input type="radio" name = "sel10" value="a">A. retract<br><input type="radio" name = "sel10" value="b">B. make<br><input type="radio" name = "sel10" value="c">C. withhold<br><input type="radio" name = "sel10" value="d">D. voice</p>
-                <p>11. But for the timely ______________ of the police, there would have been a riot<br><input type="radio" name = "sel11" value="a">A. interference<br><input type="radio" name = "sel11" value="b">B. intrusion<br><input type="radio" name = "sel11" value="c">C. intervention<br><input type="radio" name = "sel11" value="d">D. interruption</p>
-                <p>12. The boys were about to trade blows, but I managed to hold one of them back while my friend ______________ the other<br><input type="radio" name = "sel12" value="a">A. restrained<br><input type="radio" name = "sel12" value="b">B. subdued<br><input type="radio" name = "sel12" value="c">C. coaxed<br><input type="radio" name = "sel12" value="d">D. captured</p>
-                <p>13. We were waiting to hear the weather ______________ for tomorrow<br><input type="radio" name = "sel13" value="a">A. broadcast<br><input type="radio" name = "sel13" value="b">B. declaration<br><input type="radio" name = "sel13" value="c">C. report<br><input type="radio" name = "sel13" value="d">D. forecast</p>
-                <p>14. I will tell you the secret if you promise not to ______________ it<br><input type="radio" name = "sel14" value="a">A. divulge<br><input type="radio" name = "sel14" value="b">B. show<br><input type="radio" name = "sel14" value="c">C. scatter<br><input type="radio" name = "sel14" value="d">D. relay</p>
-                <p>15. The hilltop was a hundred metres above the sea level and from that ______________ the whole town could be seen beautifully laid out<br><input type="radio" name = "sel15" value="a">A. magnitude<br><input type="radio" name = "sel15" value="b">B. altitude<br><input type="radio" name = "sel15" value="c">C. latitude<br><input type="radio" name = "sel15" value="d">D. longitude</p>
-                <p>16. Until now, Etim has always started the fights, but this Adamu is clearly the ______________ <br><input type="radio" name = "sel16" value="a">A. oppresor<br><input type="radio" name = "sel16" value="b">B. fighter<br><input type="radio" name = "sel16" value="c">C. aggressor<br><input type="radio" name = "sel16" value="d">D. underdog</p>
-                <p>17. If found guilty, a person may appeal to a high court in the hope that it will ______________ the verdict<br><input type="radio" name = "sel17" value="a">A. discharge<br><input type="radio" name = "sel17" value="b">B. revise<br><input type="radio" name = "sel17" value="c">C. dismiss<br><input type="radio" name = "sel17" value="d">D. reverse</p>
-                <p>18. The visit of the patron of the club ______________ the morale of the players<br><input type="radio" name = "sel18" value="a">A. elated<br><input type="radio" name = "sel18" value="b">B. induced<br><input type="radio" name = "sel18" value="b">B. boasted<br><input type="radio" name = "sel18" value="d">D. boosted</p>
-                <center>
-                    <strong>
-                        SECTION 3
-                    </strong><br>
-                    <em>After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that you consider most appropriate for each sentence</em>
-                </center>
-                <p>19. Although Aliyu was acquitted  by the court for want of evidence, the police still kept a tab on him. <br>This means that they<br><input type="radio" name = "sel19" value="a">A. kept him under close observation<br><input type="radio" name = "sel19" value="b">B. set a trap to catch him again<br><input type="radio" name = "sel19" value="c">C. attached a tag to his clothes<br><input type="radio" name = "sel19" value="d">D. kept him behind bars</p>
-                <p>20. When it came to the question of an increase in allowance, the striking workers spoke to one another. <br>This means that the workers<br><input type="radio" name = "sel20" value="a">A. became frightened<br><input type="radio" name = "sel20" value="b">B. appointed one of them as their spokesman<br><input type="radio" name = "sel20" value="c">C. repeated their demand in a chorus<br><input type="radio" name = "sel20" value="d">D. were unanimous in their position</p>
-                <p>21. The restaurant owner offered Olu a drink on the house. <br>This means that<br><input type="radio" name = "sel21" value="a">A. the drink was taken to Olu's house<br><input type="radio" name = "sel21" value="b">B. Olu was invited to the owner's house<br><input type="radio" name = "sel21" value="c">C. the drink was free of charge<br><input type="radio" name = "sel21" value="d">D. Olu was served inside the restaurant</p>
-                <p>22. When the Chior Master introduced Jane as a brilliant singer, everyone knew that he was speaking with his tongue in his cheek.<br>This means that<br><input type="radio" name = "sel22" value="a">A. was ignorant of the quality of Jane's singing<br><input type="radio" name = "sel22" value="b">B. did not intend to be taken seriously<br><input type="radio" name = "sel22" value="c">C. wanted to deceive Jane <br><input type="radio" name = "sel22" value="d">D. wanted to deceive everyone but failed</p>
-                <p>23. When the accountant made those remarks he knew that he was putting his job on the lane. <br>This means that the accountant was<br><input type="radio" name = "sel23" value="a">A. risking loosing his job<br><input type="radio" name = "sel23" value="b">B. announcing his resignation<br><input type="radio" name = "sel23" value="c">C. urging people to take his profession<br><input type="radio" name = "sel23" value="d">D. revealing secrets about his job</p>
-                <p>24. The newly acquired air-bus plane is a white elephant. <br>This means that the plane is<br><input type="radio" name = "sel24" value="a">A. very costly but worthless<br><input type="radio" name = "sel24" value="b">B. very useful<br><input type="radio" name = "sel24" value="c">C. as big as an elephant<br><input type="radio" name = "sel24" value="d">D. the biggest plane on the fleet</p>
-                <p>25. Despite the measures taken by the government, the economy of the country is still on the doldrums. <br> <br><input type="radio" name = "sel25" value="a">A. the economy is recovering<br><input type="radio" name = "sel25" value="b">B. the government is tackling the problem vigorously<br><input type="radio" name = "sel25" value="c">C. the economic problems are widely known<br><input type="radio" name = "sel25" value="d">D. the economy is not making any project</p>
-                <p>26. The new teacher urged the lazy students to turn over a new leaf. <br> This means that the teacher urged the students to <br><input type="radio" name = "sel26" value="a">A. improve their behaviour<br><input type="radio" name = "sel26" value="b">B. turn to the next page of their book<br><input type="radio" name = "sel26" value="c">C. stir the leaves in the compost pit<br><input type="radio" name = "sel26" value="d">D. strike a balance between play and hardwork</p>
-                <p>27. Amina always flies off at a tangent when a serious matter is being discussed<br><input type="radio" name = "sel27" value="a">A. gets over-excited<br><input type="radio" name = "sel27" value="b">B. keeps digressing<br><input type="radio" name = "sel27" value="c">C. keeps the discussion lively<br><input type="radio" name = "sel27" value="d">D. has noting to contribute</p>
-                <p>28. You should take what he tells with a pinch of salt. <br>This means that you should<br><input type="radio" name = "sel28" value="a">A. reject everything he says because he is a liar<br><input type="radio" name = "sel28" value="b">B. pay close attention to him<br><input type="radio" name = "sel28" value="c">C. doubt what he says<br><input type="radio" name = "sel28" value="d">D. question him closely</p>
-                <center>
-                    <strong>
-                        SECTION 4
-                    </strong>
-                    <em>From the words lettered A to D, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence</em>
-                </center>
-                <p>29. the bride was praised by her mother-in-law for her <u><b>impeccable</b></u> behaviour<br><input type="radio" name = "sel29" value="a">A. spotless<br><input type="radio" name = "sel29" value="b">B. appropriate<br><input type="radio" name = "sel29" value="c">C. beautiful<br><input type="radio" name = "sel29" value="d">D. fautless</p>
-                <p>30. Ogene was the least <u><b>cowed</b></u> by the bully's threat<br><input type="radio" name = "sel30" value="a">A. intimidated<br><input type="radio" name = "sel30" value="b">B. worried<br><input type="radio" name = "sel30" value="c">C. encouraged<br><input type="radio" name = "sel30" value="d">D. distracted</p>
-                <p>31. The dissidents held several <u><b>clandestine</b></u> meetings before the attack.<br><input type="radio" name = "sel31" value="a">A. secret<br><input type="radio" name = "sel31" value="b">B. important<br><input type="radio" name = "sel31" value="c">C. impromptu<br><input type="radio" name = "sel31" value="d">D. exclusive</p>
-                <p>32. The principal warned the final-year students about the consequences of <u><b>procrastination</b></u><br><input type="radio" name = "sel32" value="a">A. haste<br><input type="radio" name = "sel32" value="b">B. delay<br><input type="radio" name = "sel32" value="c">C. protesting<br><input type="radio" name = "sel32" value="d">D. rioting</p>
-                <p>33. The <u><b>incessant</b></u> <br><input type="radio" name = "sel33" value="a">A. excited<br><input type="radio" name = "sel33" value="b">B. meaningless<br><input type="radio" name = "sel33" value="c">C. unceasing<br><input type="radio" name = "sel33" value="d">D. illogical</p>
-                <p>34. With his <u><b>cogent</b></u> argument in favor of the proposal he was able to check further opposition<br><input type="radio" name = "sel34" value="a">A. insistent<br><input type="radio" name = "sel34" value="b">B. urgent<br><input type="radio" name = "sel34" value="c">C. convincing<br><input type="radio" name = "sel34" value="d">D. uncompromising</p>
-                <p>35. The professor's explanation of that point was quite <u><b>lucid</b></u><br><input type="radio" name = "sel35" value="a">A. lengthy<br><input type="radio" name = "sel35" value="b">B. complicated<br><input type="radio" name = "sel35" value="c">C. clear<br><input type="radio" name = "sel35" value="d">D. surprising</p>
-                <p>36. The fore man believed that with the <u><b>augmented</b></u> workforce, the construction job would take one more month to complete<br><input type="radio" name = "sel36" value="a">A. skilled<br><input type="radio" name = "sel36" value="b">B. enlarged<br><input type="radio" name = "sel36" value="c">C. hired<br><input type="radio" name = "sel36" value="d">D. determined</p>
-                <p>37. The children were warned not to unduly <u><b>inquisitive</b></u><br><input type="radio" name = "sel37" value="a">A. naughty<br><input type="radio" name = "sel37" value="b">B. playful<br><input type="radio" name = "sel37" value="c">C. troublesome<br><input type="radio" name = "sel37" value="d">D. curious</p>
-                <p>38. The accused <u><b>vehemently</b></u> denied the charges against him<br><input type="radio" name = "sel38" value="a">A. ignorantly<br><input type="radio" name = "sel38" value="b">B. stupidly<br><input type="radio" name = "sel38" value="c">C. deliberately<br><input type="radio" name = "sel38" value="d">D. strongly</p>
-                <center>
-                    <strong>
-                        SECTION 5
-                    </strong><br>
-                    <em>From the words or group of words lettered a to D, choose the word or group of words that <b>best completes</b> each of the following sentences</em>
-                </center>
-                <p>39. The man advised his children not to ______________ to the temptations of the city<br><input type="radio" name = "sel39" value="a">A. off<br><input type="radio" name = "sel39" value="b">B. up<br><input type="radio" name = "sel39" value="c">C. in<br><input type="radio" name = "sel39" value="d">D. out</p>
-                <p>40. Ebiere turned ______________ all the advances made by the men<br><input type="radio" name = "sel40" value="a">A. aside<br><input type="radio" name = "sel40" value="b">B. off<br><input type="radio" name = "sel40" value="c">C. away<br><input type="radio" name = "sel40" value="d">D. down</p>
-                <p>41. Ada is ______________ to do that kind of thing<br><input type="radio" name = "sel41" value="a">A. too intelligent much<br><input type="radio" name = "sel41" value="b">B. too much intelligent<br><input type="radio" name = "sel41" value="c">C. intelligent too much<br><input type="radio" name = "sel41" value="d">D. much too intelligent</p>
-                <p>42. ______________ were sent to the library by the English teacher<br><input type="radio" name = "sel42" value="a">A. I and Udoh<br><input type="radio" name = "sel42" value="b">B. Udoh and me<br><input type="radio" name = "sel42" value="c">C. Udoh and I<br><input type="radio" name = "sel42" value="d">D. Myself and Udoh</p>
-                <p>43. The teachers ______________ politics when I entered the staff room <br><input type="radio" name = "sel43" value="a">A. are discussing<br><input type="radio" name = "sel43" value="b">B. were discussing about<br><input type="radio" name = "sel43" value="c">C. are discussing on<br><input type="radio" name = "sel43" value="d">D. were discussing</p>
-                <p>44. The quarrel between the two men soon resulted ______________ a fight<br><input type="radio" name = "sel44" value="a">A. to <br><input type="radio" name = "sel44" value="b">B. in<br><input type="radio" name = "sel44" value="c">C. towards<br><input type="radio" name = "sel44" value="d">D. into</p>
-                <p>45. You're not too tired to continue ______________?<br><input type="radio" name = "sel45" value="a">A. are you<br><input type="radio" name = "sel45" value="b">B. isn't it<br><input type="radio" name = "sel45" value="c">C. can't you<br><input type="radio" name = "sel45" value="d">D. is it</p>
-                <p>46. The hunter, with his dogs, ______________ going into the forest<br><input type="radio" name = "sel46" value="a">A. was seen<br><input type="radio" name = "sel46" value="b">B. are being seen<br><input type="radio" name = "sel46" value="c">C. have been seen<br><input type="radio" name = "sel46" value="d">D. were seen</p>
-                <p>47. Mother could not prepare the dish because there was ______________ oil available <br><input type="radio" name = "sel47" value="a">A. small<br><input type="radio" name = "sel47" value="b">B. little<br><input type="radio" name = "sel47" value="c">C. a little<br><input type="radio" name = "sel47" value="d">D. some</p>
-                <p>48. Because it had been raining heavily all morning, ______________ people turned out to welcome the august visitor<br><input type="radio" name = "sel48" value="a">A. few<br><input type="radio" name = "sel48" value="b">B. quite a few<br><input type="radio" name = "sel48" value="c">C. only fewer<br><input type="radio" name = "sel48" value="d">D. a few</p>
-                <p>49. Unfortunately, his plans to go abroad fell ______________ <br><input type="radio" name = "sel49" value="a">A. off<br><input type="radio" name = "sel49" value="b">B. down<br><input type="radio" name = "sel49" value="c">C. under<br><input type="radio" name = "sel49" value="d">D. through</p>
-                <p>50. The man asked me ______________ <br><input type="radio" name = "sel50" value="a">A. who am I?<br><input type="radio" name = "sel50" value="b">B. that who are you?<br><input type="radio" name = "sel50" value="c">C. who I am?<br><input type="radio" name = "sel50" value="d">D. who I was?</p>
-                <p>51. "It's high time you ______________ crying" the woman told her mother gently<br><input type="radio" name = "sel51" value="a">A. stop<br><input type="radio" name = "sel51" value="b">B. should stop<br><input type="radio" name = "sel51" value="c">C. stopped<br><input type="radio" name = "sel51" value="d">D. must stop</p>
-                <p>52. He would rather resign ______________ part in such a dishonest deal<br><input type="radio" name = "sel52" value="a">A. instead of taking<br><input type="radio" name = "sel52" value="b">B. than taking<br><input type="radio" name = "sel52" value="c">C. than takes<br><input type="radio" name = "sel52" value="d">D. than take</p>
-                <p>53. Those who owed the company were urged to ______________ their debts<br><input type="radio" name = "sel53" value="a">A. make good<br><input type="radio" name = "sel53" value="b">B. pay out<br><input type="radio" name = "sel53" value="c">C. run in<br><input type="radio" name = "sel53" value="d">D. pay for</p>
-                <p>54. ______________ home, his dead uncle burial had already taking place<br><input type="radio" name = "sel54" value="a">A. Getting<br><input type="radio" name = "sel54" value="b">B. As he get<br><input type="radio" name = "sel54" value="c">C. On getting<br><input type="radio" name = "sel54" value="d">D. When he got</p>
-                <p>55. Luck ______________ the robbers on that faithful day <br><input type="radio" name = "sel55" value="a">A. came down on<br><input type="radio" name = "sel55" value="b">B. ran out on<br><input type="radio" name = "sel55" value="c">C. ended up with<br><input type="radio" name = "sel55" value="d">D. made away with</p>
-                <p>56. He never seemed to get it right ______________ <br><input type="radio" name = "sel56" value="a">A. however he tried out<br><input type="radio" name = "sel56" value="b">B. he tried hard however<br><input type="radio" name = "sel56" value="c">C. he however tried hard<br><input type="radio" name = "sel56" value="d">D. however hard he tried</p>
-                <p>57. The day that Musa's uncle died was the ______________ day of his life<br><input type="radio" name = "sel57" value="a">A. more sadder<br><input type="radio" name = "sel57" value="b">B. sadder<br><input type="radio" name = "sel57" value="c">C. saddest<br><input type="radio" name = "sel57" value="d">D. more saddest</p>
-                <p>58. With his reading glasses on, he could see the words ______________ <br><input type="radio" name = "sel58" value="a">A. much more clearly<br><input type="radio" name = "sel58" value="b">B. clearly much more<br><input type="radio" name = "sel58" value="c">C. much clearly more<br><input type="radio" name = "sel58" value="d">D. much much clearer</p>
-                <p>59. Neither Obi nor Jumoke ______________ present at the meeting<br><input type="radio" name = "sel59" value="a">A. was <br><input type="radio" name = "sel59" value="b">B. were<br><input type="radio" name = "sel59" value="c">C. have been<br><input type="radio" name = "sel59" value="d">D. are</p>
-                <p>60. Hardly had the journey started ______________ the car engine developed a fault<br><input type="radio" name = "sel60" value="a">A. that<br><input type="radio" name = "sel60" value="b">B. when<br><input type="radio" name = "sel60" value="c">C. than<br><input type="radio" name = "sel60" value="d">D. soon</p>
-                <p>61. At the end of this year, Grandmother ______________ with us for seven years<br><input type="radio" name = "sel61" value="a">A. is living<br><input type="radio" name = "sel61" value="b">B. has lived<br><input type="radio" name = "sel61" value="c">C. will have lived<br><input type="radio" name = "sel61" value="d">D. has been living</p>
-                <p>62. One of the robbers who snatched the car ______________ been arrested by the police<br><input type="radio" name = "sel62" value="a">A. have<br><input type="radio" name = "sel62" value="b">B. was<br><input type="radio" name = "sel62" value="c">C. is<br><input type="radio" name = "sel62" value="d">D. has</p>
-                <p>63. A student at the back of the class complained that he ______________ the teacher<br><input type="radio" name = "sel63" value="a">A. was not hearing<br><input type="radio" name = "sel63" value="b">B. could not hear<br><input type="radio" name = "sel63" value="c">C. does not hear<br><input type="radio" name = "sel63" value="d">D. is not hearing</p>
-                <p>64. The little boy could not move the heavy stone ______________ he tried<br><input type="radio" name = "sel64" value="a">A. as much as<br><input type="radio" name = "sel64" value="b">B. how much<br><input type="radio" name = "sel64" value="c">C. no matter that<br><input type="radio" name = "sel64" value="d">D. however hard</p>
-                <p>65. The two girls have not been speaking ______________ since their quarrel<br><input type="radio" name = "sel65" value="a">A. one to the other<br><input type="radio" name = "sel65" value="b">B. to themselves<br><input type="radio" name = "sel65" value="c">C. to each other<br><input type="radio" name = "sel65" value="d">D. to each other</p>
-                <p>66. We recieved ______________ that the workers would go on strike<br><input type="radio" name = "sel66" value="a">A. an information<br><input type="radio" name = "sel66" value="b">B. informations<br><input type="radio" name = "sel66" value="c">C. those information<br><input type="radio" name = "sel66" value="d">D. information</p>
-                <p>67. He dabbles ______________ politics from time to time <br><input type="radio" name = "sel67" value="a">A. in <br><input type="radio" name = "sel67" value="b">B. with <br><input type="radio" name = "sel67" value="c">C. through<br><input type="radio" name = "sel67" value="d">D. into</p>
-                <p>68. The government has set up a ______________ panel to investigate the fire incident<br><input type="radio" name = "sel68" value="a">A. five-men<br><input type="radio" name = "sel68" value="b">B. five men<br><input type="radio" name = "sel68" value="c">C. five-man<br><input type="radio" name = "sel68" value="d">D. five man</p>
-                <p>69. The students week was rounded ______________ with dance<br><input type="radio" name = "sel69" value="a">A. off<br><input type="radio" name = "sel69" value="b">B. up<br><input type="radio" name = "sel69" value="c">C. out<br><input type="radio" name = "sel69" value="d">D. through</p>
-                <p>70. The factory workers refused to take the matter of their sacked colleagues lying ______________ <br><input type="radio" name = "sel70" value="a">A. about<br><input type="radio" name = "sel70" value="b">B. low<br><input type="radio" name = "sel70" value="c">C. down<br><input type="radio" name = "sel70" value="d">D. idle</p>
-                <p>71. After a while, we noticed that the unconscious  accident victim was coming ______________ <br><input type="radio" name = "sel71" value="a">A. round<br><input type="radio" name = "sel71" value="b">B. on<br><input type="radio" name = "sel71" value="c">C. top<br><input type="radio" name = "sel71" value="d">D. through</p>
-                <p>72. Seun accepted the conditions we gave him ______________ for my liking<br><input type="radio" name = "sel72" value="a">A. quickly too much<br><input type="radio" name = "sel72" value="b">B. too much quickly<br><input type="radio" name = "sel72" value="c">C. much too quickly<br><input type="radio" name = "sel72" value="d">D. much quickly too</p>
-                <p>73. The careless manager has caused his bank to ______________ millions of naira<br><input type="radio" name = "sel73" value="a">A. loose<br><input type="radio" name = "sel73" value="b">B. losing<br><input type="radio" name = "sel73" value="c">C. lose<br><input type="radio" name = "sel73" value="d">D. lost</p>
-                <p>74. Both questions are alternatives, you answer ______________ one ______________ the other<br><input type="radio" name = "sel74" value="a">A. neither, nor<br><input type="radio" name = "sel74" value="b">B. both, and<br><input type="radio" name = "sel74" value="c">C. neither, or<br><input type="radio" name = "sel74" value="d">D. either, or</p>
-                <p>75. The sick man, ______________ in bed for three months<br><input type="radio" name = "sel75" value="a">A. lay<br><input type="radio" name = "sel75" value="b">B. lain<br><input type="radio" name = "sel75" value="c">C. lied<br><input type="radio" name = "sel75" value="d">D. lie</p>
-                <p>76. Oguagu has always ______________ me as a good-mannered child<br><input type="radio" name = "sel76" value="a">A. strike<br><input type="radio" name = "sel76" value="b">B. struck<br><input type="radio" name = "sel76" value="c">C. stricken<br><input type="radio" name = "sel76" value="d">D. striking</p>
-                <center>
-                    <strong>
-                        SECTION 6
-                    </strong><br>
-                    <em>In the following passages, the numbered gaps indicate missing words. Choose the word that is most suitable to fill the numbered gaps in the passage</em>
-                </center>
-                <div>
-                    <br><center><strong>PASSAGE A</strong></center>
-                    For thousands of years, man lives  in a primitive way. Before the recent <select id="sel77"><option>-77-</option><option value="a">A. developments</option><option value="b">B. growth</option><option value="c">C. adventures</option><option value="d">D. experiments</option></select> in agriculture; medicine and industry, life was difficult. it was hard to <select id="sel78"><option>-78-</option><option value="a">A. get</option><option value="b">B. realize</option><option value="c">C. make</option><option value="d">D. extract</option></select> a living form the <select id="sel79"><option>79-</option><option value="a">A. ground</option><option value="b">B. soil</option><option value="c">C. world</option><option value="d">D. earth</option></select>
-                    without modern farming <select id="sel80"><option>-80-</option><option value="a">A. methods</option><option value="b">B. procedures</option><option value="c">C. steps</option><option value="d">D. ways</option></select> and a single year of crop <select id="sel81"><option>-81-</option><option value="a">A. collapse</option><option value="b">B. withdrawal</option><option value="c">C. decease</option><option value="d">D. failure</option></select> could mean famine and therefore death. Illiness as <select id="sel82"><option>-82-</option><option value="a">A. meek</option><option value="b">B. weak</option><option value="c">C. mild</option><option value="d">D. benign</option></select> and as <select id="sel83"><option>-83-</option><option value="a">A. common</option><option value="b">B. ubiquitous</option><option value="c">C. omnipresent</option><option value="d">D. numerous</option></select>
-                    as influenza could kill a stone-aged man weakened by hunger, appendicitis was always <select id="sel84"><option>-84-</option><option value="a">A. vanguished</option><option value="b">B. fatal</option><option value="c">C. killing</option><option value="d">D. deadly</option></select> before the day of modern <select id="sel85"><option>-85-</option><option value="a">A. medication</option><option value="b">B. counseling</option><option value="c">C. therapy</option><option value="d">D. surgery</option></select>. Even child birth was an hazardous process. Under these conditions, human race needed to <select id="sel86"><option>-86-</option><option value="a">A. recreate</option><option value="b">B. replenish</option><option value="c">C. reproduce</option><option value="d">D. recycle</option></select>
-                    at a high <select id="sel87"><option>-87-</option><option value="a">A. speed</option><option value="b">B. rate</option><option value="c">C. pace</option><option value="d">D. frequency</option></select>just to keep in existence. However, with a sharp fall in the <select id="sel88"><option>-88-</option><option value="a">A. maternity</option><option value="b">B. morality</option><option value="c">C. paternity</option><option value="d">D. mortality</option></select> rate relative to the <select id="sel89"><option>-89-</option><option value="a">A. birth-rate</option><option value="b">B. living</option><option value="c">C. healthy</option><option value="d">D. woman</option></select>, the world's population is now increasing very rapidly. This increase needs to be put in
-                    <select id="sel90"><option>-90-</option><option value="a">A. detention</option><option value="b">B. bondage</option><option value="c">C. check</option><option value="d">D. reverse</option></select> to avoid the looming consequence of population <select id="sel91"><option>-91-</option><option value="a">A. enlargement</option><option value="b">B. explosion</option><option value="c">C. bank</option><option value="d">D. expansion</option></select>
-                    <br><br><center><strong>PASSAGE B</strong></center>
-                    When my elder brother decided to <select id="sel92"><option>-92-</option><option value="a">A. start</option><option value="b">B. open</option><option value="c">C. begin</option><option value="d">D. close</option></select> a current account with the United bank for Africa, he walked into one of its <select id="sel93"><option>-93-</option><option value="a">A. branches</option><option value="b">B. offices</option><option value="c">C. premises</option><option value="d">D. houses</option></select> and obtained the necessary <select id="sel94"><option>-94-</option><option value="a">A. bills</option><option value="b">B. booklets</option><option value="c">C. applications</option><option value="d">D. forms</option></select> which he completed and returned to the
-                    <select id="sel95"><option>-95-</option><option value="a">A. principal</option><option value="b">B. directors</option><option value="c">C. managers</option><option value="d">D. chairman</option></select>. He was then given paying in <select id="sel96"><option>-96-</option><option value="a">A. papers</option><option value="b">B. bonds</option><option value="c">C. tallies</option><option value="d">D. slips</option></select> soon, he started issuing <select id="sel97"><option>-97-</option><option value="a">A. cheques</option><option value="b">B. money</option><option value="c">C. numbers</option><option value="d">D. contracts</option></select> to people with whom h transacted business. Whenever his signature was irregular, his cheque was not <select id="sel98"><option>-98-</option><option value="a">A. accepted</option><option value="b">B. honoured</option><option value="c">C. paid</option><option value="d">D. recieved</option></select>.
-                    Once, he wanted to obtain a <select id="sel99"><option>-99-</option><option value="a">A. credit</option><option value="b">B. debit</option><option value="c">C. loan</option><option value="d">D. balance</option></select>and the bank insisted on <select id="sel100"><option>-100-</option><option value="a">A. a witness</option><option value="b">B. a guarantor</option><option value="c">C. collateral</option><option value="d">D. interest</option></select>
-                </div>
-                <p>&nbsp</p>
-                <div id='mainBody'>
-                    <div class='essayque'>
-                        A nagging problem in your family has so much defied all solutions. Write a letter to an uncle of yours stating what the problem is and giving reasons why he should intervene.
-                    </div><br>
-                    <div class='essayque'>
-                        Write an article for publication in your school magazine on the topic: "Why I should like to be _____________ ". Choose an occupation or career and give at least three reasons why it appeals to you.
-                    </div><br>
-                    <div class='essayque'>
-                        Write a letter to the Director of Environmental Protection Agency in your country camplaining about the environmental pollution in your area and requesting that urgent action is taking to improve the situation.
-                    </div><br>
-                    <div class='essayque'>
-                        Write a story ending with the words, "Indeed, it was a blessing in disguise".
-                    </div><br>
-                    <div class='essayque'>
-                        You are a speaker in an inter-school debate on the topic: "It is better to attend a school near your home than one outside your neighbourhood". Write your speech for or against the proposition.
-                    </div><br><br>
-                </div>
-                <div id='TestLinks'>
-                    <center>
-                       <a href="English 2000 Test of Oral.html">Take a test on 2000 WAEC Oral English</a>&nbsp;<a id='essay'>Essay Exam</a>
-                    </center>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                    <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>  
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersENG2000, event)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(100);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+    
                 </div>
             </div>
-            <div class="rightcolumn">
-                <div class="floatingDiv">
-                    <span id="clockntimer">
-                      <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button>&nbsp;&nbsp;<button id="resetBtn" onclick="resetExam()">Reset</button>&nbsp;&nbsp;<button id="stopBtn" onclick="stopExam()">Stop</button></div>  
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="clockLabel"></label>
-                        <br>Spent:<label id="timeSpent"></label>
-                        Left:<label id="timeLeft"></label>
-                    </span>
-                    <div style='position: absolute; top: 1px; left: 25%'>
-                        <center><button class="submit" onclick = "displayResults(answersENG2000)">Answers</button></center>
-                        <center><button class="submit2" onclick = "displayScore(100);">Performance</button></center>
-                    </div> 
-                    <div id="resultSheet">
-        
-                    </div>
-                </div>
-            </div>
-            <div id="footer">
-                <center><p>Click <a href="#top">here</a> to go back to top.</p></center>
-                <p>For more past questions on WAEC, NECO and other exams, visit <a href="https://www.tutusfx.com/@davixspot">@Davixspot</a>.<br><br>
-                  Available past questions include<br>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
                 <ul>
-                <!-- the English Language dropdown -->
-                <nav><span>English Language</span>
-                    <ul class="dropdown-content">
-                        <li><a href="English 2017.html">2017</a><br></li>
-                        <li><a href="English 2016.html">2016</a><br></li>
-                        <li><a href="English 2015.html">2015</a><br></li>
-                        <li><a href="English 2014.html">2014</a><br></li>
-                        <li><a href="English 2013.html">2013</a><br></li>
-                        <li><a href="English 2012.html">2012</a><br></li>
-                        <li><a href="English 2011.html">2011</a><br></li>
-                        <li><a href="English 2010.html">2010</a><br></li>
-                        <li><a href="English 2009.html">2009</a><br></li>
-                        <li><a href="English 2008.html">2008</a><br></li>
-                        <li><a href="English 2007.html">2007</a><br></li>
-                        <li><a href="English 2006.html">2006</a><br></li>
-                        <li><a href="English 2005.html">2005</a><br></li>
-                        <li><a href="English 2004.html">2004</a><br></li>
-                        <li><a href="English 1992.html">1992</a><br></li>
-                        <li><a href="English 1991.html">1991</a><br></li>
-                        <li><a href="English 1990.html">1990</a><br></li>
-                    </ul>
-                </nav><br><!-- the Mathematics dropdown -->
-                <nav><span>Mathematics</span>
-                    <ul class="dropdown-content">
-                        <li><a href="Mathematics 2018.html">2018</a><br></li>
-                        <li><a href="Mathematics 2017.html">2017</a><br></li>
-                        <li><a href="Mathematics 2016.html">2016</a><br></li>
-                        <li><a href="Mathematics 2014.html">2014</a><br></li>
-                    </ul>
-                </nav>
-                <li><a href="https://www.google.com">Government</a><br></li>
-                <li><a href="https://www.google.com">Commerce</a><br></li>
-                <li><a href="https://www.google.com">Economics</a><br></li>
-                <li><a href="#">more...</a><br></li>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2001.html">2001</a></li>
+                            <li><a href="English 1999.html">1999</a></li>
+                            <li><a href="English 1998.html">1998</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">          
+                            <li><a href="Biology 2018.html">2018</a></li>
+                            <li><a href="Biology 2017.html">2017</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Economics</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
             </div>
-            <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button>
+            
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
     </body>
 </html>

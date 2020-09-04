@@ -1,9 +1,11 @@
 <!doctype html>
 <html>
     <head>
-		<link rel="stylesheet" href="../css/style.css" type="text/css">
-		<script src="../js/script.js" type="text/javascript"></script>
-		<title>English 2016 WAEC past questions</title>
+		<title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
 	</head>
     <body onload="examiner(false)">
 		<audio id="welcomeAudio">
@@ -37,23 +39,17 @@
 		  Your browser does not support the audio element.
 		</audio>
         <div class="leftcolumnForMainPageHeader">
-            <div id = "mainPageHeader">
-                SCHOOL MANAGER
-            </div>
-            <div id="motto">Learning made Easier</div>
-        </div>
-        <div class="leftcolumn"><br>
-            <div id="pageHeader">
-              <center>ENGLISH LANGUAGE 2<br> WASSCE 2016</center>
-            </div>
+			<div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+			<a href="@davixspot.html" class="fa fa-home" id="home"></a>
+		</div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>ENGLISH LANGUAGE 2 WASSCE 2016</center></div>
             <div id="time">Time: 1 hour</div>
-            <div id="num">Number of Questions: 100</div>
-           <center>
-              <p id="Obj">OBJECTIVE TEST<br><strong>SECTION A</strong></p>
-            </center>
-            <center>
-            <em><strong>Instruction: </strong>In each of the following sentences, there is one underlined word and a gap. From the list of words lettered A to D, choose the one that most nearly opposite in meaning to the underlined word and that would at the same time, correctly fill the gap in the sentence.</em>            
-            </center>
+            <div id="num">Number of Questions: 80</div>
+            <center><p id="Obj">OBJECTIVE TEST<br><strong>SECTION A</strong></p></center>
+            <center><em>
+                <strong>Instruction: </strong>In each of the following sentences, there is one underlined word and a gap. From the list of words lettered A to D, choose the one that most nearly opposite in meaning to the underlined word and that would at the same time, correctly fill the gap in the sentence.
+            </em></center>
             <p>1. The road which used to be <u><b>wide</b></u> now appears ______________ because of the new drainage.<br><input type="radio" name = "sel1" value="a">A. winding <br><input type="radio" name = "sel1" value="b">B. limited <br><input type="radio" name = "sel1" value="c">C. narrow <br><input type="radio" name = "sel1" value="d">D. reduced</p>
             <p>2. In the past, any person who <u><b>angered</b></u> the gods was made to ____________ them.<br><input type="radio" name = "sel2" value="a">A. appease <br><input type="radio" name = "sel2" value="b">B. reward <br><input type="radio" name = "sel2" value="c">C. settle <br><input type="radio" name = "sel2" value="d">D. beg</p>
             <p>3. Rather than being <u><b>sensitive</b></u> to the plight of the workers, the manager remained _____________ <br><input type="radio" name = "sel3" value="a">A. disdainful <br><input type="radio" name = "sel3" value="b">B. curious <br><input type="radio" name = "sel3" value="c">C. negligent <br><input type="radio" name = "sel3" value="d">D. indifferent</p>
@@ -154,7 +150,7 @@
                 </strong><br>
             <em><strong>Instruction: </strong>In the following passage, the numbered gaps indicate missing words. Choose the word that is most suitable to fill the numbered gaps in the passage.</em>
             </center>
-            <div id="sec6">
+            <div>
                 The young looked sprightly in the white coat. Display his <select id="sel71"><option>-71-</option><option value="a">A. chain</option><option value="b">B. badge</option><option value="c">C. stethoscope</option><option value="d">D. watch</option></select> very conspicuously on his neck,  he walked through the
                 <select id="sel72"><option>-72-</option><option value="a">A. aisle</option><option value="b">B. office</option><option value="c">C. room</option><option value="d">D. ward</option></select>, greeting each of the <select id="sel73"><option>-73-</option><option value="a">A. patients</option><option value="b">B. clients</option><option value="c">C. invalids</option><option value="d">D. customer</option></select>
                 who greeted him in return. Then suddenly, his caught a woman on a nearby <select id="sel74"><option>-74-</option><option value="a">A. stretcher</option><option value="b">B. bed</option><option value="c">C. wheelchair</option><option value="d">D. bench</option></select>. He went closer, held her hands, feeling for her
@@ -164,65 +160,91 @@
                 said to her, "This is an ectopic pregnancy, no mistake about it. The <select id="sel79"><option>-79-</option><option value="a">A. baby</option><option value="b">B. child</option><option value="c">C. infant</option><option value="d">D. foetus</option></select> must be taken out promptly." That was it. Within minutes, the operation began. While this was going on, blood was being prepared for
                 <select id="sel80"><option>-80-</option><option value="a">A. dripping</option><option value="b">B. pumping</option><option value="c">C. transfer</option><option value="d">D. transfusion</option></select>. before long, the surgery was completed.
             </div>
-            <p class="pagebottom">&nbsp;</p>
-            <center>
-               <a href="oralenglish" class="oralLink">Take a test on 2016 Oral English</a>
-            </center>
+            <p>&nbsp;</p>
+            <div id='mainBody'>
+                <div class='essayque'>
+                    A friend of yours wants to study in your school and has written to you for information and advice. Write a reply to him telling him all that he needs to know about the school.
+                </div><br>
+                <div class='essayque'>
+                    Some core values in your society have been eroded by modernization. Write an article suitable for publication in a national newspaper on the need to revive these values for better society.
+                </div><br>
+                <div class='essayque'>
+                    The Parent-Teacher Association of your school has decided to transform the school into a single-sex school. As the senior prefect, write a latter to the Chairman giving at least three reasons why you disagree with the decision.
+                </div><br>
+                <div class='essayque'>
+                    You are the main speaker in a debate on the topic: <i>Education is the best legacy a parent can give a child</i>. Write your arguments for or against the motion.
+                </div><br>
+                <div class='essayque'>
+                    Write a story to illustrate the saying: Pride goes before a fall.
+                </div><br><br>
+            </div>
+            <div id='TestLinks'>
+                <center>
+                   <a href="English 2016 Test of Oral.html">Take a test on 2016 WAEC Oral English</a>&nbsp;<a id='essay'>Essay Exam</a>
+                </center>
+            </div>
         </div>
         <div class="rightcolumn">
-            <div class="floatingDiv">
-                <span id="clockntimer">
-                    <button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button><br><label id="clockLabel"></label><br>
-                    Spent:<label id="timeSpent"></label><br>
+                <div class="floatingDiv">
+                    <span id="clockntimer">
+                    <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>  
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
                     Left:<label id="timeLeft"></label>
                 </span>
-                <center><button class="submit" onclick = "displayResults(answersENG2016)">Answers</button></center>
-                <center><button class="submit2" onclick = "displayScore(80)">Total score in percentage</button></center>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersENG2016, event)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(80);">Performance</button></center>
+                </div> 
                 <div id="resultSheet">
-    
-                </div>        
+        
+                </div>
             </div>
         </div>
         <div id="footer">
-            <center><p>Click <a href="#top">here</a> to go back to top.</p></center>
-            <p>For more past questions on WAEC, NECO and other exams, visit <a href="https://www.tutusfx.com/@davixspot">@Davixspot</a>.<br><br>
-              Available past questions include<br>
-            <ul>
-            <!-- the English Language dropdown -->
-            <nav><span>English Language</span>
-                <ul class="dropdown-content">
-                    <li><a href="English 2018.html">2018</a><br></li>
-                    <li><a href="English 2017.html">2017</a><br></li>
-                    <li><a href="English 2015.html">2015</a><br></li>
-                    <li><a href="English 2014.html">2014</a><br></li>
-                    <li><a href="English 2013.html">2013</a><br></li>
-                    <li><a href="English 2012.html">2012</a><br></li>
-                    <li><a href="English 2011.html">2011</a><br></li>
-                    <li><a href="English 2010.html">2010</a><br></li>
-                    <li><a href="English 2009.html">2009</a><br></li>
-                    <li><a href="English 2008.html">2008</a><br></li>
-                    <li><a href="English 2007.html">2007</a><br></li>
-                    <li><a href="English 2006.html">2006</a><br></li>
-                    <li><a href="English 2005.html">2005</a><br></li>
-                    <li><a href="English 2004.html">2004</a><br></li>
-                    <li><a href="English 1992.html">1992</a><br></li>
-                    <li><a href="English 1991.html">1991</a><br></li>
-                    <li><a href="English 1990.html">1990</a><br></li>
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2017.html">2017</a></li>
+                            <li><a href="English 2015.html">2015</a></li>
+                            <li><a href="English 2014.html">2014</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2018.html">2018</a></li>
+                            <li><a href="Biology 2017.html">2017</a></li>
+                            <li><a href="Biology 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Economics</a></li>
+                    <li><a href="#">Others</a></li>
                 </ul>
-            </nav><br><!-- the Mathematics dropdown -->
-            <nav><span>Mathematics</span>
-                <ul class="dropdown-content">
-                    <li><a href="Mathematics 2018.html">2018</a><br></li>
-                    <li><a href="Mathematics 2017.html">2017</a><br></li>
-                    <li><a href="Mathematics 2016.html">2016</a><br></li>
-                    <li><a href="Mathematics 2014.html">2014</a><br></li>
-                </ul>
-            </nav>
-            <li><a href="https://www.google.com">Government</a><br></li>
-            <li><a href="https://www.google.com">Commerce</a><br></li>
-            <li><a href="https://www.google.com">Economics</a><br></li>
-            <li><a href="#">more...</a><br></li>
+            </div>
+            
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
         </div>
-        <button id="footerBtn" class="footerBtn" onclick="showFooter()">Hide footer</button>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
     </body>
 </html>

@@ -1,27 +1,53 @@
 <!doctype html>
 <html>
     <head>
-	<link rel="stylesheet" href="../css/style.css" type="text/css">
-	<script src="../js/script.js" type="text/javascript"></script>
-	<title>English 1997 WAEC test of Orals</title>
+    	<title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
     </head>
     <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+            <source src="../aud/start.ogg" type="audio/ogg">
+            <source src="../aud/start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/optionselect.ogg" type="audio/ogg">
+            <source src="../aud/optionselect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="stopAudio">
+            <source src="../aud/stop.ogg" type="audio/ogg">
+            <source src="../aud/stop.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="passedAudio">
+            <source src="../aud/passed.ogg" type="audio/ogg">
+            <source src="../aud/passed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/failed.ogg" type="audio/ogg">
+            <source src="../aud/failed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="clickAudio">
+            <source src="../aud/btnclick.ogg" type="audio/ogg">
+            <source src="../aud/btnclick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
         <div class="leftcolumnForMainPageHeader">
-            <div id = "mainPageHeader">SCHOOL MANAGER</div>
-            <div id="motto">Learning made Easier</div>
-        </div>
+			<div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+			<a href="@davixspot.html" class="fa fa-home" id="home"></a>
+		</div>
         <div class="leftcolumn">
-            <div id="pageHeader">
-              <center>ENGLISH LANGUAGE 2<br> English 1997 WAEC test of Orals</center>
-            </div>
-            <div id="time">Time: 1 hour</div>
+            <div id="pageHeader"><center>ENGLISH 1997 WAEC TEST OF ORALS</center></div>
+            <div id="time">Time: 45 Minutes</div>
             <div id="num">Number of Questions: 60</div>
-            <center>
-              <p id="Obj">OBJECTIVE TEST<br><strong>SECTION A</strong></p>
-            </center>
-            <center><em>
-                <strong>Instruction: </strong>From the words lettered A to D, choose the word that has the same vowel sound as the on represented by the letter(s) underlined
-            </em></center>
+            <center><p id="Obj">OBJECTIVE TEST<br><strong>SECTION A</strong></p></center>
+            <center><em><strong>Instruction: </strong>From the words lettered A to D, choose the word that has the same vowel sound as the on represented by the letter(s) underlined</em></center>
             <p>1. L<u><b>eag</b></u>ue<br><input type="radio" name = "sel1" value="a">A. lick<input type="radio" name = "sel1" value="b">B. pleasure<input type="radio" name = "sel1" value="c">C. people<input type="radio" name = "sel1" value="d">D. learn</p>
             <p>2. Sh<u><b>a</b></u>ll<br><input type="radio" name = "sel2" value="a">A. shark<input type="radio" name = "sel2" value="b">B. hall<input type="radio" name = "sel2" value="c">C. shale<input type="radio" name = "sel2" value="d">D. sahdow</p>
             <p>3. W<u><b>a</b></u>tch<br><input type="radio" name = "sel3" value="a">A. war<input type="radio" name = "sel3" value="b">B. luck<input type="radio" name = "sel3" value="c">C. water<input type="radio" name = "sel3" value="d">D. hot</p>
@@ -37,12 +63,7 @@
             <p>13. M<u><b>a</b></u>ke<br><input type="radio" name = "sel13" value="a">A. plant<input type="radio" name = "sel13" value="b">B. afraid<input type="radio" name = "sel13" value="c">C. mark<input type="radio" name = "sel13" value="d">D. met</p>
             <p>14. C<u><b>oa</b></u>t<br><input type="radio" name = "sel14" value="a">A. no<input type="radio" name = "sel14" value="b">B. knew<input type="radio" name = "sel14" value="c">C. gnaw<input type="radio" name = "sel14" value="d">D. now</p>
             <p>15. Ch<u><b>ee</b></u>r<br><input type="radio" name = "sel15" value="a">A. chair<input type="radio" name = "sel15" value="b">B. ear<input type="radio" name = "sel15" value="c">C. check<input type="radio" name = "sel15" value="d">D. cheat</p>
-            <center>
-                <strong>
-                    SECTION 2
-                </strong><br>
-                <em><strong>Instruction: </strong>From the words lettered A to D, choose the word that has the consonant sound as the on represented by the letter(s) underlined</em>
-            </center>
+            <center><strong>SECTION 2</strong><br><em><strong>Instruction: </strong>From the words lettered A to D, choose the word that has the consonant sound as the on represented by the letter(s) underlined</em></center>
             <p>16. <u><b>P</b></u>acket<br><input type="radio" name = "sel16" value="a">A. psychology<input type="radio" name = "sel16" value="b">B. physics<input type="radio" name = "sel16" value="c">C. pseudonym<input type="radio" name = "sel16" value="d">D. sparkle</p>
             <p>17. <u><b>T</b></u>in<br><input type="radio" name = "sel17" value="a">A. thin<input type="radio" name = "sel17" value="b">B. tent<input type="radio" name = "sel17" value="c">C. then<input type="radio" name = "sel17" value="d">D. hitch</p>
             <p>18. <u><b>K</b></u>ing<br><input type="radio" name = "sel18" value="a">A. known<input type="radio" name = "sel18" value="b">B. knight<input type="radio" name = "sel18" value="c">C. sink<input type="radio" name = "sel18" value="d">D. ring</p>
@@ -58,12 +79,7 @@
             <p>28. Ca<u><b>v</b></u>e<br><input type="radio" name = "sel28" value="a">A. vale<input type="radio" name = "sel28" value="b">B. calf<input type="radio" name = "sel28" value="c">C. has<input type="radio" name = "sel28" value="d">D. fail</p>
             <p>29. <u><b>Th</b></u>en<br><input type="radio" name = "sel29" value="a">A. den<input type="radio" name = "sel29" value="b">B. thin<input type="radio" name = "sel29" value="c">C. ten<input type="radio" name = "sel29" value="d">D. brother</p>
             <p>30. Boy<u><b>s</b></u><br><input type="radio" name = "sel30" value="a">A. sick<input type="radio" name = "sel30" value="b">B. voice<input type="radio" name = "sel30" value="c">C. zeal<input type="radio" name = "sel30" value="d">D. shop</p>
-            <center>
-                <strong>
-                    SECTION 3
-                </strong><br>
-                <em><strong>Instruction: </strong>From the words lettered A to D, choose the word that rhymmes with the word</em>
-            </center>
+            <center><strong>SECTION 3</strong><br><em><strong>Instruction: </strong>From the words lettered A to D, choose the word that rhymmes with the word</em></center>
             <p>31. Return<br><input type="radio" name = "sel31" value="a">A. borne<input type="radio" name = "sel31" value="b">B. burn<input type="radio" name = "sel31" value="c">C. become<input type="radio" name = "sel31" value="d">D. thunder</p>
             <p>32. Laugh<br><input type="radio" name = "sel32" value="a">A. life<input type="radio" name = "sel32" value="b">B. light<input type="radio" name = "sel32" value="c">C. ghost<input type="radio" name = "sel32" value="d">D. half</p>
             <p>33. Sweet<br><input type="radio" name = "sel33" value="a">A. sweat<input type="radio" name = "sel33" value="b">B. suit<input type="radio" name = "sel33" value="c">C. twice<input type="radio" name = "sel33" value="d">D. hurried</p>
@@ -80,101 +96,92 @@
             <p>38. Stupidity<br><input type="radio" name = "sel38" value="a">A. STU-pi-di-ty<input type="radio" name = "sel38" value="b">B. stu-PI-di-ty<br><input type="radio" name = "sel38" value="c">C. stu-pi-DI-ty<input type="radio" name = "sel38" value="d">D. stu-pi-di-TY</p>
             <p>39. Resurrection<br><input type="radio" name = "sel39" value="a">A. RE-sur-rec-tion<input type="radio" name = "sel39" value="b">B. re-SUR-rec-tion<br><input type="radio" name = "sel39" value="c">C. re-sur-REC-tion<input type="radio" name = "sel39" value="d">D. re-sur-rec-TION</p>
             <p>40. Advertisement<br><input type="radio" name = "sel40" value="a">A. AD-ver-tise-ment<input type="radio" name = "sel40" value="b">B. ad-VER-tise-ment<br><input type="radio" name = "sel40" value="c">C. ad-ver-TISE-ment<input type="radio" name = "sel40" value="d">D. ad-ver-tise-MENT</p>
-            <center>
-                <strong>
-                    SECTION 5
-                </strong><br>
-                <em><strong>Instruction: </strong>In the following options lettered A to D, all the words except on have the same stress pattern. Identify the one with different stress pattern.</em>
-            </center>
+            <center><strong>SECTION 5</strong><br><em><strong>Instruction: </strong>In the following options lettered A to D, all the words except on have the same stress pattern. Identify the one with different stress pattern.</em></center>
             <p>41. <input type="radio" name = "sel41" value="a">A. commit<input type="radio" name = "sel41" value="b">B. compare<input type="radio" name = "sel41" value="c">C. complete<input type="radio" name = "sel41" value="d">D. column</p>
             <p>42. <input type="radio" name = "sel42" value="a">A. afraid<input type="radio" name = "sel42" value="b">B. allow<input type="radio" name = "sel42" value="c">C. always<input type="radio" name = "sel42" value="d">D. attempt</p>
             <p>43. <input type="radio" name = "sel43" value="a">A. decision<input type="radio" name = "sel43" value="b">B. continue<input type="radio" name = "sel43" value="c">C. plantation<input type="radio" name = "sel43" value="d">D. continent</p>
             <p>44. <input type="radio" name = "sel44" value="a">A. monitor<input type="radio" name = "sel44" value="b">B. register<input type="radio" name = "sel44" value="c">C. possible<input type="radio" name = "sel44" value="d">D. promotion</p>
             <p>45. <input type="radio" name = "sel45" value="a">A. <input type="radio" name = "sel45" value="b">B. <input type="radio" name = "sel45" value="c">C. <input type="radio" name = "sel45" value="d">D. </p>
-            <center>
-                <strong>
-                    SECTION 6
-                </strong><br>
-                <em><strong>Instruction: </strong>In each of the following sentences, the word that receives the emphatic stress is written in capital letters. From the options lettered A to D, choose the one to which the given sentence is the appropriate answer</em>
-            </center>
+            <center><strong>SECTION 6</strong><br><em><strong>Instruction: </strong>In each of the following sentences, the word that receives the emphatic stress is written in capital letters. From the options lettered A to D, choose the one to which the given sentence is the appropriate answer</em></center>
             <p>46. Last week's foorball match was very EXCITING<br><input type="radio" name = "sel46" value="a">A. Was yesterday's football match very exciting<br><input type="radio" name = "sel46" value="b">B. Was last week's tennis match very exciting<br><input type="radio" name = "sel46" value="c">C. Was last week's football match very dull<br><input type="radio" name = "sel46" value="d">D. Was last year's foorball match very exciting</p>
             <p>47. Mary stole the HISTORY teacher's pen<br><input type="radio" name = "sel47" value="a">A. Did Anne steal the history teacher's pen<br><input type="radio" name = "sel47" value="b">B. Did Mary borrow the history teacher's pen<br><input type="radio" name = "sel47" value="c">C. Did Mary steal the geography teacher's pen<br><input type="radio" name = "sel47" value="d">D. Did Mary steal the history teacher's book</p>
             <p>48. My FATHER arrived from london yesterday<br><input type="radio" name = "sel48" value="a">A. Did My mother arrive from london yesterday<br><input type="radio" name = "sel48" value="b">B. Did My father leave for london yesterday<br><input type="radio" name = "sel48" value="c">C. Did My father arrive from Accra yesterday<br><input type="radio" name = "sel48" value="d">D. Did his father arrive from london yesterday</p>
             <p>49. The judge CAUTIONED the prosecution witness <br><input type="radio" name = "sel49" value="a">A. Who cautioned the prosecution witness<br><input type="radio" name = "sel49" value="b">B. Did the judge praise the prosecution witness<br><input type="radio" name = "sel49" value="c">C. Did the judge caution the defense witness<br><input type="radio" name = "sel49" value="d">D. Did the judge caution he prosecution counsel</p>
             <p>50. Our SCHOOL won the debating competition<br><input type="radio" name = "sel50" value="a">A. Did our club win the debating competition<br><input type="radio" name = "sel50" value="b">B. Did our school lose the debating competition<br><input type="radio" name = "sel50" value="c">C. Did your school win the debating competition<br><input type="radio" name = "sel50" value="d">D. Did our school win swimming competition</p>
-            <center>
-                <strong>
-                    SECTION 7
-                </strong><br>
-                <em><strong>Instruction: </strong>From the words lettered A to D, choose the word that contains the same sound represented by the given phonetic sound</em>
-            </center>
+            <center><strong>SECTION 7</strong><br><em><strong>Instruction: </strong>From the words lettered A to D, choose the word that contains the same sound represented by the given phonetic sound</em></center>
             <p>51. /e/<input type="radio" name = "sel51" value="a">A. wet<input type="radio" name = "sel51" value="b">B. key<input type="radio" name = "sel51" value="c">C. wanted<input type="radio" name = "sel51" value="d">D. eke</p>
             <p>52. /i/<input type="radio" name = "sel52" value="a">A. heel<input type="radio" name = "sel52" value="b">B. sit<input type="radio" name = "sel52" value="c">C. high<input type="radio" name = "sel52" value="d">D. bite</p>
             <p>53. /i:/<input type="radio" name = "sel53" value="a">A. say<input type="radio" name = "sel53" value="b">B. seize<input type="radio" name = "sel53" value="c">C. kill<input type="radio" name = "sel53" value="d">D. ill</p>
-            <p>54. / /<input type="radio" name = "sel54" value="a">A. cart<input type="radio" name = "sel54" value="b">B. bail<input type="radio" name = "sel54" value="c">C. hate<input type="radio" name = "sel54" value="d">D. cat</p>
+            <p>54. /ᴂ/<input type="radio" name = "sel54" value="a">A. cart<input type="radio" name = "sel54" value="b">B. bail<input type="radio" name = "sel54" value="c">C. hate<input type="radio" name = "sel54" value="d">D. cat</p>
             <p>55. /^/<input type="radio" name = "sel55" value="a">A. cot<input type="radio" name = "sel55" value="b">B. cut<input type="radio" name = "sel55" value="c">C. curt<input type="radio" name = "sel55" value="d">D. caught</p>
-            <p>56. / /<input type="radio" name = "sel56" value="a">A. wig<input type="radio" name = "sel56" value="b">B. judge<input type="radio" name = "sel56" value="c">C. cake<input type="radio" name = "sel56" value="d">D. death</p>
-            <p>57. / /<input type="radio" name = "sel57" value="a">A. thin<input type="radio" name = "sel57" value="b">B. tin<input type="radio" name = "sel57" value="c">C. dose<input type="radio" name = "sel57" value="d">D. those</p>
-            <p>58. / /<input type="radio" name = "sel58" value="a">A. hop<input type="radio" name = "sel58" value="b">B. shop<input type="radio" name = "sel58" value="c">C. stop<input type="radio" name = "sel58" value="d">D. kiss</p>
-            <p>59. / /<input type="radio" name = "sel59" value="a">A. zebra<input type="radio" name = "sel59" value="b">B. leisure<input type="radio" name = "sel59" value="c">C. missing<input type="radio" name = "sel59" value="d">D. mission</p>
+            <p>56. /dʒ/<input type="radio" name = "sel56" value="a">A. wig<input type="radio" name = "sel56" value="b">B. judge<input type="radio" name = "sel56" value="c">C. cake<input type="radio" name = "sel56" value="d">D. death</p>
+            <p>57. /θ/<input type="radio" name = "sel57" value="a">A. thin<input type="radio" name = "sel57" value="b">B. tin<input type="radio" name = "sel57" value="c">C. dose<input type="radio" name = "sel57" value="d">D. those</p>
+            <p>58. /ʃ/<input type="radio" name = "sel58" value="a">A. hop<input type="radio" name = "sel58" value="b">B. shop<input type="radio" name = "sel58" value="c">C. stop<input type="radio" name = "sel58" value="d">D. kiss</p>
+            <p>59. /Ʒ/<input type="radio" name = "sel59" value="a">A. zebra<input type="radio" name = "sel59" value="b">B. leisure<input type="radio" name = "sel59" value="c">C. missing<input type="radio" name = "sel59" value="d">D. mission</p>
             <p>60. /h/<input type="radio" name = "sel60" value="a">A. hour<input type="radio" name = "sel60" value="b">B. power<input type="radio" name = "sel60" value="c">C. honour<input type="radio" name = "sel60" value="d">D. how</p>
             <p>&nbsp</p>
-           </div>
         </div>
         <div class="rightcolumn">
-			<div class="floatingDiv">
-				<span id="clockntimer">
-					<button id="startBtn" onclick="startExam(150)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button><br><label id="clockLabel"></label><br>
-					Spent:<label id="timeSpent"></label><br>
-					Left:<label id="timeLeft"></label>
-				</span>
-				<center><button class="submit" onclick = "displayResults(answersENG2018)">Answers</button></center>
-				<center><button class="submit2" onclick = "displayScore(60)">Performance</button></center>
-				<div id="resultSheet">
-
-				</div>
-			</div>
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                  <div id='timer'><button id="startBtn" onclick="startExam(45)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersORAL1997, event)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(60);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+    
+                </div>
+            </div>
         </div>
         <div id="footer">
-            <center><p>Click <a href="#top">here</a> to go back to top.</p></center>
-            <p>For more past questions on WAEC, NECO and other exams, visit <a href="https://www.tutusfx.com/@davixspot">@Davixspot</a>.<br><br>
-              Available past questions include<br>
-            <ul>
-            <!-- the English Language dropdown -->
-            <nav><span>English Language</span>
-                <ul class="dropdown-content">
-                    <li><a href="English 2017.html">2017</a><br></li>
-                    <li><a href="English 2016.html">2016</a><br></li>
-                    <li><a href="English 2015.html">2015</a><br></li>
-                    <li><a href="English 2014.html">2014</a><br></li>
-                    <li><a href="English 2013.html">2013</a><br></li>
-                    <li><a href="English 2012.html">2012</a><br></li>
-                    <li><a href="English 2011.html">2011</a><br></li>
-                    <li><a href="English 2010.html">2010</a><br></li>
-                    <li><a href="English 2009.html">2009</a><br></li>
-                    <li><a href="English 2008.html">2008</a><br></li>
-                    <li><a href="English 2007.html">2007</a><br></li>
-                    <li><a href="English 2006.html">2006</a><br></li>
-                    <li><a href="English 2005.html">2005</a><br></li>
-                    <li><a href="English 2004.html">2004</a><br></li>
-                    <li><a href="English 1992.html">1992</a><br></li>
-                    <li><a href="English 1991.html">1991</a><br></li>
-                    <li><a href="English 1990.html">1990</a><br></li>
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                    <ul class="dropdown-content">
+                        <li><a href="English 1998 Test of Oral.html">1998</a></li>
+                        <li><a href="English 1996 Test of Oral.html">1996</a></li>
+                        <li><a href="English 1995 Test of Oral.html">1995</a></li>
+                        <li><a href="#">more...</a></li>
+                    </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2018.html">2018</a></li>
+                            <li><a href="Biology 2017.html">2017</a></li>
+                            <li><a href="Biology 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Economics</a></li>
+                    <li><a href="#">Others</a></li>
                 </ul>
-            </nav><br><!-- the Mathematics dropdown -->
-            <nav><span>Mathematics</span>
-                <ul class="dropdown-content">
-                    <li><a href="Mathematics 2018.html">2018</a><br></li>
-                    <li><a href="Mathematics 2017.html">2017</a><br></li>
-                    <li><a href="Mathematics 2016.html">2016</a><br></li>
-                    <li><a href="Mathematics 2014.html">2014</a><br></li>
-                </ul>
-            </nav>
-            <li><a href="www.google.com">Government</a><br></li>
-            <li><a href="www.google.com">Commerce</a><br></li>
-            <li><a href="www.google.com">Econimics</a><br></li>
-            <li><a href="www.google.com">Physics</a><br></li>
+            </div>
+            
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
         </div>
-        <button class="footerBtn" onclick="footer();"><span id="footerBtntxt">hide footer</span></button></p>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
     </body>
 </html>

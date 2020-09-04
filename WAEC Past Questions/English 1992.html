@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+    <head>
+    	<title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+            <source src="../aud/start.ogg" type="audio/ogg">
+            <source src="../aud/start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/optionselect.ogg" type="audio/ogg">
+            <source src="../aud/optionselect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="stopAudio">
+            <source src="../aud/stop.ogg" type="audio/ogg">
+            <source src="../aud/stop.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="passedAudio">
+            <source src="../aud/passed.ogg" type="audio/ogg">
+            <source src="../aud/passed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/failed.ogg" type="audio/ogg">
+            <source src="../aud/failed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="clickAudio">
+            <source src="../aud/btnclick.ogg" type="audio/ogg">
+            <source src="../aud/btnclick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="leftcolumnForMainPageHeader">
+			<div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+			<a href="@davixspot.html" class="fa fa-home" id="home"></a>
+		</div>
+        <div class="leftcolumn">          
+            <div id="pageHeader"><center>ENGLISH LANGUAGE 2 WASSCE 1992</center></div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 100</div>
+            <center><p id="Obj">OBJECTIVE TEST<br><strong>SECTION A</strong></p></center>
+            <center><em>
+                In each of the following sentences, there is one underlined word and a gap. From the list of words lettered A to D, choose the one that most nearly opposite in meaning to the underlined word and that would at the same time, correctly fill the gap in the sentence.
+            </em></center>
+            <p>1. In many ways my parent are very <u><b>conservative</b></u> but there are times when they surprise me with their ____________ ideas on family planning<br><input type="radio" value="a" name = "sel1">A. orthodox  <br><input type="radio" value="b" name = "sel1">B. critical  <br><input type="radio" value="c" name = "sel1">C. modern  <br><input type="radio" value="d" name = "sel1">D. new  <br><input type="radio" value="e" name = "sel1">E. liberal</p>
+            <p>2. My brother <u><b>adores</b></u> dogs but he has a very strong ___________ for cats.<br> <input type="radio" value="a" name = "sel2">A. love  <br><input type="radio" value="b" name = "sel2">B. annoyance  <br><input type="radio" value="c" name = "sel2">C. attitude  <br><input type="radio" value="d" name = "sel2">D. dislike  <br><input type="radio" value="e" name = "sel2">E. critism</p>
+            <p>3. On our way to Tarkwa Bay, the sea was <u><b>turbulent</b></u> but fortunately it was quite ___________ on our way back<br> <input type="radio" value="a" name = "sel3">A. calm  <br><input type="radio" value="b" name = "sel3">B. pleasant  <br><input type="radio" value="c" name = "sel3">C. motionless  <br><input type="radio" value="d" name = "sel3">D. placid  <br><input type="radio" value="e" name = "sel3">E. rough</p>
+            <p>4. Though payment of the levy is <u><b>voluntary</b></u>, it is ___________ for all students to pay tuition fee<br> <input type="radio" value="a" name = "sel4">A. essential  <br><input type="radio" value="b" name = "sel4">B. important  <br><input type="radio" value="c" name = "sel4">C. necessary  <br><input type="radio" value="d" name = "sel4">D. mandatory  <br><input type="radio" value="e" name = "sel4">E. optional</p>
+            <p>5. The director left <u><b>strict</b></u>instructions regarding the running of the office but his deputy was most ___________ in his absence<br> <input type="radio" value="a" name = "sel5">A. vague  <br><input type="radio" value="b" name = "sel5">B. lazy  <br><input type="radio" value="c" name = "sel5">C. lax  <br><input type="radio" value="d" name = "sel5">D. accurate  <br><input type="radio" value="e" name = "sel5">E. prompt</p>
+            <p>6. Emeka complained that while his colegues were <u><b>elevated</b></u>, he was _____________.<br> <input type="radio" value="a" name = "sel6">A. interdicted  <br><input type="radio" value="b" name = "sel6">B. prompted  <br><input type="radio" value="c" name = "sel6">C. suspended  <br><input type="radio" value="d" name = "sel6">D. dismissed  <br><input type="radio" value="e" name = "sel6">E. downgraded</p>
+            <p>7. The taxi driver pleaded that the spalshing of water was <u><b>accidental</b></u> but the lady insisted that it was ___________ <br><input type="radio" value="a" name = "sel7">A. thoughtful  <br><input type="radio" value="b" name = "sel7">B. deliberate  <br><input type="radio" value="c" name = "sel7">C. directed <br><input type="radio" value="d" name = "sel7">D. mischievous  <br><input type="radio" value="e" name = "sel7">E. incidental </p>
+            <p>8. The government was accused of  implementing policies that favour the <u><b>elite</b></u> instead of the ________________ <br> <input type="radio" value="a" name = "sel8">A. masses  <br><input type="radio" value="b" name = "sel8">B. oppressed  <br><input type="radio" value="c" name = "sel8">C. executive  <br><input type="radio" value="d" name = "sel8">D. worker  <br><input type="radio" value="e" name = "sel8">E. jobless</p>
+            <center>
+              <b>SECTION 2 </b><br>
+              <em>From the word lettered A to E, choose the word that best completes each of the following sentence.</em>
+            </center>
+            <p>9. The earthquake that struck Mexico ____________ the city<br><input type="radio" value="a" name = "sel9">A. confused  <br><input type="radio" value="b" name = "sel9">B. devastated  <br><input type="radio" value="c" name = "sel9">C. demacated  <br><input type="radio" value="d" name = "sel9">D. trouble  <br><input type="radio" value="e" name = "sel9">E. demolished </p>
+            <p>10. After his defeat in the war, the general _____________ his army and went into retirement<br> <input type="radio" value="a" name = "sel10">A. fire  <br><input type="radio" value="b" name = "sel10">B. retired  <br><input type="radio" value="c" name = "sel10">C. disbanded  <br><input type="radio" value="d" name = "sel10">D. executed  <br><input type="radio" value="e" name = "sel10">E. disgraced</p>
+            <p>11. The notorious robber was finally _____________ by the police after a three-month search<br> <input type="radio" value="a" name = "sel11">A. surrounded  <br><input type="radio" value="b" name = "sel11">B. overwhelmed  <br><input type="radio" value="c" name = "sel11">C. arrested  <br><input type="radio" value="d" name = "sel11">D. entangled  <br><input type="radio" value="e" name = "sel11">E. located</p>
+            <p>12. Many student had good results in the examination but Kola performance was ______________<br> <input type="radio" value="a" name = "sel12">A. terrible  <br><input type="radio" value="b" name = "sel12">B. best  <br><input type="radio" value="c" name = "sel12">C. fear  <br><input type="radio" value="d" name = "sel12">D. unacceptable  <br><input type="radio" value="e" name = "sel12">E. woeful</p>
+            <p>13. Besides being a qualified nurse, my mother is also good in accounting, hair-dressing and sewing; is is very ___________ indeed<br> <input type="radio" value="a" name = "sel13">A. versatile  <br><input type="radio" value="b" name = "sel13">B. skilled  <br><input type="radio" value="c" name = "sel13">C. clever  <br><input type="radio" value="d" name = "sel13">D. pushful  <br><input type="radio" value="e" name = "sel13">E. hard-working</p>
+            <p>14. It almost _____________ that despite the huge amount spent on health care most hospital lack basic medical equipment<br> <input type="radio" value="a" name = "sel14">A. wonderful  <br><input type="radio" value="b" name = "sel14">B. ungrateful  <br><input type="radio" value="c" name = "sel14">C. wicked  <br><input type="radio" value="d" name = "sel14">D. atonishing  <br><input type="radio" value="e" name = "sel14">E. remarkable</p>
+            <p>15. The _____________ ceremony of the new Oba had to be postponed because of his sudden death of his mother.<br> <input type="radio" value="a" name = "sel15">A. initiation  <br><input type="radio" value="b" name = "sel15">B. coronation  <br><input type="radio" value="c" name = "sel15">C. cultural  <br><input type="radio" value="d" name = "sel15">D. remembrance  <br><input type="radio" value="e" name = "sel15">E. resurrection</p>
+            <p>16. The local government election result was cancelled because of widespread ____________ during voting<br> <input type="radio" value="a" name = "sel16">A. offences  <br><input type="radio" value="b" name = "sel16">B. accusations  <br><input type="radio" value="c" name = "sel16">C. voilence  <br><input type="radio" value="d" name = "sel16">D. fighting  <br><input type="radio" value="e" name = "sel16">E. irregulations</p>
+            <p>17. He was _____________ to have escaped unhurt from the collasped building<br> <input type="radio" value="a" name = "sel17">A. fortune  <br><input type="radio" value="b" name = "sel17">B. briliant  <br><input type="radio" value="c" name = "sel17">C. agile  <br><input type="radio" value="d" name = "sel17">D. unfortunate  <br><input type="radio" value="e" name = "sel17">E. enrgetic</p>
+            <p>18. The out going leader warned his successor to beware of _____________ who praise every activities of government, whether good or bad<br> <input type="radio" value="a" name = "sel18">A. critics  <br><input type="radio" value="b" name = "sel18">B. favourite  <br><input type="radio" value="c" name = "sel18">C. enthusiasts  <br><input type="radio" value="d" name = "sel18">D. parasites  <br><input type="radio" value="e" name = "sel18">E. sycophants </p>
+            <p>19. The officer pledged that _____________ loyalty to the new government<br> <input type="radio" value="a" name = "sel19">A. indifatigable  <br><input type="radio" value="b" name = "sel19">B. complete  <br><input type="radio" value="c" name = "sel19">C. questionable  <br><input type="radio" value="d" name = "sel19">D. unalloyed <br><input type="radio" value="e" name = "sel19">E. indiscriminate</p>
+            <center>
+              <b>SECTION 3</b><br>
+              <em>After each of the following sentences, a list of possible interpretations of the sentence is given. Choose the interpretation that you consider most appropriate for each sentence</em>
+            </center>
+            <p>20. Though we lost the last match, we will get even with our opponents in the next round. <br>This means that <br><input type="radio" value="a" name = "sel20">A.  our opponents were just lucky to win <br><input type="radio" value="b" name = "sel20">B. we will win the next match<br><input type="radio" value="c" name = "sel20">C. we will not play again<br><input type="radio" value="d" name = "sel20">D. the two teams are not evenly macthed.</p>
+            <p>21. He was retrenched last year and now he is only the shadow of his former self. <br><br>This means <br><input type="radio" value="a" name = "sel21">A. looks very well <br><input type="radio" value="b" name = "sel21">B. He is just like his shadow<br><input type="radio" value="c" name = "sel21">C. is very thin and weak<br><input type="radio" value="d" name = "sel21">D. is very fearful</p>
+            <p>22. Due to poor visibility all air craft were grounded at the Kano Airport for two days. <br>This means that <br><input type="radio" value="a" name = "sel22">A. all aircraft had mechanical problems<br><input type="radio" value="b" name = "sel22">B. The run way at Kano airport was damaged<br><input type="radio" value="c" name = "sel22">C. no aircraft could take off<br><input type="radio" value="d" name = "sel22">D. there was a visible disturbance at Kano airport</p>
+            <p>23. Getting six distinctions in your mock examination is praise worthy but dont let that get into your head. <br>This means that the good result <br><input type="radio" value="a" name = "sel23">A. has made you mad <br><input type="radio" value="b" name = "sel23">B. has not bothered you <br> <input type="radio" value="c" name = "sel23">C. could be better <br><input type="radio" value="d" name = "sel23">D. should not make you conceited </p>
+            <p>24. When Mr. Ojo, the first principal, suddenly left the school, it became a regular bedlam. <br>This means that <br><input type="radio" value="a" name = "sel24">A. there was noise and confusion everywhere <br><input type="radio" value="b" name = "sel24">B. everybody started coming to school regularly <br><input type="radio" value="" name = "sel24">C. everybody was happy with his departure <br><input type="radio" value="d" name = "sel24">D. discipline was restored to the school</p>
+            <p>25. Segun held the audience spellbound with his superb performance. <br>This means that <br><input type="radio" value="a" name = "sel25">A. the play was a good one <br><input type="radio" value="b" name = "sel25">B. all the actors put up a good performance <br><input type="radio" value="c" name = "sel25">C. All the actors except Segun, performed very well   <br><input type="radio" value="d" name = "sel25">D. members of the audience were captivated by Segun's performance</p>
+            <p>26. Matters came to as head when the man accussed his wife on infidelity. <br>This means that <br><input type="radio" value="a" name = "sel26">A. accusation worsened the relationship between the couple<br><input type="radio" value="b" name = "sel26">B. couple were living peacefully before the accusation<br><input type="radio" value="c" name = "sel26">C. husband hit the wife on the head because of her misbehaviour<br><input type="radio" value="d" name = "sel26">D. wife had been proved to be unfaithful by the husband.</p>
+            <p>27. The way the young pupils were chasing the poor mad woman made my blood boil. <br>This means that <br><input type="radio" value="a" name = "sel27">A. the pupils were mad to chase the poor woman<br><input type="radio" value="b" name = "sel27">B. I was agitated about the action of the pupils<br><input type="radio" value="c" name = "sel27">C. the mad woman was very angry with the pupils <br><input type="radio" value="d" name = "sel27">D. my blood was actually boiling because the pupils maltreated the mad woman</p>
+            <p>28. The former chairman has no moral right to criticize the present chairman because he too was a skeleton in the cupboard. <br>This means that the <br><input type="radio" value="a" name = "sel28">A. former chairman has an unpleasant secret that is hidden <br><input type="radio" value="b" name = "sel28">B. present chairman has not done anything wrong so far <br><input type="radio" value="c" name = "sel28">C. former chairman maintained a very low moral standard during his tenure <br><input type="radio" value="d" name = "sel28">D. former chairman kept a very terrifying skeleton in a large cupboard </p>
+            <center>
+              <b>SECTION 4</b><br>
+              <em>Choose the word or group of words that is nearest in meaning to the underlined word or phrase as it is used in the sentence</em>
+            </center>
+            <p>29. Femi's comments <u><b>germane</b></u> to the issue under discussion. <br><input type="radio" value="a" name = "sel29">A. confidential  <br><input type="radio" value="b" name = "sel29">B. redundant  <br><input type="radio" value="c" name = "sel29">C. crucial  <br><input type="radio" value="d" name = "sel29">D. critical  <br><input type="radio" value="e" name = "sel29">E. relevent</p>
+            <p>30. The testimony of the witness <u><b>absolved</b></u> the accused of the charges. <br><input type="radio" value="a" name = "sel30">A. condemned  <br><input type="radio" value="b" name = "sel30">B. implicated  <br><input type="radio" value="c" name = "sel30">C. criticized  <br><input type="radio" value="d" name = "sel30">D. Blamed  <br><input type="radio" value="e" name = "sel30">E. cleared</p>
+            <p>31. The Supreme Court <u><b>set aside</b></u> the ruling of the High Court.<br> <input type="radio" value="a" name = "sel31">A. upheld  <br><input type="radio" value="b" name = "sel31">B. nullified  <br><input type="radio" value="c" name = "sel31">C. agreed with  <br><input type="radio" value="d" name = "sel31">D. justified <br><input type="radio" value="e" name = "sel31">E. rebuked </p>
+            <p>32. The ornament should be handled with care because it is <u><b>fragile</b></u> <br><input type="radio" value="a" name = "sel32">A. expensive  <br><input type="radio" value="b" name = "sel32">B. uncommon  <br><input type="radio" value="c" name = "sel32">C. golden  <br><input type="radio" value="d" name = "sel32">D. imported  <br><input type="radio" value="e" name = "sel32">E. delicate</p>
+            <p>33. The minister announced that the government would soon make a law to prohibit the showing of obscence film. <br><input type="radio" value="a" name = "sel33">A. voilent  <br><input type="radio" value="b" name = "sel33">B. dangerous  <br><input type="radio" value="c" name = "sel33">C. immoral  <br><input type="radio" value="d" name = "sel33">D. frightful  <input type="radio" value="e" name = "sel33">E. juvenile</p>
+            <p>34. His approach to work is rather <u><b>perfunctory</b></u> <br>  <input type="radio" value="a" name = "sel34">A. careful  <br><input type="radio" value="b" name = "sel34">B. serious  <br><input type="radio" value="c" name = "sel34">C. careless  <br><input type="radio" value="d" name = "sel34">D. encouraging  <br><input type="radio" value="e" name = "sel34">E. bad</p>
+            <p>35. The retiring officer's contribution towards the growth of the company was <u><b>invaluable</b></u> <br><input type="radio" value="a" name = "sel35">A. inestimable  <br><input type="radio" value="b" name = "sel35">B.  unnoticeable <br><input type="radio" value="c" name = "sel35">C. negligible <br><input type="radio" value="d" name = "sel35">D. inconsequencial <br><input type="radio" value="e" name = "sel35">E. measurable</p>
+            <p>36. The General's response to the question on whether or not he will retire was <u><b>evasive</b></u> <br><input type="radio" value="a" name = "sel36">A. clear <br><input type="radio" value="b" name = "sel36">B. undecided <br><input type="radio" value="c" name = "sel36">C. <br><input type="radio" value="d" name = "sel36">D. annoyed <br><input type="radio" value="e" name = "sel36">E. elusive</p>
+            <p>37. He poured out a lot of <u><b>invectives</b></u> in a speech that was supposed to be a vote of thanks <br><input type="radio" value="a" name = "sel37">A. praises <br><input type="radio" value="b" name = "sel37">B. requests<br><input type="radio" value="c" name = "sel37">C. denials <br><input type="radio" value="d" name = "sel37">D. curses <br><input type="radio" value="e" name = "sel37">E. apologies</p>
+            <p>38. Her eloping with the man is a <u><b>stigma</b></u> to the family <br><input type="radio" value="a" name = "sel38">A. disgrace <br><input type="radio" value="" name = "sel38">B. pride <br><input type="radio" value="c" name = "sel38">C. calamity <br><input type="radio" value="d" name = "sel38">D. disappointment <br><input type="radio" value="e" name = "sel38">E. disaster</p>
+            <p>39. The politician was given  a <u><b>tumultuous</b></u> welcome when he came to address the rally. <br><input type="radio" value="a" name = "sel39">A. pleasant <br><input type="radio" value="b" name = "sel39">B. noisy <br><input type="radio" value="c" name = "sel39">C. discouraging <br><input type="radio" value="d" name = "sel39">D. strange <br><input type="radio" value="e" name = "sel39">E. well-organised</p>
+            <center>
+              SECTION 5 <br>
+              <em>From the words lettered A to D, choose the word or group of words that best completes each of the following sentences</em>
+            </center>
+            <p>40. Everyone must be ___________ bed by 9:00pm. <br><input type="radio" value="a" name = "sel40">A. over <br><input type="radio" value="b" name = "sel40">B. inside <br><input type="radio" value="c" name = "sel40">C. on <br><input type="radio" value="d" name = "sel40">D. in</p>
+            <p>41. Femi was told not to allow pleasure to interfare ___________ his duty. <br><input type="radio" value="a" name = "sel41">A. on <br><input type="radio" value="b" name = "sel41">B. over <br><input type="radio" value="c" name = "sel41">C. with <br><input type="radio" value="d" name = "sel41">D. beside</p>
+            <p>42. He sent a card to his parents to congratulate them ___________ their diamond wdding anniversary. <br><input type="radio" value="a" name = "sel42">A. over <br><input type="radio" value="b" name = "sel42">B.on <br><input type="radio" value="c" name = "sel42">C. with <br><input type="radio" value="d" name = "sel42">D. about</p>
+            <p>43. The pupils were advised not to laugh __________ mad people. <br><input type="radio" value="a" name = "sel43">A. at <br><input type="radio" value="b" name = "sel43">B. on <br><input type="radio" value="c" name = "sel43">C. with <br><input type="radio" value="d" name = "sel43">D. over </p>
+            <p>44. If you want to succeed in life, you will have to shake _________ your lazy habits. <br><input type="radio" value="a" name = "sel44">A. against <br><input type="radio" value="b" name = "sel44">B. if <br><input type="radio" value="c" name = "sel44">C. over <br><input type="radio" value="d" name = "sel44">D. off</p>
+            <p>45. You should take good care of your car ___________ buy another one. <br><input type="radio" value="a" name = "sel44">A. for you may not be able to <br><input type="radio" value="b" name = "sel44">B. suppose you cannot <br><input type="radio" value="c" name = "sel44">C. due to the fact that you cannot <br><input type="radio" value="d" name = "sel44">D. otherwise you cannot</p>
+            <p>46. Hardly had we arrived _________ he left. <br><input type="radio" value="a" name = "sel46">A. so <br><input type="radio" value="b" name = "sel46">B. when <br><input type="radio" value="c" name = "sel46">C. then <br><input type="radio" value="d" name = "sel46">D. that</p>
+            <p>47. It is high time you _________ smoking. <br><input type="radio" value="a" name = "sel47">A. stopped <br><input type="radio" value="b" name = "sel47">B. should stop <br><input type="radio" value="c" name = "sel47">C. must stop <br><input type="radio" value="d" name = "sel47">D. stop</p>
+            <p>48. The Office ___________ he works is fully air-conditioned. <br><input type="radio" value="a" name = "sel48">A. to which <br><input type="radio" value="b" name = "sel48">B. by which <br><input type="radio" value="c" name = "sel48">C. where <br><input type="radio" value="d" name = "sel48">D. that</p>
+            <p>49. I do not like to flatter people but I must say that Bisi is ___________ beautiful girl in the schools.<br><input type="radio" value="a" name = "sel49">A. a <br><input type="radio" value="b" name = "sel49">B. a more <br><input type="radio" value="c" name = "sel49">C. very <br><input type="radio" value="d" name = "sel49">D. the most
+            <p>50. He would have won the race __________ <br><input type="radio" value="a" name = "sel50">A. only if he could ran fast <br><input type="radio" value="b" name = "sel50">B. if he had run faster<br><input type="radio" value="c" name = "sel50">C. if he can run faster <br><input type="radio" value="d" name = "sel50">D. although he ran faster</p>
+            <p>51. Though we are friends, I ___________ <br><input type="radio" value="a" name = "sel51">A. lent her some money <br><input type="radio" value="b" name = "sel51">B. refused to lend her any money <br><input type="radio" value="c" name = "sel51">C. will lend her some money <br><input type="radio" value="d" name = "sel51">D. am lending her the money</p>
+            <p>52. There is no dispute about the ownership of this piece of land, but ___________ is that portion over there? <br><input type="radio" value="a" name = "sel52">A. whom <br><input type="radio" value="b" name = "sel52">B. to whom <br><input type="radio" value="c" name = "sel52">C. of whom <br><input type="radio" value="d" name = "sel52">D. whose </p>
+            <p>53. Neither Adamu or Musa __________ at home when Idris arrived. <br><input type="radio" value="a" name = "sel53">A. was <br><input type="radio" value="b" name = "sel53">B. were <br><input type="radio" value="c" name = "sel53">C. are <br><input type="radio" value="d" name = "sel53">D. is</p>
+            <p>54. Both Ngozi and Ifeoma promised to attend the party but __________ of them came. <br><input type="radio" value="a" name = "sel54">A. either <br><input type="radio" value="b" name = "sel54">B. all <br><input type="radio" value="c" name = "sel54">C. no person <br><input type="radio" value="d" name = "sel54">D. neither</p>
+            <p>55. He has stopped drinking _________? <br><input type="radio" value="a" name = "sel55">A. does he <br><input type="radio" value="b" name = "sel55">B. hasn't he <br><input type="radio" value="c" name = "sel55">C. doesn't he <br><input type="radio" value="d" name = "sel55">D. did he</p>
+            <p>56. The labour leaders threatened a __________ with the government if the subsidy was removed. <br><input type="radio" value="a" name = "sel56">A. show-off <br><input type="radio" value="b" name = "sel56">B. showbiz <br><input type="radio" value="c" name = "sel56">C. show-down <br><input type="radio" value="d" name = "sel56">D. show-piece</p>
+            <p>57. _________ of what he said was nonsense. <br><input type="radio" value="a" name = "sel57">A. Much <br><input type="radio" value="" name = "sel57">B. Few <br><input type="radio" value="c" name = "sel57">C. Little <br><input type="radio" value="d" name = "sel57">D. Many</p>
+            <p>58. The utility player in the center forward position meandered _________ the defence of the opponent to score the winning goal. <br><input type="radio" value="a" name = "sel58">A. across <br><input type="radio" value="b" name = "sel58">B. through <br><input type="radio" value="c" name = "sel58">C. over <br><input type="radio" value="d" name = "sel58">D. under</p>
+            <p>59. If it __________ rained, I would have completed the work. <br><input type="radio" value="a" name = "sel59">A. had <br><input type="radio" value="b" name = "sel59">B. has <br><input type="radio" value="c" name = "sel59">C. hasn't <br><input type="radio" value="d" name = "sel59">D. hadn't</p>
+            <p>60. __________ kept the bicycle in the rain <br><input type="radio" value="a" name = "sel60">A. Whom <br><input type="radio" value="b" name = "sel60">B. Whose <br><input type="radio" value="c" name = "sel60">C. Who's <br><input type="radio" value="d" name = "sel60">D. Who</p>
+            <p>61. _________ the owner of the dog?. <br><input type="radio" value="a" name = "sel61">A. Who's <br><input type="radio" value="b" name = "sel61">B. Whose <br><input type="radio" value="c" name = "sel61">C. Whom <br><input type="radio" value="d" name = "sel61">D. Which is</p>
+            <p>62. One of the pupils ___________ able to answer the question correctly. <br><input type="radio" value="a" name = "sel62">A. were <br><input type="radio" value="b" name = "sel62">B. are <br><input type="radio" value="c" name = "sel62">C. was <br><input type="radio" value="d" name = "sel62">D. can</p> <p>63. ___________ way you look at it, Alibis case is a very bad one. <br><input type="radio" value="a" name = "sel63">A. Whatever <br><input type="radio" value="b" name = "sel63">B. Whichever <br><input type="radio" value="c" name = "sel63">C. Whenever <br><input type="radio" value="d" name = "sel63">D. However</p>
+            <p>64. People were cautious about ___________ the sad news to her. <br><input type="radio" value="a" name = "sel64">A. to break <br><input type="radio" value="b" name = "sel64">B. having break <br><input type="radio" value="c" name = "sel64">C. broken <br><input type="radio" value="d" name = "sel64">D. breaking</p>
+            <p>65. They were warned, so they have __________ to blame for the problems they are now facing. <br><input type="radio" value="a" name = "sel65">A. themselves <br><input type="radio" value="b" name = "sel65">B. ourselves <br><input type="radio" value="c" name = "sel65">C. yourselves <br><input type="radio" value="d" name = "sel65">D. their own selves </p>
+            <p>66. _________ in his right senses will give shelter to a known thief <br><input type="radio" value="a" name = "sel66">A. somebody <br><input type="radio" value="b" name = "sel66">B. Everybody <br><input type="radio" value="c" name = "sel66">C. nobody <br><input type="radio" value="d" name = "sel66">D. someone</p>
+            <p>67. It was very clever of the students ________ solved the problem so quickly. <br><input type="radio" value="a" name = "sel67">A. to have solved <br><input type="radio" value="b" name = "sel67">B. having solved <br><input type="radio" value="c" name = "sel67">C. to have been solving <br><input type="radio" value="d" name = "sel67">D. having been solving </p>
+            <p>68. The dress he wore was ___________ appropriate for the party. <br><input type="radio" value="a" name = "sel68">A. quite <br><input type="radio" value="b" name = "sel68">B. too <br><input type="radio" value="c" name = "sel68">C. much <br><input type="radio" value="d" name = "sel68">D. more</p>
+            <div>
+                <center>
+                  SECTION 6 <br>
+                  <em>Choose the word that is the most suitable to fill the numbered gap in the passage.</em>
+                  <br><br><strong>PASSAGE A</strong>
+                </center>
+                Teaching is one of the oldest <select id="sel69"><option>-69-</option><option value="a">A. activities</option><option value="b">B. role</option><option value="c">C. professions</option><option value="d">D. callings</option><option value="e">E. jobs</option></select> known to man. Every community from time immemorial must have had <select id="sel70"><option>-70-</option><option value="a">A. men</option><option value="b">B. women</option><option value="c">C. groups</option><option value="d">D. children</option><option value="e">E. individual</option></select> known and respected for their ability to guild and
+                <select id="sel71"><option>-71-</option><option value="a">A. coerce</option><option value="b">B. motivate</option><option value="c">C. force</option><option value="d">D. bribe</option><option value="e">E. induce</option></select> younger members of their community towards the of the desired goals of their group. The <select id="sel72"><option>-72-</option><option value="a">A. attainment</option><option value="b">B. evolution</option><option value="c">C. creating</option><option value="d">D. enforcement</option><option value="e">E. preservation</option></select> of the desired goals of their group. The
+                <select id="sel73"><option>-73-</option><option value="a">A. fattening</option><option value="b">B. courageous</option><option value="c">C. wild</option><option value="d">D. initiation</option><option value="e">E. secret</option></select> ceremonies for young adults common to many cultures are part of the <select id="sel74"><option>-74-</option><option value="a">A. true</option><option value="b">B. formal</option><option value="c">C. respective</option><option value="d">D. good</option><option value="e">E. praise-worthy</option></select>
+                educational process of those cultures; but there are very many informal ways of educating the young. When a young girl helps her mother in preparing the family <select id="sel75"><option>-75-</option><option value="a">A. diet</option><option value="b">B. meat</option><option value="c">C. meal</option><option value="d">D. cooking</option><option value="e">E. dishes</option></select>, she is learning <select id="sel76"><option>-76-</option><option value="a">A. modern</option><option value="b">B. expert</option><option value="c">C. culinary</option><option value="d">D. beneficial</option><option value="e">E. interesting</option></select>
+                skills in an informal set-up. One's <select id="sel77"><option>-77-</option><option value="a">A. sex</option><option value="b">B. school</option><option value="c">C. friendly</option><option value="d">D. peer</option><option value="e">E. neighbourhood</option></select> group also exerts a great <select id="sel78"><option>-78-</option><option value="a">A. pressure</option><option value="b">B. action</option><option value="c">C. attitude</option><option value="d">D. behaviour</option><option value="e">E. influence</option></select> on individuals. In the formal set-up of the schools today, education is highly
+                <select id="sel79"><option>-79-</option><option value="a">A. expensive</option><option value="b">B. europeanized</option><option value="c">C. popular</option><option value="d">D. different</option><option value="e">E. organized</option></select>. There is the <select id="sel80"><option>-80-</option><option value="a">A. hierarchy</option><option value="b">B. obidience</option><option value="c">C. respect</option><option value="d">D. power</option><option value="e">E. enforcement</option></select> of authority from the principal down to the class monitors. We have a fixed
+                <select id="sel81"><option>-81-</option><option value="a">A. calender</option><option value="b">B. almanac</option><option value="c">C. time-table</option><option value="d">D. set-up</option><option value="e">E. way of life</option></select> which we adhere to strictly. Though we <select id="sel82"><option>-82-</option><option value="a">A. study</option><option value="b">B. gather</option><option value="c">C. acquire</option><option value="d">D. get</option><option value="e">E. learn</option></select> a great deal from our mates, the
+                <select id="sel83"><option>-83-</option><option value="a">A. prefect</option><option value="b">B. teacher</option><option value="c">C. monitor</option><option value="d">D. captain</option><option value="e">E. leader</option></select> plays an important role in shaping our attitudes and conditioning our <select id="sel84"><option>-84-</option><option value="a">A. behaviour</option><option value="b">B. success</option><option value="c">C. future</option><option value="d">D. goal</option><option value="e">E. objective</option></select> and responses to our society as a whole.</p>
+                <center><strong>PASSAGE B</strong></center>
+                Mankind has been ravaged by many viruses and <select id="sel85"><option>-85-</option><option value="a">A. germ</option><option value="b">B. bacterial</option><option value="c">C. dirty</option><option value="d">D. mosquito</option><option value="e">E. fly</option></select> disease such as measles, tuberculosis, diarrhoea and many other including 
+                <select id="sel86"><option>-86-</option><option value="a">A. catarrh</option><option value="b">B. running-nose</option><option value="c">C. headache</option><option value="d">D. influenza</option><option value="e">E. sinus</option></select>  known also as the common cold. The <select id="sel87"><option>-87-</option><option value="a">A. common</option><option value="b">B. sporadic</option><option value="c">C. universal</option><option value="d">D. regular</option><option value="e">E. accidental</option></select> 
+                outbreak of many of these disease have been brought under control in the last fifty years. Some <select id="sel88"><option>-88-</option><option value="a">A. pains</option><option value="b">B. fevers</option><option value="c">C. infections</option><option value="d">D. trace</option><option value="e">E. injuries</option></select> like measles and whooping coughs stiples a great danger to younger children. The <select id="sel89"><option>-89-</option><option value="a">A. symptoms</option><option value="b">B. appearances</option><option value="c">C. feels</option><option value="d">D. signs</option><option value="e">E. experiences</option></select>
+                of measles are more easily <select id="sel90"><option>-90-</option><option value="a">A. diagnosed</option><option value="b">B. treated</option><option value="c">C. dealt with</option><option value="d">D. handled</option><option value="e">E. cured</option></select> than those of whooping-cough. Unlike that of many others, the virus of measles appears to have remained <select id="sel91"><option>91-</option><option value="a">A. unchanged</option><option value="b">B. constant</option><option value="c">C. erractic</option><option value="d">D. secret</option><option value="e">E. undiscovered</option></select>
+                for hundred of years. However, once you have had <select id="sel92"><option>-92-</option><option value="a">A. eqidemic</option><option value="b">B. ecounter</option><option value="c">C. outing</option><option value="d">D. indisposition</option><option value="e">E. attack</option></select> of this dreadful disease, you develop an <select id="sel93"><option>-93-</option><option value="a">A. impurity</option><option value="b">B. armour</option><option value="c">C. immunity</option><option value="d">D. ability</option><option value="e">E. assurance</option></select> which is almost complete and long lasting. Modern science made available
+                <select id="sel94"><option>-94-</option><option value="a">A. injections</option><option value="b">B. medicine</option><option value="c">C. tablets</option><option value="d">D. vaccines</option><option value="e">E. drugs</option></select> to prevent many childhood disease and this is the only guarantee of <select id="sel95"><option>-95-</option><option value="a">A. freedom</option><option value="b">B. discharge</option><option value="c">C. cure</option><option value="d">D. protection</option><option value="e">E. victory</option></select> from these scourges. More effective treatment of complication arising from this childhood disease using penicilin and others
+                <select id="sel96"><option>-96-</option><option value="a">A. relievers</option><option value="b">B. treatment</option><option value="c">C. antibiotics</option><option value="d">D. balms</option><option value="e">E. pills</option></select> has also helped to reduce the <select id="sel97"><option>-97-</option><option value="a">A. high</option><option value="b">B. mortality</option><option value="c">C. killing</option><option value="d">D. dangerous</option><option value="e">E. unbelievable</option></select> rate among the children. It is universally accepted that good -
+                <select id="sel98"><option>-98-</option><option value="a">A. health</option><option value="b">B. body</option><option value="c">C. sense</option><option value="d">D. development</option><option value="e">E. stature</option></select> is the right of every human being and children do not have to die from this disease which wiped out whole <select id="sel99"><option>-99-</option><option value="a">A. countries</option><option value="b">B. areas</option><option value="c">C. schools</option><option value="d">D. states</option><option value="e">E. communities</option></select> in the middle ages. We have today <select id="sel100"><option>-100-</option><option value="a">A. bitter</option><option value="b">B. lovely</option><option value="c">C. marvellous</option><option value="d">D. super</option><option value="e">E. potent</option></select> drugs which give protection against most childhood diseases. 
+            </div>
+            </div>
+            <p>&nbsp;</p>
+            <div id='mainBody'>
+                <div class='essayque'>
+                    Your school was tipped to win the final match of the inter-school football competition for secondary schools in your state, but unfortunately you lost to the underdog. Write an article for publication in your school magazine on that match, explaining why your school lost and the lessons to be learnt.
+                </div><br>
+                <div class='essayque'>
+                    Narrate a story to illustrate the warning: "Look before you leap"
+                </div><br>
+                <div class='essayque'>
+                    There have been widespread compliants by students agaisnt the teaching staff: absenteeism, lateness to classes, failure to prepare lessons, and so on. As a senior prefect, write a letter to the principal informing him of the situation and requesting him to take necessary action in order to avert a riot that is being secretly planned by the students.
+                </div><br>
+                <div class='essayque'>
+                    The Political Science Students' Association in one of the higher institutions of learning has invited your school to participate in a debate on the topic: <i>"Civil rule is Preferable to Military rule".</i> Write out your speech for or against the motion.
+                </div><br>
+                <div class='essayque'>
+                    You changed school recently and have been at the new school for six weeks. Write a letter to your uncle explaining why you left your former school nd describe at least three things that you find interesting in the new school.
+                </div><br>
+                <div class='essayque'>
+                    You were an eye-witness of a fire outbreak which completely destroyed the main market in your town. Write an article suitable for publication in a national newspaper describing the incident and suggesting measures that could be adopted to prevent reoccurrence.
+                </div><br><br>
+            </div>
+            <div id='TestLinks'>
+                <center>
+                    <a href="English 1992 Test of Oral.html">Take a test on 1992 WAEC Oral English</a>&nbsp;<a id='essay'>Essay Exam</a>
+                </center>
+            </div>
+            <div class="rightcolumn">
+                <div class="floatingDiv">
+                    <span id="clockntimer">
+                      <div id='timer' style='position: relative;'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>
+                        <br><label id="clockLabel"></label>
+                        <br>Spent:<label id="timeSpent"></label>
+                        Left:<label id="timeLeft"></label>
+                    </span>
+                    <div style='position: absolute; top: 1px; left: 25%'>
+                        <center><button class="submit" name = "eng1992" onclick = "displayResults(answersENG1992, event, event)">Answers</button></center>
+                        <center><button class="submit2" onclick = "displayScore(100);">Performance</button></center>
+                    </div> 
+                    <div id="resultSheet">
+        
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <p></p>
+                <center>Click <a href='#top'>here</a> to back to top</center><br>
+                <div class="footerLink">
+                    <span>Quick links</span><hr>
+                    <ul>
+                        <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 1993.html">1993</a></li>
+                            <li><a href="English 1991.html">1991</a></li>
+                            <li><a href="English 1990.html">1990</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                        </nav><br><!-- the Mathematics dropdown -->
+                        <nav><span>Mathematics</span>
+                            <ul class="dropdown-content">
+                                <li><a href="Mathematics 2018.html">2018</a></li>
+                                <li><a href="Mathematics 2017.html">2017</a></li>
+                                <li><a href="Mathematics 2016.html">2016</a></li>
+                                <li><a href="#">more...</a></li>
+                            </ul>
+                        </nav>
+                        <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2018.html">2018</a></li>
+                            <li><a href="Biology 2017.html">2017</a></li>
+                            <li><a href="Biology 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                        <li><a href="www.google.com">Commerce</a></li>
+                        <li><a href="www.google.com">Economics</a></li>
+                        <li><a href="www.google.com">Physics</a></li>
+                    </ul>
+                </div>
+                <div id="feed_back">
+                    <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                    <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                    <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                    <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+                </div>
+            </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>

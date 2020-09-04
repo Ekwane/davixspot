@@ -1,24 +1,52 @@
 <!doctype html>
 <html>
     <head>
-	<link rel="stylesheet" href="../css/style.css" type="text/css">
-	<script src="../js/script.js" type="text/javascript"></script>
-	<title>English 2000 WAEC test of Orals</title>
-   </head>
-    <body onload='examiner(false)'>
+        <title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="examiner(false)">
+		<audio id="welcomeAudio">
+            <source src="../aud/start.ogg" type="audio/ogg">
+            <source src="../aud/start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+		</audio>
+		<audio id="selectAudio">
+            <source src="../aud/optionselect.ogg" type="audio/ogg">
+            <source src="../aud/optionselect.mp3" type="audio/mpeg">
+		    Your browser does not support the audio element.
+		</audio>
+		<audio id="stopAudio">
+            <source src="../aud/stop.ogg" type="audio/ogg">
+            <source src="../aud/stop.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+		</audio>
+		<audio id="passedAudio">
+            <source src="../aud/passed.ogg" type="audio/ogg">
+            <source src="../aud/passed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+		</audio>
+		<audio id="selectAudio">
+            <source src="../aud/failed.ogg" type="audio/ogg">
+            <source src="../aud/failed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+		</audio>
+		<audio id="clickAudio">
+            <source src="../aud/btnclick.ogg" type="audio/ogg">
+            <source src="../aud/btnclick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+		</audio>
         <div class="leftcolumnForMainPageHeader">
-            <div id = "mainPageHeader">SCHOOL MANAGER</div>
-            <div id="motto">Learning made Easier</div>
-        </div>
+			<div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+			<a href="@davixspot.html" class="fa fa-home" id="home"></a>
+		</div>
         <div class="leftcolumn">
-            <div id="pageHeader">
-              <center>ENGLISH LANGUAGE 2<br> English 2000 WAEC test of Orals</center>
-            </div>
-            <div id="time">Time: 1 hour</div>
+            <div id="pageHeader"><center>ENGLISH 2000 WAEC TEST OF ORALS</center></div>
+            <div id="time">Time: 45 Minutes</div>
             <div id="num">Number of Questions: 60</div>
-            <center>
-              <p id="Obj">OBJECTIVE TEST<br><strong>SECTION A</strong></p>
-            </center>
+            <center><p id="Obj">OBJECTIVE TEST<br><strong>SECTION A</strong></p></center>
             <center><em>
                 <strong>Instruction: </strong>From the words lettered A to D, choose the word that has the same vowel sound as the on represented by the letter(s) underlined
             </em></center>
@@ -110,71 +138,76 @@
             </center>
             <p>51. /e/<input type="radio" name = "sel51" value="a">A. people<input type="radio" name = "sel51" value="b">B. heinous<input type="radio" name = "sel51" value="c">C. ewe<input type="radio" name = "sel51" value="d">D. jeopardy</p>
             <p>52. /^/<input type="radio" name = "sel52" value="a">A. wonder<input type="radio" name = "sel52" value="b">B. dough<input type="radio" name = "sel52" value="c">C. wander<input type="radio" name = "sel52" value="d">D. cough</p>
-            <p>53. /3:/<input type="radio" name = "sel53" value="a">A. pour<input type="radio" name = "sel53" value="b">B. clerk<input type="radio" name = "sel53" value="c">C. journal<input type="radio" name = "sel53" value="d">D. surprise</p>
-            <p>54. /u/<input type="radio" name = "sel54" value="a">A. folly<input type="radio" name = "sel54" value="b">B. toll<input type="radio" name = "sel54" value="c">C. curly<input type="radio" name = "sel54" value="d">D. bout</p>
+            <p>53. /ʒ:/<input type="radio" name = "sel53" value="a">A. pour<input type="radio" name = "sel53" value="b">B. clerk<input type="radio" name = "sel53" value="c">C. journal<input type="radio" name = "sel53" value="d">D. surprise</p>
+            <p>54. /ðu/<input type="radio" name = "sel54" value="a">A. folly<input type="radio" name = "sel54" value="b">B. toll<input type="radio" name = "sel54" value="c">C. curly<input type="radio" name = "sel54" value="d">D. bout</p>
             <p>55. /a:/<input type="radio" name = "sel55" value="a">A. sack<input type="radio" name = "sel55" value="b">B. card<input type="radio" name = "sel55" value="c">C. search<input type="radio" name = "sel55" value="d">D. fact</p>
-            <p>56. //<input type="radio" name = "sel56" value="a">A. bathe<input type="radio" name = "sel56" value="b">B. faith<input type="radio" name = "sel56" value="c">C. month<input type="radio" name = "sel56" value="d">D. length</p>
-            <p>57. //<input type="radio" name = "sel57" value="a">A. mission<input type="radio" name = "sel57" value="b">B. shoe<input type="radio" name = "sel57" value="c">C. attach<input type="radio" name = "sel57" value="d">D. character</p>
+            <p>56. /ð/<input type="radio" name = "sel56" value="a">A. bathe<input type="radio" name = "sel56" value="b">B. faith<input type="radio" name = "sel56" value="c">C. month<input type="radio" name = "sel56" value="d">D. length</p>
+            <p>57. /tʃ/<input type="radio" name = "sel57" value="a">A. mission<input type="radio" name = "sel57" value="b">B. shoe<input type="radio" name = "sel57" value="c">C. attach<input type="radio" name = "sel57" value="d">D. character</p>
             <p>58. /t/<input type="radio" name = "sel58" value="a">A. begged<input type="radio" name = "sel58" value="b">B. carved<input type="radio" name = "sel58" value="c">C. urged<input type="radio" name = "sel58" value="d">D. attend</p>
-            <p>59. //<input type="radio" name = "sel59" value="a">A. equation<input type="radio" name = "sel59" value="b">B. addition<input type="radio" name = "sel59" value="c">C. impression<input type="radio" name = "sel59" value="d">D. pressure</p>
+            <p>59. / /<input type="radio" name = "sel59" value="a">A. equation<input type="radio" name = "sel59" value="b">B. addition<input type="radio" name = "sel59" value="c">C. impression<input type="radio" name = "sel59" value="d">D. pressure</p>
             <p>60. /z/<input type="radio" name = "sel60" value="a">A. consist<input type="radio" name = "sel60" value="b">B. insist<input type="radio" name = "sel60" value="c">C. design<input type="radio" name = "sel60" value="d">D. reverse</p>
             <p>&nbsp</p>
-           </div>
         </div>
         <div class="rightcolumn">
-			<div class="floatingDiv">
-				<span id="clockntimer">
-					<button id="startBtn" onclick="startExam(150)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button><br><label id="clockLabel"></label><br>
-					Spent:<label id="timeSpent"></label><br>
-					Left:<label id="timeLeft"></label>
-				</span>
-				<center><button class="submit" onclick = "displayResults(answersENG1994)">Answers</button></center>
-				<center><button class="submit2" onclick = "displayScore(60)">Performance</button></center>
-				<div id="resultSheet">
-
-				</div>
-			</div>
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                   <div id='timer'><button id="startBtn" onclick="startExam(45)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>
+                   <br><label id="clockLabel"></label>
+                   <br>Spent:<label id="timeSpent"></label>
+                   Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                   <center><button class="submit" onclick = "displayResults(answersORAL2000, event)">Answers</button></center>
+                   <center><button class="submit2" onclick = "displayScore(60);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+        
+                </div>
+            </div>
         </div>
         <div id="footer">
-            <center><p>Click <a href="#top">here</a> to go back to top.</p></center>
-            <p>For more past questions on WAEC, NECO and other exams, visit <a href="https://www.tutusfx.com/@davixspot">@Davixspot</a>.<br><br>
-              Available past questions include<br>
-            <ul>
-            <!-- the English Language dropdown -->
-            <nav><span>English Language</span>
-                <ul class="dropdown-content">
-                    <li><a href="English 2017.html">2017</a><br></li>
-                    <li><a href="English 2016.html">2016</a><br></li>
-                    <li><a href="English 2015.html">2015</a><br></li>
-                    <li><a href="English 2014.html">2014</a><br></li>
-                    <li><a href="English 2013.html">2013</a><br></li>
-                    <li><a href="English 2012.html">2012</a><br></li>
-                    <li><a href="English 2011.html">2011</a><br></li>
-                    <li><a href="English 2010.html">2010</a><br></li>
-                    <li><a href="English 2009.html">2009</a><br></li>
-                    <li><a href="English 2008.html">2008</a><br></li>
-                    <li><a href="English 2007.html">2007</a><br></li>
-                    <li><a href="English 2006.html">2006</a><br></li>
-                    <li><a href="English 2005.html">2005</a><br></li>
-                    <li><a href="English 2004.html">2004</a><br></li>
-                    <li><a href="English 1992.html">1992</a><br></li>
-                    <li><a href="English 1991.html">1991</a><br></li>
-                    <li><a href="English 1990.html">1990</a><br></li>
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+                <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2001 Test of Oral.html">2001</a></li>
+                            <li><a href="English 1999 Test of Oral.html">1999</a></li>
+                            <li><a href="English 1998 Test of Oral.html">1998</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2018.html">2018</a></li>
+                            <li><a href="Biology 2017.html">2017</a></li>
+                            <li><a href="Biology 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Economics</a></li>
+                    <li><a href="www.google.com">Physics</a></li>
                 </ul>
-            </nav><br><!-- the Mathematics dropdown -->
-            <nav><span>Mathematics</span>
-                <ul class="dropdown-content">
-                    <li><a href="Mathematics 2018.html">2018</a><br></li>
-                    <li><a href="Mathematics 2017.html">2017</a><br></li>
-                    <li><a href="Mathematics 2016.html">2016</a><br></li>
-                    <li><a href="Mathematics 2014.html">2014</a><br></li>
-                </ul>
-            </nav>
-            <li><a href="www.google.com">Government</a><br></li>
-            <li><a href="www.google.com">Commerce</a><br></li>
-            <li><a href="www.google.com">Econimics</a><br></li>
-            <li><a href="www.google.com">Physics</a><br></li>
+            </div>
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
         </div>
-        <button class="footerBtn" onclick="footer();"><span id="footerBtntxt">hide footer</span></button></p>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
     </body>
 </html>
