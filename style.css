@@ -1,0 +1,76 @@
+﻿* {color: blue; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+*::selection {background-color: black; color: yellow; text-decoration: none;}
+body {background-color: dark-blue; margin: 0; padding: 0% 2%; font-size: 18px;}
+table {border-collapse: collapse; border: 2px solid; width: 50%; text-align: center;}
+thead {background-color: rgb(89, 89, 255);}
+thead th, tr td {border-bottom: 2px solid;}
+thead th { color: white}
+tr:nth-child(even) {background-color: rgb(89, 89, 255);}
+tr:nth-child(even) td{color: white}
+/*th, td {border: 2px groove; text-align: center; cell-padding: 2%}*/
+input {cursor:pointer;}
+li {list-style-type: none;}
+input[name=time] {width: 50%; padding: 10px; border: none; border-radius: 4px; cursor: text} /*to be continued with*/
+li:hover {cursor: pointer; transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -o-transition: all 0.3s ease-in;}
+nav li{padding: 1% 5%;}
+input[name=search]:focus {border: 1px solid blue}
+nav {position: relative; display: inline-block; cursor: pointer;}
+nav:hover .dropdown-content {display: block; background-color: red; transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -o-transition: all 0.3s ease-in;}
+.footerLink ul:first-of-type {position: absolute; left: -2%; top: auto;}
+.footerLink {width: 19.2%; margin-right: 19.2%; float: left}
+.dropdown-content {display: none; position: absolute; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); padding: 0% 1%; border-radius: 1px; z-index: 1;}
+.submit {background-color: red; color: dark-blue; box-shadow: -2px 4px 8px 0px blue; text-shadow: -1px 2px 2px gray; position: relative; font-size: 14px; top: 100px; left: 0; padding: 8px; border-radius: 5px; border-width: 1px; border-color: red;}
+.submit:hover {color: blue; text-shadow: none; cursor: pointer; transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -o-transition: all 0.3s ease-in; padding: 10px}
+.submit2 {background-color: red; color: dark-blue; box-shadow: -2px 4px 8px 0px blue; text-shadow: -1px 2px 2px gray; position: relative; font-size: 14px; top: 105px; left: 0%; padding: 8px; border-radius: 5px; border-width: 1px; border-color: red;}
+.submit2:hover {color: blue; text-shadow: none; cursor: pointer; transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -o-transition: all 0.3s ease-in; padding: 10px}
+.leftcolumnForMainPageHeader {background-color: red; box-shadow: -4px 8px 8px 0px blue; position: absolute; float: left; width: 98%; height: auto; top: 0; left: 0.25%; text-align: justify; padding: 5px; border: 0; border-radius: 10px;}
+.leftcolumn {position: absolute; float: left; top: 15.5%; left: 0; width: 70%; height: 100%; padding: 0.5% 1%; text-align: justify;}
+.rightcolumn {color: #cecece; position: absolute; top: auto; left: 70%; width: 30%;}
+.floatingDiv {position: fixed; float: right; top: 18%; right: 0; width: 25%; height: 10%; background: none;}
+.pagebottom {margin-bottom: 40%;}
+.footerBtn {background: #aeaeae; color: dark-blue; box-shadow: -2px 4px 8px 0px blue; text-shadow: -1px 2px 2px gray; font-weight: bolder; border: none; border-radius: 50px; cursor: pointer; font-style: italic; margin: 0% 2% 2% 0%; padding: 10px; float: right; position: fixed; bottom: 0; right: 0; z-index: 1;}
+.footerBtn:hover {background: white; color: dark-blue; text-shadow: none; font-weight: light; transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -o-transition: all 0.3s ease-in;}
+.essayque {background: transparent; border: 1px double blue; border-radius: 5px; padding: 10px; width: 100%}
+.show0 {display: block; position: absolute; float: left; min-width: 100px; width: 33%; z-index: 1;}
+.show1 {display: block; position: absolute; float: left; min-width: 100px; width: 33%; z-index: 1;}
+.show2 {display: block; position: absolute; float: left; min-width: 100px; width: 33%; z-index: 1;}
+.hide0 {display: none;}
+.hide1 {display: none;}
+.hide2 {display: none;}
+.wel_page {background-color: transparent; margin: 15% 10%; font-style: italic;}
+.subjects {position: absolute; left: 38%;}
+.sub {max-height: 0; opacity: 0; z-index: -1; overflow: hidden; transition: all 0.3s ease-in}
+.subjects input[name=search] {margin-left: 15%; border: none; cursor: text; padding: 3%; border-radius: 5px; display: inline}
+#home {margin-left: 1%; color: white; text-decoration: none; font-size: 20px}
+#quickLinks {margin-left: 0}
+#feed_back {width: 19.2%; float: left;}
+#TestLinks a {background: red; border: 0; border-radius: 5px; cursor: pointer; text-align: center; padding: 20px; color: blue; text-decoration: none}
+#mainPageHeader {color: blue; text-shadow: -4px 4px 2px black; padding: 0.5% 0%; border: 0; border-radius: 3px; font-size: 60px; font-weight: bolder; font-stretch: ultra-expanded; text-align: center; font-style: italic; transform: rotate3d(20deg); transform-style: preserve-3d;}
+#pageHeader {background-color: red; box-shadow: -8px 6px 8px 0px blue; text-shadow: -2px 2px 1px black; margin-top: 1%; border: 2px groove red; border-radius: 5px; font-size: 30px; padding: 2%}
+#EssaypageHeader {position: absolute; float: left; top: 13%; left: 0; width: 97%; height: auto; padding: 0.5% 1%; text-align: justify; background-color: red ; box-shadow: -8px 6px 8px 0px blue; text-shadow: -2px 2px 1px black; margin-top: 2%; border: 2px groove red; border-radius: 5px; font-size: 30px;}
+#motto {color: #eaeaea; text-shadow: -4px 4px 8px gray; width: 100%; text-align: center; text-transform: lowercase; font-style: italic;}
+#time {float: left; font-size: 15px; font-weight: bolder;}
+#mainBody {margin-right: 2%; font-size: 20px;  position: relative; display: none; top: 0px}
+#num {float: right; font-size: 15px; font-weight: bolder;}
+#Obj {font-family: Arial; font-size: 15px; text-indent: 2.45cm;}
+#timer {position: relative; z-index: 1}
+#clockLabel {position: relative; left: 35%}
+#clockntimer {position: absolute; font-size: 24px; top: 1%; left: 5%;}
+#clockntimer *{display: inline-flex;}
+#timer button {margin-right: 10%}
+#startBtn {background-color: red; color: dark-blue; box-shadow: -2px 4px 4px 0px blue; text-shadow: -1px 2px 2px gray; font-size: 14px; margin-right: 1%; padding: 8px; border-radius: 5px; border-width: 1px; border-color: red; cursor: pointer;}
+#startBtn:hover {color: blue; text-shadow: none; cursor: pointer; transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -o-transition: all 0.3s ease-in; padding: 10px}
+#resetBtn {background-color: red; color: dark-blue; box-shadow: -2px 4px 4px 0px blue; text-shadow: -1px 2px 2px gray; font-size: 14px; margin-right: 1%; padding: 8px; border-radius: 5px; border-width: 1px; border-color: red; cursor: pointer; position: relative;}
+#resetBtn:hover {color: blue; text-shadow: none; cursor: pointer; transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -o-transition: all 0.3s ease-in; padding: 10px}
+#stopBtn {background-color: red; color: dark-blue; box-shadow: -2px 4px 4px 0px blue; text-shadow: -1px 2px 2px gray; font-size: 14px; padding: 8px; border-radius: 5px; border-width: 1px; border-color: red; cursor: pointer;}
+#stopBtn:hover {color: blue; text-shadow: none; cursor: pointer; transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -o-transition: all 0.3s ease-in; padding: 10px}
+#resultSheet {background-color: white; position: relative; width: 100%; right: 10%; top: 10em; height: 330%; overflow-y: auto; display: inline-flex; background: non; border: none; border-radius: 5px; text-align: justify;}
+#footer {background-color: red; position: fixed; bottom: 0; left: 0; width: 100%; height: 25%; margin: 0; padding: 0% 2%;}
+#footer * {color: #eaeaea; font-weight: bolder; font-stretch: ultra-condensed; font-size: 11px; font-style: italic;}
+#footer li{display: flex; min-width: 100px; width: 140px; cursor: pointer;}
+#footer li *:hover{cursor: pointer;}
+#footer a{text-decoration: none; text-shadow: -2px 2px 2px gray;}
+#footer p a{font-style: oblique; font-weight: light;}
+#footer a:visited {color:#123456;}
+#footer a:active, a:active {color: #48ff12;}
+#footer a:hover, a:hover {transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -o-transition: all 0.3s ease-in;}
