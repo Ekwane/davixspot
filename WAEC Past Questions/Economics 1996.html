@@ -93,14 +93,14 @@
         <div class="rightcolumn">
             <div class="floatingDiv">
                 <span id="clockntimer">
-                  <div id='timer'><button id="startBtn" onclick="startExam(100)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>
+                  <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>
                     <br><label id="clockLabel"></label>
                     <br>Spent:<label id="timeSpent"></label>
                     Left:<label id="timeLeft"></label>
                 </span>
                 <div style='position: absolute; top: 1px; left: 25%'>
-                    <center><button class="submit" onclick = "displayResults()">Answers</button></center>
-                    <center><button class="submit2" onclick = "displayScore();">Performance</button></center>
+                    <center><button class="submit" onclick = "displayResults(answersECO1996, event)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(40);">Performance</button></center>
                 </div> 
                 <div id="resultSheet">
                 

@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+    <head>
+        <title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+            <source src="../aud/start.ogg" type="audio/ogg">
+            <source src="../aud/start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/optionselect.ogg" type="audio/ogg">
+            <source src="../aud/optionselect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="stopAudio">
+            <source src="../aud/stop.ogg" type="audio/ogg">
+            <source src="../aud/stop.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="passedAudio">
+            <source src="../aud/passed.ogg" type="audio/ogg">
+            <source src="../aud/passed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/failed.ogg" type="audio/ogg">
+            <source src="../aud/failed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="clickAudio">
+            <source src="../aud/btnclick.ogg" type="audio/ogg">
+            <source src="../aud/btnclick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="leftcolumnForMainPageHeader">
+			<div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+			<a href="@davixspot.html" class="fa fa-home" id="home"> Home</a>
+		</div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>ECONOMICS WASSCE 2007</center></div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 40</div>
+            <center><p id="Obj"><strong>OBJECTIVE TEST</strong></p></center>
+            <p>1. The three principal economic units in any system are <br><input type="radio" name = "sel1" value="a">A. trade, industry and banking<br><input type="radio" name = "sel1" value="b">B. workers, consumers and shareholders<br><input type="radio" name = "sel1" value="c">C. households, firms and governments<br><input type="radio" name = "sel1" value="d">D. companies, industries and plants</p>
+            <p>2. The satisfaction derived from the use of a commodity is its <br><input type="radio" name = "sel2" value="a">A. demand<br><input type="radio" name = "sel2" value="b">B. elasticity<br><input type="radio" name = "sel2" value="c">C. wealth<br><input type="radio" name = "sel2" value="d">D. utility</p>
+            <p>3. The reward which accrues to labour for participating in production is <br><input type="radio" name = "sel3" value="a">A. interest<br><input type="radio" name = "sel3" value="b">B. wage<br><input type="radio" name = "sel3" value="c">C. bonus<br><input type="radio" name = "sel3" value="d">D. profit</p>
+            <p>4. The Malthusian theory of population does not concern itself with <br><input type="radio" name = "sel4" value="a">A. growth of food production in arithmetical progression<br><input type="radio" name = "sel4" value="b">B. growth of population in geometric progression<br><input type="radio" name = "sel4" value="c">C. positive checks of population growth<br><input type="radio" name = "sel4" value="d">D. development and growth of manpower</p>
+            <p>5. One characteristic of labour is that it is <br><input type="radio" name = "sel5" value="a">A. fixed in demand<br><input type="radio" name = "sel5" value="b">B. fixed in supply<br><input type="radio" name = "sel5" value="c">C. mobile<br><input type="radio" name = "sel5" value="d">D. untrainable</p>
+            <p>6. A country where labour is not sufficient to make proper use of natural resources is said to have an <br><input type="radio" name = "sel6" value="a">A. active population<br><input type="radio" name = "sel6" value="b">B. optimum population<br><input type="radio" name = "sel6" value="c">C. over-population<br><input type="radio" name = "sel6" value="d">D. under-population</p>
+            <p>7. When population is classified according to professions, it is called <br><input type="radio" name = "sel7" value="a">A. geographic distribution of population<br><input type="radio" name = "sel7" value="b">B. age distribution of population<br><input type="radio" name = "sel7" value="c">C. sex distribution of population<br><input type="radio" name = "sel7" value="d">D. occupational distribution of population</p>
+            <p>8. What must be added to variable cost to give total cost?<br><input type="radio" name = "sel8" value="a">A. average total cost<br><input type="radio" name = "sel8" value="b">B. average variable cost<br><input type="radio" name = "sel8" value="c">C. fixed cost<br><input type="radio" name = "sel8" value="d">D. marginal cost</p>
+            <p>9. Revenue is the <br><input type="radio" name = "sel9" value="a">A. total profit made after sales<br><input type="radio" name = "sel9" value="b">B. amount spent on purchases<br><input type="radio" name = "sel9" value="c">C. amount of goods produced<br><input type="radio" name = "sel9" value="d">D. total money realized from sale</p>
+            <p>10. Given that TR is total revenue, then TRn - TR(n-1) can be used to find the <br><input type="radio" name = "sel10" value="a">A. marginal revenue<br><input type="radio" name = "sel10" value="b">B. marginal cost<br><input type="radio" name = "sel10" value="c">C. average cost<br><input type="radio" name = "sel10" value="d">D. average revenue</p>
+            <p>11. The lower the price of a commodity, the greater the quantity demanded. This is based on the assumption that consumers' <br><input type="radio" name = "sel11" value="a">A. income is diminished<br><input type="radio" name = "sel11" value="b">B. income remains the same<br><input type="radio" name = "sel11" value="c">C. utility is diminished<br><input type="radio" name = "sel11" value="d">D. population is high</p>
+            <p>12. The demand for beans in bags is given by the function Q - 36 + 0.4P. Where P is price in Naira and Q is quantity. Find Q when P = 20 Naira.<br><input type="radio" name = "sel12" value="a">A. 12 bags<br><input type="radio" name = "sel12" value="b">B. 24 bags<br><input type="radio" name = "sel12" value="c">C. 28 bags<br><input type="radio" name = "sel12" value="d">D. 30 bags</p>
+            <p>13. If the price of good X rises and the quantity demand of good Y increases then the two goods X and Y must be <br><input type="radio" name = "sel13" value="a">A. inferior goods<br><input type="radio" name = "sel13" value="b">B. substitutes<br><input type="radio" name = "sel13" value="c">C. complements<br><input type="radio" name = "sel13" value="d">D. free goods</p>
+            <strong>Use the following demand schedule to answer question 14</strong>
+            <table style="border-collapse: collapse;">
+                <thead><th>Price(N)</th><th>Quantity Demanded</th></thead>
+                <tr><td>15<br>13</td><td>60<br>70</td></tr>
+            </table>
+            <p>14. The percentage change in quantity demanded is <br><input type="radio" name = "sel14" value="a">A. 12.7%<br><input type="radio" name = "sel14" value="b">B. 15.7%<br><input type="radio" name = "sel14" value="c">C. 16.7%<br><input type="radio" name = "sel14" value="d">D. 19.7%</p>
+            <p>15. In a situation where demand is perfectly elastic, imposition of a tax on a commodity to raise its price will result in <br><input type="radio" name = "sel15" value="a">A. consumers increasing their demand for the product<br><input type="radio" name = "sel15" value="b">B. consumers' demand for the product will remain unchanged<br><input type="radio" name = "sel15" value="c">C. consumers shifting completely to substitute products<br><input type="radio" name = "sel15" value="d">D. suppliers increasing the supply of product</p>
+            <p>16. Patents are example of <br><input type="radio" name = "sel16" value="a">A. natural barriers to entry<br><input type="radio" name = "sel16" value="b">B. legal barriers to entry<br><input type="radio" name = "sel16" value="c">C. illegal barriers to entry<br><input type="radio" name = "sel16" value="d">D. unnatural barriers to entry</p>
+            <p>17. Which of the following is a characteristic of monopoly?<br><input type="radio" name = "sel17" value="a">A. many sellers<br><input type="radio" name = "sel17" value="b">B. homogenous commodity<br><input type="radio" name = "sel17" value="c">C. a single seller<br><input type="radio" name = "sel17" value="d">D. perfect knowledge</p>
+            <p>18. When a firm is nationalized, <br><input type="radio" name = "sel18" value="a">A. former owners are removed without compensation<br><input type="radio" name = "sel18" value="b">B. it has the right to draw on state funds for capital investment<br><input type="radio" name = "sel18" value="c">C. it must break even within a specified period<br><input type="radio" name = "sel18" value="d">D. workers take control of the firm</p>
+            <p>19. The practice whereby a business is owned by two or more independent firms is termed <br><input type="radio" name = "sel19" value="a">A. indigenization<br><input type="radio" name = "sel19" value="b">B. joint venture<br><input type="radio" name = "sel19" value="c">C. commercialization<br><input type="radio" name = "sel19" value="d">D. foreign investment</p>
+            <p>20. The main objective of privatizing government business is to <br><input type="radio" name = "sel20" value="a">A. create additional employment<br><input type="radio" name = "sel20" value="b">B. increase expenditure<br><input type="radio" name = "sel20" value="c">C. source of new funds<br><input type="radio" name = "sel20" value="d">D. increase the level of efficiency</p>
+            <p>21. The return on investment that is just sufficient to satisfy the owner of a business is called <br><input type="radio" name = "sel21" value="a">A. economic profit<br><input type="radio" name = "sel21" value="b">B. business profit<br><input type="radio" name = "sel21" value="c">C. normal profit<br><input type="radio" name = "sel21" value="d">D. excess profit</p>
+            <p>22. Which of the following is a middleman in the chain of distribution?<br><input type="radio" name = "sel22" value="a">A. an entrepreneur<br><input type="radio" name = "sel22" value="b">B. a producer<br><input type="radio" name = "sel22" value="c">C. a banker<br><input type="radio" name = "sel22" value="d">D. a retailer</p>
+            <p>23. A negative effect of the presence of a large number of middlemen in the distributive network is <br><input type="radio" name = "sel23" value="a">A. greater variety of goods<br><input type="radio" name = "sel23" value="b">B. greater quality of goods<br><input type="radio" name = "sel23" value="c">C. lower price of goods<br><input type="radio" name = "sel23" value="d">D. higher price of goods</p>
+            <p>24. An example of a producer good is a <br><input type="radio" name = "sel24" value="a">A. tin of milk<br><input type="radio" name = "sel24" value="b">B. hammer<br><input type="radio" name = "sel24" value="c">C. loaf of bread<br><input type="radio" name = "sel24" value="d">D. shirt</p>
+            <p>25. To promote the development of the agricultural sector, governments of West African countries should <br><input type="radio" name = "sel25" value="a">A. encourage rural-urban drift<br><input type="radio" name = "sel25" value="b">B. discourage foreign investment in agriculture<br><input type="radio" name = "sel25" value="c">C. support the marketing of farm produce<br><input type="radio" name = "sel25" value="d">D. reduce tariff on food imports</p>
+            <p>26. The most important quality of money is that it must be <br><input type="radio" name = "sel26" value="a">A. relatively scarce<br><input type="radio" name = "sel26" value="b">B. generally acceptable<br><input type="radio" name = "sel26" value="c">C. portable<br><input type="radio" name = "sel26" value="d">D. durable</p>
+            <p>27. A certain amount is needed for everyday expenditure like buying of goods, transportation and others. This is <br><input type="radio" name = "sel27" value="a">A. transaction demand for money<br><input type="radio" name = "sel27" value="b">B. precautionary demand for money<br><input type="radio" name = "sel27" value="c">C. derived demand for money<br><input type="radio" name = "sel27" value="d">D. speculative demand for money</p>
+            <p>28. Long term loans can be secured from <br><input type="radio" name = "sel28" value="a">A. commercial banks<br><input type="radio" name = "sel28" value="b">B. discount houses<br><input type="radio" name = "sel28" value="c">C. development banks<br><input type="radio" name = "sel28" value="d">D. acceptable houses</p>
+            <p>29. The value of money is generally measured in relation to the <br><input type="radio" name = "sel29" value="a">A. interest rate charged on bank loans<br><input type="radio" name = "sel29" value="b">B. general price level<br><input type="radio" name = "sel29" value="c">C. size of the country's gold stock<br><input type="radio" name = "sel29" value="d">D. volume of imports</p>
+            <p>30. Which of the following is true under rapid inflation? People <br><input type="radio" name = "sel30" value="a">A. demand less foreign exchange<br><input type="radio" name = "sel30" value="b">B. set up businesses<br><input type="radio" name = "sel30" value="c">C. rush to pay their taxes<br><input type="radio" name = "sel30" value="d">D. hardly want to lend money</p>
+            <p>31. Which of the following financial institutions was originally known as a Building Society?<br><input type="radio" name = "sel31" value="a">A. development bank<br><input type="radio" name = "sel31" value="b">B. insurance company<br><input type="radio" name = "sel31" value="c">C. mortgage banks<br><input type="radio" name = "sel31" value="d">D. merchant banks</p>
+            <p>32. A non-bank financial intermediary which is regarded as a pool of risks is the <br><input type="radio" name = "sel32" value="a">A. co-operative society<br><input type="radio" name = "sel32" value="b">B. stock exchange<br><input type="radio" name = "sel32" value="c">C. insurance company<br><input type="radio" name = "sel32" value="d">D. post office</p>
+            <p>33. A foreign exchange market deals in <br><input type="radio" name = "sel33" value="a">A. treasury bills<br><input type="radio" name = "sel33" value="b">B. currencies<br><input type="radio" name = "sel33" value="c">C. government bonds<br><input type="radio" name = "sel33" value="d">D. commodities</p>
+            <p>34. Which of the following institutions assists the government in managing the national debt?<br><input type="radio" name = "sel34" value="a">A. commercial banks<br><input type="radio" name = "sel34" value="b">B. the central banks<br><input type="radio" name = "sel34" value="c">C. the capital market<br><input type="radio" name = "sel34" value="d">D. the world bank</p>
+            <p>35. If tax takes a large proportion of the income of people with lower income, tax is <br><input type="radio" name = "sel35" value="a">A. progressive<br><input type="radio" name = "sel35" value="b">B. proportional<br><input type="radio" name = "sel35" value="c">C. regressive<br><input type="radio" name = "sel35" value="d">D. ad-valorem</p>
+            <p>36. Which of the following is an example of a direct tax?<br><input type="radio" name = "sel36" value="a">A. import duties<br><input type="radio" name = "sel36" value="b">B. income tax<br><input type="radio" name = "sel36" value="c">C. export duties<br><input type="radio" name = "sel36" value="d">D. purchase tax</p>
+            <p>37. Monetary control measures are coordinated by <br><input type="radio" name = "sel37" value="a">A. development banks <br><input type="radio" name = "sel37" value="b">B. merchant banks<br><input type="radio" name = "sel37" value="c">C. commercial banks<br><input type="radio" name = "sel37" value="d">D. the central banks</p>
+            <p>38. A country whose economy is buoyant is likely to have <br><input type="radio" name = "sel38" value="a">A. a weak currency<br><input type="radio" name = "sel38" value="b">B. devaluation from time to time<br><input type="radio" name = "sel38" value="c">C. a strong currency<br><input type="radio" name = "sel38" value="d">D. balance of payment problems</p>
+            <p>39. The Net National Product (NNP) is Gross National Product (GNP) less <br><input type="radio" name = "sel39" value="a">A. domestic product<br><input type="radio" name = "sel39" value="b">B. foreign products<br><input type="radio" name = "sel39" value="c">C. depreciation<br><input type="radio" name = "sel39" value="d">D. investment</p>
+            <p>40. If the population of a country is low and the Gross National Product is high, the per capita income will be <br><input type="radio" name = "sel40" value="a">A. high<br><input type="radio" name = "sel40" value="b">B. low<br><input type="radio" name = "sel40" value="c">C. average<br><input type="radio" name = "sel40" value="d">D. unitary</p>
+            <p>41. The population of a country in a certain year was fifty million and per capital income was &#36;2,050. What was the national income?<br><input type="radio" name = "sel41" value="a">A. &#36;750,000 million<br><input type="radio" name = "sel41" value="b">B. &#36;100,250 million<br><input type="radio" name = "sel41" value="c">C. &#36;102,500 million<br><input type="radio" name = "sel41" value="d">D. &#36;125,050 million</p>
+            <p>42. One of the advantages of capitalism is that <br><input type="radio" name = "sel42" value="a">A. consumers are exploited<br><input type="radio" name = "sel42" value="b">B. private initiative is discourage<br><input type="radio" name = "sel42" value="c">C. efficient allocation of resources is assured<br><input type="radio" name = "sel42" value="d">D. job security assured</p>
+            <p>43. Which of the following contributes the highest amount of foreign exchange to economy of West African nations?<br><input type="radio" name = "sel43" value="a">A. construction, manufacturing and banking<br><input type="radio" name = "sel43" value="b">B. shipping, trading and fishing<br><input type="radio" name = "sel43" value="c">C. power, telecommunications and sport<br><input type="radio" name = "sel43" value="d">D. extraction, farming and tourism</p>
+            <p>44. International trade depends on the concept of <br><input type="radio" name = "sel44" value="a">A. marginal cost advantage<br><input type="radio" name = "sel44" value="b">B. comparative cost disadvantage<br><input type="radio" name = "sel44" value="c">C. comparative cost advantage<br><input type="radio" name = "sel44" value="d">D. absolute cost</p>
+            <p>45. One advantage of international trade is that <br><input type="radio" name = "sel45" value="a">A. countries depend on each other<br><input type="radio" name = "sel45" value="b">B. it introduces variation in prices<br><input type="radio" name = "sel45" value="c">C. it increases the demand for foreign goods<br><input type="radio" name = "sel45" value="d">D. it makes variety of goods available</p>
+            <p>46. The practice of selling goods overseas and often below the cost of production is known as <br><input type="radio" name = "sel46" value="a">A. retailing<br><input type="radio" name = "sel46" value="b">B. dumping<br><input type="radio" name = "sel46" value="c">C. internal trade<br><input type="radio" name = "sel46" value="d">D. advertising</p>
+            <p>47. A summary of all the receipts and payments of a country in international transaction is called <br><input type="radio" name = "sel47" value="a">A. terms of trade<br><input type="radio" name = "sel47" value="b">B. balance of payment<br><input type="radio" name = "sel47" value="c">C. balance of payment adjustment<br><input type="radio" name = "sel47" value="d">D. capital account</p>
+            <p>48. Which of the following countries export cocoa?<br><input type="radio" name = "sel48" value="a">A. Liberia and The Gambia<br><input type="radio" name = "sel48" value="b">B. Ghana and Sierra Leone<br><input type="radio" name = "sel48" value="c">C. Nigeria and Ghana<br><input type="radio" name = "sel48" value="d">D. Sierra Leone and Ghana</p>
+            <p>49. Which of the following are examples of transfer payments?<br><input type="radio" name = "sel49" value="a">A. Gifts and donations<br><input type="radio" name = "sel49" value="b">B. Rents and rates<br><input type="radio" name = "sel49" value="c">C. Profits and dividends <br><input type="radio" name = "sel49" value="d">D. internal external debts</p>
+            <p>50. ECA means?<br><input type="radio" name = "sel50" value="a">A. Economic Commission for Africa<br><input type="radio" name = "sel50" value="b">B. Economic Community of Africa<br><input type="radio" name = "sel50" value="c">C. Exporting Countries of Africa<br><input type="radio" name = "sel50" value="d">D. Economic Conference on Africa</p>     
+        </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                    <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersECO2007, event)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(50);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+    
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+               <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2018.html">2018</a></li>
+                            <li><a href="English 2017.html">2017</a></li>
+                            <li><a href="English 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2018.html">2018</a></li>
+                            <li><a href="Biology 2017.html">2017</a></li>
+                            <li><a href="Biology 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Economics</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+    <head>
+        <title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+            <source src="../aud/start.ogg" type="audio/ogg">
+            <source src="../aud/start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/optionselect.ogg" type="audio/ogg">
+            <source src="../aud/optionselect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="stopAudio">
+            <source src="../aud/stop.ogg" type="audio/ogg">
+            <source src="../aud/stop.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="passedAudio">
+            <source src="../aud/passed.ogg" type="audio/ogg">
+            <source src="../aud/passed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/failed.ogg" type="audio/ogg">
+            <source src="../aud/failed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="clickAudio">
+            <source src="../aud/btnclick.ogg" type="audio/ogg">
+            <source src="../aud/btnclick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="leftcolumnForMainPageHeader">
+			<div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+			<a href="@davixspot.html" class="fa fa-home" id="home"> Home</a>
+		</div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>ECONOMICS WASSCE 2011</center></div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 50</div>
+            <center><p id="Obj"><strong>OBJECTIVE TEST</strong></p></center>
+            <p>1. Human wants are <br><input type="radio" name = "sel1" value="a">A. limited<br><input type="radio" name = "sel1" value="b">B. scarce<br><input type="radio" name = "sel1" value="c">C. unlimited<br><input type="radio" name = "sel1" value="d">D. in grades</p>
+            <p>2. The difference between the money cost and the real cost of any item is that <br><input type="radio" name = "sel2" value="a">A. real cost is the alternative foregone while the money cost is the actual amount paid for buying the item<br><input type="radio" name = "sel2" value="b">B. the real cost is the opportunity cost, while the money cost is the marginal cost<br><input type="radio" name = "sel2" value="c">C. money cost is the opportunity cost, while the real cost is the actual cost in monetary terms<br><input type="radio" name = "sel2" value="d">D. money cost is always greater than real cost</p>
+            <p>3. The Production Possibility Curve (PPC) indicates that as more of one product is produced <br><input type="radio" name = "sel3" value="a">A. less of the other good is produced<br><input type="radio" name = "sel3" value="b">B. the same quantity of the other good is produced<br><input type="radio" name = "sel3" value="c">C. more of the other good is produced<br><input type="radio" name = "sel3" value="d">D. none of the other good is produced</p>
+            <p>4. An arrangement of data in rows and columns is referred to as a <br><input type="radio" name = "sel4" value="a">A. graph<br><input type="radio" name = "sel4" value="b">B. bar chart<br><input type="radio" name = "sel4" value="c">C. pie chart<br><input type="radio" name = "sel4" value="d">D. table</p>
+            <p>5. A normal demand curve slopes <br><input type="radio" name = "sel5" value="a">A. downwards from left to right<br><input type="radio" name = "sel5" value="b">B. upwards from right to left<br><input type="radio" name = "sel5" value="c">C. downwards from right to left<br><input type="radio" name = "sel5" value="d">D. upwards from left to right</p>
+            <p>6. The co-efficient of income elasticity of demand for inferior goods is <br><input type="radio" name = "sel6" value="a">A. positive<br><input type="radio" name = "sel6" value="b">B. equal to one<br><input type="radio" name = "sel6" value="c">C. less than one<br><input type="radio" name = "sel6" value="d">D. negative</p>
+            <p>7. If 20% rise in the price of Whisky leads to 30% increase in the quantity demanded of Schnapps, the cross elasticity of demand is <br><input type="radio" name = "sel7" value="a">A. 3.0<br><input type="radio" name = "sel7" value="b">B. 2.5<br><input type="radio" name = "sel7" value="c">C. 2.5<br><input type="radio" name = "sel7" value="d">D. 1.5</p>
+            <p>8. Palm oil and palm kernel have <br><input type="radio" name = "sel8" value="a">A. competitive supply<br><input type="radio" name = "sel8" value="b">B. excessive supply<br><input type="radio" name = "sel8" value="c">C. joint supply<br><input type="radio" name = "sel8" value="d">D. composite supply</p>
+            <p>9. A supply curve which is vertical has has an elasticity co-efficient of <br><input type="radio" name = "sel9" value="a">A. 0<br><input type="radio" name = "sel9" value="b">B. 0.5<br><input type="radio" name = "sel9" value="c">C. 1.5<br><input type="radio" name = "sel9" value="d">D. 2</p>
+            <p>10. If the current price of an apple is twice that of last year, it implies that the value of money <br><input type="radio" name = "sel10" value="a">A. stable<br><input type="radio" name = "sel10" value="b">B. falling<br><input type="radio" name = "sel10" value="c">C. rising<br><input type="radio" name = "sel10" value="d">D. getting stronger</p>
+            <p>11. Price fixed above equilibrium is to <br><input type="radio" name = "sel11" value="a">A. protect agricultural producers<br><input type="radio" name = "sel11" value="b">B. discourage agricultural producers<br><input type="radio" name = "sel11" value="c">C. lower the prices of agricultural produce<br><input type="radio" name = "sel11" value="d">D. favor consumers</p>
+            <p>12. A consumer purchasing a commodity X will maximize his satisfaction is <br><input type="radio" name = "sel12" value="a">A. Px = MUx<br><input type="radio" name = "sel12" value="b">B. Px greater than or equal to MUX <br><input type="radio" name = "sel12" value="c">C. Px > MUx<br><input type="radio" name = "sel12" value="d">D. Px < MUx</p>
+            <p>13. When the total utility is constant, it means marginal utility is <br><input type="radio" name = "sel13" value="a">A. increasing<br><input type="radio" name = "sel13" value="b">B. zero<br><input type="radio" name = "sel13" value="c">C. decreasing<br><input type="radio" name = "sel13" value="d">D. one</p>
+            <p>14. A rational consumer is one who <br><input type="radio" name = "sel14" value="a">A. spends his income to maximize satisfaction<br><input type="radio" name = "sel14" value="b">B. is influenced by advertisement<br><input type="radio" name = "sel14" value="c">C. behaves in a particular way all the time<br><input type="radio" name = "sel14" value="d">D. knows the prices of all goods and buys the cheapest</p>
+            <p>15. Which of the following is not true about land?<br><input type="radio" name = "sel15" value="a">A. the supply is fixed<br><input type="radio" name = "sel15" value="b">B. land is mobile<br><input type="radio" name = "sel15" value="c">C. it is subject to diminishing returns<br><input type="radio" name = "sel15" value="d">D. land is heterogeneous</p>
+            <p>16. The type of production that involves the tapping ans harnessing of natural resources is <br><input type="radio" name = "sel16" value="a">A. primary production<br><input type="radio" name = "sel16" value="b">B. secondary production<br><input type="radio" name = "sel16" value="c">C. tertiary production<br><input type="radio" name = "sel16" value="d">D. industrial production</p>
+            <p>17. Which of the following does not change in the short run?<br><input type="radio" name = "sel17" value="a">A. variable cost<br><input type="radio" name = "sel17" value="b">B. marginal cost<br><input type="radio" name = "sel17" value="c">C. total cost<br><input type="radio" name = "sel17" value="d">D. fixed cost</p>
+            <p>18. The resources used in production are called <br><input type="radio" name = "sel18" value="a">A. variable inputs<br><input type="radio" name = "sel18" value="b">B. factors of production<br><input type="radio" name = "sel18" value="c">C. capital for production<br><input type="radio" name = "sel18" value="d">D. fixed input</p>
+            <p>19. A firm will shutdown in the long run if its earning is <br><input type="radio" name = "sel19" value="a">A. less than normal profit<br><input type="radio" name = "sel19" value="b">B. greater than normal profit<br><input type="radio" name = "sel19" value="c">C. equal to super normal profit<br><input type="radio" name = "sel19" value="d">D. less than super normal profit</p>
+            <p>20. A market structure where profit is maximized when marginal revenue, marginal cost and price are equal is known as <br><input type="radio" name = "sel20" value="a">A. perfect competition<br><input type="radio" name = "sel20" value="b">B. monopoly<br><input type="radio" name = "sel20" value="c">C. oligopoly<br><input type="radio" name = "sel20" value="d">D. imperfect competition</p>
+            <p>21. In which of the following market does a firm have power to make super normal profits both in short run and long run?<br><input type="radio" name = "sel21" value="a">A. monopoly<br><input type="radio" name = "sel21" value="b">B. duopoly<br><input type="radio" name = "sel21" value="c">C. oligopoly<br><input type="radio" name = "sel21" value="d">D. monopsony</p>
+            <p>22. If there are no barriers to entering a market, it means that <br><input type="radio" name = "sel22" value="a">A. anyone can become a buyer or seller <br><input type="radio" name = "sel22" value="b">B. unwanted goods can always enter the market<br><input type="radio" name = "sel22" value="c">C. the market becomes a dumping ground<br><input type="radio" name = "sel22" value="d">D. the goods are not inspected</p>
+            <p>23. A firm's main aim is to <br><input type="radio" name = "sel23" value="a">A. survive in business<br><input type="radio" name = "sel23" value="b">B. maximize profits<br><input type="radio" name = "sel23" value="c">C. increase its market share<br><input type="radio" name = "sel23" value="d">D. satisfy the ambitions of its managers</p>
+            <p>24. One good reason for the elimination of middlemen is that they <br><input type="radio" name = "sel24" value="a">A. cause increase in price<br><input type="radio" name = "sel24" value="b">B. help in price stability<br><input type="radio" name = "sel24" value="c">C. grade and blend goods<br><input type="radio" name = "sel24" value="d">D. are too many</p>
+            <p>25. The increase in population in big cities is referred to as <br><input type="radio" name = "sel25" value="a">A. settlement<br><input type="radio" name = "sel25" value="b">B. migration<br><input type="radio" name = "sel25" value="c">C. industrialization<br><input type="radio" name = "sel25" value="d">D. urbanization</p>
+            <p>26. Frictional unemployment can be reduced by <br><input type="radio" name = "sel26" value="a">A. encouraging the use restraining schemes<br><input type="radio" name = "sel26" value="b">B. removing barriers to labour mobility<br><input type="radio" name = "sel26" value="c">C. restricting the introduction of new technology<br><input type="radio" name = "sel26" value="d">D. lowering the level of wages paid to young people</p>
+            <p>27. If the labour force of a country is 2.5 million and 2 million are employed, what is the unemployment rate?<br><input type="radio" name = "sel27" value="a">A. 0.2%<br><input type="radio" name = "sel27" value="b">B. 20%<br><input type="radio" name = "sel27" value="c">C. 200%<br><input type="radio" name = "sel27" value="d">D. 250%</p>
+            <p>28. The grouping of population according to the economic activities people engage in is <br><input type="radio" name = "sel28" value="a">A. age distribution<br><input type="radio" name = "sel28" value="b">B. sex distribution<br><input type="radio" name = "sel28" value="c">C. geographical distribution<br><input type="radio" name = "sel28" value="d">D. occupational distribution</p>
+            <p>29. Natural growth rate of population can be defined as the <br><input type="radio" name = "sel29" value="a">A. difference between birth rate and death rate <br><input type="radio" name = "sel29" value="b">B. number of births in a year<br><input type="radio" name = "sel29" value="c">C. increase in the population growth in a year<br><input type="radio" name = "sel29" value="d">D. difference between the total population and the death rate</p>
+            <p>30. Which of the following is not a consequence of increased unemployment?<br><input type="radio" name = "sel30" value="a">A. a fall in tax revenue for the government<br><input type="radio" name = "sel30" value="b">B. a reduction in trade union's influence<br><input type="radio" name = "sel30" value="c">C. a fall in the death rate<br><input type="radio" name = "sel30" value="d">D. an increase in the labour force</p>
+            <p>31. The following are features of subsistence agriculture except <br><input type="radio" name = "sel31" value="a">A. little capital<br><input type="radio" name = "sel31" value="b">B. processing of raw materials<br><input type="radio" name = "sel31" value="c">C. small allotments of land<br><input type="radio" name = "sel31" value="d">D. use of crude implements</p>
+            <p>32. Which of the following is not true of small companies? They <br><input type="radio" name = "sel32" value="a">A. cannot benefit from economies of scale<br><input type="radio" name = "sel32" value="b">B. are a job source of a new job<br><input type="radio" name = "sel32" value="c">C. can satisfy demand in a specialist market<br><input type="radio" name = "sel32" value="d">D. have a good record of technical innovations</p>
+            <p>33. The effect of privatization on the industrial sector of a country is that it <br><input type="radio" name = "sel33" value="a">A. ensures efficiency<br><input type="radio" name = "sel33" value="b">B. discourages efficiency<br><input type="radio" name = "sel33" value="c">C. leads to decrease in output<br><input type="radio" name = "sel33" value="d">D. leads to liquidation</p>
+            <p>34. The production strategy used in an overpopulated country is <br><input type="radio" name = "sel34" value="a">A. import substitution<br><input type="radio" name = "sel34" value="b">B. capital intensive<br><input type="radio" name = "sel34" value="c">C. labour intensive<br><input type="radio" name = "sel34" value="d">D. first come first employed</p>
+            <p>35. National income is used to measure <br><input type="radio" name = "sel35" value="a">A. a country's population size<br><input type="radio" name = "sel35" value="b">B. a country's economic growth<br><input type="radio" name = "sel35" value="c">C. the human level of development<br><input type="radio" name = "sel35" value="d">D. the flow of import to a country</p>
+            <p>36. A tax is regressive if the <br><input type="radio" name = "sel36" value="a">A. rate of tax is constant at all income level<br><input type="radio" name = "sel36" value="b">B. rate of tax decreases as income increases<br><input type="radio" name = "sel36" value="c">C. rate of tax increases as income increases<br><input type="radio" name = "sel36" value="d">D. tax is direct rather than indirect</p>
+            <p>37. When a country's net income from abroad is added to its total output, the result is <br><input type="radio" name = "sel37" value="a">A. gross domestic product<br><input type="radio" name = "sel37" value="b">B. net national product<br><input type="radio" name = "sel37" value="c">C. gross national product<br><input type="radio" name = "sel37" value="d">D. net domestic product</p>
+            <p>38. A fall in national output will necessitate <br><input type="radio" name = "sel38" value="a">A. a rise in expenditure on imports<br><input type="radio" name = "sel38" value="b">B. a rise in the level of savings<br><input type="radio" name = "sel38" value="c">C. an increase in consumption expenditure<br><input type="radio" name = "sel38" value="d">D. a rise in the standard of living</p>
+            <p>39. The demand for money to take advantage of changes in bond prices is the <br><input type="radio" name = "sel39" value="a">A. unforeseen motive<br><input type="radio" name = "sel39" value="b">B. transaction motive<br><input type="radio" name = "sel39" value="c">C. speculative motive<br><input type="radio" name = "sel39" value="d">D. precautionary motive</p>
+            <p>40. Cost push inflation is caused by a <br><input type="radio" name = "sel40" value="a">A. rise in the cost of production<br><input type="radio" name = "sel40" value="b">B. decrease in the transportation cost<br><input type="radio" name = "sel40" value="c">C. rise in demand for goods<br><input type="radio" name = "sel40" value="d">D. decrease in the cost of production</p>
+            <p>41. Deposits held in a commercial bank are a part of <br><input type="radio" name = "sel41" value="a">A. money supply<br><input type="radio" name = "sel41" value="b">B. transfer payments<br><input type="radio" name = "sel41" value="c">C. ordinary shares<br><input type="radio" name = "sel41" value="d">D. treasury bills</p>
+            <p>42. One profitable for of business undertaken by the commercial banks is <br><input type="radio" name = "sel42" value="a">A. the issuing of cheques<br><input type="radio" name = "sel42" value="b">B. the payment of standing order<br><input type="radio" name = "sel42" value="c">C. lending money to borrowers<br><input type="radio" name = "sel42" value="d">D. accepting cheques from customers</p>
+            <p>43. When governments wants to discourage consumption, they tax goods whose demand is <br><input type="radio" name = "sel43" value="a">A. price inelastic<br><input type="radio" name = "sel43" value="b">B. abnormal in nature<br><input type="radio" name = "sel43" value="c">C. price elastic<br><input type="radio" name = "sel43" value="d">D. normal in nature</p>
+            <p>44. A rise in government expenditure can lead to <br><input type="radio" name = "sel44" value="a">A. higher inflation<br><input type="radio" name = "sel44" value="b">B. higher unemployment<br><input type="radio" name = "sel44" value="c">C. lower profit for industries<br><input type="radio" name = "sel44" value="d">D. lower importation of raw materials by industries</p>
+            <p>45. Tariff is used to protect domestic industries by making goods relatively<br><input type="radio" name = "sel45" value="a">A. cheaper in the domestic market<br><input type="radio" name = "sel45" value="b">B. more expensive in the domestic market<br><input type="radio" name = "sel45" value="c">C. more expensive in the international market<br><input type="radio" name = "sel45" value="d">D. cheaper in the international market</p>
+            <p>46. The process of increasing the real per capita income and effecting changes in various sectors of the economy is known as <br><input type="radio" name = "sel46" value="a">A. economic acceleration<br><input type="radio" name = "sel46" value="b">B. economic development<br><input type="radio" name = "sel46" value="c">C. economic integration<br><input type="radio" name = "sel46" value="d">D. economic growth</p>
+            <p>47. Development plans in West Africa tend to deviate from their targets mainly due to <br><input type="radio" name = "sel47" value="a">A. political instability<br><input type="radio" name = "sel47" value="b">B. lack of manpower<br><input type="radio" name = "sel47" value="c">C. high population growth rate<br><input type="radio" name = "sel47" value="d">D. low level of education</p>
+            <p>48. The balance of trade is <br><input type="radio" name = "sel48" value="a">A. an annual statement showing transactions within a country<br><input type="radio" name = "sel48" value="b">B. the relationship between a country's visible exports and imports<br><input type="radio" name = "sel48" value="c">C. the relationship between a country's receipt for visible and invisible trade<br><input type="radio" name = "sel48" value="d">D. an account that shows a country's payments to other countries</p>
+            <p>49. As one of the instruments of commercial policy, quota is<br><input type="radio" name = "sel49" value="a">A. a qualitative restriction on imports<br><input type="radio" name = "sel49" value="b">B. a normal restriction on imports<br><input type="radio" name = "sel49" value="c">C. a quantitative restriction on imports<br><input type="radio" name = "sel49" value="d">D. an outright prohibition of imports</p>
+            <p>50. The full meaning of IMF is <br><input type="radio" name = "sel50" value="a">A. International Military Force<br><input type="radio" name = "sel50" value="b">B. International Monetary Fund<br><input type="radio" name = "sel50" value="c">C. International Mortgage Fund<br><input type="radio" name = "sel50" value="d">D. International Monetary Financing</p>
+        </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                    <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersECO2011, event)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(50);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+    
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+               <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2018.html">2018</a></li>
+                            <li><a href="English 2017.html">2017</a></li>
+                            <li><a href="English 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2018.html">2018</a></li>
+                            <li><a href="Biology 2017.html">2017</a></li>
+                            <li><a href="Biology 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Economics</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+    <head>
+        <title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="examiner(false)">
+        <audio id="welcomeAudio">
+            <source src="../aud/start.ogg" type="audio/ogg">
+            <source src="../aud/start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/optionselect.ogg" type="audio/ogg">
+            <source src="../aud/optionselect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="stopAudio">
+            <source src="../aud/stop.ogg" type="audio/ogg">
+            <source src="../aud/stop.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="passedAudio">
+            <source src="../aud/passed.ogg" type="audio/ogg">
+            <source src="../aud/passed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="selectAudio">
+            <source src="../aud/failed.ogg" type="audio/ogg">
+            <source src="../aud/failed.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="clickAudio">
+            <source src="../aud/btnclick.ogg" type="audio/ogg">
+            <source src="../aud/btnclick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="leftcolumnForMainPageHeader">
+			<div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>SCHOOL MANAGER</div>
+			<a href="@davixspot.html" class="fa fa-home" id="home"> Home</a>
+		</div>
+        <div class="leftcolumn">
+            <div id="pageHeader"><center>ECONOMICS WASSCE 2012</center></div>
+            <div id="time">Time: 1 hour</div>
+            <div id="num">Number of Questions: 50</div>
+            <center><p id="Obj"><strong>OBJECTIVE TEST</strong></p></center>
+            <p>1. Which of the following problem arises where there are more than one technically possible methods of production?<br><input type="radio" name = "sel1" value="a">A. where to produce<br><input type="radio" name = "sel1" value="b">B. to whom to produce<br><input type="radio" name = "sel1" value="c">C. how to produce<br><input type="radio" name = "sel1" value="d">D. what to produce</p>
+            <p>2. Visible balance is also known as <br><input type="radio" name = "sel2" value="a">A. terms of trade<br><input type="radio" name = "sel2" value="b">B. balance of payments<br><input type="radio" name = "sel2" value="c">C. balance of trade<br><input type="radio" name = "sel2" value="d">D. capital balance</p>
+            <p>3. A shift in the demand curve indicates <br><input type="radio" name = "sel3" value="a">A. exceptional demand<br><input type="radio" name = "sel3" value="b">B. change in demand<br><input type="radio" name = "sel3" value="c">C. change in quantity demanded<br><input type="radio" name = "sel3" value="d">D. elasticity of demand</p>
+            <p>4. If a 6% decrease in price results to more than 6% decrease in quantity supplied, supply can be regarded as <br><input type="radio" name = "sel4" value="a">A. elastic<br><input type="radio" name = "sel4" value="b">B. unitary elastic<br><input type="radio" name = "sel4" value="c">C. perfectly inelastic<br><input type="radio" name = "sel4" value="d">D. perfectly elastic</p>
+            <p>5. A condition for consumer utility maximization is <br><input type="radio" name = "sel5" value="a">A. equality of the ratio of the marginal utilities and the ratio of prices<br><input type="radio" name = "sel5" value="b">B. equality of ratio of average utilities and the ratio of prices<br><input type="radio" name = "sel5" value="c">C. equality of marginal utility to total utility ratio for both commodities<br><input type="radio" name = "sel5" value="d">D. total utility and marginal utility must be zero</p>
+            <p>6. Which of the following best describes the mode? The <br><input type="radio" name = "sel6" value="a">A. observation with the highest frequency<br><input type="radio" name = "sel6" value="b">B. average of two middle numbers<br><input type="radio" name = "sel6" value="c">C. item that occupies the middle position<br><input type="radio" name = "sel6" value="d">D. difference of two extreme values</p>
+            <p>7. Where a commodity takes an insignificant proportion of the consumer's income, demand for it will be <br><input type="radio" name = "sel7" value="a">A. unitary elastic<br><input type="radio" name = "sel7" value="b">B. price inelastic<br><input type="radio" name = "sel7" value="c">C. fairly elastic<br><input type="radio" name = "sel7" value="d">D. income inelastic</p>
+            <p>8. A demand schedule shows the quantities of goods that are <br><input type="radio" name = "sel8" value="a">A. bought at given prices at a time<br><input type="radio" name = "sel8" value="b">B. supplied at given prices at a time<br><input type="radio" name = "sel8" value="c">C. produced at given prices at a time<br><input type="radio" name = "sel8" value="d">D. reserved for future consumption</p>
+            <p>9. The demand curve for a commodity is downward sloping because the consumer will pay <br><input type="radio" name = "sel9" value="a">A. less as the marginal utility falls<br><input type="radio" name = "sel9" value="b">B. more as the marginal utility falls<br><input type="radio" name = "sel9" value="c">C. less as the total utility falls<br><input type="radio" name = "sel9" value="d">D. more as the average utility falls</p>
+            <p>10. A decrease in the demand for a product X resulted in a decrease in the demand for another product Y. The demand for X and Y is <br><input type="radio" name = "sel10" value="a">A. derived<br><input type="radio" name = "sel10" value="b">B. composite<br><input type="radio" name = "sel10" value="c">C. joint<br><input type="radio" name = "sel10" value="d">D. competitive</p>
+            <p>11. Any price below the equilibrium price will lead to <br><input type="radio" name = "sel11" value="a">A. increase in supply<br><input type="radio" name = "sel11" value="b">B. excess demand<br><input type="radio" name = "sel11" value="c">C. equality of demand and supply<br><input type="radio" name = "sel11" value="d">D. decrease in demand</p>
+            <p>12. The allocation of goods and services in a free market is performed by <br><input type="radio" name = "sel12" value="a">A. the price system<br><input type="radio" name = "sel12" value="b">B. the banking system<br><input type="radio" name = "sel12" value="c">C. the central planning body<br><input type="radio" name = "sel12" value="d">D. government budgets</p>
+            <p>13. Given the demand function Qd = 20 - <sup>1</sup>/<sub>2</sub>P. What is Qd when P is $12?<br><input type="radio" name = "sel13" value="a">A. 6 units<br><input type="radio" name = "sel13" value="b">B. 10 units<br><input type="radio" name = "sel13" value="c">C. 12 units<br><input type="radio" name = "sel13" value="d">D. 14 units</p>
+            <p>14. If a particular consumer derives total utility of 22 units having consuming 4 units of a given products, his average utility will be <br><input type="radio" name = "sel14" value="a">A. 88 units<br><input type="radio" name = "sel14" value="b">B. 18 units<br><input type="radio" name = "sel14" value="c">C. 5.5 units<br><input type="radio" name = "sel14" value="d">D. 3.5 units</p>
+            <p>15. The law of diminishing marginal utility applies to a <br><input type="radio" name = "sel15" value="a">A. firm which minimizes cost<br><input type="radio" name = "sel15" value="b">B. consumer who maximizes satisfaction<br><input type="radio" name = "sel15" value="c">C. producer who maximizes marginal product<br><input type="radio" name = "sel15" value="d">D. consumer who maximizes total utility</p>
+            <p>16. Why is the law of diminishing returns a short run phenomenon?<br><input type="radio" name = "sel16" value="a">A. all inputs are fixed<br><input type="radio" name = "sel16" value="b">B. all inputs are variable<br><input type="radio" name = "sel16" value="c">C. some outputs are variable<br><input type="radio" name = "sel16" value="d">D. some inputs are variable</p>
+            <p>17. Which of the following is capable of increasing the population of a country?<br><input type="radio" name = "sel17" value="a">A. decrease in death rate<br><input type="radio" name = "sel17" value="b">B. increase in death rate<br><input type="radio" name = "sel17" value="c">C. poor medical facilities<br><input type="radio" name = "sel17" value="d">D. decrease in birth rate</p>
+            <p>18. In the firm's production process, marginal cost <br><input type="radio" name = "sel18" value="a">A.  falls continuously throughout<br><input type="radio" name = "sel18" value="b">B. remains unchanged throughout<br><input type="radio" name = "sel18" value="c">C. rises and later falls<br><input type="radio" name = "sel18" value="d">D. rises and later falls</p>
+            <p>19. If a firm's price is less than average cost but more than average variable cost, the firm is covering <br><input type="radio" name = "sel19" value="a">A. all of its fixed cost and variable cost<br><input type="radio" name = "sel19" value="b">B. all of its fixed cost and part of variable cost<br><input type="radio" name = "sel19" value="c">C. all of its variable cost and part of fixed cost<br><input type="radio" name = "sel19" value="d">D. part of its fixed cost and part of variable cost</p>
+            <p>20. An arrangement in which the debts of a company can only be paid from its own assets implies <br><input type="radio" name = "sel20" value="a">A. unlimited liability<br><input type="radio" name = "sel20" value="b">B. transfered liability<br><input type="radio" name = "sel20" value="c">C. limited liability<br><input type="radio" name = "sel20" value="d">D. capital liability</p>
+            <p>21. One reason why small scale businesses are very common in West Africa is that <br><input type="radio" name = "sel21" value="a">A. They can easily float shares<br><input type="radio" name = "sel21" value="b">B. their management boards are easily formed<br><input type="radio" name = "sel21" value="c">C. their initial capital is easy to raise <br><input type="radio" name = "sel21" value="d">D. their dividend payments is very regular</p>
+            <p>22. A public limited company could finance its operations through<br><input type="radio" name = "sel22" value="a">A. government taxes<br><input type="radio" name = "sel22" value="b">B. equity shares<br><input type="radio" name = "sel22" value="c">C. dividend payments<br><input type="radio" name = "sel22" value="d">D. import duties</p>
+            <p>23. The factor of production which takes the initiative in combining resources for production is known as <br><input type="radio" name = "sel23" value="a">A. capital<br><input type="radio" name = "sel23" value="b">B. land<br><input type="radio" name = "sel23" value="c">C. entrepreneur<br><input type="radio" name = "sel23" value="d">D. labour</p>
+            <p>24. The type of monopoly that develops as a result of granting patent right is known as <br><input type="radio" name = "sel24" value="a">A. natural monopoly<br><input type="radio" name = "sel24" value="b">B. state monopoly<br><input type="radio" name = "sel24" value="c">C. legal monopoly<br><input type="radio" name = "sel24" value="d">D. discriminating monopoly</p>
+            <p>25. Which of the following markets determines its own prices or output?<br><input type="radio" name = "sel25" value="a">A. perfect market<br><input type="radio" name = "sel25" value="b">B. common market<br><input type="radio" name = "sel25" value="c">C. monopoly market<br><input type="radio" name = "sel25" value="d">D. commodity market</p>
+            <p>26. Which of the following is a function of a retailer?<br><input type="radio" name = "sel26" value="a">A. banking services<br><input type="radio" name = "sel26" value="b">B. hoarding services<br><input type="radio" name = "sel26" value="c">C. storage services<br><input type="radio" name = "sel26" value="d">D. sales services</p>
+            <p>27. The difference between the number of immigrants and emigrants is <br><input type="radio" name = "sel27" value="a">A. natural growth rate<br><input type="radio" name = "sel27" value="b">B. natural increase<br><input type="radio" name = "sel27" value="c">C. net migration<br><input type="radio" name = "sel27" value="d">D. census</p>
+            <p>28. All the following are features of optimum population except <br><input type="radio" name = "sel28" value="a">A. full employment of available resources<br><input type="radio" name = "sel28" value="b">B. unlimited amount of unexploited resources<br><input type="radio" name = "sel28" value="c">C. maximum per capita production and income<br><input type="radio" name = "sel28" value="d">D. high standard of living</p>
+            <p>29. The financial institution that specializes in risk spreading is called <br><input type="radio" name = "sel29" value="a">A. an investment bank<br><input type="radio" name = "sel29" value="b">B. a development bank<br><input type="radio" name = "sel29" value="c">C. an insurance company<br><input type="radio" name = "sel29" value="d">D. a stock exchange</p>
+            <p>30. The following are means of reducing the population of a country except encouraging <br><input type="radio" name = "sel30" value="a">A. emigration<br><input type="radio" name = "sel30" value="b">B. family planning<br><input type="radio" name = "sel30" value="c">C. early marriage<br><input type="radio" name = "sel30" value="d">D. sex education</p>
+            <p>31. Which of the following best describes peasant agriculture in West African? It <br><input type="radio" name = "sel31" value="a">A. specializes in the production of one crop<br><input type="radio" name = "sel31" value="b">B. involves the use of small holdings<br><input type="radio" name = "sel31" value="c">C. is a capital-intensive system of farming<br><input type="radio" name = "sel31" value="d">D. is mostly associated with tree crops</p>
+            <p>32. One of the problems facing industrial development in West African countries is <br><input type="radio" name = "sel32" value="a">A. in adequate large market<br><input type="radio" name = "sel32" value="b">B. inadequate infrastructure<br><input type="radio" name = "sel32" value="c">C. inadequate supply of labour<br><input type="radio" name = "sel32" value="d">D. unavailability of natural resources</p>
+            <p>33. In a situation where the finished product of an industry is fragile, bulky and perishable, such an industry should be close to its <br><input type="radio" name = "sel33" value="a">A. raw materials<br><input type="radio" name = "sel33" value="b">B. market<br><input type="radio" name = "sel33" value="c">C. labour supply<br><input type="radio" name = "sel33" value="d">D. power supply</p>
+            <p>34. If Y = Income, C = Consumption, I = Investment, X = Export and M = Imports, then national income is <br><input type="radio" name = "sel34" value="a">A. Y=C-I+(X+M)<br><input type="radio" name = "sel34" value="b">B. Y=C+I+(X+M)<br><input type="radio" name = "sel34" value="c">C. Y=C+I+(X-M)<br><input type="radio" name = "sel34" value="d">D. Y=C+I+(M-X)</p>
+            <p>35. The national income is the <br><input type="radio" name = "sel35" value="a">A. Gross Domestic Product at market prices<br><input type="radio" name = "sel35" value="b">B. Gross National Product at factor cost<br><input type="radio" name = "sel35" value="c">C. Net National Product at factor cost<br><input type="radio" name = "sel35" value="d">D. Net National Product at market prices</p>
+            <p>36. When depreciation is deducted from Gross National Product, the result is <br><input type="radio" name = "sel36" value="a">A. Total National Income<br><input type="radio" name = "sel36" value="b">B. Gross Domestic Product<br><input type="radio" name = "sel36" value="c">C. Net National Product<br><input type="radio" name = "sel36" value="d">D. Net Domestic Products</p>
+            <p>37. Mr. Okpoti has meat and wants maize while Mr. Adama has maize and wants meat. A transaction is possible because of <br><input type="radio" name = "sel37" value="a">A. joint demand<br><input type="radio" name = "sel37" value="b">B. scale of preference<br><input type="radio" name = "sel37" value="c">C. double coincidence of wants<br><input type="radio" name = "sel37" value="d">D. opportunity cost</p>
+            <p>38. Which of the following is not a form of money?<br><input type="radio" name = "sel38" value="a">A. coins<br><input type="radio" name = "sel38" value="b">B. bank notes<br><input type="radio" name = "sel38" value="c">C. bank balance<br><input type="radio" name = "sel38" value="d">D. bank deposit</p>
+            <p>39. A price index as a static, measures <br><input type="radio" name = "sel39" value="a">A. how the value of money changes over time<br><input type="radio" name = "sel39" value="b">B. the volume of currency in the economy<br><input type="radio" name = "sel39" value="c">C. the exchange rate of a country's currency<br><input type="radio" name = "sel39" value="d">D. the composition of goods and services</p>
+            <p>40. The difference between birth rate and death rate is known as <br><input type="radio" name = "sel40" value="a">A. demographic transition<br><input type="radio" name = "sel40" value="b">B. natural growth rate<br><input type="radio" name = "sel40" value="c">C. migration rate<br><input type="radio" name = "sel40" value="d">D. fertility rate</p>
+            <p>41. In open market operations, what the Central Bank sells or buys are <br><input type="radio" name = "sel41" value="a">A. shares<br><input type="radio" name = "sel41" value="b">B. debentures<br><input type="radio" name = "sel41" value="c">C. securities<br><input type="radio" name = "sel41" value="d">D. equities</p>
+            <p>42. The following are reasons for the failure of agricultural policies in West Africa except <br><input type="radio" name = "sel42" value="a">A. vague policy statements<br><input type="radio" name = "sel42" value="b">B. negation of policies<br><input type="radio" name = "sel42" value="c">C. creation of agro-service stations<br><input type="radio" name = "sel42" value="d">D. provision of obsolete implements</p>
+            <p>43. A situation in the estimated government revenue is less than the proposed expenditure for a given year can be described as <br><input type="radio" name = "sel43" value="a">A. surplus budget<br><input type="radio" name = "sel43" value="b">B. supplementary budgeting<br><input type="radio" name = "sel43" value="c">C. balanced budgeting<br><input type="radio" name = "sel43" value="d">D. deficit budgeting</p>
+            <p>44. An excise tax is imposed on goods <br><input type="radio" name = "sel44" value="a">A. smuggled into the country<br><input type="radio" name = "sel44" value="b">B. manufactured locally<br><input type="radio" name = "sel44" value="c">C. imported into the country<br><input type="radio" name = "sel44" value="d">D. seized by custom officials</p>
+            <p>45. Which of the following will not retard economic development in West Africa?<br><input type="radio" name = "sel45" value="a">A. dependence on imports<br><input type="radio" name = "sel45" value="b">B. population control<br><input type="radio" name = "sel45" value="c">C. high level of literacy<br><input type="radio" name = "sel45" value="d">D. low level of savings</p>
+            <p>46. When there is improvement in a country's terms of trade, it means that the countries <br><input type="radio" name = "sel46" value="a">A. exports are cheaper relative to imports<br><input type="radio" name = "sel46" value="b">B. imports are cheaper relative to exports<br><input type="radio" name = "sel46" value="c">C. volume of imports as declined<br><input type="radio" name = "sel46" value="d">D. volume of exports declined</p>
+            <p>47. Which of the following is true about import substitution? It <br><input type="radio" name = "sel47" value="a">A. helps in increasing exportation<br><input type="radio" name = "sel47" value="b">B. is meant to reduce exportation<br><input type="radio" name = "sel47" value="c">C. enables a country to curtail importation<br><input type="radio" name = "sel47" value="d">D. enables a country to improve on importation</p>
+            <p>48. Balance of payments problem can be corrected through <br><input type="radio" name = "sel48" value="a">A. increasing foreign reserves<br><input type="radio" name = "sel48" value="b">B. increasing domestic borrowing<br><input type="radio" name = "sel48" value="c">C. import promotion strategies<br><input type="radio" name = "sel48" value="d">D. export promotion strategies</p>
+            <p>49. One of the reasons why government may erect a trade barrier is to <br><input type="radio" name = "sel49" value="a">A. control foreign currencies<br><input type="radio" name = "sel49" value="b">B. protect infant industries<br><input type="radio" name = "sel49" value="c">C. promote importation<br><input type="radio" name = "sel49" value="d">D. diversify the economy</p>
+            <p>50. Which of the following is not a function of the West African Development Bank?<br><input type="radio" name = "sel50" value="a">A. promotion of both private and public investments of member states<br><input type="radio" name = "sel50" value="b">B. financing and executing projects in member states<br><input type="radio" name = "sel50" value="c">C. promotion of social development of member states<br><input type="radio" name = "sel50" value="d">D. harmonization of oil prices to the advantage of member states</p>
+        </div>
+        <div class="rightcolumn">
+            <div class="floatingDiv">
+                <span id="clockntimer">
+                    <div id='timer'><button id="startBtn" onclick="startExam(60)">Start</button><button id="resetBtn" onclick="resetExam()">Reset</button><button id="stopBtn" onclick="stopExam()">Stop</button></div>
+                    <br><label id="clockLabel"></label>
+                    <br>Spent:<label id="timeSpent"></label>
+                    Left:<label id="timeLeft"></label>
+                </span>
+                <div style='position: absolute; top: 1px; left: 25%'>
+                    <center><button class="submit" onclick = "displayResults(answersECO2012, event)">Answers</button></center>
+                    <center><button class="submit2" onclick = "displayScore(50);">Performance</button></center>
+                </div> 
+                <div id="resultSheet">
+    
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p></p>
+            <center>Click <a href='#top'>here</a> to back to top</center><br>
+            <div class="footerLink">
+               <span>Quick links</span><hr>
+                <ul>
+                    <nav><span>English Language</span>
+                        <ul class="dropdown-content">
+                            <li><a href="English 2018.html">2018</a></li>
+                            <li><a href="English 2017.html">2017</a></li>
+                            <li><a href="English 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav><br><!-- the Mathematics dropdown -->
+                    <nav><span>Mathematics</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Mathematics 2018.html">2018</a></li>
+                            <li><a href="Mathematics 2017.html">2017</a></li>
+                            <li><a href="Mathematics 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <nav><span>Biology</span>
+                        <ul class="dropdown-content">
+                            <li><a href="Biology 2018.html">2018</a></li>
+                            <li><a href="Biology 2017.html">2017</a></li>
+                            <li><a href="Biology 2016.html">2016</a></li>
+                            <li><a href="#">more...</a></li>
+                        </ul>
+                    </nav>
+                    <li><a href="www.google.com">Commerce</a></li>
+                    <li><a href="www.google.com">Economics</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            
+            <div id="feed_back">
+                <span>Feedback!</span><hr>
+                <p>Help us improve this platform</p>
+                <a href="#" class='fa fa-facebook' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-github' style="font-size: 20px; margin-right: 5px"></a>&nbsp;
+                <a href="#" class='fa fa-twitter' style="font-size: 20px"></a>
+            </div>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>
