@@ -57,8 +57,8 @@
             <p>8. The graph below represents the growth pattern of an animal. Which of the following groups of animal shows this pattern of growth?<br><input type="radio" name = "sel8" value="a">A. Cestoda<br><input type="radio" name = "sel8" value="b">B. Reptilia<br><input type="radio" name = "sel8" value="c">C. Amphibia<br><input type="radio" name = "sel8" value="d">D. Insecta</p>
             <p>9. The pulmonary circulation involves movement of the blood to and from the  <br><input type="radio" name = "sel9" value="a">A. brain<br><input type="radio" name = "sel9" value="b">B. kidneys<br><input type="radio" name = "sel9" value="c">C. liver<br><input type="radio" name = "sel9" value="b">D. lungs</p>
             <p>The table below shows the blood composition of four individuals. Use the information contained in the table to answer questions 10 and 11</p>
-	        <table cellpadding='3%' width='100%'>
-		          <tr><th>Individual</th><th>Plasma</th><th>Red blood cells</th><th>White blood cells</th><th>platelets</th></tr>
+	        <table cellpadding="10%">
+		          <thead><th>Individual</th><th>Plasma</th><th>Red blood cells</th><th>White blood cells</th><th>Platelets</th></thead>
 		          <tr><td>I</td><td>Normal</td><td>Normal</td><td>High</td><td>Normal</td></tr>
 		          <tr><td>II</td><td>Normal</td><td>Normal</td><td>Normal</td><td>Normal</td></tr>
 		          <tr><td>III</td><td>Normal</td><td>Normal</td><td>Low</td><td>Normal</td></tr>
@@ -127,7 +127,7 @@
                     Left:<label id="timeLeft"></label>
                 </span>
                 <div style='position: absolute; top: 1px; left: 25%'>
-                    <center><button class="submit" onclick = "displayResults(answersBIO2012)">Answers</button></center>
+                    <center><button class="submit" onclick = "displayResults(answersBIO2012, event)">Answers</button></center>
                     <center><button class="submit2" onclick = "displayScore(60);">Performance</button></center>
                 </div> 
                 <div id="resultSheet">
