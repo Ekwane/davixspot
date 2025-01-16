@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+    <head>
+		<title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+	</head>
+    <body onload="examiner(false)">
+		<audio id="welcomeAudio">
+		  <source src="../aud/start.ogg" type="audio/ogg">
+		  <source src="../aud/start.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="selectAudio">
+		  <source src="../aud/optionselect.ogg" type="audio/ogg">
+		  <source src="../aud/optionselect.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="stopAudio">
+		  <source src="../aud/stop.ogg" type="audio/ogg">
+		  <source src="../aud/stop.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="passedAudio">
+		  <source src="../aud/passed.ogg" type="audio/ogg">
+		  <source src="../aud/passed.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="selectAudio">
+		  <source src="../aud/failed.ogg" type="audio/ogg">
+		  <source src="../aud/failed.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="clickAudio">
+		  <source src="../aud/btnclick.ogg" type="audio/ogg">
+		  <source src="../aud/btnclick.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+        <div class="leftcolumnForMainPageHeader">
+			<div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>MonApp Study</div>
+			<a href="MonApp.html" class="fa fa-home" id="home"></a>
+		</div>
+        <div class="leftcolumn">
+            <div class="questionPaper">
+                <div id="stickyHeader">
+                    <div>
+                        <div style="display: inline-flex; width: 100%">
+                            <div id="pageHeader"><center>MATHEMATICS 2001</center></div><button id="startBtn" onclick="startExam(45)">Start</button>
+                        </div>
+                         <div id="time"> Time left: <label id="timeLeft">45 Mins</label> </div><div id="num">Num Ques.: 50</div>
+                    </div>
+                </div>
+                <div id="pages">
+       				<div class="queSet">
+						<center><strong>OBJECTIVE TEST<br></strong></center>
+						<p>1. Which of the following correctly expresses 48 as a product of prime factors?</a></label></p>
+						<p><label><input type="radio" name="sel1" value="a">A. <a> 3 &times; 4 &times; 4</a></label><br><label><input type="radio" name="sel1" value="b">B. <a> 2 &times; 3 &times; 8</a></label><br><label><input type="radio" name="sel1" value="c">C. <a> 2 &times; 2 &times; 3 &times; 4</a></label><br><label><input type="radio" name="sel1" value="d">D. <a> 2 &times; 2 &times; 2 &times; 2 &times; 3</a></label></p>
+						<p>2. Evaluate (20<sub>three</sub>)&sup2; &minus; (11<sub>three</sub>)&sup2; in base three.</a></label></p>
+						<p><label><input type="radio" name="sel2" value="a">A. <a> 101</a></label><br><label><input type="radio" name="sel2" value="b">B. <a> 121</a></label><br><label><input type="radio" name="sel2" value="c">C. <a> 202</a></label><br><label><input type="radio" name="sel2" value="d">D. <a> 2020</a></label></p>
+						<p>3. Evaluate log<sub>10</sub>5 &plus; log<sub>10</sub>20.</a></label></p>
+						<p><label><input type="radio" name="sel3" value="a">A. <a> 2</a></label><br><label><input type="radio" name="sel3" value="b">B. <a> 3</a></label><br><label><input type="radio" name="sel3" value="c">C. <a> 4</a></label><br><label><input type="radio" name="sel3" value="d">D. <a> 5</a></label></p>
+						<p>4. In a class of 80 students, every student studies Economics or Geography or both. If 65 students study Economics and 50 study Geography, how many study both subjects?</a></label></p>
+						<p><label><input type="radio" name="sel4" value="a">A. <a> 15</a></label><br><label><input type="radio" value= "b" name="sel4">B. <a> 30</a></label><br><label><input type="radio" name="sel4" value="c">C. <a> 35</a></label><br><label><input type="radio" value="d" name="sel4">D. <a> 45</a></label></p>
+						<p>5. If N varies directly as M and N &equals; 8 when M &equals; 20, find M when N &equals; 7.</a></label></p>
+						<p><label><input type="radio" name="sel5" value="a">A. <a> 13</a></label><br><label><input type="radio" value="b" name="sel5">B. <a> 15</a></label><br><label><input type="radio" value="c" name="sel5">C. <a> 17&frac12;</a></label><br><label><input type="radio" name="sel5" value="d">D. <a> 18&frac12;</a></label></p>
+						<p>6. Express 0.0462 in standard form.</a></label></p>
+						<p><label><input type="radio" name="sel6" value="a">A. <a>  0.462 &times; 10&#8315;&sup1;</a></label><br><label><input type="radio" name="sel6" value="b">B. <a> 0.462 &times; 10&#8315;&sup2;</a></label><br><label><input type="radio" name="sel6" value="c">C. <a> 4.62 &times; 10&#8315;&sup1;</a></label><br><label><input type="radio" name="sel6" value="d">D. <a> 4.62 &times; 10&#8315;&sup2;</a></label></p>
+						<p>7. In a bag of oranges, the ratio of the good ones to the bad ones is 5:4. If the number of bad oranges in the bag is 36, how many oranges are there altogether?</a></label></p>
+						<p><label><input type="radio" name="sel7" value="a">A. <a> 81</a></label><br><label><input type="radio" name="sel7" value="b">B. <a> 72</a></label><br><label><input type="radio" name="sel7" value="c">C. <a> 54</a></label><br><label><input type="radio" name="sel7" value="d">D. <a> 45</a></label></p>
+						<p>8. A boy estimated his transport fare for a journey as &#8358;190 instead of &#8358;200. Find the percentage error in his estimation.</a></label></p>
+						<p><label><input type="radio" name="sel8" value="a">A. <a> 95%</a></label><br><label><input type="radio" name="sel8" value="b">B. <a> 47.5%</a></label><br><label><input type="radio" name="sel8" value="c">C. <a> 5.26%</a></label><br><label><input type="radio" name="sel8" value="d">D. <a> 5%</a></label></p>
+						<p>9. Evaluate 5&frac25; &times; (&frac23;)&sup2; &divide; (1&frac12;)&#8315;&sup1;</a></label></p>
+						<p><label><input type="radio" name="sel9" value="a">A. <a> &#8312;/<sub>25</sub></a></label><br><label><input type="radio" name="sel9" value="b">B. <a> <sup>12</sup>/<sub>25</sub></a></label><br><label><input type="radio" name="sel9" value="c">C. <a> 3&frac35;</a></label><br><label><input type="radio" name="sel9" value="d">D. <a> 4&frac18;</a></label></p>
+						<p>10. The nth term of a sequence is 2&sup2;&#8319;&#8315;&sup1;. Which term of the sequence is 2&#8313;?</a></label></p>
+						<p><label><input type="radio" name="sel10" value="a">A. <a> 3rd</a></label><br><label><input type="radio" name="sel10" value="b">B. <a> 4th</a></label><br><label><input type="radio" name="sel10" value="c">C. <a> 5th</a></label><br><label><input type="radio" name="sel10" value="d">D. <a> 6th</a></label></p>
+					</div>
+					<div class="queSet">
+						<p>11. Evaluate &frac12; &plus; &frac34; of &frac25; &divide; 1&frac35;.</a></label></p>
+						<p><label><input type="radio" name="sel11" value="a">A. <a> <sup>15</sup>/<sub>16</sub></a></label><br><label><input type="radio" name="sel11" value="b">B. <a> <sup>11</sup>/<sub>16</sub></a></label><br><label><input type="radio" name="sel11" value="c">C. <a> <sup>49</sup>/<sub>50</sub></a></label><br><label><input type="radio" name="sel11" value="d">D. <a> 3&frac15;</a></label></p>
+						<p>12. A man is four times as old as his son. The difference between their ages is 36. Find the sum of their ages.</a></label></p>
+						<p><label><input type="radio" name="sel12" value="a">A. <a> 45 years</a></label><br><label><input type="radio" name="sel12" value="b">B. <a> 48 years</a></label><br><label><input type="radio" name="sel12" value="c">C. <a> 60 years</a></label><br><label><input type="radio" name="sel12" value="d">D. <a> 74 years</a></label></p>
+						<p>13. Given that y &equals; px &plus; q and y &equals; 5 when x &equals; 3, while y &equals; 4 when x &equals; 2, find the value of p and q.</a></label></p>
+						<p><label><input type="radio" name="sel13" value="a">A. <a> p &equals; 1, q &equals; 3</a></label><br><label><input type="radio" name="sel13" value="b">B. <a> p &equals; 1, q &equals; 2</a></label><br><label><input type="radio" name="sel13" value="c">C. <a> p &equals; -2, q &equals; 3</a></label><br><label><input type="radio" name="sel13" value="d">D. <a> p &equals; 3, q &equals; -2</a></label></p>
+						<p>14. Evaluate <sup>(x&sup2; &plus; x &minus; 2)</sup>/<sub>(2x&sup2; &plus; x &minus; 3)</sub> when x &equals; -1.</a></label></p>
+						<p><label><input type="radio" name="sel14" value="a">A. <a> -2</a></label><br><label><input type="radio" value= "b" name="sel14">B. <a> -1</a></label><br><label><input type="radio" name="sel14" value="c">C. <a> -&frac12;</a></label><br><label><input type="radio" value="d" name="sel14">D. <a> 1</a></label></p>
+						<p>15. Factorize 6x&sup2; &plus; 7x &minus; 20</a></label></p>
+						<p><label><input type="radio" name="sel15" value="a">A. <a> (6x &minus; 5)(x &plus; 4)</a></label><br><label><input type="radio" value="b" name="sel15">B. <a> 2(3x &minus; 5)(x &plus; 2)</a></label><br><label><input type="radio" value="c" name="sel15">C. <a> (3x &plus; 4)(2x &minus; 5)</a></label><br><label><input type="radio" name="sel15" value="d">D. <a> (3x &minus; 4)(2x &plus; 5)</a></label></p>
+						<p>16. Simplify <sup>(2x &minus; 1)</sup>/&#8323; &minus; <sup>(x &plus; 3)</sup>/&#8322;</a></label></p>
+						<p><label><input type="radio" name="sel16" value="a">A. <a>  <sup>(x &plus; 7)</sup>/&#8326;</a></label><br><label><input type="radio" name="sel16" value="b">B. <a> <sup>(x &plus; 8)</sup>/&#8326;</a></label><br><label><input type="radio" name="sel16" value="c">C. <a> <sup>(x &minus; 11)</sup>/&#8326;</a></label><br><label><input type="radio" name="sel16" value="d">D. <a> <sup>(x &minus; 4)</sup>/&#8326;</a></label></p>
+						<p>17. If <sup>(y &minus; 3)</sup>/&#8322; &lt; <sup>(2y &minus; 1)</sup>/&#8323;, which of the following is true?</a></label></p>
+						<p><label><input type="radio" name="sel17" value="a">A. <a> y &gt; 7</a></label><br><label><input type="radio" name="sel17" value="b">B. <a> y &lt; -7</a></label><br><label><input type="radio" name="sel17" value="c">C. <a> y &gt; -7</a></label><br><label><input type="radio" name="sel17" value="d">D. <a> y &lt; 7</a></label></p>
+						<p>18. If <sup>(4m &plus; 3n)</sup>/<sub>(4m &minus; 3n)</sub> &equals; <sup>5</sup>/&#8322;, find the ratio m:n.</a></label></p>
+						<p><label><input type="radio" name="sel18" value="a">A. <a> 7:4</a></label><br><label><input type="radio" name="sel18" value="b">B. <a> 4:3</a></label><br><label><input type="radio" name="sel18" value="c">C. <a> 3:4</a></label><br><label><input type="radio" name="sel18" value="d">D. <a> 4:7</a></label></p>
+						<p>19. The number line represents</a></label></p>
+						<p><label><input type="radio" name="sel19" value="a">A. <a> 0 &gt; x &ge; -7</a></label><br><label><input type="radio" name="sel19" value="b">B. <a> -7 &le; x &lt; -1</a></label><br><label><input type="radio" name="sel19" value="c">C. <a> -7 &lt; x &le; -1</a></label><br><label><input type="radio" name="sel19" value="d">D. <a> -7 &lt; x &lt; -1</a></label></p>
+						<p>20. If 2x&sup2; &plus; Kx &minus; 14 &equals; (x &plus; 2)(2x &minus; 7), find the value of K.</a></label></p>
+						<p><label><input type="radio" name="sel20" value="a">A. <a> -3</a></label><br><label><input type="radio" name="sel20" value="b">B. <a> 5</a></label><br><label><input type="radio" name="sel20" value="c">C. <a> 9</a></label><br><label><input type="radio" name="sel20" value="d">D. <a> 11</a></label></p>
+					</div>
+					<div class="queSet">
+						<p>21. Which of the following is not a quadratic expression?</a></label></p>
+						<p><label><input type="radio" name="sel21" value="a">A. <a> y &equals; 2x&sup2; &minus; 5x</a></label><br><label><input type="radio" name="sel21" value="b">B. <a> y &equals; x(x &minus; 5)</a></label><br><label><input type="radio" name="sel21" value="c">C. <a> y &equals; x&sup2; &minus; 5</a></label><br><label><input type="radio" name="sel21" value="d">D. <a> y &equals; 5(x &minus; 1)</a></label></p>
+						<p>22. The graph of the curve y &equals; 2x&sup2; &minus; 5x &minus; 1 and a straight line PQ were drawn to solve the equation 2x&sup2; &minus; 5x &plus; 2 &equals; 0. What is the equation of the line, PQ?</a></label></p>
+						<p><label><input type="radio" name="sel22" value="a">A. <a> y &equals; -1</a></label><br><label><input type="radio" name="sel22" value="b">B. <a> y &equals; 1</a></label><br><label><input type="radio" name="sel22" value="c">C. <a> y &equals; 3</a></label><br><label><input type="radio" name="sel22" value="d">D. <a> y &equals; -3</a></label></p>
+						<p>23. Subtract (-y &plus; 3x &plus; 5z) from (4y &minus; x &minus; 2z)</a></label></p>
+						<p><label><input type="radio" name="sel23" value="a">A. <a> 5y &minus; 4x &minus; 5z</a></label><br><label><input type="radio" value= "b" name="sel23">B. <a> 3y &plus; 2x &plus; 3z</a></label><br><label><input type="radio" name="sel23" value="c">C. <a> -5y &plus; 4x &plus; 7z</a></label><br><label><input type="radio" value="d" name="sel23">D. <a> 2y &minus; 5x &plus; 3z</a></label></p>
+						<p>24. If y &prop; &sup1;/<sub>&radic;x</sub> and x &equals; 16 when y &equals; 2, find x when y &equals; 24.</a></label></p>
+						<p><label><input type="radio" name="sel24" value="a">A. <a> <sup>1</sup>/<sub>9</sub></a></label><br><label><input type="radio" name="sel24" value="b">B. <a> &frac16;</a></label><br><label><input type="radio" name="sel24" value="c">C. <a> &frac13;</a></label><br><label><input type="radio" name="sel24" value="d">D. <a> &frac23;</a></label></p>
+						<p>25. If 2x:(x &plus; 1) &equals; 3:2, what is the value of x?</a></label></p>
+						<p><label><input type="radio" name="sel25" value="a">A. <a> &frac12;</a></label><br><label><input type="radio" value="b" name="sel25">B. <a> 1</a></label><br><label><input type="radio" value="c" name="sel25">C. <a> 1&frac12;</a></label><br><label><input type="radio" name="sel25" value="d">D. <a> 3</a></label></p>
+						<p>26. The bearing S40&deg;E is the same as</a></label></p>
+						<p><label><input type="radio" name="sel26" value="a">A. <a>  040&deg;</a></label><br><label><input type="radio" name="sel26" value="b">B. <a> 050&deg;</a></label><br><label><input type="radio" name="sel26" value="c">C. <a> 130&deg;</a></label><br><label><input type="radio" name="sel26" value="d">D. <a> 140&deg;</a></label></p>
+						<p>27. Given that sin p &equals; <sup>5</sup>/<sub>13</sub> where p is acute, find the value of cos p - tan p.</a></label></p>
+						<p><label><input type="radio" name="sel27" value="a">A. <a> <sup>79</sup>/<sub>156</sub></a></label><br><label><input type="radio" name="sel27" value="b">B. <a> <sup>85</sup>/<sub>156</sub></a></label><br><label><input type="radio" name="sel27" value="c">C. <a> <sup>7</sup>/<sub>13</sub></a></label><br><label><input type="radio" name="sel27" value="d">D. <a> <sup>8</sup>/<sub>13</sub></a></label></p>
+						<p>28. Three observation posts P, Q and R are such that Q is due east of P and R is due north of Q. If |PQ| &equals; 5 km and |PR| &equals; 10km, find |QR|.</a></label></p>
+						<p><label><input type="radio" name="sel28" value="a">A. <a> 5.0 km</a></label><br><label><input type="radio" name="sel28" value="b">B. <a> 7.5 km</a></label><br><label><input type="radio" name="sel28" value="c">C. <a> 7.6 km</a></label><br><label><input type="radio" name="sel28" value="d">D. <a> 8.7 km</a></label></p>
+						<p>29. Express 25&deg; 45&prime; in decimal (Hint: 1&deg; &equals; 60&prime;)</a></label></p>
+						<p><label><input type="radio" name="sel29" value="a">A. <a> 25.75&deg;</a></label><br><label><input type="radio" name="sel29" value="b">B. <a> 25.55&deg;</a></label><br><label><input type="radio" name="sel29" value="c">C. <a> 25.45&deg;</a></label><br><label><input type="radio" name="sel29" value="d">D. <a> 25.15&deg;</a></label></p>
+						<p>    A box contains 5 red, 3 green and 4 blue balls. A boy is allowed to take away two balls from the box. <em>Use this information to answer Questions <strong>30</strong> and <strong>31</strong></em>.</a></label></p>
+						<p>30. What is the probability that the two balls are red?</a></label></p>
+						<p><label><input type="radio" name="sel30" value="a">A. <a> <sup>5</sup>/<sub>33</sub></a></label><br><label><input type="radio" name="sel30" value="b">B. <a> <sup>5</sup>/<sub>36</sub></a></label><br><label><input type="radio" name="sel30" value="c">C. <a> <sup>103</sup>/<sub>132</sub></a></label><br><label><input type="radio" name="sel30" value="d">D. <a> <sup>31</sup>/<sub>36</sub></a></label></p>
+					</div>
+					<div class="queSet">
+						<p>31. What is the probability that one is green and the other is blue?</a></label></p>
+						<p><label><input type="radio" name="sel31" value="a">A. <a> <sup>2</sup>/<sub>11</sub></a></label><br><label><input type="radio" name="sel31" value="b">B. <a> <sup>5</sup>/<sub>12</sub></a></label><br><label><input type="radio" name="sel31" value="c">C. <a> <sup>8</sup>/<sub>12</sub></a></label><br><label><input type="radio" name="sel31" value="d">D. <a> <sup>7</sup>/<sub>11</sub></a></label></p>
+						<p>32. If the probability that an event will occur is p and the probability that it will not occur is q, which of the following is true?</a></label></p>
+						<p><label><input type="radio" name="sel32" value="a">A. <a> p &minus; q &equals; 1</a></label><br><label><input type="radio" name="sel32" value="b">B. <a> p &minus; q &equals; 0</a></label><br><label><input type="radio" name="sel32" value="c">C. <a> p &plus; q &equals; 1</a></label><br><label><input type="radio" name="sel32" value="d">D. <a> p &plus; q &equals; 0</a></label></p>
+						<p>    The histogram shows the distribution of a group of students according to their ages. <em>Use the information to answer Questions <strong>33</strong> to <strong>35</strong></em>.</a></label></p>
+						<p>33. What is the range of their ages?</a></label></p>
+						<p><label><input type="radio" name="sel33" value="a">A. <a> 14 years</a></label><br><label><input type="radio" name="sel33" value="b">B. <a> 20 years</a></label><br><label><input type="radio" name="sel33" value="c">C. <a> 30.5 years</a></label><br><label><input type="radio" name="sel33" value="d">D. <a> 31 years</a></label></p>
+						<p>34. What is the mode?</a></label></p>
+						<p><label><input type="radio" name="sel34" value="a">A. <a> 22.5 years</a></label><br><label><input type="radio" value= "b" name="sel34">B. <a> 23.0 years</a></label><br><label><input type="radio" name="sel34" value="c">C. <a> 24.0 years</a></label><br><label><input type="radio" value="d" name="sel34">D. <a> 24.5 years</a></label></p>
+						<p>35. How many students are there in the group?</a></label></p>
+						<p><label><input type="radio" name="sel35" value="a">A. <a> 25</a></label><br><label><input type="radio" value="b" name="sel35">B. <a> 30</a></label><br><label><input type="radio" value="c" name="sel35">C. <a> 52</a></label><br><label><input type="radio" name="sel35" value="d">D. <a> 55</a></label></p>
+						<p>36. Which of the following is not the size of an exterior angle of a regular polygon?</a></label></p>
+						<p><label><input type="radio" name="sel36" value="a">A. <a>  15&deg;</a></label><br><label><input type="radio" name="sel36" value="b">B. <a> 18&deg;</a></label><br><label><input type="radio" name="sel36" value="c">C. <a> 20&deg;</a></label><br><label><input type="radio" name="sel36" value="d">D. <a> 21&deg;</a></label></p>
+						<p>37. In the diagram, PQR is a triangle, |PQ| &equals; |PR|, |PS| &equals; |SQ| and PRS &equals; 50&deg;. What is the size of &ang;PSQ?</a></label></p>
+						<p><label><input type="radio" name="sel37" value="a">A. <a> 75&deg;</a></label><br><label><input type="radio" name="sel37" value="b">B. <a> 80&deg;</a></label><br><label><input type="radio" name="sel37" value="c">C. <a> 85&deg;</a></label><br><label><input type="radio" name="sel37" value="d">D. <a> 95&deg;</a></label></p>
+						<p>38. PQRS is a rhombus of side 16 cm. The diagonal |QS| &equals; 20 cm. Calculate, correct to the nearest degree, &ang;PQR.</a></label></p>
+						<p><label><input type="radio" name="sel38" value="a">A. <a> 51&deg;</a></label><br><label><input type="radio" name="sel38" value="b">B. <a> 64&deg;</a></label><br><label><input type="radio" name="sel38" value="c">C. <a> 77&deg;</a></label><br><label><input type="radio" name="sel38" value="d">D. <a> 103&deg;</a></label></p>
+						<p>39. In the diagram, PQ is a diameter of the circle and &ang;PRS &equals; 58&deg;. Find &ang;STQ.</a></label></p>
+						<p><label><input type="radio" name="sel39" value="a">A. <a> 29&deg;</a></label><br><label><input type="radio" name="sel39" value="b">B. <a> 32&deg;</a></label><br><label><input type="radio" name="sel39" value="c">C. <a> 42&deg;</a></label><br><label><input type="radio" name="sel39" value="d">D. <a> 53&deg;</a></label></p>
+						<p>40. Which of the following pairs of triangles is/are similar?</a></label></p>
+						<p><label><input type="radio" name="sel40" value="a">A. <a> II only</a></label><br><label><input type="radio" name="sel40" value="b">B. <a> III only</a></label><br><label><input type="radio" name="sel40" value="c">C. <a> I and III only</a></label><br><label><input type="radio" name="sel40" value="d">D. <a> II and III only</a></label></p>
+					</div>
+					<div class="queSet">
+						<p>41. In the diagram, O is the centre of the circle. Reflex angle XOY &equals; 210&deg; and the length of the minor arc is 5.5 m. Find, correct to the nearest metre, the length of the major arc.</a></label></p>
+						<p><label><input type="radio" name="sel41" value="a">A. <a> 8 m</a></label><br><label><input type="radio" name="sel41" value="b">B. <a> 9 m</a></label><br><label><input type="radio" name="sel41" value="c">C. <a> 10 m</a></label><br><label><input type="radio" name="sel41" value="d">D. <a> 13 m</a></label></p>
+						<p>42. A right pyramid is on a square base of side 4 cm. The slanting side of the pyramid is 2&radic;3 cm. Calculate the volume of the pyramid.</a></label></p>
+						<p><label><input type="radio" name="sel42" value="a">A. <a> 5&frac13; cm&sup3;</a></label><br><label><input type="radio" name="sel42" value="b">B. <a> 10&frac23; cm&sup3;</a></label><br><label><input type="radio" name="sel42" value="c">C. <a> 16 cm&sup3;</a></label><br><label><input type="radio" name="sel42" value="d">D. <a> 32 cm&sup3;</a></label></p>
+						<p>43. The height of a right circular cone is 4 cm. The radius of its base is 3 cm. Find its curved surface area.</a></label></p>
+						<p><label><input type="radio" name="sel43" value="a">A. <a> 9&pi; cm&sup2;</a></label><br><label><input type="radio" name="sel43" value="b">B. <a> 15&pi; cm&sup2;</a></label><br><label><input type="radio" name="sel43" value="c">C. <a> 16&pi; cm&sup2;</a></label><br><label><input type="radio" name="sel43" value="d">D. <a> 20&pi; cm&sup2;</a></label></p>
+						<p>44. A chord of length 30 cm is 8 cm away from the center of the circle. What is the radius of the circle?</a></label></p>
+						<p><label><input type="radio" name="sel44" value="a">A. <a> 16 cm</a></label><br><label><input type="radio" value= "b" name="sel44">B. <a> 17 cm</a></label><br><label><input type="radio" name="sel44" value="c">C. <a> 18 cm</a></label><br><label><input type="radio" value="d" name="sel44">D. <a> 20 cm</a></label></p>
+						<p>45. A sector of a circle, radius 14cm, subtends an angle of 135&deg; at the centre of the circle. What is the perimeter of the sector? [ Take &pi; &equals; <sup>22</sup>/&#8327; ]</a></label></p>
+						<p><label><input type="radio" name="sel45" value="a">A. <a> 47 cm</a></label><br><label><input type="radio" value="b" name="sel45">B. <a> 61 cm</a></label><br><label><input type="radio" value="c" name="sel45">C. <a> 88 cm</a></label><br><label><input type="radio" name="sel45" value="d">D. <a> 231 cm</a></label></p>
+						<p>46. In the diagram, MN&parallel;PQ, |LM| &equals; 3 cm and |LP| &equals; 4 cm. If the area of &#8710;LMN is 18 cm&sup2;, find the area of quadilateral MPQN.</a></label></p>
+						<p><label><input type="radio" name="sel46" value="a">A. <a>  3 cm&sup2;</a></label><br><label><input type="radio" name="sel46" value="b">B. <a> 6 cm&sup2;</a></label><br><label><input type="radio" name="sel46" value="c">C. <a> 14 cm&sup2;</a></label><br><label><input type="radio" name="sel46" value="d">D. <a> 24 cm&sup2;</a></label></p>
+						<p>The diagram shows a triangular prism of length 7 cm. The right-angled triangle PQR is a cross-section of the prism, |PR| &equals; 5 cm and |RQ| &equals; 3 cm. <em>Use the information to answer Questions <strong>47</strong> and <strong>48</strong></em>.</a></label></p>
+						<p>47. What is the area of the cross-section?</a></label></p>
+						<p><label><input type="radio" name="sel47" value="a">A. <a> 4 cm&sup2;</a></label><br><label><input type="radio" name="sel47" value="b">B. <a> 6 cm&sup2;</a></label><br><label><input type="radio" name="sel47" value="c">C. <a> 15 cm&sup2;</a></label><br><label><input type="radio" name="sel47" value="d">D. <a> 20 cm&sup2;</a></label></p>
+						<p>48. What is the volume of the prism?</a></label></p>
+						<p><label><input type="radio" name="sel48" value="a">A. <a> 28 cm&sup3;</a></label><br><label><input type="radio" name="sel48" value="b">B. <a> 42 cm&sup3;</a></label><br><label><input type="radio" name="sel48" value="c">C. <a> 70 cm&sup3;</a></label><br><label><input type="radio" name="sel48" value="d">D. <a> 48 cm&sup3;</a></label></p>
+						<p>49. A solid cylinder of radius 7 cm is 10 cm long. Find its total surface area.</a></label></p>
+						<p><label><input type="radio" name="sel49" value="a">A. <a> 70&pi; cm&sup2;</a></label><br><label><input type="radio" name="sel49" value="b">B. <a> 189&pi; cm&sup2;</a></label><br><label><input type="radio" name="sel49" value="c">C. <a> 210&pi; cm&sup2;</a></label><br><label><input type="radio" name="sel49" value="d">D. <a> 238&pi; cm&sup2;</a></label></p>
+						<p>50. PQRS is a trapezium in which |PS| &equals; 9 cm, |QR| &equals; 15 cm, |PQ| &equals; 2&radic;3 cm, &ang;QRS &equals; 30&deg;. Calculate the area of the trapezium.</a></label></p>
+						<p><label><input type="radio" name="sel50" value="a">A. <a> 24&radic;3 cm&sup2;</a></label><br><label><input type="radio" name="sel50" value="b">B. <a> 36&radic;3 cm&sup2;</a></label><br><label><input type="radio" name="sel50" value="c">C. <a> 42&radic;3 cm&sup2;</a></label><br><label><input type="radio" name="sel50" value="d">D. <a> 72&radic;3 cm&sup2;</a></label></p>
+						<p>&nbsp;</p>
+        			</div>
+        		</div>
+            </div><br>
+            <div style="margin-top: 30%" id="navBtns">
+                <div align="center">
+                    <button onclick="showPreSet()" id="previous">Previous</button>
+                    <button id="submit" onclick = "displayResults(answersMTH2001,50,event)">Submit</button>
+                    <button onclick="showNextSet(event);" id="start_next">Next</button>
+                </div>
+            </div>
+        </div><p>&nbsp;</p>
+        <div id="resultSheet">
+            <table align="center" style="text-align: left; width: 100%;" cellpadding="10" border="1" bgcolor="#eaeaea" id="organicStructures">
+                <caption style=" font-weight: bolder;">MY PERFORMANCE</caption>
+                <tbody>
+                    <tr><td>Subject:</td><td style="text-align: center" id="subPer"></td></tr>
+                    <tr><td>Number of questions:</td><td style="text-align: center" id="nq"></td></tr>
+                    <tr><td>Number of questions attempted:</td><td style="text-align: center" id="aq"></td></tr>
+                    <tr><td>Time spent:</td><td style="text-align: center" id="ts"></td></tr>
+                    <tr><td>Average Time spent per question:</td><td style="text-align: center" id="tspq"></td></tr>
+                    <tr><td>Correct answers of attempted questions:</td><td style="text-align: center" id="caoaq"></td></tr>
+                    <tr><td>Percentage score for questions attempted:</td><td style="text-align: center" id="psfaq"></td></tr>
+                    <tr><td>Correct answers of all questions:</td><td style="text-align: center" id="ocaoaq"></td></tr>
+                    <tr style="background-color: green"><td style="color: white;">Overall percentage score</td><td style="color: white; text-align: center;" id="ops"></td></tr>
+                </tbody>
+            </table><br>
+            <div align="center">
+                <a id="sc" onclick="showScript(answersMTH2001)">See Corrections</a>
+                <a id="tas" href="MonApp.html">Try another subject</a>
+                <a id="sr" href="">Share result</a>
+                <p>&nbsp;</p>
+            </div>
+            <p></p>
+        </div><p></p>
+        <div id="footer">
+            <p></p>
+            <center>Copyright &#169; 2023</center>
+            <a href='#top' id="backToTop"></a>
+            <p></p>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>

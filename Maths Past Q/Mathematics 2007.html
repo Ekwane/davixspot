@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+    <head>
+		<title>School manager</title>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+	</head>
+    <body onload="examiner(false)">
+		<audio id="welcomeAudio">
+		  <source src="../aud/start.ogg" type="audio/ogg">
+		  <source src="../aud/start.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="selectAudio">
+		  <source src="../aud/optionselect.ogg" type="audio/ogg">
+		  <source src="../aud/optionselect.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="stopAudio">
+		  <source src="../aud/stop.ogg" type="audio/ogg">
+		  <source src="../aud/stop.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="passedAudio">
+		  <source src="../aud/passed.ogg" type="audio/ogg">
+		  <source src="../aud/passed.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="selectAudio">
+		  <source src="../aud/failed.ogg" type="audio/ogg">
+		  <source src="../aud/failed.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="clickAudio">
+		  <source src="../aud/btnclick.ogg" type="audio/ogg">
+		  <source src="../aud/btnclick.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+        <div class="leftcolumnForMainPageHeader">
+			<div id = "mainPageHeader"><i class="fa fa-mortar-board fa-1x"></i>MonApp Study</div>
+			<a href="MonApp.html" class="fa fa-home" id="home"></a>
+		</div>
+        <div class="leftcolumn">
+            <div class="questionPaper">
+                <div id="stickyHeader">
+                    <div>
+                        <div style="display: inline-flex; width: 100%">
+                            <div id="pageHeader"><center>MATHEMATICS 2007</center></div><button id="startBtn" onclick="startExam(45)">Start</button>
+                        </div>
+                         <div id="time"> Time left: <label id="timeLeft">45 Mins</label> </div><div id="num">Num Ques.: 50</div>
+                    </div>
+                </div>
+                <div id="pages">
+        			<div class="queSet">
+						<center><strong>OBJECTIVE TEST<br></strong></center>
+						<p>1. Evaluate (111<sub>two</sub>)&sup2; and leave your answer in base 2.</a></label></p>
+						<p><label><input type="radio" name="sel1" value="a">A. <a> 111001<sub>two</sub></a></label><br><label><input type="radio" name="sel1" value="b">B. <a> 110001<sub>two</sub></a></label><br><label><input type="radio" name="sel1" value="c">C. <a> 101001<sub>two</sub></a></label><br><label><input type="radio" name="sel1" value="d">D. <a> 10010<sub>two</sub></a></label></p>
+						<p>2. Find the LCM of 2&sup3; &times; 3 &times; 5&sup2;, 2 &times; 3&sup2; &times; 5 and 2&sup3; &times; 3&sup3; &times; 5.</a></label></p>
+						<p><label><input type="radio" name="sel2" value="a">A. <a> 2&sup2; &times; 3&sup3; &times; 5&sup2;</a></label><br><label><input type="radio" name="sel2" value="b">B. <a> 2&sup3; &times; 3&sup3; &times; 5</a></label><br><label><input type="radio" name="sel2" value="c">C. <a> 2&sup2; &times; 3&sup2; &times; 5&sup2;</a></label><br><label><input type="radio" name="sel2" value="d">D. <a> 2&sup3; &times; 3&sup3; &times; 5&sup2;</a></label></p>
+						<p>3. Simplify (0.3 &times; 10&#8309;) &divide; (0.4 &times; 10&#8311;), leaving your answer in the standard form.</a></label></p>
+						<p><label><input type="radio" name="sel3" value="a">A. <a> 7.5 &times; 10&#8315;&#8308;</a></label><br><label><input type="radio" name="sel3" value="b">B. <a> 7.5 &times; 10&#8315;<sup>3</sup></a></label><br><label><input type="radio" name="sel3" value="c">C. <a> 7.5 &times; 10&#8315;<sup>2</sup></a></label><br><label><input type="radio" name="sel3" value="d">D. <a> 7.5 &times; 10&#8315;<sup>1</sup></a></label></p>
+						<p>4. If p &prop; <sup>1</sup>/<sub>q</sub>, which of the following is <strong>true</strong>?</a></label></p>
+						<p><label><input type="radio" name="sel4" value="a">A. <a> q &prop; p&sup2;</a></label><br><label><input type="radio" value= "b" name="sel4">B. <a> q &prop; <sup>1</sup>/<sub>p&sup2;</sub></a></label><br><label><input type="radio" name="sel4" value="c">C. <a> q &prop; &radic;p</a></label><br><label><input type="radio" value="d" name="sel4">D. <a> q &prop; <sup>1</sup>/<sub>p</sub></a></label></p>
+						<p>5. Simplify 3&radic;45 &minus; 12&radic;5 &plus; 16&radic;20, leaving your answer in surd form.</a></label></p>
+						<p><label><input type="radio" name="sel5" value="a">A. <a> 29&radic;5</a></label><br><label><input type="radio" value="b" name="sel5">B. <a> 14&radic;15</a></label><br><label><input type="radio" value="c" name="sel5">C. <a> 12&radic;15</a></label><br><label><input type="radio" name="sel5" value="d">D. <a> 11&radic;5</a></label></p>
+						<p>6. Which of the following statements is <strong>true</strong> for the set P &equals; {-3.2 &le; x &lt; 5} where x is an integer?</a></label></p>
+						<p><label><input type="radio" name="sel6" value="a">A. <a>  Least value of x is -3.2</a></label><br><label><input type="radio" name="sel6" value="b">B. <a> Least value of x is -3</a></label><br><label><input type="radio" name="sel6" value="c">C. <a> Greatest value of x is 4.9</a></label><br><label><input type="radio" name="sel6" value="d">D. <a> Greatest value of x is 5</a></label></p>
+						<p>7. Simplify: <sup>3x&sup3;</sup>/<sub>(3x)&sup3;</sub></a></label></p>
+						<p><label><input type="radio" name="sel7" value="a">A. <a> 1</a></label><br><label><input type="radio" name="sel7" value="b">B. <a> &frac13;</a></label><br><label><input type="radio" name="sel7" value="c">C. <a> <sup>1</sup>/&#8329;</a></label><br><label><input type="radio" name="sel7" value="d">D. <a> <sup>1</sup>/<sub>27</sub></a></label></p>
+						<p>8. &#8358;140,000 is shared between Abu, Kayode and Uche. Abu has twice as much as Kayode and Kayode has twice as much as Uche. What is Kayode's share?</a></label></p>
+						<p><label><input type="radio" name="sel8" value="a">A. <a> &#8358;80,000</a></label><br><label><input type="radio" name="sel8" value="b">B. <a> &#8358;40,000</a></label><br><label><input type="radio" name="sel8" value="c">C. <a> &#8358;20,000</a></label><br><label><input type="radio" name="sel8" value="d">D. <a> &#8358;10,000</a></label></p>
+						<p>9. I am x years old and my brother is 3 years older. How old was my brother last year?</a></label></p>
+						<p><label><input type="radio" name="sel9" value="a">A. <a> (x &minus; 4)years</a></label><br><label><input type="radio" name="sel9" value="b">B. <a> (x &plus; 2)years</a></label><br><label><input type="radio" name="sel9" value="c">C. <a> (3x &minus; 1)years</a></label><br><label><input type="radio" name="sel9" value="d">D. <a> (3x &plus; 1)years</a></label></p>
+						<p>10. For what value of x is the expression <sup>(2x &minus; 1)</sup>/<sub>(x &plus; 3)</sub> <strong>not</strong> defined?</a></label></p>
+						<p><label><input type="radio" name="sel10" value="a">A. <a> 3</a></label><br><label><input type="radio" name="sel10" value="b">B. <a> 2</a></label><br><label><input type="radio" name="sel10" value="c">C. <a> &frac12;</a></label><br><label><input type="radio" name="sel10" value="d">D. <a> -3</a></label></p>
+					</div>
+					<div class="queSet">
+						<p>11. If x &equals; 3, y &equals; 2 and z &equals; 4, what is the value of 3x&sup2; &minus; 2y &plus; z?</a></label></p>
+						<p><label><input type="radio" name="sel11" value="a">A. <a> 17</a></label><br><label><input type="radio" name="sel11" value="b">B. <a> 27</a></label><br><label><input type="radio" name="sel11" value="c">C. <a> 35</a></label><br><label><input type="radio" name="sel11" value="d">D. <a> 71</a></label></p>
+						<p>12. Solve the simultaneous equations: x &plus; y &equals; 2 and 3x &minus; 2y &equals; 1</a></label></p>
+						<p><label><input type="radio" name="sel12" value="a">A. <a> x &equals; 2 and y &equals; 1</a></label><br><label><input type="radio" name="sel12" value="b">B. <a> x &equals; 1 and y &equals; 1</a></label><br><label><input type="radio" name="sel12" value="c">C. <a> x &equals; 1 and y &equals; 2</a></label><br><label><input type="radio" name="sel12" value="d">D. <a> x &equals; -1 and y &equals; 1</a></label></p>
+						<p>13. If 8<sup>x</sup>&#8314;&sup1; &equals; &frac14; find x.</a></label></p>
+						<p><label><input type="radio" name="sel13" value="a">A. <a> &#8315;&#8309;/&#8323;</a></label><br><label><input type="radio" name="sel13" value="b">B. <a> -1</a></label><br><label><input type="radio" name="sel13" value="c">C. <a> -&frac13;</a></label><br><label><input type="radio" name="sel13" value="d">D. <a> &frac13;</a></label></p>
+						<p>14. The area of a square field is 110.25m&sup2;. Find the cost of fencing it round at &#8358;75.00 per metre.</a></label></p>
+						<p><label><input type="radio" name="sel14" value="a">A. <a> &#8358;1,575.00</a></label><br><label><input type="radio" value= "b" name="sel14">B. <a> &#8358;3,150.00</a></label><br><label><input type="radio" name="sel14" value="c">C. <a> &#8358;4,734.30</a></label><br><label><input type="radio" value="d" name="sel14">D. <a> &#8358;8268.75</a></label></p>
+						<p>15. A chord of length 6cm is drawn in a circle of radius 5cm. Find the distance of the chord from the centre of the circle.</a></label></p>
+						<p><label><input type="radio" name="sel15" value="a">A. <a> 2.5cm</a></label><br><label><input type="radio" value="b" name="sel15">B. <a> 3.0cm</a></label><br><label><input type="radio" value="c" name="sel15">C. <a> 3.5cm</a></label><br><label><input type="radio" name="sel15" value="d">D. <a> 4.0cm</a></label></p>
+						<p>16. </a></label></p>
+						<p><label><input type="radio" name="sel16" value="a">A. <a>  672 cm</a></label><br><label><input type="radio" name="sel16" value="b">B. <a> 1056 cm</a></label><br><label><input type="radio" name="sel16" value="c">C. <a> 2112 cm</a></label><br><label><input type="radio" name="sel16" value="d">D. <a> 4224 cm</a></label></p>
+						<p>17. Calculate the perpendicular distance between the parallel sides.</a></label></p>
+						<p><label><input type="radio" name="sel17" value="a">A. <a> 3.35cm</a></label><br><label><input type="radio" name="sel17" value="b">B. <a> 3.72cm</a></label><br><label><input type="radio" name="sel17" value="c">C. <a> 4.50cm</a></label><br><label><input type="radio" name="sel17" value="d">D. <a> 4.62cm</a></label></p>
+						<p>18. Calculate, correct to the nearest cm&sup2;, the area of the trapezium. [ Take &pi; &equals; <sup>22</sup>/&#8327; ]</a></label></p>
+						<p><label><input type="radio" name="sel18" value="a">A. <a> 27 cm&sup2;</a></label><br><label><input type="radio" name="sel18" value="b">B. <a> 30 cm&sup2;</a></label><br><label><input type="radio" name="sel18" value="c">C. <a> 36 cm&sup2;</a></label><br><label><input type="radio" name="sel18" value="d">D. <a> 37 cm&sup2;</a></label></p>
+						<p>19. In the diagram, |TP| &equals; 12cm and it is 6cm from O, the centre of the circle. Calculate &ang;TOP.</a></label></p>
+						<p><label><input type="radio" name="sel19" value="a">A. <a> 120&deg;</a></label><br><label><input type="radio" name="sel19" value="b">B. <a> 90&deg;</a></label><br><label><input type="radio" name="sel19" value="c">C. <a> 60&deg;</a></label><br><label><input type="radio" name="sel19" value="d">D. <a> 45&deg;</a></label></p>
+						<p>20. The interior angles of a pentagon are (2<sup>x</sup> &plus; 5)&deg;, (x &plus; 20)&deg;, x&deg;, (3x &minus; 20)&deg; and (x &plus; 15)&deg;. Find the value of x.</a></label></p>
+						<p><label><input type="radio" name="sel20" value="a">A. <a> 80&deg;</a></label><br><label><input type="radio" name="sel20" value="b">B. <a> 70&deg;</a></label><br><label><input type="radio" name="sel20" value="c">C. <a> 65&deg;</a></label><br><label><input type="radio" name="sel20" value="d">D. <a> 40&deg;</a></label></p>
+					</div>
+					<div class="queSet">
+						<p>21. In the diagram, IG is parallel to JE, JEF &equals; 120&deg; and FHG &equals; 130&deg;. Find the angle marked <em>t</em>.</a></label></p>
+						<p><label><input type="radio" name="sel21" value="a">A. <a> 40&deg;</a></label><br><label><input type="radio" name="sel21" value="b">B. <a> 70&deg;</a></label><br><label><input type="radio" name="sel21" value="c">C. <a> 80&deg;</a></label><br><label><input type="radio" name="sel21" value="d">D. <a> 100&deg;</a></label></p>
+						<p>22. If M and N are two fixed points in a plane, find the locus L &equals; {P : PM &equals; PN}.</a></label></p>
+						<p><label><input type="radio" name="sel22" value="a">A. <a> A line equal to MN</a></label><br><label><input type="radio" name="sel22" value="b">B. <a> A line parallel to MN</a></label><br><label><input type="radio" name="sel22" value="c">C. <a> Perpendicular bisector of MN</a></label><br><label><input type="radio" name="sel22" value="d">D. <a> A circle centre P, radius MN</a></label></p>
+						<p>23. Find the value of x in the diagram.</a></label></p>
+						<p><label><input type="radio" name="sel23" value="a">A. <a> 50&deg;</a></label><br><label><input type="radio" value= "b" name="sel23">B. <a> 30&deg;</a></label><br><label><input type="radio" name="sel23" value="c">C. <a> 22&deg;</a></label><br><label><input type="radio" value="d" name="sel23">D. <a> 17&deg;</a></label></p>
+						<p>24. In the diagram, |SQ| &equals; 4cm, |PT| &equals; 7cm, |TR| &equals; 5cm and ST&parallel;OR. If |SP| &equals; x cm, find the value of x.</a></label></p>
+						<p><label><input type="radio" name="sel24" value="a">A. <a> 5.6</a></label><br><label><input type="radio" name="sel24" value="b">B. <a> 6.5</a></label><br><label><input type="radio" name="sel24" value="c">C. <a> 6.6</a></label><br><label><input type="radio" name="sel24" value="d">D. <a> 6.8</a></label></p>
+						<p>25. Given that sin 60&deg; &equals; <sup>&radic;3</sup>/&#8322; and cos 60&deg; &equals; &frac12;, evaluate: <sup>(1 &minus; sin 60&deg;)</sup>/<sub>(1 &plus; cos 60&deg;)</sub></a></label></p>
+						<p><label><input type="radio" name="sel25" value="a">A. <a> <sup>(2 &plus; &radic;3)</sup>/&#8323;</a></label><br><label><input type="radio" value="b" name="sel25">B. <a> <sup>(1 &minus; &radic;3)</sup>/&#8323;</a></label><br><label><input type="radio" value="c" name="sel25">C. <a> <sup>(1 &plus; &radic;3)</sup>/&#8323;</a></label><br><label><input type="radio" name="sel25" value="d">D. <a> <sup>(2 &minus; &radic;3)</sup>/&#8323;</a></label></p>
+						<p>    <em>Use the diagram below to answer <strong>26</strong> and <strong>27</strong></em>.</a></label></p>
+						<p>26. Find the bearing of X from Y.</a></label></p>
+						<p><label><input type="radio" name="sel26" value="a">A. <a>  300&deg;</a></label><br><label><input type="radio" name="sel26" value="b">B. <a> 240&deg;</a></label><br><label><input type="radio" name="sel26" value="c">C. <a> 120&deg;</a></label><br><label><input type="radio" name="sel26" value="d">D. <a> 60&deg;</a></label></p>
+						<p>27. If |XY| &equals; 50m, how far east of X is Y?</a></label></p>
+						<p><label><input type="radio" name="sel27" value="a">A. <a> 25.5m</a></label><br><label><input type="radio" name="sel27" value="b">B. <a> 40.6m</a></label><br><label><input type="radio" name="sel27" value="c">C. <a> 40.8m</a></label><br><label><input type="radio" name="sel27" value="d">D. <a> 43.3m</a></label></p>
+						<p>28. In an examination, Kofi scored x% in Physics, 50% in Chemistry and 70% in Biology. If his mean score for the three subjects was 55%, find x.</a></label></p>
+						<p><label><input type="radio" name="sel28" value="a">A. <a> 40</a></label><br><label><input type="radio" name="sel28" value="b">B. <a> 45</a></label><br><label><input type="radio" name="sel28" value="c">C. <a> 55</a></label><br><label><input type="radio" name="sel28" value="d">D. <a> 60</a></label></p>
+						<p>29. What is the median of the following scores: 22, 41, 35, 63, 82, 74?</a></label></p>
+						<p><label><input type="radio" name="sel29" value="a">A. <a> 82</a></label><br><label><input type="radio" name="sel29" value="b">B. <a> 52</a></label><br><label><input type="radio" name="sel29" value="c">C. <a> 49</a></label><br><label><input type="radio" name="sel29" value="d">D. <a> 22</a></label></p>
+						<p>30. Express 2.7864 &times; 10&#8315;&sup3; to two significant figures.</a></label></p>
+						<p><label><input type="radio" name="sel30" value="a">A. <a> 0.28</a></label><br><label><input type="radio" name="sel30" value="b">B. <a> 0.27</a></label><br><label><input type="radio" name="sel30" value="c">C. <a> 0.0028</a></label><br><label><input type="radio" name="sel30" value="d">D. <a> 0.0027</a></label></p>
+					</div>
+					<div class="queSet">
+						<p>31. If 9&sup2;<sup>x</sup> &equals; &frac13;(27x), find x.</a></label></p>
+						<p><label><input type="radio" name="sel31" value="a">A. <a> 2</a></label><br><label><input type="radio" name="sel31" value="b">B. <a> 1</a></label><br><label><input type="radio" name="sel31" value="c">C. <a> -1</a></label><br><label><input type="radio" name="sel31" value="d">D. <a> -2</a></label></p>
+						<p>32. If 85% of x is &#8358;3,230, what is the value of x?</a></label></p>
+						<p><label><input type="radio" name="sel32" value="a">A. <a> &#8358;2,745.50</a></label><br><label><input type="radio" name="sel32" value="b">B. <a> &#8358;3,714.50</a></label><br><label><input type="radio" name="sel32" value="c">C. <a> &#8358;3,800.00</a></label><br><label><input type="radio" name="sel32" value="d">D. <a> &#8358;4,845.00</a></label></p>
+						<p>33. The capacity of a water tank is 1.800 litres. If the tank is in form of a cuboid with base 600cm by 150cm, find the height of the tank.</a></label></p>
+						<p><label><input type="radio" name="sel33" value="a">A. <a> 2 cm</a></label><br><label><input type="radio" name="sel33" value="b">B. <a> 20 cm</a></label><br><label><input type="radio" name="sel33" value="c">C. <a> 200 cm</a></label><br><label><input type="radio" name="sel33" value="d">D. <a> 2000 cm</a></label></p>
+						<p>34. An arc of a circle subtends an angle of 60&deg; at the centre. If the radius of the circle is 3 cm, find, in terms of &pi;, the length of the arc.</a></label></p>
+						<p><label><input type="radio" name="sel34" value="a">A. <a> &pi; cm</a></label><br><label><input type="radio" value= "b" name="sel34">B. <a> 2&pi; cm</a></label><br><label><input type="radio" name="sel34" value="c">C. <a> 3&pi; cm</a></label><br><label><input type="radio" value="d" name="sel34">D. <a> 6&pi; cm</a></label></p>
+						<p>35. Solve: <sup>(2x &plus; 1)</sup>/&#8326; &minus; <sup>(3x &minus; 1)</sup>/&#8324; &equals; 0.</a></label></p>
+						<p><label><input type="radio" name="sel35" value="a">A. <a> 1</a></label><br><label><input type="radio" value="b" name="sel35">B. <a> &frac15;</a></label><br><label><input type="radio" value="c" name="sel35">C. <a> -&frac15;</a></label><br><label><input type="radio" name="sel35" value="d">D. <a> -1</a></label></p>
+						<p>36. If x is a positive integer, list the values of x which satisfy the equations 3x &minus; 4 &lt; 6 and x &minus; 1 &gt; 0.</a></label></p>
+						<p><label><input type="radio" name="sel36" value="a">A. <a>  {1, 2, 3}</a></label><br><label><input type="radio" name="sel36" value="b">B. <a> {2, 3}</a></label><br><label><input type="radio" name="sel36" value="c">C. <a> {2, 3, 4}</a></label><br><label><input type="radio" name="sel36" value="d">D. <a> {2, 3, 4, 5}</a></label></p>
+						<p>37. If c and k are the roots of 6 &minus; x &minus; x&sup2; &equals; 0, find c &plus; k.</a></label></p>
+						<p><label><input type="radio" name="sel37" value="a">A. <a> 2</a></label><br><label><input type="radio" name="sel37" value="b">B. <a> 1</a></label><br><label><input type="radio" name="sel37" value="c">C. <a> -1</a></label><br><label><input type="radio" name="sel37" value="d">D. <a> -2</a></label></p>
+						<p>38. In the diagram, angle 200&deg; is subtended at the centre of the circle. Find the value of x.</a></label></p>
+						<p><label><input type="radio" name="sel38" value="a">A. <a> 30&deg;</a></label><br><label><input type="radio" name="sel38" value="b">B. <a> 50&deg;</a></label><br><label><input type="radio" name="sel38" value="c">C. <a> 80&deg;</a></label><br><label><input type="radio" name="sel38" value="d">D. <a> 100&deg;</a></label></p>
+						<p>39. Each of the interior angles of a regular polygon is 140&deg;. Calculate the sum of all the interior angles of the polygon.</a></label></p>
+						<p><label><input type="radio" name="sel39" value="a">A. <a> 1080&deg;</a></label><br><label><input type="radio" name="sel39" value="b">B. <a> 1260&deg;</a></label><br><label><input type="radio" name="sel39" value="c">C. <a> 1800&deg;</a></label><br><label><input type="radio" name="sel39" value="d">D. <a> 2160&deg;</a></label></p>
+						<p>40. A bucket holds 10 litres of water. How many buckets of water will fill a reservoir of size 8m &times; 7m &times; 5m? [ 1 litre &equals; 1000cm&sup3;]</a></label></p>
+						<p><label><input type="radio" name="sel40" value="a">A. <a> 28</a></label><br><label><input type="radio" name="sel40" value="b">B. <a> 280</a></label><br><label><input type="radio" name="sel40" value="c">C. <a> 2800</a></label><br><label><input type="radio" name="sel40" value="d">D. <a> 28000</a></label></p>
+					</div>
+					<div class="queSet">
+						<p>41. A box contains black, white and red identical balls. The probability of picking a black ball at random from the box is &sup3;/<sub>10</sub> and the probability of picking a white ball at random is &frac25;. If there are 30 balls in the box, how many of them are red?</a></label></p>
+						<p><label><input type="radio" name="sel41" value="a">A. <a> 3</a></label><br><label><input type="radio" name="sel41" value="b">B. <a> 7</a></label><br><label><input type="radio" name="sel41" value="c">C. <a> 9</a></label><br><label><input type="radio" name="sel41" value="d">D. <a> 12</a></label></p>
+						<p>    The pie chart shows the distribution of 4320 students who graduated from four Departments in a University. <em>Use the information to answer Questions <strong>42</strong> and <strong>43</strong></em>.</a></label></p>
+						<p>42. How many students graduated from the Science Department?</a></label></p>
+						<p><label><input type="radio" name="sel42" value="a">A. <a> 840</a></label><br><label><input type="radio" name="sel42" value="b">B. <a> 864</a></label><br><label><input type="radio" name="sel42" value="c">C. <a> 920</a></label><br><label><input type="radio" name="sel42" value="d">D. <a> 960</a></label></p>
+						<p>43. If a student is picked at random from the four Departments, what is the probability that he is not from the Education Department?</a></label></p>
+						<p><label><input type="radio" name="sel43" value="a">A. <a> &sup3;/<sub>10</sub></a></label><br><label><input type="radio" name="sel43" value="b">B. <a> &sup2;/&#8329;</a></label><br><label><input type="radio" name="sel43" value="c">C. <a> &#8309;/<sub>18</sub></a></label><br><label><input type="radio" name="sel43" value="d">D. <a> &#8311;/<sub>10</sub></a></label></p>
+						<p>44. Simplify: &frac12;&radic;32 &minus; &radic;18 &plus; &radic;2.</a></label></p>
+						<p><label><input type="radio" name="sel44" value="a">A. <a> 0</a></label><br><label><input type="radio" value= "b" name="sel44">B. <a> &radic;2</a></label><br><label><input type="radio" name="sel44" value="c">C. <a> 2&radic;2</a></label><br><label><input type="radio" value="d" name="sel44">D. <a> 4&radic;2</a></label></p>
+						<p>45. From the diagram, which of the following statements is/are <strong>correct</strong>?</a></label></p>
+						<p>
+							<ol>
+								<li><strong>I.</strong> XQ is a radius of a circle centre Q</li>
+								<li><strong>II.</strong> |XQ| &equals; |QY|</li>
+								<li><strong>III.</strong> |QX| &equals; |XY|</li>
+							</ol>
+						</a></label></p>
+						<p><label><input type="radio" name="sel45" value="a">A. <a> I only</a></label><br><label><input type="radio" value="b" name="sel45">B. <a> I and II only</a></label><br><label><input type="radio" value="c" name="sel45">C. <a> II and III only</a></label><br><label><input type="radio" name="sel45" value="d">D. <a> I, II and III</a></label></p>
+						<p>46. Find the value of x in the diagram.</a></label></p>
+						<p><label><input type="radio" name="sel46" value="a">A. <a>  50&deg;</a></label><br><label><input type="radio" name="sel46" value="b">B. <a> 60&deg;</a></label><br><label><input type="radio" name="sel46" value="c">C. <a> 70&deg;</a></label><br><label><input type="radio" name="sel46" value="d">D. <a> 80&deg;</a></label></p>
+						<p>47. The angles of a triangle are (x &plus; 10)&deg;, (2x &minus; 40)&deg; and (3x &minus; 90)&deg;. Which of the following accurately describes the triangle?</a></label></p>
+						<p><label><input type="radio" name="sel47" value="a">A. <a> It is a scalene triangle.</a></label><br><label><input type="radio" name="sel47" value="b">B. <a> It is a right angled isosceles triangle.</a></label><br><label><input type="radio" name="sel47" value="c">C. <a> It is an equilateral triangle.</a></label><br><label><input type="radio" name="sel47" value="d">D. <a> It is an isosceles triangle but, not right angled.</a></label></p>
+						<p>48. Which shaded region in the following diagram represents (P &xcup; Q) &xcap; R?</a></label></p>
+						<p><label><input type="radio" name="sel48" value="a">A. <a> </a></label><br><label><input type="radio" name="sel48" value="b">B. <a> </a></label><br><label><input type="radio" name="sel48" value="c">C. <a> </a></label><br><label><input type="radio" name="sel48" value="d">D. <a> </a></label></p>
+						<p>49. Simplify: (x &minus; 3y)&sup2; &minus; (x &plus; 3y)&sup2;</a></label></p>
+						<p><label><input type="radio" name="sel49" value="a">A. <a> 2(x &plus; 3y)</a></label><br><label><input type="radio" name="sel49" value="b">B. <a> (2x &minus; 3y)</a></label><br><label><input type="radio" name="sel49" value="c">C. <a> -12xy</a></label><br><label><input type="radio" name="sel49" value="d">D. <a> 6xy</a></label></p>
+						<p>50. Find the quadratic equation whose roots are -&frac12; and 3.</a></label></p>
+						<p><label><input type="radio" name="sel50" value="a">A. <a> 2x&sup2; &minus; 2x &plus; 3 &equals; 0</a></label><br><label><input type="radio" name="sel50" value="b">B. <a> 2x&sup2; &minus; 2x &minus; 3 &equals; 0</a></label><br><label><input type="radio" name="sel50" value="c">C. <a> 2x&sup2; &minus; 5x &plus; 3 &equals; 0</a></label><br><label><input type="radio" name="sel50" value="d">D. <a> 2x&sup2; &minus; 5x &minus; 3 &equals; 0</a></label></p>
+						<p>&nbsp;</p>
+        			</div>
+        		</div>
+            </div><br>
+            <div style="margin-top: 30%" id="navBtns">
+                <div align="center">
+                    <button onclick="showPreSet()" id="previous">Previous</button>
+                    <button id="submit" onclick = "displayResults(answersMTH2007,50,event)">Submit</button>
+                    <button onclick="showNextSet(event);" id="start_next">Next</button>
+                </div>
+            </div>
+        </div><p>&nbsp;</p>
+        <div id="resultSheet">
+            <table align="center" style="text-align: left; width: 100%;" cellpadding="10" border="1" bgcolor="#eaeaea" id="organicStructures">
+                <caption style=" font-weight: bolder;">MY PERFORMANCE</caption>
+                <tbody>
+                    <tr><td>Subject:</td><td style="text-align: center" id="subPer"></td></tr>
+                    <tr><td>Number of questions:</td><td style="text-align: center" id="nq"></td></tr>
+                    <tr><td>Number of questions attempted:</td><td style="text-align: center" id="aq"></td></tr>
+                    <tr><td>Time spent:</td><td style="text-align: center" id="ts"></td></tr>
+                    <tr><td>Average Time spent per question:</td><td style="text-align: center" id="tspq"></td></tr>
+                    <tr><td>Correct answers of attempted questions:</td><td style="text-align: center" id="caoaq"></td></tr>
+                    <tr><td>Percentage score for questions attempted:</td><td style="text-align: center" id="psfaq"></td></tr>
+                    <tr><td>Correct answers of all questions:</td><td style="text-align: center" id="ocaoaq"></td></tr>
+                    <tr style="background-color: green"><td style="color: white;">Overall percentage score</td><td style="color: white; text-align: center;" id="ops"></td></tr>
+                </tbody>
+            </table><br>
+            <div align="center">
+                <a id="sc" onclick="showScript(answersMTH2007)">See Corrections</a>
+                <a id="tas" href="MonApp.html">Try another subject</a>
+                <a id="sr" href="">Share result</a>
+                <p>&nbsp;</p>
+            </div>
+            <p></p>
+        </div><p></p>
+        <div id="footer">
+            <p></p>
+            <center>Copyright &#169; 2023</center>
+            <a href='#top' id="backToTop"></a>
+            <p></p>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    </body>
+</html>

@@ -1,0 +1,584 @@
+<!--
+	I created this home page to help users navigate through the webpages. I see that the footer alone won't be enough for navigation. This is just an idea of how I would want the homepage to be if at all I'm going to be needing it (other ideas are welcome). 
+-->
+<!doctype html>
+<html>
+    <head>
+        <title>School manager</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style-homepage.css" type="text/css">
+        <script src="../js/JQuery.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+        <audio id="welcomeAudio">
+		  <source src="../aud/start.ogg" type="audio/ogg">
+		  <source src="../aud/start.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+		<audio id="stopAudio">
+		  <source src="../aud/stop.ogg" type="audio/ogg">
+		  <source src="../aud/stop.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+    </head>	
+<body>
+		<!-- <div id="sideNav" style="
+		position: absolute; z-index: 4; background-color: red; border: 2px solid white; left:-1%; width: 0; height: auto; float: left; top:
+		0; overflow-x: hidden;">
+		<a style="position: relative; left:95%; cursor: pointer; color: white">X</a>
+			<ul>
+				<span>Dashboard<hr></span>
+				<li>Supplement questions<hr></li>
+				<li>NECO<hr></li>
+				<li>Jamb<hr></li>
+				<li>WASSCE<hr></li>
+				<li>Similar sites<hr></li>
+				<li>Store<hr></li>
+				<li><a onclick="javascript: window.open('calculators.html', 'calculator', 'height=300px, width=256px, location=no, left=700px, ')">Calculator</a><hr></li>
+				<li>Affiliate<hr></li>
+				<li>Contact<hr></li>
+				<li>Blog<hr></li>
+				<li>School manager</li>
+			</ul>
+		</div> -->
+		<div class="leftcolumnForMainPageHeader">
+			<div id = "mainPageHeader">MonApp Study</div>
+			<a class="fa fa-bars" id="home"></a>
+		</div>
+		<div class="wel_page">
+			<section id="page_d">
+				<center>Select a subject </center><br>
+				<center><input type="text" placeholder="Search Subject" onkeyup="search()" style="padding: 1% 5%; border: 1px solid blue; cursor: text;" id="filter"/></center>
+			</section><br/>
+			<div class="subjects" align="center">
+				<label for="maths_label"><a class="fa fa-superscript"> Mathematics</a>
+					<input type="radio" name="btn" id="maths_label" checked="true" />
+					<div class="sub">
+						<div id="maths"><p></p>
+							<span style="width: 100%">
+								<select style="padding: 5%; cursor: pointer; border: none; text-align: center;" id="mathsYear">
+									<option>Select year</option>
+									<option>Prototype1</option>
+									<option>Mathematics 2020</option>
+									<option>Mathematics 2019</option>
+									<option>Mathematics 2018</option>
+									<option>Mathematics 2017</option>
+									<option>Mathematics 2016</option>
+									<option>Mathematics 2015</option>
+									<option>Mathematics 2014</option>
+									<option>Mathematics 2013</option>
+									<option>Mathematics 2012</option>
+									<option>Mathematics 2011</option>
+									<option>Mathematics 2010</option>
+									<option>Mathematics 2009</option>
+									<option>Mathematics 2008</option>
+									<option>Mathematics 2007</option>
+									<option>Mathematics 2006</option>
+									<option>Mathematics 2005</option>
+									<option>Mathematics 2004</option>
+									<option>Mathematics 2003</option>
+									<option>Mathematics 2002</option>
+									<option>Mathematics 2001</option>
+									<option>Mathematics 2000</option>
+									<option>Mathematics 1999</option>
+									<option>Mathematics 1998</option>
+									<option>Mathematics 1997</option>
+									<option>Mathematics 1996</option>
+									<option>Mathematics 1995</option>
+									<option>Mathematics 1994</option>
+									<option>Mathematics 1993</option>
+									<option>Mathematics 1992</option>
+									<option>Mathematics 1991</option>
+									<option>Mathematics 1990</option>
+									<option>Mathematics 1989</option>
+									<option>Mathematics 1988</option>
+								</select><p></p>&nbsp;<a style="display: inline; padding: 5% 7%; border: none; background-color: #eaeaea; text-decoration: none" onclick="loadQues('mathsYear', event)">Start</a>
+							</span>
+						</div>
+					</div>
+				</label>
+				<label for="eng_label"><a class="fa fa-book"> English</a>
+					<input type="radio" name="btn" id="eng_label"/>
+					<div class="sub">
+						<div id="eng"><p></p>
+							<span style="width: 100%">
+								<select style="padding: 5%; cursor: pointer; border: none; text-align: center;" id="engYear">
+									<option>English 2021</option>
+									<option>English 2020</option>
+									<option>English 2019</option>
+									<option>English 2018</option>
+									<option>English 2017</option>
+									<option>English 2016</option>
+									<option>English 2015</option>
+									<option>English 2014</option>
+									<option>English 2013</option>
+									<option>English 2012</option>
+									<option>English 2011</option>
+									<option>English 2010</option>
+									<option>English 2009</option>
+									<option>English 2008</option>
+									<option>English 2007</option>
+									<option>English 2006</option>
+									<option>English 2005</option>
+									<option>English 2004</option>
+									<option>English 2003</option>
+									<option>English 2002</option>
+									<option>English 2001</option>
+									<option>English 2000</option>
+									<option>English 1999</option>
+									<option>English 1998</option>
+									<option>English 1997</option>
+									<option>English 1996</option>
+									<option>English 1995</option>
+									<option>English 1994</option>
+									<option>English 1993</option>
+									<option>English 1992</option>
+									<option>English 1991</option>
+									<option>English 1990</option>
+								</select><p></p>&nbsp;<a style="display: inline; padding: 5% 7%; border: none; background-color: #eaeaea; text-decoration: none" onclick="loadQues('engYear', event)">Start</a>
+							</span>
+						</div>
+					</div>
+				</label>
+				<label for="bio_label"><a class="fa fa-search"> Biology</a>
+					<input type="radio" name="btn" id="bio_label"/>
+					<div class="sub">
+						<div id="bio"><p></p>
+							<span style="width: 100%">
+								<select style="padding: 5%; cursor: pointer; border: none; text-align: center;" id="bioYear">
+									<option>Biology 2021</option>
+									<option>Biology 2020</option>
+									<option>Biology 2019</option>
+									<option>Biology 2018</option>
+									<option>Biology 2017</option>
+									<option>Biology 2016</option>
+									<option>Biology 2015</option>
+									<option>Biology 2014</option>
+									<option>Biology 2013</option>
+									<option>Biology 2012</option>
+									<option>Biology 2011</option>
+									<option>Biology 2010</option>
+									<option>Biology 2009</option>
+									<option>Biology 2008</option>
+									<option>Biology 2007</option>
+									<option>Biology 2006</option>
+									<option>Biology 2005</option>
+									<option>Biology 2004</option>
+									<option>Biology 2003</option>
+									<option>Biology 2002</option>
+									<option>Biology 2001</option>
+									<option>Biology 2000</option>
+									<option>Biology 1999</option>
+									<option>Biology 1998</option>
+									<option>Biology 1997</option>
+									<option>Biology 1996</option>
+									<option>Biology 1995</option>
+									<option>Biology 1994</option>
+									<option>Biology 1993</option>
+									<option>Biology 1992</option>
+									<option>Biology 1991</option>
+									<option>Biology 1990</option>
+									<option>Biology 1989</option>
+									<option>Biology 1988</option>
+								</select><p></p>&nbsp;<a style="display: inline; padding: 5% 7%; border: none; background-color: #eaeaea; text-decoration: none" onclick="loadQues('bioYear', event)">Start</a>
+							</span>
+						</div>
+					</div>
+				</label>
+				<label for="chem_label"><a class="fa fa-won"> Chemistry</a>
+					<input type="radio" name="btn" id="chem_label"/>	
+					<div class="sub">
+						<div id="chem"><p></p>
+							<span style="width: 100%">
+								<select style="padding: 5%; cursor: pointer; border: none; text-align: center;" id="chemYear">
+									<option>Chemistry 2021</option>
+									<option>Chemistry 2020</option>
+									<option>Chemistry 2019</option>
+									<option>Chemistry 2018</option>
+									<option>Chemistry 2017</option>
+									<option>Chemistry 2016</option>
+									<option>Chemistry 2015</option>
+									<option>Chemistry 2014</option>
+									<option>Chemistry 2013</option>
+									<option>Chemistry 2012</option>
+									<option>Chemistry 2011</option>
+									<option>Chemistry 2010</option>
+									<option>Chemistry 2009</option>
+									<option>Chemistry 2008</option>
+									<option>Chemistry 2007</option>
+									<option>Chemistry 2006</option>
+									<option>Chemistry 2005</option>
+									<option>Chemistry 2004</option>
+									<option>Chemistry 2003</option>
+									<option>Chemistry 2002</option>
+									<option>Chemistry 2001</option>
+									<option>Chemistry 2000</option>
+									<option>Chemistry 1999</option>
+									<option>Chemistry 1998</option>
+									<option>Chemistry 1997</option>
+									<option>Chemistry 1996</option>
+									<option>Chemistry 1995</option>
+									<option>Chemistry 1994</option>
+									<option>Chemistry 1993</option>
+									<option>Chemistry 1992</option>
+									<option>Chemistry 1991</option>
+									<option>Chemistry 1990</option>
+									<option>Chemistry 1989</option>
+									<option>Chemistry 1988</option>
+								</select><p></p>&nbsp;<a style="display: inline; padding: 5% 7%; border: none; background-color: #eaeaea; text-decoration: none" onclick="loadQues('chemYear', event)">Start</a>
+							</span>
+						</div>
+					</div>
+				</label>
+				<label for="acct_label"><a class="fa fa-won"> Accounting</a>
+					<input type="radio" name="btn" id="acct_label"/>	
+					<div class="sub">
+						<div id="acct"><p></p>
+							<span style="width: 100%">
+								<select style="padding: 5%; cursor: pointer; border: none; text-align: center;" id="acctYear">
+									<option>Accounting 2022</option>
+									<option>Accounting 2021</option>
+									<option>Accounting 2020</option>
+									<option>Accounting 2019</option>
+									<option>Accounting 2018</option>
+									<option>Accounting 2017</option>
+									<option>Accounting 2016</option>
+									<option>Accounting 2015</option>
+									<option>Accounting 2014</option>
+									<option>Accounting 2013</option>
+									<option>Accounting 2012</option>
+									<option>Accounting 2011</option>
+									<option>Accounting 2010</option>
+									<option>Accounting 2009</option>
+									<option>Accounting 2008</option>
+									<option>Accounting 2007</option>
+									<option>Accounting 2006</option>
+									<option>Accounting 2005</option>
+									<option>Accounting 2004</option>
+									<option>Accounting 2003</option>
+									<option>Accounting 2002</option>
+									<option>Accounting 2001</option>
+									<option>Accounting 2000</option>
+									<option>Accounting 1999</option>
+									<option>Accounting 1998</option>
+									<option>Accounting 1997</option>
+									<option>Accounting 1996</option>
+									<option>Accounting 1995</option>
+									<option>Accounting 1994</option>
+									<option>Accounting 1993</option>
+									<option>Accounting 1992</option>
+									<option>Accounting 1991</option>
+									<option>Accounting 1990</option>
+									<option>Accounting 1989</option>
+									<option>Accounting 1988</option>
+								</select><p></p>&nbsp;<a style="display: inline; padding: 5% 7%; border: none; background-color: #eaeaea; text-decoration: none" onclick="loadQues('acctYear', event)">Start</a>
+							</span>
+						</div>
+					</div>
+				</label>
+				<label for="comm_label"><a class="fa fa-won"> Commerce</a>
+					<input type="radio" name="btn" id="comm_label"/>	
+					<div class="sub">
+						<div id="comm"><p></p>
+							<span style="width: 100%">
+								<select style="padding: 5%; cursor: pointer; border: none; text-align: center;" id="commYear">
+									<option>Commerce 2022</option>
+									<option>Commerce 2021</option>
+									<option>Commerce 2020</option>
+									<option>Commerce 2019</option>
+									<option>Commerce 2018</option>
+									<option>Commerce 2017</option>
+									<option>Commerce 2016</option>
+									<option>Commerce 2015</option>
+									<option>Commerce 2014</option>
+									<option>Commerce 2013</option>
+									<option>Commerce 2012</option>
+									<option>Commerce 2011</option>
+									<option>Commerce 2010</option>
+									<option>Commerce 2009</option>
+									<option>Commerce 2008</option>
+									<option>Commerce 2007</option>
+									<option>Commerce 2006</option>
+									<option>Commerce 2005</option>
+									<option>Commerce 2004</option>
+									<option>Commerce 2003</option>
+									<option>Commerce 2002</option>
+									<option>Commerce 2001</option>
+									<option>Commerce 2000</option>
+									<option>Commerce 1999</option>
+									<option>Commerce 1998</option>
+									<option>Commerce 1997</option>
+									<option>Commerce 1996</option>
+									<option>Commerce 1995</option>
+									<option>Commerce 1994</option>
+									<option>Commerce 1993</option>
+									<option>Commerce 1992</option>
+									<option>Commerce 1991</option>
+									<option>Commerce 1990</option>
+									<option>Commerce 1989</option>
+									<option>Commerce 1988</option>
+								</select><p></p>&nbsp;<a style="display: inline; padding: 5% 7%; border: none; background-color: #eaeaea; text-decoration: none" onclick="loadQues('commYear', event)">Start</a>
+							</span>
+						</div>
+					</div>
+				</label>
+				<label for="litineng_label"><a class="fa fa-won"> Lit-in-English</a>
+					<input type="radio" name="btn" id="litineng_label"/>	
+					<div class="sub">
+						<div id="litineng"><p></p>
+							<span style="width: 100%">
+								<select style="padding: 5%; cursor: pointer; border: none; text-align: center;" id="litinengYear">
+									<option>Lit-in-English 2022</option>
+									<option>Lit-in-English 2021</option>
+									<option>Lit-in-English 2020</option>
+									<option>Lit-in-English 2019</option>
+									<option>Lit-in-English 2018</option>
+									<option>Lit-in-English 2017</option>
+									<option>Lit-in-English 2016</option>
+									<option>Lit-in-English 2015</option>
+									<option>Lit-in-English 2014</option>
+									<option>Lit-in-English 2013</option>
+									<option>Lit-in-English 2012</option>
+									<option>Lit-in-English 2011</option>
+									<option>Lit-in-English 2010</option>
+									<option>Lit-in-English 2009</option>
+									<option>Lit-in-English 2008</option>
+									<option>Lit-in-English 2007</option>
+									<option>Lit-in-English 2006</option>
+									<option>Lit-in-English 2005</option>
+									<option>Lit-in-English 2004</option>
+									<option>Lit-in-English 2003</option>
+									<option>Lit-in-English 2002</option>
+									<option>Lit-in-English 2001</option>
+									<option>Lit-in-English 2000</option>
+									<option>Lit-in-English 1999</option>
+									<option>Lit-in-English 1998</option>
+									<option>Lit-in-English 1997</option>
+									<option>Lit-in-English 1996</option>
+									<option>Lit-in-English 1995</option>
+									<option>Lit-in-English 1994</option>
+									<option>Lit-in-English 1993</option>
+									<option>Lit-in-English 1992</option>
+									<option>Lit-in-English 1991</option>
+									<option>Lit-in-English 1990</option>
+									<option>Lit-in-English 1989</option>
+									<option>Lit-in-English 1988</option>
+								</select><p></p>&nbsp;<a style="display: inline; padding: 5% 7%; border: none; background-color: #eaeaea; text-decoration: none" onclick="loadQues('litinengYear', event)">Start</a>
+							</span>
+						</div>
+					</div>
+				</label>
+				<label for="govt_label"><a class="fa fa-won"> Government</a>
+					<input type="radio" name="btn" id="govt_label"/>	
+					<div class="sub">
+						<div id="govt"><p></p>
+							<span style="width: 100%">
+								<select style="padding: 5%; cursor: pointer; border: none; text-align: center;" id="govt">
+									<option>Government 2022</option>
+									<option>Government 2021</option>
+									<option>Government 2020</option>
+									<option>Government 2019</option>
+									<option>Government 2018</option>
+									<option>Government 2017</option>
+									<option>Government 2016</option>
+									<option>Government 2015</option>
+									<option>Government 2014</option>
+									<option>Government 2013</option>
+									<option>Government 2012</option>
+									<option>Government 2011</option>
+									<option>Government 2010</option>
+									<option>Government 2009</option>
+									<option>Government 2008</option>
+									<option>Government 2007</option>
+									<option>Government 2006</option>
+									<option>Government 2005</option>
+									<option>Government 2004</option>
+									<option>Government 2003</option>
+									<option>Government 2002</option>
+									<option>Government 2001</option>
+									<option>Government 2000</option>
+									<option>Government 1999</option>
+									<option>Government 1998</option>
+									<option>Government 1997</option>
+									<option>Government 1996</option>
+									<option>Government 1995</option>
+									<option>Government 1994</option>
+									<option>Government 1993</option>
+									<option>Government 1992</option>
+									<option>Government 1991</option>
+									<option>Government 1990</option>
+									<option>Government 1989</option>
+									<option>Government 1988</option>
+								</select><p></p>&nbsp;<a style="display: inline; padding: 5% 7%; border: none; background-color: #eaeaea; text-decoration: none" onclick="loadQues('govtYear', event)">Start</a>
+							</span>
+						</div>
+					</div>
+				</label>
+				<label for="phy_label"><a class="fa fa-won"> Physics</a>
+					<input type="radio" name="btn" id="phy_label"/>	
+					<div class="sub">
+						<div id="physics"><p></p>
+							<span style="width: 100%">
+								<select style="padding: 5%; cursor: pointer; border: none; text-align: center;" id="physics">
+									<option>Physics 2022</option>
+									<option>Physics 2021</option>
+									<option>Physics 2020</option>
+									<option>Physics 2019</option>
+									<option>Physics 2018</option>
+									<option>Physics 2017</option>
+									<option>Physics 2016</option>
+									<option>Physics 2015</option>
+									<option>Physics 2014</option>
+									<option>Physics 2013</option>
+									<option>Physics 2012</option>
+									<option>Physics 2011</option>
+									<option>Physics 2010</option>
+									<option>Physics 2009</option>
+									<option>Physics 2008</option>
+									<option>Physics 2007</option>
+									<option>Physics 2006</option>
+									<option>Physics 2005</option>
+									<option>Physics 2004</option>
+									<option>Physics 2003</option>
+									<option>Physics 2002</option>
+									<option>Physics 2001</option>
+									<option>Physics 2000</option>
+									<option>Physics 1999</option>
+									<option>Physics 1998</option>
+									<option>Physics 1997</option>
+									<option>Physics 1996</option>
+									<option>Physics 1995</option>
+									<option>Physics 1994</option>
+									<option>Physics 1993</option>
+									<option>Physics 1992</option>
+									<option>Physics 1991</option>
+									<option>Physics 1990</option>
+									<option>Physics 1989</option>
+									<option>Physics 1988</option>
+								</select><p></p>&nbsp;<a style="display: inline; padding: 5% 7%; border: none; background-color: #eaeaea; text-decoration: none" onclick="loadQues('physics', event)">Start</a>
+							</span>
+						</div>
+					</div>
+				</label>
+				<label for="crs_label"><a class="fa fa-won"> CRS</a>
+					<input type="radio" name="btn" id="crs_label"/>	
+					<div class="sub">
+						<div id="crs"><p></p>
+							<span style="width: 100%">
+								<select style="padding: 5%; cursor: pointer; border: none; text-align: center;" id="crs">
+									<option>CRS 2022</option>
+									<option>CRS 2021</option>
+									<option>CRS 2020</option>
+									<option>CRS 2019</option>
+									<option>CRS 2018</option>
+									<option>CRS 2017</option>
+									<option>CRS 2016</option>
+									<option>CRS 2015</option>
+									<option>CRS 2014</option>
+									<option>CRS 2013</option>
+									<option>CRS 2012</option>
+									<option>CRS 2011</option>
+									<option>CRS 2010</option>
+									<option>CRS 2009</option>
+									<option>CRS 2008</option>
+									<option>CRS 2007</option>
+									<option>CRS 2006</option>
+									<option>CRS 2005</option>
+									<option>CRS 2004</option>
+									<option>CRS 2003</option>
+									<option>CRS 2002</option>
+									<option>CRS 2001</option>
+									<option>CRS 2000</option>
+									<option>CRS 1999</option>
+									<option>CRS 1998</option>
+									<option>CRS 1997</option>
+									<option>CRS 1996</option>
+									<option>CRS 1995</option>
+									<option>CRS 1994</option>
+									<option>CRS 1993</option>
+									<option>CRS 1992</option>
+									<option>CRS 1991</option>
+									<option>CRS 1990</option>
+									<option>CRS 1989</option>
+									<option>CRS 1988</option>
+								</select><p></p>&nbsp;<a style="display: inline; padding: 5% 7%; border: none; background-color: #eaeaea; text-decoration: none" onclick="loadQues('crs', event)">Start</a>
+							</span>
+						</div>
+					</div>
+				</label>
+				<label for="eco_label"><a class="fa fa-won"> Economics</a>
+					<input type="radio" name="btn" id="eco_label"/>	
+					<div class="sub">
+						<div id="eco"><p></p>
+							<span style="width: 100%">
+								<select style="padding: 5%; cursor: pointer; border: none; text-align: center;" id="eco">
+									<option>Economics 2022</option>
+									<option>Economics 2021</option>
+									<option>Economics 2020</option>
+									<option>Economics 2019</option>
+									<option>Economics 2018</option>
+									<option>Economics 2017</option>
+									<option>Economics 2016</option>
+									<option>Economics 2015</option>
+									<option>Economics 2014</option>
+									<option>Economics 2013</option>
+									<option>Economics 2012</option>
+									<option>Economics 2011</option>
+									<option>Economics 2010</option>
+									<option>Economics 2009</option>
+									<option>Economics 2008</option>
+									<option>Economics 2007</option>
+									<option>Economics 2006</option>
+									<option>Economics 2005</option>
+									<option>Economics 2004</option>
+									<option>Economics 2003</option>
+									<option>Economics 2002</option>
+									<option>Economics 2001</option>
+									<option>Economics 2000</option>
+									<option>Economics 1999</option>
+									<option>Economics 1998</option>
+									<option>Economics 1997</option>
+									<option>Economics 1996</option>
+									<option>Economics 1995</option>
+									<option>Economics 1994</option>
+									<option>Economics 1993</option>
+									<option>Economics 1992</option>
+									<option>Economics 1991</option>
+									<option>Economics 1990</option>
+									<option>Economics 1989</option>
+									<option>Economics 1988</option>
+								</select><p></p>&nbsp;<a style="display: inline; padding: 5% 7%; border: none; background-color: #eaeaea; text-decoration: none" onclick="loadQues('eco', event)">Start</a>
+							</span>
+						</div>
+					</div>
+				</label>
+			</div>
+		</div>
+            <p></p>
+        </div><p></p>
+        <div id="footer">
+            <p></p>
+            <center>Copyright &#169; 2023</center>
+            <a href='#top' id="backToTop"></a>
+            <p></p>
+        </div>
+        <button id="footerBtn" class="footerBtn" onclick="showFooter();">Hide footer</button></p>
+    	<script type="text/javascript">
+
+    		function loadQues(id,e) {
+    			var selectedYear = document.getElementById(id);
+    			var option = selectedYear.options[selectedYear.selectedIndex].innerHTML;
+    			e.target.href = option + ".html";
+    			e.target.click();
+    			//window.location.replace(currentLocation);
+    		}
+
+			$('#home').click(function()
+			{
+				$('#sideNav').animate({width: '45%'}, 500);
+			})
+			$('#sideNav a').click(function(){$('#sideNav').animate({width: '0'}, 500);});
+		</script>
+    </body>
+
+</html>	
