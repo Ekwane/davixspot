@@ -1,0 +1,114 @@
+
+* {
+    color: blue;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+*::selection {
+    background-color: black;
+    color: yellow; text-decoration: none;
+} 
+body {
+    background-color: dark-blue;
+    margin: 0%;
+    padding: 0% 0%;
+    font-size: 18px;
+}
+input { cursor:pointer; }
+li { list-style-type: none; } 
+input[type=radio] { display: none }
+input[name=time] {width: 50%; padding: 10px; border: none; border-radius: 4px; cursor: text} /*to be continued with*/
+li:hover {cursor: pointer; transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -o-transition: all 0.3s ease-in;}
+nav li{padding: 1% 5%;} 
+input[name=search]:focus {border: 1px solid blue}
+nav {position: relative; display: inline-block; cursor: pointer;}
+nav:hover .dropdown-content {display: block; background-color: red; transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -o-transition: all 0.3s ease-in;}
+#mainPageHeader {color: blue; text-shadow: -1px -1px black; padding: 0.5% 0%; border: 0; border-radius: 3px; font-size: 40px; font-weight: bolder; font-stretch: ultra-expanded; text-align: center; font-style: italic; transform: rotate3d(20deg); transform-style: preserve-3d;}
+#home {margin-left: 1%; color: white; text-decoration: none; font-size: 20px}
+#quickLinks {margin-left: 0}
+#feed_back { width: 19.2%; }
+#footer {background-color: red; height: auto; margin: 0; padding: 0.5% 2%; }
+#footer * {color: #eaeaea; font-weight: bolder; font-stretch: ultra-condensed; font-size: 11px; font-style: italic;}
+#footer li{ min-width: 100px; width: 140px; cursor: pointer;}
+#footer li *:hover{cursor: pointer;}
+#footer a{text-decoration: none; text-shadow: -2px 2px 2px gray;}
+#footer p a{font-style: oblique; font-weight: light;}
+#footer a:visited {color:#123456;}
+#footer a:active, a:active {color: #48ff12;}
+.footerLink { width: 19.2%; margin-right: 19.2%; } 
+.dropdown-content {display: none; position: absolute; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); padding: 0% 1%; border-radius: 1px; z-index: 1;} 
+.leftcolumnForMainPageHeader {background-color: red; height: auto; top: 0; text-align: justify; padding: 1%; border: 0;}
+.footerBtn {background: #aeaeae; color: dark-blue; box-shadow: -2px 4px 8px 0px blue; text-shadow: -1px 2px 2px gray; font-weight: bolder; border: none; border-radius: 50px; cursor: pointer; font-style: italic; margin: 0% 2% 2% 0%; padding: 10px; float: right; position: fixed; bottom: 0; right: 0; z-index: 1; }
+.footerBtn:hover {background: white; color: dark-blue; text-shadow: none; font-weight: light; transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -o-transition: all 0.3s ease-in;}
+.wel_page {background-color: transparent; margin: 5% 10%; font-style: italic;}
+.sub {max-height: 0; opacity: 0; z-index: -1; overflow: hidden; transition: all 0.3s ease-in;}
+.subjects input[name=search] {margin-left: 15%; border: none; cursor: text; padding: 3%; border-radius: 5px; display: inline}
+#footer a:hover, a:hover {transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -o-transition: all 0.3s ease-in;}
+input[name=btn]:checked + .sub {
+    max-height: 110.5px; 
+    opacity: 1; 
+    transition: all 1s ease-in; 
+    z-index: 1; 
+    overflow: hidden }
+li a { text-decoration: none }
+label {
+    border: 2px solid blue;
+	border-radius: 1px; 
+	background-color: white;
+	width: 15%; 
+	text-align: center; 
+	text-decoration: none; 
+	display: block; 
+	padding: 2% 10%; 
+	margin-bottom: 2%; 
+	cursor: pointer
+}
+#sideNav li, span {
+    color: white;
+    line-height: 2em;
+}
+#sideNav hr { color: white }
+
+@media only screen and (max-width: 800px)
+{
+
+    label { border: 2px solid blue;
+            border-radius: 1px; 
+            background-color: white;
+            width: 30%; 
+            text-align: center; 
+            text-decoration: none; 
+            display: block; 
+            padding: 5% 5%; 
+            margin-bottom: 3%; 
+            cursor: pointer
+        }
+
+    @media only screen and (max-width: 360px) {
+
+    .leftcolumnForMainPageHeader {background-color: red; height: auto; top: 0; text-align: justify; padding: 3%; border: 0;}
+    #mainPageHeader { color: blue; text-shadow: -1px -1px black; padding: 0.5% 0%; border: 0; border-radius: 3px; font-size: 100 %; font-weight: bolder; text-align: center;}
+    #pageHeader {background-color: red; margin-top: 1%; font-size: 70%; padding: 2%; width: 100%}
+    .questionPaper { width: 100% }
+    .leftcolumn { padding: 0.5% 1%; text-align: justify; width: 85%; margin-left: 5% }
+    #startBtn {background-color: red; width: 15%; margin: 1% 0 0 1%; text-align: center; font-size: 50%; padding: 2%; color: white; border: none; cursor: pointer;}
+    #submit { border: none; background-color: red; padding: 2% 4%; color: white; cursor: pointer; margin-left: 14%; visibility: hidden;}
+    label { border: 2px solid blue;
+            border-radius: 1px; 
+            background-color: white;
+            width: 60%; 
+            text-align: center; 
+            text-decoration: none; 
+            display: block; 
+            padding: 5% 5%; 
+            margin-bottom: 3%; 
+            cursor: pointer
+        }
+        #sideNav li, span {color: white; line-height: 2em;}
+        #sideNav hr {color: white}
+
+
+    }
+
+}
